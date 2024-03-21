@@ -1,0 +1,79 @@
+<template>
+    <!-- <template lwc:if={contentReady}>
+        <template lwc:if={isEditMode}> -->
+            <h2 class="slds-p-around_x-small slds-text-title_caps">{label.labelConfirmThat}</h2>
+            <div class="slds-box terms-and-conditions ">
+                <div class="checkbox-group">
+                    <div class="checkbox-item">
+                        <lightning-input 
+                            type="checkbox" 
+                            name="checkbox1"
+                            onchange={handleChangeCheckbox1}
+                            variant="label-hidden"
+                            label="-"
+                            required
+                        ></lightning-input>
+
+                        <span class="checkbox-item-label"> {label.labelConfirmReadThe} 
+                            <a 
+                                href={termsAndConditions} 
+                                style="margin-left:4px" 
+                                target="_blank"
+                                > <b>{label.labelTermsAndCondition}.</b>
+                            </a>
+                        </span>
+                    </div>
+
+                    <div class="checkbox-item">
+                        <lightning-input
+                            type="checkbox" 
+                            name="checkbox2" 
+                            onchange={handleChangeCheckbox2}
+                            variant="label-hidden"
+                            label="-"
+                            required
+                        ></lightning-input> 
+                        <span class="checkbox-item-label"> {label.labelAknowledgePaymentTherms} <b><span style="margin-left:4px">{paymentTerm}.</span></b></span>
+                    </div>
+                    <template lwc:if={showIOTcheckbox}>
+                        <div class="checkbox-item">
+                            <lightning-input
+                                type="checkbox" 
+                                name="checkbox3" 
+                                onchange={handleChangeCheckbox3}
+                                variant="label-hidden"
+                                label="-"
+                                required
+                            ></lightning-input>
+                            <span  class="checkbox-item-label">{label.labelPurchaseIOTDevice}.</span>
+                        </div>
+                    </template>  
+                </div>
+            </div>
+
+            <div class="slds-box" style="margin-top:10px;margin-bottom:10px">
+                <div class="row">
+                    <div class="checkout-po-label-container">
+                        <p class="checkbox-item-label">{label.labelPurchaseOrderNumber}</p>
+                        <div class="checkout-po-info-container">
+                            <lightning-icon class="po-info-icon" icon-name="utility:info" alternative-text="info!" title="Info" size="xx-small"></lightning-icon>
+                                <!-- <span class="slds-assistive-text">Help</span> -->
+                            <!-- </button> -->
+                            <div class="slds-popover slds-popover_tooltip slds-nubbin_bottom-left slds-hide" role="tooltip" id="help">
+                                <div class="slds-popover__body">{label.labelPurchaseOrderNumberInfo}.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <lightning-input 
+                        name="input1" 
+                        value={poNumber}
+                        onchange={handleChangePoNumber}
+                        label="-"
+                        variant="label-hidden"
+                    >
+                    </lightning-input>
+                </div>
+            </div>
+        <!-- </template>
+    </template> -->
+</template>

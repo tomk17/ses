@@ -1,0 +1,285 @@
+<!--
+Author : Mohamed HUSSEIN (Source : sfdcMonkey.com)
+Company : EI-Technologies
+Date : 21/08/2019
+-->
+<aura:component
+    implements="lightning:availableForFlowScreens,lightning:availableForFlowActions,force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction"
+    access="global" controller="LC02_ContactsListView">
+    <lightning:quickActionAPI aura:id="quickActionAPI" />
+    <!-- call doInit method on component load -->
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    <!-- aura attributes to store data/values -->
+    <aura:attribute name="listOfAllContacts" type="list" />
+    <aura:attribute name="selectedRecords" type="list" />
+    <aura:attribute name="PaginationList" type="list" />
+    <aura:attribute name="selectedCount" type="integer" default="0" description="selected Records Count" />
+    <aura:attribute name="startPage" type="Integer" />
+    <aura:attribute name="endPage" type="Integer" />
+    <aura:attribute name="totalRecordsCount" type="Integer" />
+    <aura:attribute name="pageSize" type="Integer" default="10"
+        description="number of records to be display on per page" />
+    <aura:attribute name="currentPage" type="integer" default="1" />
+    <aura:attribute name="totalPagesCount" type="integer" />
+    <aura:attribute name="bNoRecordsFound" type="boolean" />
+    <aura:attribute access="private" name="msg" type="String" default="" />
+    <aura:attribute access="private" name="title" type="String" default="" />
+    <aura:attribute name="Spinner" type="boolean" default="false" />
+    <aura:attribute name="orderBy" type="String" default="Name" />
+    <aura:attribute name="showCreateForm" type="boolean" default="false" />
+    <aura:attribute name="AccountId" type="String" />
+
+    <aura:if isTrue="{!v.Spinner}">
+        <div>
+            <lightning:spinner aura:id="mySpinner" />
+        </div>
+    </aura:if>
+    <aura:if isTrue="{! !empty(v.msg)}">
+        <ui:message title="{!v.title}" severity="{!v.title}" closable="true">
+            {!v.msg}
+        </ui:message>
+    </aura:if>
+    <br />
+
+    <div class="slds-page-header" style="background-color: white;">
+        <div class="slds-text-heading_medium">
+            <h1 style="text-align: center; font-family: bold; font-family: 'Maax_Bold';font-size: 40px;color: black; padding: 0 10%;">
+                {!$Label.c.Contact_list_view_title}</h1>
+            <br />
+        </div>
+        <br />
+        <div class="slds-page-header__row">
+            <div class="slds-page-header__col-title">
+                <div class="slds-media">
+                     <!--<div class="slds-media__figure">
+                        <lightning:icon iconName="standard:contact" alternativeText="Event" />
+                    </div> -->
+                    <div class="slds-media__body">
+                        <!--<div class="slds-page-header__name">
+                            <div class="slds-page-header__name-title">
+                                Contacts
+                            </div>
+                        </div>
+                        <p class="slds-page-header__name-meta">
+                        <h1>
+                            <span class="slds-page-header__title slds-truncate"
+                                title="Rohde Corp - 80,000 Widgets">{!$Label.c.Z_LC_ContactsListView_AllContacts}</span>
+                        </h1>
+                        </p>
+                        <br>
+                        </br>-->
+                        <div class="slds-page-header__name">
+                            <div class="slds-page-header__name-title">
+                                <p style="font-size: 20px; width: 80%;">{!$Label.c.Contact_list_view_information}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div style="margin-bottom: 5px;">
+        <div>
+            <!--   <div class="inlineDiv" style="width:60%"><label>{!v.totalRecordsCount} {!$Label.c.Z_LC_ContactsListView_SortedItems} {!v.orderBy}</label></div> -->
+            <div class="inlineDiv">
+                <div style="width:200px">
+                    <span onkeypress="{!c.handleNameFilterChange}">
+                        <lightning:input type="search" aura:id="nameFilter"
+                            placeholder="{!$Label.c.Z_LC_ContactsListView_Search}" />
+                    </span>
+                </div>
+                <div style="margin-left: 5px;">
+                    <div class="custom-btn-wrapper"> <!-- used to display a border with linear gradiant -->
+                        <button class="custom-btn" onclick="{!c.createNewContact}">{!$Label.c.Z_LC_ContactsListView_NewButton}</button>
+                    </div>
+                    <!--<lightning:button label="{!$Label.c.Z_LC_ContactsListView_NewButton}"
+                        title="{!$Label.c.Z_LC_ContactsListView_NewButton}" onclick="{!c.createNewContact}" />-->
+                </div>
+                <div style="margin-left: 5px;">
+                    <aura:if isTrue="{!v.selectedCount == 0 || v.selectedCount > $Label.c.Invite_Number_of_Contacts_limit}">
+                        <lightning:button label="{!$Label.c.Z_LC_ContactsListView_InviteButton}"
+                            onclick="{! c.getSelectedRecords }"
+                            disabled="{!v.selectedCount == 0 || v.selectedCount > $Label.c.Invite_Number_of_Contacts_limit}" />
+                        <aura:set attribute="else">
+                            <div class="custom-btn-wrapper"> <!-- used to display a border with linear gradiant -->
+                                <button class="custom-btn" onclick="{!c.getSelectedRecords}">{!$Label.c.Z_LC_ContactsListView_InviteButton}</button>
+                            </div>
+                        </aura:set>
+                    </aura:if>
+                    
+                    <!--<lightning:button label="{!$Label.c.Z_LC_ContactsListView_InviteButton}"
+                        onclick="{! c.getSelectedRecords }"
+                        disabled="{!v.selectedCount == 0 || v.selectedCount > $Label.c.Invite_Number_of_Contacts_limit}" />-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--  -->
+    <aura:if isTrue="{!v.showCreateForm}">
+        <c:LC_CreateContactFromlistView showCreateForm="{!v.showCreateForm}" accountId="{!v.AccountId}"
+            status="{!v.status}" />
+    </aura:if>
+    <!--Use aura:if tag to display/hide popup Add Product based on isModalOpen value-->
+    <aura:if isTrue="{!v.isModalOpen}">
+        <!-- Modal/Popup Box starts here-->
+        <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true"
+            aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open">
+            <div class="slds-modal__container">
+                <!-- Modal/Popup Box Header Starts here-->
+                <header class="slds-modal__header">
+                    <lightning:buttonIcon iconName="utility:close" onclick="{! c.closePopup }" alternativeText="close"
+                        variant="bare-inverse" class="slds-modal__close" />
+                    <h2 id="modal-heading-01" class="slds-text-heading_medium slds-hyphenate">
+                        {!$Label.c.Z_LC_AddProduct_Header1}</h2>
+                </header>
+                <!--Modal/Popup Box Body Starts here-->
+                <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1" style="height: 200px;">
+                    <div class="slds-m-top_small">
+                        {!$Label.c.Z_LC_AddProduct_Header2}
+                    </div>
+                    <div>
+                        <c:LC_CreateContact />
+                    </div>
+                </div>
+                <!--Modal/Popup Box Footer Starts here-->
+                <footer class="slds-modal__footer">
+                    <lightning:button variant="neutral" label="{!$Label.c.Z_LC_AddProduct_BtnCancel}"
+                        title="{!$Label.c.Z_LC_AddProduct_BtnCancel}" onclick="{! c.closePopup }" />
+                    <lightning:button variant="brand" label="{!$Label.c.Z_LC_AddProduct_BtnAdd}"
+                        title="{!$Label.c.Z_LC_AddProduct_BtnAdd}" onclick="{!c.addProduct}" />
+                </footer>
+            </div>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open"></div>
+    </aura:if>
+    <!-- -->
+    <aura:if isTrue="{!v.bNoRecordsFound}">
+        <!--display error message if there is no records available -->
+        <div class="slds-notify slds-notify_alert slds-theme_alert-texture slds-theme_info" role="alert">
+            <span class="slds-assistive-text">{!$Label.c.Z_LC_ContactsListView_Error}</span>
+            <h2>{!$Label.c.Z_LC_ContactsListView_NoRecords}</h2>
+        </div>
+        <aura:set attribute="else">
+            <!-- data table start-->
+            <table class="slds-table slds-table_bordered slds-table_cell-buffer">
+                <thead>
+                    <tr class="slds-text-title_caps">
+                        <!--header checkbox for select all-->
+                        <th style="width:3.25rem;" class="slds-text-align_right">
+                            <div class="slds-form-element">
+                                <div class="slds-form-element__control">
+                                    <label class="slds-hidden">
+                                        <!-- "slds-checkbox" -->
+                                        <!--ui:inputCheckbox disabled="{!v.totalRecordsCount == 0}"
+                                                          aura:id="selectAllId"
+                                                          change="{!c.selectAllCheckbox}"/-->
+                                        <ui:inputCheckbox disabled="true" aura:id="selectAllId" />
+                                        <span class="slds-checkbox_faux"></span>
+                                        <span class="slds-form-element__label"></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </th>
+                        <th scope="col">
+                            <div class="slds-truncate" title="{!$Label.c.Z_LC_ContactsListView_Name}">
+                                <a href="javascript:void(0)"
+                                    onclick="{!c.orderByName}">{!$Label.c.Z_LC_ContactsListView_Name}</a>
+                            </div>
+                        </th>
+                        <th scope="col">
+                            <div class="slds-truncate" title="{!$Label.c.Z_LC_ContactsListView_AccountName}">
+                                <a href="javascript:void(0)"
+                                    onclick="{!c.orderByAccountName}">{!$Label.c.Z_LC_ContactsListView_AccountName}</a>
+                            </div>
+                        </th>
+                        <th scope="col">
+                            <div class="slds-truncate" title="{!$Label.c.Z_LC_ContactsListView_Phone}">
+                                <a href="javascript:void(0)"
+                                    onclick="{!c.orderByPhone}">{!$Label.c.Z_LC_ContactsListView_Phone}</a>
+                            </div>
+                        </th>
+                        <th scope="col">
+                            <div class="slds-truncate" title="{!$Label.c.Z_LC_ContactsListView_Email}">
+                                <a href="javascript:void(0)"
+                                    onclick="{!c.orderByEmail}">{!$Label.c.Z_LC_ContactsListView_Email}</a>
+                            </div>
+                        </th>
+                        <th scope="col">
+                            <div class="slds-truncate" title="{!$Label.c.Contact_list_view_is_already_invited}">
+                                <span>{!$Label.c.Contact_list_view_is_already_invited}</span>
+                            </div>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <aura:iteration items="{!v.PaginationList}" var="obj">
+                        <tr>
+                            <th scope="row" class="slds-text-align_right" style="width:3.25rem;">
+                                <aura:if isTrue="{!not(obj.objContact.Is_Customer_Portal_User__c)}">
+                                    <div class="slds-form-element">
+                                        <div class="slds-form-element__control">
+                                            <label class="slds-checkbox">
+                                                <ui:inputCheckbox aura:id="checkbox" text="{!obj.objContact.Id}"
+                                                    value="{!obj.isChecked}" change="{!c.checkboxSelect}" />
+                                                <span class="slds-checkbox_faux"></span>
+                                                <span class="slds-form-element__label text"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </aura:if>
+                            </th>
+                            <th scope="row">
+                                <div class="slds-truncate" title="{!obj.objContact.Name}">
+                                    <a href="{!'detail/'+ obj.objContact.Id + ''}">
+                                        {!obj.objContact.Name}</a>
+                                </div>
+                            </th>
+                            <th scope="row">
+                                <div class="slds-truncate" title="{!obj.objContact.Account.Name}">
+                                    <a href="{!'detail/'+ obj.objContact.AccountId + ''}">
+                                        {!obj.objContact.Account.Name}</a>
+                                </div>
+                            </th>
+                            <th scope="row">
+                                <div class="slds-truncate" title="{!obj.objAccount.Phone}">
+                                    <lightning:formattedPhone value="{!obj.objContact.Phone}" />
+                                </div>
+                            </th>
+                            <th scope="row">
+                                <div class="slds-truncate" title="{!obj.objContact.Email}">
+                                    {!obj.objContact.Email}
+                                </div>
+                            </th>
+                            <th scope="row">
+                                <div class="slds-truncate" title="{!obj.objContact.Is_Customer_Portal_User__c}">
+                                    <aura:if isTrue="{!obj.objContact.Is_Customer_Portal_User__c}">
+                                        {!$Label.c.Contact_list_view_Yes}
+                                    </aura:if>
+                                </div>
+                            </th>
+                        </tr>
+                    </aura:iteration>
+                </tbody>
+            </table>
+            <!-- DataTable End -->
+            <br />
+            <!--  Pagination Buttons Start -->
+            <div class="slds-align_absolute-center">
+                <lightning:button label="{!$Label.c.Z_LC_ContactsListView_PreviousButton}"
+                    disabled="{!v.startPage == 0}" onclick="{!c.navigation}" variant="brand" iconName="utility:back"
+                    name="previous" />
+
+                <span class="slds-badge slds-badge_lightest" style="margin-right: 10px;margin-left: 10px;">
+                    {!$Label.c.Z_LC_ContactsListView_Page} - {!v.currentPage} - {!$Label.c.Z_LC_ContactsListView_OutOf}
+                    : {!v.totalPagesCount}
+                </span>
+
+                <lightning:button label="{!$Label.c.Z_LC_ContactsListView_NextButton}"
+                    disabled="{!(v.endPage + 1) >= v.totalRecordsCount}" onclick="{!c.navigation}" variant="brand"
+                    iconName="utility:forward" iconPosition="right" name="next" />
+            </div>
+            <!--  Pagination Buttons End -->
+        </aura:set>
+    </aura:if>
+</aura:component>

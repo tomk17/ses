@@ -1,0 +1,141 @@
+<aura:component implements="lightning:availableForFlowScreens" controller="B2BCheckoutSummaryAdditionalInfos">
+    <aura:attribute name="cartId" type="String" />
+    <aura:attribute name="email" type="String" />
+    <aura:attribute name="currency" type="String" />
+    <aura:attribute name="products" type="CartItem[]" />
+    <aura:attribute name="softwares" type="CartItem[]" />
+    <aura:attribute name="optionalEmail" type="String" />
+    <aura:handler name = "init" value = "{!this}" action = "{!c.onInit}"/>
+    
+    <h2 class="slds-p-around_x-small slds-text-title_caps">{!$Label.c.ShippingContact}</h2>
+    <div class="slds-box inheritPadding">
+        <div class="wrap">
+            <div class="changePadding" style="width:50%; border-right: 1px solid #D4D4D4">
+                <p><b>{!$Label.c.B2BStore_Email_address_of_the_selected_contact} : </b></p>
+                <aura:if isTrue="{!v.email != null}">
+                    <p>{!v.email}</p>
+                    <aura:set attribute="else">
+                        <p>{!$Label.c.B2BStore_NoEmail}</p>
+                    </aura:set>
+                </aura:if>
+            </div>
+            <div class="changePadding" style="width:50%">
+                <p style="margin-left:15px"><b>{!$Label.c.B2BStore_Additional_email_address} : </b></p>
+                <aura:if isTrue="{!v.optionalEmail != null}">
+                    <p style="margin-left:15px">{!v.optionalEmail}</p>
+                    <aura:set attribute="else">
+                        <p style="margin-left:15px">{!$Label.c.B2BStore_NoEmail}</p>
+                    </aura:set>
+                </aura:if>
+            </div>
+        </div>
+    </div>
+    
+    <table class="slds-table slds-table_cell-buffer slds-no-row-hover slds-table_bordered" style="margin-top:15px;margin-bottom:15px;border-radius:0.25rem;border: 1px solid #D4D4D4;table-layout:fixed;" aria-labelledby="element-with-table-label other-element-with-table-label">
+        <thead>
+            <tr class="slds-line-height_reset">
+                <th class="backgroundTH begin" style="width:58%" scope="col">
+                    <div class="slds-truncate" title="Opportunity Name">{!$Label.c.B2BStore_Product_Name}</div>
+                </th>
+                <th class="backgroundTH middle" style="width:90px" scope="col">
+                    <div class="slds-truncate" title="Account Name">{!$Label.c.B2BStore_Quantity}</div>
+                </th>
+                <th class="backgroundTH middle" style="width:240px" scope="col">
+                    <div class="slds-truncate" title="Account Name">{!$Label.c.B2BStore_Availablity}</div>
+                </th>
+                <th class="backgroundTH end" style="width:90px" scope="col">
+                    <div class="slds-truncate" title="Close Date">{!$Label.c.B2BStore_Price}</div>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <aura:iteration items="{!v.products}" var="product">
+                <tr class="slds-hint-parent">
+                    <th data-label="Opportunity Name" scope="row" class="begin" style="overflow:hidden">
+                        <div class="slds-truncate" title="name">{!product.Product2.Name}</div>
+                    </th>
+                    <td data-label="Account Name">
+                        <div class="slds-truncate" title="quantity">{!product.Quantity}</div>
+                    </td>
+                    <td data-label="Account Name">
+                        <aura:if isTrue="{!product.Availability_Result__c == 'En cours de réapprovisionnement'}">
+                            <p>{!$Label.c.B2BStore_ATP1}<br/>
+                            <span style="font-style: italic;color: #b9b8b8d4;">{!$Label.c.B2BStore_ATP2}</span>
+                            </p>
+                        </aura:if>
+                        <aura:if isTrue="{!product.Availability_Result__c == 'En stock'}">
+                            <p>{!$Label.c.B2BStore_ATP3}<br/>
+                                <span style="font-style: italic;color: #b9b8b8d4;">{!$Label.c.B2BStore_ATP4}</span>
+                            </p>
+                        </aura:if>
+                        <aura:if isTrue="{!product.Availability_Result__c == 'Information non disponible actuellement'}">
+                            <p>{!$Label.c.B2BStore_ATP5}<br/></p>
+                        </aura:if>
+                    </td>
+                    <td data-label="Close Date" class="end">
+                        <aura:if isTrue="{!v.currency == 'USD'}">
+                            <div class="slds-truncate" title="price">$<lightning:formattedNumber value="{!product.TotalPrice}" maximumFractionDigits="2" minimumFractionDigits="2"/></div>
+                        </aura:if>
+                        <aura:if isTrue="{!v.currency == 'CAD'}">
+                            <div class="slds-truncate" title="price">CA$<lightning:formattedNumber value="{!product.TotalPrice}" maximumFractionDigits="2" minimumFractionDigits="2"/></div>
+                        </aura:if>
+                        <aura:if isTrue="{!v.currency == 'EUR'}">
+                            <div class="slds-truncate" title="price">€<lightning:formattedNumber value="{!product.TotalPrice}" maximumFractionDigits="2" minimumFractionDigits="2"/></div>
+                        </aura:if>
+                    </td>
+                </tr>
+            </aura:iteration>
+        </tbody>
+    </table>
+    
+    <aura:if isTrue="{!v.softwares.length != 0}">
+        <table class="slds-table slds-table_cell-buffer slds-no-row-hover slds-table_bordered" style="margin-top:15px;margin-bottom:15px;border-radius:0.25rem;border: 1px solid #D4D4D4;table-layout:fixed;" aria-labelledby="element-with-table-label other-element-with-table-label">
+            <thead>
+                <tr class="slds-line-height_reset">
+                    <th class="backgroundTH begin" style="width:70%" scope="col">
+                        <div class="slds-truncate" title="Opportunity Name">{!$Label.c.B2BStore_Software}</div>
+                    </th>
+                    <th class="backgroundTH middle" scope="col">
+                        <div class="slds-truncate" title="Account Name">{!$Label.c.B2BStore_Quantity}</div>
+                    </th>
+                    <th class="backgroundTH end" scope="col">
+                        <div class="slds-truncate" title="Close Date">{!$Label.c.B2BStore_Monthly_Fee}</div>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <aura:iteration items="{!v.softwares}" var="software">
+                    <tr class="slds-hint-parent">
+                        <th data-label="Opportunity Name" scope="row" class="begin" style="overflow:hidden">
+                            <div class="slds-truncate" title="name">{!software.Product2.Name}</div>
+                        </th>
+                        <td data-label="Account Name">
+                            <div class="slds-truncate" title="quantity">{!software.Quantity}</div>
+                        </td>
+                        <td data-label="Close Date" class="end">
+                            <aura:if isTrue="{!v.currency == 'USD'}">
+                                <div class="slds-truncate" title="price">$<lightning:formattedNumber value="{!software.TotalPrice}" maximumFractionDigits="2" minimumFractionDigits="2"/></div>
+                            </aura:if>
+                            <aura:if isTrue="{!v.currency == 'CAD'}">
+                                <div class="slds-truncate" title="price">CA$<lightning:formattedNumber value="{!software.TotalPrice}" maximumFractionDigits="2" minimumFractionDigits="2"/></div>
+                            </aura:if>
+                            <aura:if isTrue="{!v.currency == 'EUR'}">
+                                <div class="slds-truncate" title="price">€<lightning:formattedNumber value="{!software.TotalPrice}" maximumFractionDigits="2" minimumFractionDigits="2"/></div>
+                            </aura:if>
+                        </td>
+                    </tr>
+                </aura:iteration>
+            </tbody>
+        </table>
+    </aura:if>
+    
+    <div class="slds-box inheritPadding" style="margin-bottom:15px">
+        <div class="slds-text-body_regular row body" style="margin-bottom:12px;font-weight:700">
+            {!$Label.c.B2BStore_Delivery_Method}
+        </div>
+        <div class="slds-text-body_regular row body">
+            {!$Label.c.B2BStore_Standard_Delivery}
+        </div>
+    </div>
+    
+</aura:component>

@@ -1,0 +1,293 @@
+{
+  "appPageId" : "7d764b4a-d052-482a-b0a3-fbe81ddac77c",
+  "componentName" : "community_layout:sldsFlexibleLayout",
+  "dataProviders" : [ {
+    "componentName" : "commerce_data_provider:productDataProvider",
+    "componentAttributes" : {
+      "recordId" : "{!recordId}",
+      "sfdcExpressionKey" : "Product"
+    }
+  } ],
+  "id" : "a8caa960-d85c-4435-a8cc-4c35c753fb4b",
+  "label" : "Product",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "backgroundImageConfig" : "",
+        "backgroundImageOverlay" : "rgba(0,0,0,0)",
+        "sectionConfig" : "{\"UUID\":\"14c7865f-90d6-4890-8b69-c198e327f57b\",\"columns\":[{\"UUID\":\"ac8c42fa-b4ec-44b9-b01e-3536a95914d6\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":null}]}"
+      },
+      "componentName" : "community_layout:section",
+      "id" : "14c7865f-90d6-4890-8b69-c198e327f57b",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : {
+            "divider" : "chevron",
+            "hideOnMobile" : false,
+            "maxDepthOnMobile" : "3",
+            "showHomeLink" : false,
+            "showLastItemAsLink" : false,
+            "textSize" : "small"
+          },
+          "componentName" : "commerce_builder:breadcrumbs",
+          "id" : "fa5621ae-856a-4e50-b604-4ebb134aaa0d",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "ac8c42fa-b4ec-44b9-b01e-3536a95914d6",
+        "regionLabel" : "Column 1",
+        "regionName" : "col1",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "scopedBrandingSetId" : null,
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "backgroundImageConfig" : "",
+        "backgroundImageOverlay" : "rgba(0,0,0,0)",
+        "sectionConfig" : "{\"UUID\":\"a18e5294-5775-4df4-af39-680383cc80f3\",\"columns\":[{\"UUID\":\"3c44c7fb-b0aa-4de6-8f43-dd2fa631f887\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"6\",\"seedComponents\":null},{\"UUID\":\"b4442a53-14d1-4df5-9d29-6bc86d7e029d\",\"columnName\":\"Column 2\",\"columnKey\":\"col2\",\"columnWidth\":\"6\",\"seedComponents\":null}]}"
+      },
+      "componentName" : "community_layout:section",
+      "id" : "a18e5294-5775-4df4-af39-680383cc80f3",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : {
+            "carouselPageSize" : 1,
+            "carouselPosition" : "before",
+            "product" : "{!Product.Details}",
+            "showCarousel" : true
+          },
+          "componentName" : "commerce_builder:productGallery",
+          "id" : "e423fc11-97c2-4e83-8e29-679a15104d40",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "3c44c7fb-b0aa-4de6-8f43-dd2fa631f887",
+        "regionLabel" : "Column 1",
+        "regionName" : "col1",
+        "renditionMap" : { },
+        "type" : "region"
+      }, {
+        "components" : [ {
+          "componentAttributes" : {
+            "identifierName" : "SKU#",
+            "product" : "{!Product.Details}",
+            "productDetailSummaryFieldMapping" : "[]"
+          },
+          "componentName" : "commerce_builder:heading",
+          "id" : "f7845df9-d8ea-427b-aba1-7d422c90c864",
+          "regions" : [ {
+            "components" : [ {
+              "componentAttributes" : {
+                "backgroundColor" : "",
+                "paddingHorizontal" : "none",
+                "paddingVertical" : "none",
+                "text" : "{!Product.Details.fields.Name}",
+                "textAlign" : "left",
+                "textDecoration" : "{}",
+                "textDisplayInfo" : "{\"headingTag\": \"h1\", \"textStyle\": \"heading-medium\"}"
+              },
+              "componentName" : "dxp_base:textBlock",
+              "id" : "7f79a00e-e018-4173-98e4-8dae303bd52a",
+              "renderPriority" : "NEUTRAL",
+              "renditionMap" : { },
+              "type" : "component"
+            } ],
+            "id" : "21b3c67a-2cf5-41d7-adfb-096748146dd1",
+            "regionName" : "heading",
+            "type" : "region"
+          } ],
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "product" : "{!Product.Details}"
+          },
+          "componentName" : "commerce_builder:variantSelector",
+          "id" : "e99e45be-3491-4e0b-8384-c0ebdbc13cc7",
+          "regions" : [ {
+            "components" : [ {
+              "componentAttributes" : {
+                "backgroundColor" : "",
+                "paddingHorizontal" : "none",
+                "paddingVertical" : "none",
+                "text" : "Product options:",
+                "textAlign" : "left",
+                "textDecoration" : "{}",
+                "textDisplayInfo" : "{\"headingTag\": \"h2\", \"textStyle\": \"body-regular\"}"
+              },
+              "componentName" : "dxp_base:textBlock",
+              "id" : "cf28cc92-e550-4ca1-bf8a-f6e1a19fd531",
+              "renderPriority" : "NEUTRAL",
+              "renditionMap" : { },
+              "type" : "component"
+            } ],
+            "id" : "7847dd62-ea4c-4c35-b143-fd364a294249",
+            "regionName" : "heading",
+            "type" : "region"
+          } ],
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "negotiatedPriceLabel" : "Your Price",
+            "negotiatedPriceTextSize" : "small",
+            "originalPriceLabel" : "Original Price",
+            "originalPriceTextSize" : "small",
+            "product" : "{!Product.Details}",
+            "productPricing" : "{!Product.Pricing}",
+            "productTax" : "{!Product.Tax}",
+            "productVariant" : "{!Product.SelectedVariant}",
+            "showNegotiatedPrice" : true,
+            "showOriginalPrice" : true,
+            "showTaxIndication" : true,
+            "taxIncludedLabel" : "Tax Included",
+            "taxLabelSize" : "medium",
+            "unavailablePriceLabel" : "Price Unavailable"
+          },
+          "componentName" : "commerce_builder:productPricing",
+          "id" : "c3d0f63d-924d-4c8a-9fc7-48d412dfc61a",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "backgroundColor" : "rgba(0,0,0,0)",
+            "borderRadius" : 0,
+            "discountRowLabel" : "Discount per Unit",
+            "productPricing" : "{!Product.Pricing}",
+            "quantityRowLabel" : "Quantity"
+          },
+          "componentName" : "commerce_builder:pricingTiers",
+          "id" : "cf35ce49-0d03-41ed-a96b-2f28dd3462f4",
+          "regions" : [ {
+            "components" : [ {
+              "componentAttributes" : {
+                "backgroundColor" : "",
+                "paddingHorizontal" : "none",
+                "paddingVertical" : "none",
+                "text" : "Tier Discounts",
+                "textAlign" : "left",
+                "textDecoration" : "{}",
+                "textDisplayInfo" : "{\"headingTag\": \"h1\", \"textStyle\": \"heading-medium\"}"
+              },
+              "componentName" : "dxp_base:textBlock",
+              "id" : "5486faa0-62d1-4e03-b745-1d3668afd3f4",
+              "renderPriority" : "NEUTRAL",
+              "renditionMap" : { },
+              "type" : "component"
+            } ],
+            "id" : "c4c2134e-8590-4ab3-817e-846eecf92e7b",
+            "regionName" : "title",
+            "type" : "region"
+          } ],
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "addToCartButtonBorderRadius" : 0,
+            "addToCartButtonProcessingText" : "Adding...",
+            "addToCartButtonText" : "Add To Cart",
+            "addToListButtonBorderRadius" : 0,
+            "addToListButtonText" : "Add To List",
+            "incrementValueGuideText" : "Increment quantity is {0}",
+            "maximumValueGuideText" : "Maximum quantity is {0}",
+            "minimumValueGuideText" : "Minimum quantity is {0}",
+            "outOfStockText" : "Out of Stock",
+            "product" : "{!Product.Details}",
+            "productInventory" : "{!Product.Inventory}",
+            "productVariant" : "{!Product.SelectedVariant}",
+            "quantitySelectorLabel" : "QTY",
+            "showAddToListButton" : true
+          },
+          "componentName" : "commerce_builder:purchaseOptions",
+          "id" : "619be01f-af52-42e9-9dcd-8ff3589ca82d",
+          "regions" : [ {
+            "components" : [ {
+              "componentAttributes" : {
+                "backgroundColor" : "",
+                "paddingHorizontal" : "none",
+                "paddingVertical" : "none",
+                "text" : "Minimum Quantity is {!Product.Details.purchaseQuantityRule.minimumNumber} • Maximum Quantity is {!Product.Details.purchaseQuantityRule.maximumNumber} • Sold in increments of {!Product.Details.purchaseQuantityRule.incrementNumber}",
+                "textAlign" : "left",
+                "textDecoration" : "{}",
+                "textDisplayInfo" : "{\"headingTag\": \"h3\", \"textStyle\": \"heading-small\"}"
+              },
+              "componentName" : "dxp_base:textBlock",
+              "id" : "43a16243-c322-4b81-95b3-f12fdea08ec0",
+              "renderPriority" : "NEUTRAL",
+              "renditionMap" : { },
+              "type" : "component"
+            } ],
+            "id" : "061e26f4-26d6-4cdc-9545-4d9f94d99a46",
+            "regionName" : "combinedPurchaseQuantityRuleInfo",
+            "type" : "region"
+          } ],
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "incrementValueGuideText" : "Increment quantity is {0}",
+            "maximumValueGuideText" : "Maximum quantity is {0}",
+            "minimumValueGuideText" : "Minimum quantity is {0}",
+            "outOfStockText" : "Out of Stock",
+            "product" : "{!Product.Details}",
+            "quantitySelectorLabel" : "QTY",
+            "showAddAllToCartButton" : true,
+            "showNegotiatedPrice" : true,
+            "showOriginalPrice" : true,
+            "showProductDescription" : true,
+            "showProductImage" : true,
+            "showTaxIndication" : true
+          },
+          "componentName" : "commerce_builder:productSet",
+          "id" : "618dddb8-6158-490f-b97e-ef919c407255",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "b4442a53-14d1-4df5-9d29-6bc86d7e029d",
+        "regionLabel" : "Column 2",
+        "regionName" : "col2",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "scopedBrandingSetId" : null,
+      "type" : "component"
+    } ],
+    "id" : "791daa00-7557-47f9-83c3-2fc30bcf5fad",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "pageTitle" : "{!Record._Object}: {!Record._Title}",
+        "recordId" : "{!recordId}"
+      },
+      "componentName" : "community_builder:seoAssistant",
+      "id" : "f5b22313-d081-4036-9206-c53603826010",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "bd89130a-cfc9-4e69-bf4c-4aabd494d96e",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "detail-01t"
+}

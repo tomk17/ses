@@ -1,0 +1,170 @@
+{
+  "appPageId" : "420337f2-f879-4442-ac4d-7a772ca6fa6a",
+  "componentName" : "community_layout:sldsFlexibleLayout",
+  "dataProviders" : [ {
+    "componentName" : "commerce_data_provider:checkoutDataProvider",
+    "componentAttributes" : {
+      "sfdcExpressionKey" : "Checkout"
+    }
+  } ],
+  "id" : "0d90cdb6-3f8f-4779-bc93-c1437d82462c",
+  "label" : "Checkout",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "backgroundImageConfig" : "",
+        "backgroundImageOverlay" : "rgba(0,0,0,0)",
+        "sectionConfig" : "{\"UUID\":\"b80a7a6d-2920-46c5-a6d6-e37953b35fa4\",\"columns\":[{\"UUID\":\"f0220792-4fd5-4f46-8fdd-ef12e9f615e4\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"2\",\"seedComponents\":[]},{\"UUID\":\"431153e2-c3cd-4383-8d0b-1115c459d438\",\"columnName\":\"Column 2\",\"columnKey\":\"156bd\",\"columnWidth\":\"8\",\"seedComponents\":[]},{\"UUID\":\"880b9fc2-3f7e-42a2-ae71-936a859ae8b2\",\"columnName\":\"Column 3\",\"columnKey\":\"bcade\",\"columnWidth\":\"2\",\"seedComponents\":[]}]}"
+      },
+      "componentName" : "community_layout:section",
+      "id" : "b80a7a6d-2920-46c5-a6d6-e37953b35fa4",
+      "regions" : [ {
+        "id" : "f0220792-4fd5-4f46-8fdd-ef12e9f615e4",
+        "regionLabel" : "Column 1",
+        "regionName" : "col1",
+        "renditionMap" : { },
+        "type" : "region"
+      }, {
+        "components" : [ {
+          "componentAttributes" : {
+            "backgroundColor" : "",
+            "paddingHorizontal" : "none",
+            "paddingVertical" : "none",
+            "text" : "Checkout",
+            "textAlign" : "center",
+            "textDecoration" : "{}",
+            "textDisplayInfo" : "{\"textStyle\":\"heading-xlarge\",\"headingTag\":\"h1\"}"
+          },
+          "componentName" : "dxp_base:textBlock",
+          "id" : "8ebffae3-a85c-42ed-b279-576208c09bfb",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "431153e2-c3cd-4383-8d0b-1115c459d438",
+        "regionLabel" : "Column 2",
+        "regionName" : "156bd",
+        "renditionMap" : { },
+        "type" : "region"
+      }, {
+        "id" : "880b9fc2-3f7e-42a2-ae71-936a859ae8b2",
+        "regionLabel" : "Column 3",
+        "regionName" : "bcade",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "scopedBrandingSetId" : null,
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "backgroundImageConfig" : "",
+        "backgroundImageOverlay" : "rgba(0,0,0,0)",
+        "sectionConfig" : "{\"UUID\":\"2814a2cd-f563-4220-9184-14596d8b4d91\",\"columns\":[{\"UUID\":\"57c4584b-0ee5-46b3-9062-5b952491f78b\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"2\",\"seedComponents\":[]},{\"UUID\":\"659a6519-e50c-407b-b251-410224c5c995\",\"columnName\":\"Column 2\",\"columnKey\":\"col2\",\"columnWidth\":\"8\",\"seedComponents\":[]},{\"UUID\":\"5ca71d2f-45b0-4f02-be56-c42888246e6e\",\"columnName\":\"Column 3\",\"columnKey\":\"cdf54\",\"columnWidth\":\"2\",\"seedComponents\":[]}]}"
+      },
+      "componentName" : "community_layout:section",
+      "id" : "2814a2cd-f563-4220-9184-14596d8b4d91",
+      "regions" : [ {
+        "id" : "57c4584b-0ee5-46b3-9062-5b952491f78b",
+        "regionLabel" : "Column 1",
+        "regionName" : "col1",
+        "renditionMap" : { },
+        "type" : "region"
+      }, {
+        "components" : [ {
+          "componentAttributes" : {
+            "stepsConfig" : "[{\"checkoutStepKey\":\"ShippingAddress\",\"checkoutStepName\":\"1. Adresse de livraison\",\"proceedButtonLabel\":\"Suivant\",\"isExpanded\":false,\"seedComponents\":[{\"fqn\":\"commerce_unified_checkout:shipping\",\"attributes\":null}]},{\"checkoutStepKey\":\"ShippingMethod\",\"checkoutStepName\":\"2. Adresse de facturation\",\"proceedButtonLabel\":\"Suivant\",\"isExpanded\":false,\"seedComponents\":[{\"fqn\":\"commerce_unified_checkout:shippingMethod\",\"attributes\":null}]},{\"checkoutStepKey\":\"Payment\",\"checkoutStepName\":\"3. Résumé de la commande\",\"proceedButtonLabel\":\"Commander\",\"isExpanded\":true,\"seedComponents\":[{\"fqn\":\"commerce_unified_checkout:multiPaymentAccordion\",\"attributes\":null}]}]"
+          },
+          "componentName" : "commerce_unified_checkout:checkout",
+          "id" : "a6bf867c-3e3d-440b-a88a-0831b42fd910",
+          "regions" : [ {
+            "components" : [ {
+              "componentAttributes" : {
+                "caEnTermsAndConditionLink" : "/2020_General_Terms_and_Conditions__Global_CANADA__EN_CLEAN.pdf",
+                "caFrTermsAndConditionLink" : "/2020_General_Terms_and_Conditions__CANADA_FR_CLEAN.pdf",
+                "componentMode" : "Shipping",
+                "deTermsAndConditionLink" : "/2022_General_Terms_and_Conditions_EUROPE_DE_CLEAN.pdf",
+                "enTermsAndConditionLink" : "/2022_General_Terms_and_Conditions_GLOBAL_EN_CLEAN.pdf",
+                "frTermsAndConditionLink" : "/2022_General_Terms_and_Conditions_EUROPE_FR_CLEAN.pdf",
+                "itTermsAndConditionLink" : "/2022_General_Terms_and_Conditions_EUROPE_IT_CLEAN.pdf",
+                "usTermsAndConditionLink" : "/2020_General_Terms_and_Conditions__Global_USA_CLEAN.pdf"
+              },
+              "componentName" : "c:checkoutDeliveryInfosB2B",
+              "id" : "2ef428ec-bec1-4cad-bf13-306c4cb8589f",
+              "renderPriority" : "NEUTRAL",
+              "renditionMap" : { },
+              "type" : "component"
+            } ],
+            "id" : "c2f56f72-868d-48b6-ba84-effc29bb3064",
+            "regionLabel" : "1. Adresse de livraison",
+            "regionName" : "ShippingAddress",
+            "renditionMap" : { },
+            "type" : "region"
+          }, {
+            "components" : [ {
+              "componentAttributes" : {
+                "caEnTermsAndConditionLink" : "/2020_General_Terms_and_Conditions__Global_CANADA__EN_CLEAN.pdf",
+                "caFrTermsAndConditionLink" : "/2020_General_Terms_and_Conditions__CANADA_FR_CLEAN.pdf",
+                "componentMode" : "Billing",
+                "deTermsAndConditionLink" : "/2022_General_Terms_and_Conditions_EUROPE_DE_CLEAN.pdf",
+                "enTermsAndConditionLink" : "/2022_General_Terms_and_Conditions_GLOBAL_EN_CLEAN.pdf",
+                "frTermsAndConditionLink" : "/2022_General_Terms_and_Conditions_EUROPE_FR_CLEAN.pdf",
+                "itTermsAndConditionLink" : "/2022_General_Terms_and_Conditions_EUROPE_IT_CLEAN.pdf",
+                "usTermsAndConditionLink" : "/2020_General_Terms_and_Conditions__Global_USA_CLEAN.pdf"
+              },
+              "componentName" : "c:checkoutDeliveryInfosB2B",
+              "id" : "bf5f7d5c-6e6b-4356-a7d7-7f803bb2297a",
+              "renderPriority" : "NEUTRAL",
+              "renditionMap" : { },
+              "type" : "component"
+            } ],
+            "id" : "39980708-68b9-45f3-a8a9-64599d372f79",
+            "regionLabel" : "2. Adresse de facturation",
+            "regionName" : "ShippingMethod",
+            "renditionMap" : { },
+            "type" : "region"
+          }, {
+            "components" : [ {
+              "componentAttributes" : { },
+              "componentName" : "c:checkoutSummaryAdditionalInfosB2B",
+              "id" : "ce0e76d1-7e1d-49bc-8d9a-ceecec83bdb8",
+              "renderPriority" : "NEUTRAL",
+              "renditionMap" : { },
+              "type" : "component"
+            } ],
+            "id" : "f20804eb-e4eb-4a42-a7ab-69f78980a52f",
+            "regionLabel" : "3. Résumé de la commande",
+            "regionName" : "Payment",
+            "renditionMap" : { },
+            "type" : "region"
+          } ],
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "659a6519-e50c-407b-b251-410224c5c995",
+        "regionLabel" : "Column 2",
+        "regionName" : "col2",
+        "renditionMap" : { },
+        "type" : "region"
+      }, {
+        "id" : "5ca71d2f-45b0-4f02-be56-c42888246e6e",
+        "regionLabel" : "Column 3",
+        "regionName" : "cdf54",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "scopedBrandingSetId" : null,
+      "type" : "component"
+    } ],
+    "id" : "cf6ce843-d072-4951-a636-5c5b1e88ff1d",
+    "regionName" : "content",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Checkout",
+  "type" : "view",
+  "viewType" : "current-checkout"
+}

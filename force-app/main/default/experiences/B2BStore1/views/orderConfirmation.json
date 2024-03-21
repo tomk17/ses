@@ -1,0 +1,70 @@
+{
+  "appPageId" : "0f39f530-1371-40d3-9005-f22e4fda9f38",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "dataProviders" : [ ],
+  "id" : "5f3bd8f5-a547-42c9-bbbc-44a09fd99e77",
+  "label" : "Order Confirmation",
+  "regions" : [ {
+    "id" : "5fcf1d40-89f5-4efc-bcbe-5cba3e54b8e7",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "orderSummaryId" : "{!recordId}"
+      },
+      "componentName" : "forceCommunity:commerceOrderConfirmation",
+      "id" : "7aa4720f-9132-4a76-a620-bf9ba1148b2e",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "cartId" : "{!recordId}",
+        "isReadOnly" : true,
+        "orderDeliveryMethodId" : ""
+      },
+      "componentName" : "commerce_checkout:deliveryMethod",
+      "id" : "4b224ed1-fee0-4144-8504-3268b2e70663",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "cartId" : "",
+        "showShipping" : true,
+        "showSubtotal" : true,
+        "showTax" : true,
+        "showTotal" : true
+      },
+      "componentName" : "forceCommunity:commerceCheckoutSummary",
+      "id" : "9620d575-8962-4441-9977-aef4c35f5f80",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "cartId" : "",
+        "contactPointAddressId" : "",
+        "readonly" : true,
+        "shippingInstructions" : "",
+        "showShippingInstructions" : true
+      },
+      "componentName" : "forceCommunity:commerceDelivery",
+      "id" : "1642485c-d6aa-47d9-8a3a-8b79914b965b",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "f409ad8d-572e-4382-a4f3-6698f451ae08",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "e6321e50-1430-448a-a3ee-3e3e037bb1cb",
+    "regionName" : "footer",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "orderconfirmation"
+}

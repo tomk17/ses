@@ -1,0 +1,251 @@
+{
+  "appPageId" : "7f3c3a22-7f52-483b-8435-18c8b47cb803",
+  "componentName" : "siteforce:dynamicLayout",
+  "dataProviders" : [ ],
+  "id" : "2992a245-64cd-45ef-b1ee-6a5afcbad0b6",
+  "label" : "Home",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "background" : "background: rgba(0,0,0,0)",
+        "backgroundOverlay" : "rgba(0,0,0,0.5)",
+        "contentAreaWidth" : 100,
+        "sectionConfig" : {
+          "UUID" : "5ab3b488-1091-486e-8057-472cb70ab588",
+          "columns" : [ {
+            "UUID" : "903ba343-4520-47a5-aeda-d678cfe20180",
+            "columnKey" : "1",
+            "columnName" : "Column 1",
+            "columnWidth" : "12",
+            "seedComponents" : [ ]
+          } ]
+        },
+        "sectionHeight" : 300
+      },
+      "componentName" : "forceCommunity:section",
+      "id" : "5ab3b488-1091-486e-8057-472cb70ab588",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : {
+            "backgroundCss" : "linear-gradient(180deg, #000000 19.25%, #202020 100%)",
+            "height" : 450,
+            "imageName" : "headerSectionBackgroundImg.gif",
+            "leftSideWidth" : "45%",
+            "maxHeightSmallDesk" : "250px",
+            "rightSideWidth" : "480px",
+            "sectionPaddingLeft" : "11%",
+            "sectionPaddingRight" : "11%",
+            "titleColor" : "#000000",
+            "titleContent" : "Welcome <b>{!CurrentUser.firstName}</b> to <span>MyVUSION</span> Portal",
+            "titleFontSize" : "58px",
+            "titleFontSizeSmallDesk" : "24px"
+          },
+          "componentName" : "c:headerComponent",
+          "id" : "d8335353-6bc3-4075-97ca-1f8dc25a6501",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : {
+            "fr" : "35dcb647-7b8e-4bc8-bdb8-decbb379ad57",
+            "fr_ca" : "c9d27f3f-e267-46d8-9f47-debd05d8447e"
+          },
+          "renditions" : [ {
+            "id" : "35dcb647-7b8e-4bc8-bdb8-decbb379ad57",
+            "renditionValue" : {
+              "componentAttributes" : {
+                "titleContent" : "Bienvenue <b>{!CurrentUser.firstName}</b> sur <span>MyVUSION</span>"
+              }
+            },
+            "type" : "renditionComponent"
+          }, {
+            "id" : "c9d27f3f-e267-46d8-9f47-debd05d8447e",
+            "renditionValue" : {
+              "componentAttributes" : {
+                "titleContent" : "Bienvenue <b>{!CurrentUser.firstName}</b> sur le portail <span>MyVUSION</span>"
+              }
+            },
+            "type" : "renditionComponent"
+          } ],
+          "type" : "component"
+        } ],
+        "id" : "903ba343-4520-47a5-aeda-d678cfe20180",
+        "regionLabel" : "Column 1",
+        "regionName" : "1",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "background" : "background: rgba(0,0,0,0)",
+        "backgroundOverlay" : "rgba(0,0,0,0.5)",
+        "contentAreaWidth" : 100,
+        "sectionConfig" : {
+          "UUID" : "90953a45-6a03-427c-acb7-03c872260952",
+          "columns" : [ {
+            "UUID" : "e92c26ed-830c-4637-94d6-ad29c5ad6245",
+            "columnKey" : "1",
+            "columnName" : "Column 1",
+            "columnWidth" : "12",
+            "seedComponents" : [ ]
+          } ]
+        },
+        "sectionHeight" : 300
+      },
+      "componentName" : "forceCommunity:section",
+      "id" : "90953a45-6a03-427c-acb7-03c872260952",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : {
+            "backgroundCss" : "transparent",
+            "buttonBackgroundColor" : "#ffffff",
+            "buttonLabel" : "View my orders",
+            "buttonTextColor" : "#000000",
+            "height" : "fit-content",
+            "imageHeight" : "350px",
+            "imageName" : "trackManageOrdersImg.png",
+            "imageObjectFit" : "contain",
+            "imageSide" : "Left",
+            "imageTabletHeight" : "250px",
+            "leftSideWidth" : "45%",
+            "pageNameToNavigateTo" : "Orders__c",
+            "paragraphColor" : "#000000",
+            "paragraphContent" : "View the status of your orders at any time and easily find the orders associated with your customer accounts. Consult your support request if you have a problem with any of your orders.",
+            "paragraphFontSize" : "16px",
+            "pictoCssPositionHorizontalAdjustment" : "calc(50% - 3px)",
+            "pictoDisplayBoolean" : true,
+            "pictoHeight" : "40px",
+            "pictoName" : "cartIcon.png",
+            "rightSideWidth" : "43%",
+            "scdButton" : true,
+            "scdButtonBackgroundColor" : "#ffffff",
+            "scdButtonLabel" : "Add new order",
+            "scdButtonTextColor" : "#000000",
+            "scdPageNameToNavigateTo" : "Category Detail",
+            "sectionPaddingLeft" : "100px 10%",
+            "sectionPaddingRight" : "3%",
+            "titleColor" : "#000000",
+            "titleContent" : "Track and manage <b>your orders</b>",
+            "titleFontSize" : "40px"
+          },
+          "componentName" : "c:twoColumnsComponent",
+          "id" : "00a63416-ae16-4ec2-ad02-dafb76b8e6a9",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : {
+            "fr" : "a4e65d14-d80f-4180-a60d-703d6f03585a"
+          },
+          "renditions" : [ {
+            "id" : "a4e65d14-d80f-4180-a60d-703d6f03585a",
+            "renditionValue" : {
+              "componentAttributes" : {
+                "buttonLabel" : "Voir mes commandes",
+                "paragraphContent" : "Visualisez à tout moment l'état de vos commandes et retrouvez facilement les commandes associées à vos comptes clients. Consultez vos demandes d'assistance si vous rencontrez un problème avec l'une de vos commandes.",
+                "scdButtonLabel" : "Ajouter une nouvelle commande",
+                "titleContent" : "Suivre et gérer <b> vos commandes</b>"
+              }
+            },
+            "type" : "renditionComponent"
+          } ],
+          "type" : "component"
+        } ],
+        "id" : "e92c26ed-830c-4637-94d6-ad29c5ad6245",
+        "regionLabel" : "Column 1",
+        "regionName" : "1",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "background" : "background: rgb(0,0,0)",
+        "backgroundOverlay" : "rgba(0,0,0,0.5)",
+        "contentAreaWidth" : 100,
+        "sectionConfig" : {
+          "UUID" : "b46af064-01c5-4ceb-a84e-7ca2ce8a0445",
+          "columns" : [ {
+            "UUID" : "1c6de780-fac0-4db0-a807-69be8829afc5",
+            "columnKey" : "1",
+            "columnName" : "Column 1",
+            "columnWidth" : "12",
+            "seedComponents" : [ ]
+          } ]
+        },
+        "sectionHeight" : 32
+      },
+      "componentName" : "forceCommunity:section",
+      "id" : "b46af064-01c5-4ceb-a84e-7ca2ce8a0445",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : {
+            "backgroundCss" : "linear-gradient(181.39deg, #000000 1.24%, #202020 93.88%)",
+            "buttonBackgroundColor" : "#1a1a1a",
+            "buttonLabel" : "Consult our knowledge base",
+            "buttonTextColor" : "rgb(255, 255, 255)",
+            "contentSectionWidth" : "40%",
+            "imageHeight" : "90px",
+            "imageName" : "knowledgeBasePicto.png",
+            "paddingBottom" : "107px",
+            "paddingTop" : "107px",
+            "pageNameToNavigateTo" : "https://sesimagotag--preprod.sandbox.my.site.com/s/knowledge-base",
+            "paragraphColor" : "rgb(173, 173, 173)",
+            "paragraphContent" : "Find easily the answers to your questions around our products via our search engine (keyword or category). Don't hesitate to consult the frequently asked questions section.",
+            "paragraphContent_underButton" : "",
+            "paragraphFontSize" : "16px",
+            "titleColor" : "rgb(255, 255, 255)",
+            "titleContent" : "Check out our <span>Knowledge base</span>",
+            "titleFontSize" : "40px"
+          },
+          "componentName" : "c:sectionCenteredContent",
+          "id" : "684a8e5a-475a-43fd-9b81-39af055e58cf",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : {
+            "fr" : "18185b66-37cb-4261-bd51-63c66ab0852b"
+          },
+          "renditions" : [ {
+            "id" : "18185b66-37cb-4261-bd51-63c66ab0852b",
+            "renditionValue" : {
+              "componentAttributes" : {
+                "buttonLabel" : "Consulter notre base de connaissance",
+                "paragraphContent" : "Trouver facilement la réponse à votre question à propos d'un de nos produits via notre moteur de recherche par mot clé ou catégorie. Aussi, consultez les questions les plus fréquentes relatives à nos produits.",
+                "titleContent" : "Consulter notre <span>Base de connaissance</span>"
+              }
+            },
+            "type" : "renditionComponent"
+          } ],
+          "type" : "component"
+        } ],
+        "id" : "1c6de780-fac0-4db0-a807-69be8829afc5",
+        "regionLabel" : "Column 1",
+        "regionName" : "1",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "94986dff-38f9-4c4b-afe2-499e0b876da3",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Home"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "2e86f52a-5af0-435d-a0a1-8911da3ded79",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "fe6ed949-5940-48db-8dc2-5304fe0ebaa0",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Home",
+  "type" : "view",
+  "viewType" : "home"
+}

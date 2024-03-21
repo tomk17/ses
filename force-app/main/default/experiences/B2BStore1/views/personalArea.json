@@ -1,0 +1,72 @@
+{
+  "appPageId" : "0f39f530-1371-40d3-9005-f22e4fda9f38",
+  "componentName" : "siteforce:sldsTwoCol48Layout",
+  "dataProviders" : [ ],
+  "id" : "9d69d238-8f0e-421d-8fd2-ffb3a8109ab6",
+  "label" : "Personal Area",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "richTextValue" : "<div style=\"height:50px;background: #f4f4f4;\"></div>"
+      },
+      "componentName" : "forceCommunity:htmlBlock",
+      "id" : "1edf2d24-b02e-4c90-bd52-afe9d5eb1456",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "ec5c0371-8e77-421f-92b4-663c6878598b",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "debugMode" : false,
+        "isPageOrder" : false,
+        "isPageUserProfile" : true
+      },
+      "componentName" : "c:b2bCustomerLeftMenu",
+      "id" : "d425124a-3b6c-4724-8710-64a955b4e8f8",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "73e22695-74ca-4a5b-b317-8fd690366da5",
+    "regionName" : "sidebar",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : { },
+      "componentName" : "c:b2bCustomerPersonalArea",
+      "id" : "e0108fc1-9696-431c-8653-a71ce16d01b5",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "647ba1c2-2038-4fbc-883d-3339cea10265",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "688f6d39-080b-45fd-80a0-64683c71c82c",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Personal Area"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "0ae8f28e-f7a6-4465-9c87-ed9871f482c8",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "6f16ee58-9709-4aa2-b35c-57d1c797ca07",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "custom-personal-area"
+}

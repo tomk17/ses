@@ -1,0 +1,75 @@
+{
+  "appPageId" : "7f3c3a22-7f52-483b-8435-18c8b47cb803",
+  "componentName" : "siteforce:dynamicLayout",
+  "dataProviders" : [ ],
+  "id" : "5a582d97-3496-48c4-9214-b52a849aabd3",
+  "label" : "Orders",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "background" : "background: rgba(0,0,0,0)",
+        "backgroundOverlay" : "rgba(0,0,0,0.5)",
+        "contentAreaWidth" : 100,
+        "sectionConfig" : {
+          "UUID" : "89f8aabd-7a27-4a5d-9391-f72d4ddd04b7",
+          "columns" : [ {
+            "UUID" : "0d8c3b4e-4db2-42e8-9c20-b8c8fd5f6a6d",
+            "columnKey" : "1",
+            "columnName" : "Column 1",
+            "columnWidth" : "12",
+            "seedComponents" : [ ]
+          } ]
+        },
+        "sectionHeight" : 300
+      },
+      "componentName" : "forceCommunity:section",
+      "id" : "89f8aabd-7a27-4a5d-9391-f72d4ddd04b7",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : {
+            "displayAddNewOrderButton" : true,
+            "displayViewRequestsButton" : false,
+            "paddingLeft" : "11%",
+            "paddingRight" : "11%",
+            "pageNameToNavigateTo" : "Category Detail",
+            "reordering" : true
+          },
+          "componentName" : "c:sesCustomOrdersListComponent",
+          "id" : "0f87433b-e61f-4e36-82e1-e3fef5513b68",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "0d8c3b4e-4db2-42e8-9c20-b8c8fd5f6a6d",
+        "regionLabel" : "Column 1",
+        "regionName" : "1",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "fa7924c7-eb43-486f-8009-8da3c1a3a330",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Orders"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "ee68cd8d-4fc8-4b2d-a4c4-df2ec591e706",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "c58f1457-cd86-4e8a-86b7-b6000c619241",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "custom-orders"
+}

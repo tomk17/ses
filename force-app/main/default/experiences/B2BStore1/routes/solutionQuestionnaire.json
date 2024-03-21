@@ -1,0 +1,11 @@
+{
+  "activeViewId" : "ea340038-f3b4-4cf9-a81b-d4cbf26fe959",
+  "appPageId" : "0f39f530-1371-40d3-9005-f22e4fda9f38",
+  "configurationTags" : [ ],
+  "id" : "7113e6d9-23e5-46ab-8a6e-2d4871824f80",
+  "label" : "Solution Questionnaire",
+  "pageAccess" : "Public",
+  "routeType" : "custom-solution-questionnaire",
+  "type" : "route",
+  "urlPrefix" : "solution-questionnaire"
+}

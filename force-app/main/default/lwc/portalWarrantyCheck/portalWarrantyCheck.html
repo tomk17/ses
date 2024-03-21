@@ -1,0 +1,53 @@
+<template>
+    <div class="warranty-component ses-custom-main-body">
+        <div class="choose-product">
+            <h1>{labels.ProductTitle}</h1>
+            <div class="tags-images">
+                <img class="VusionImg" src={imgs.VusionTag} alt="Vusion Tag">
+                <img class="GImg" src={imgs.GTag} alt="G Tag" style="display: none;">
+                <img class="SImg" src={imgs.STag} alt="S Tag" style="display: none;">
+            </div>
+            <lightning-radio-group name="labelType" options={labelTypes} value="VusionLabels" type="radio"
+                class="radio-group" onchange={handleChangeRadioGroup}>
+            </lightning-radio-group>
+        </div>
+        <div class="scan-label">
+            <h1>{scdTitle}</h1>
+
+            <div class="labels-images">
+                <img src={imgSrc} alt="Label Id" style="width: 285px;">
+                <img src={imgs.DouchetteScan} alt="Douchette scanner" style="width: 154px;">
+            </div>
+
+            <div class="slds-form-element fixed-width-div">
+                <div class="slds-form-element__control slds-input-has-icon slds-input-has-icon_right">
+                    <lightning-button-icon
+                        class="btnIconOverlay slds-icon slds-input__icon slds-input__icon_right slds-icon-text-default"
+                        icon-name="utility:search"></lightning-button-icon>
+                    <lightning-input id="id-input" class="id-input" type="text" placeholder={inputPlaceholder}
+                        label={inputLabel} field-level-help={inputHelpText} onkeypress={handleKeyPressedInput}></lightning-input>
+                </div>
+            </div>
+
+            <template if:true={resultMsg}>
+                <div class="result-div-border fixed-width-div">
+                    <div class="result-div">
+                        <lightning-formatted-rich-text value={resultMsg}>
+                        </lightning-formatted-rich-text>
+                    </div>
+                </div>
+            </template>
+
+            <!--<lightning-formatted-rich-text value={labels.HelpParagraph} class="help-paragraph fixed-width-div">
+            </lightning-formatted-rich-text>-->
+
+            <template if:true={error}>
+                <p class="slds-text-color_error">{error}</p>
+            </template>
+
+            <lightning-button variant="brand-outline" label={labels.Search} onclick={handleClickSearchBtn}
+                class="custom-btn">
+            </lightning-button>
+        </div>
+    </div>
+</template>

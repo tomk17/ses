@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>56.0</apiVersion>
+    <isExposed>true</isExposed>
+    <masterLabel>Checkout B2B Header</masterLabel>
+    <targets>
+        <target>lightning__FlowScreen</target>
+    </targets>
+  <targetConfigs>
+         <targetConfig targets="lightning__FlowScreen">
+             <property name="stepOne" label="Is this step 1?" type="Boolean"/>
+             <property name="stepTwo" label="Is this step 2?" type="Boolean"/>
+             <property name="stepThree" label="Is this step 3?" type="Boolean"/>
+             <property name="stepFourth" label="Is this step 4?" type="Boolean"/>
+             <property name="cartId" label="Cart ID" type="String"/>
+         </targetConfig>
+  </targetConfigs>
+</LightningComponentBundle>

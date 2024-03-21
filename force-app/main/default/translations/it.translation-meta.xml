@@ -1,0 +1,979 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Translations xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <customLabels>
+        <label><!-- B2BStore ATP1 --></label>
+        <name>B2BStore_ATP1</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore ATP2 --></label>
+        <name>B2BStore_ATP2</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore ATP3 --></label>
+        <name>B2BStore_ATP3</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore ATP4 --></label>
+        <name>B2BStore_ATP4</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore ATP5 --></label>
+        <name>B2BStore_ATP5</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_AccountCreationFormCompanyName --></label>
+        <name>B2BStore_AccountCreationFormCompanyName</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_AccountCreationFormCompanyNamePH --></label>
+        <name>B2BStore_AccountCreationFormCompanyNamePH</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_AccountCreationFormEmailAddress --></label>
+        <name>B2BStore_AccountCreationFormEmailAddress</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_AccountCreationFormEmailAddressPH --></label>
+        <name>B2BStore_AccountCreationFormEmailAddressPH</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_AccountCreationFormEmailCommunicationConsent --></label>
+        <name>B2BStore_AccountCreationFormEmailCommunicationConsent</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_AccountCreationFormError1 --></label>
+        <name>B2BStore_AccountCreationFormError1</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_AccountCreationFormError2 --></label>
+        <name>B2BStore_AccountCreationFormError2</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_AccountCreationFormFirstName --></label>
+        <name>B2BStore_AccountCreationFormFirstName</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_AccountCreationFormFirstNamePH --></label>
+        <name>B2BStore_AccountCreationFormFirstNamePH</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_AccountCreationFormLastName --></label>
+        <name>B2BStore_AccountCreationFormLastName</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_AccountCreationFormLastNamePH --></label>
+        <name>B2BStore_AccountCreationFormLastNamePH</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_AccountCreationFormPersonalInformation --></label>
+        <name>B2BStore_AccountCreationFormPersonalInformation</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_AccountCreationFormPrivacyPolicyAgreement --></label>
+        <name>B2BStore_AccountCreationFormPrivacyPolicyAgreement</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_AccountCreationFormSubTitle --></label>
+        <name>B2BStore_AccountCreationFormSubTitle</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_AccountCreationFormSubmitButton --></label>
+        <name>B2BStore_AccountCreationFormSubmitButton</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_AccountCreationFormSuccessText1 --></label>
+        <name>B2BStore_AccountCreationFormSuccessText1</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_AccountCreationFormSuccessText2 --></label>
+        <name>B2BStore_AccountCreationFormSuccessText2</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_AccountCreationFormSuccessTitle --></label>
+        <name>B2BStore_AccountCreationFormSuccessTitle</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_AccountCreationFormTitle --></label>
+        <name>B2BStore_AccountCreationFormTitle</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore Adding a purchase order number --></label>
+        <name>B2BStore_Adding_a_purchase_order_number</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_AdditionalEmailTrackingNotification --></label>
+        <name>B2BStore_AdditionalEmailTrackingNotification</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_Additional email address --></label>
+        <name>B2BStore_Additional_email_address</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore Availablity --></label>
+        <name>B2BStore_Availablity</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore Bill To Account --></label>
+        <name>B2BStore_Bill_To_Account</name>
+    </customLabels>
+    <customLabels>
+        <label>Informazioni sulla fatturazione</label>
+        <name>B2BStore_Billing</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_BillingAddress --></label>
+        <name>B2BStore_BillingAddress</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_Billing Address --></label>
+        <name>B2BStore_Billing_Address</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_Billing Contact --></label>
+        <name>B2BStore_Billing_Contact</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore CardCvvInfo --></label>
+        <name>B2BStore_CardCvvInfo</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore CardCvvPlaceholder --></label>
+        <name>B2BStore_CardCvvPlaceholder</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore CardExpiryMonthLabel --></label>
+        <name>B2BStore_CardExpiryMonthLabel</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore CardExpiryYearLabel --></label>
+        <name>B2BStore_CardExpiryYearLabel</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore CardExpiryYearPlaceholder --></label>
+        <name>B2BStore_CardExpiryYearPlaceholder</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore CardFirstName --></label>
+        <name>B2BStore_CardFirstName</name>
+    </customLabels>
+    <customLabels>
+        <label>Errore di pagamento. Controlla i dettagli della tua carta</label>
+        <name>B2BStore_CardGatewayError</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore CardHolderLastNamePlaceholder --></label>
+        <name>B2BStore_CardHolderLastNamePlaceholder</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore CardHolderNamePlaceholder --></label>
+        <name>B2BStore_CardHolderNamePlaceholder</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore CardInvalidCardType --></label>
+        <name>B2BStore_CardInvalidCardType</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore CardInvalidCreditCardNumber --></label>
+        <name>B2BStore_CardInvalidCreditCardNumber</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore CardInvalidCvv --></label>
+        <name>B2BStore_CardInvalidCvv</name>
+    </customLabels>
+    <customLabels>
+        <label>La data di scadenza della carta non è valida</label>
+        <name>B2BStore_CardInvalidExpiryDate</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore CardInvalidExpiryMonth --></label>
+        <name>B2BStore_CardInvalidExpiryMonth</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore CardInvalidExpiryYear --></label>
+        <name>B2BStore_CardInvalidExpiryYear</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore CardInvalidName --></label>
+        <name>B2BStore_CardInvalidName</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore CardLastName --></label>
+        <name>B2BStore_CardLastName</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore CardNumberLabel --></label>
+        <name>B2BStore_CardNumberLabel</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore CardNumberPlaceholder --></label>
+        <name>B2BStore_CardNumberPlaceholder</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore CardPaymentOptionLabel --></label>
+        <name>B2BStore_CardPaymentOptionLabel</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore CardPlaceMyOrder --></label>
+        <name>B2BStore_CardPlaceMyOrder</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore CardTypeLabel --></label>
+        <name>B2BStore_CardTypeLabel</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore CardTypePlaceholder --></label>
+        <name>B2BStore_CardTypePlaceholder</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_Checkout Summary --></label>
+        <name>B2BStore_Checkout_Summary</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_Close --></label>
+        <name>B2BStore_Close</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_Contact --></label>
+        <name>B2BStore_Contact</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_Content_Questionnaire_1 --></label>
+        <name>B2BStore_Content_Questionnaire_1</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_Content_Questionnaire_2 --></label>
+        <name>B2BStore_Content_Questionnaire_2</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_Content_Questionnaire_3 --></label>
+        <name>B2BStore_Content_Questionnaire_3</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_Content_Questionnaire_4 --></label>
+        <name>B2BStore_Content_Questionnaire_4</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_Content_Questionnaire_5 --></label>
+        <name>B2BStore_Content_Questionnaire_5</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_Content_Questionnaire_5_part2 --></label>
+        <name>B2BStore_Content_Questionnaire_5_part2</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_Content_Questionnaire_6 --></label>
+        <name>B2BStore_Content_Questionnaire_6</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_Content_Questionnaire_7 --></label>
+        <name>B2BStore_Content_Questionnaire_7</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_Content_Questionnaire_8 --></label>
+        <name>B2BStore_Content_Questionnaire_8</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_Content_Questionnaire_9 --></label>
+        <name>B2BStore_Content_Questionnaire_9</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_Content_Questionnaire_9_part2 --></label>
+        <name>B2BStore_Content_Questionnaire_9_part2</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_Content_Questionnaire_customize_1 --></label>
+        <name>B2BStore_Content_Questionnaire_customize_1</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_Content_Questionnaire_customize_2 --></label>
+        <name>B2BStore_Content_Questionnaire_customize_2</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_Content_Questionnaire_customize_3 --></label>
+        <name>B2BStore_Content_Questionnaire_customize_3</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_Content_Questionnaire_customize_4 --></label>
+        <name>B2BStore_Content_Questionnaire_customize_4</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_Content_Questionnaire_customize_5 --></label>
+        <name>B2BStore_Content_Questionnaire_customize_5</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_CustomerPersonalArea_EditButton --></label>
+        <name>B2BStore_CustomerPersonalArea_EditButton</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_CustomerPersonalArea_EditErrorMessage --></label>
+        <name>B2BStore_CustomerPersonalArea_EditErrorMessage</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_CustomerPersonalArea_EditSuccessMessage --></label>
+        <name>B2BStore_CustomerPersonalArea_EditSuccessMessage</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_CustomerPersonalArea_EmailAddress --></label>
+        <name>B2BStore_CustomerPersonalArea_EmailAddress</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_CustomerPersonalArea_EmailAddressPH --></label>
+        <name>B2BStore_CustomerPersonalArea_EmailAddressPH</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_CustomerPersonalArea_FirstName --></label>
+        <name>B2BStore_CustomerPersonalArea_FirstName</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_CustomerPersonalArea_FirstNamePH --></label>
+        <name>B2BStore_CustomerPersonalArea_FirstNamePH</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_CustomerPersonalArea_ForgotPassword --></label>
+        <name>B2BStore_CustomerPersonalArea_ForgotPassword</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_CustomerPersonalArea_LOGOUT --></label>
+        <name>B2BStore_CustomerPersonalArea_LOGOUT</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_CustomerPersonalArea_LastName --></label>
+        <name>B2BStore_CustomerPersonalArea_LastName</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_CustomerPersonalArea_LastNamePH --></label>
+        <name>B2BStore_CustomerPersonalArea_LastNamePH</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_CustomerPersonalArea_Orders --></label>
+        <name>B2BStore_CustomerPersonalArea_Orders</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_CustomerPersonalArea_Password --></label>
+        <name>B2BStore_CustomerPersonalArea_Password</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_CustomerPersonalArea_PhoneNumber --></label>
+        <name>B2BStore_CustomerPersonalArea_PhoneNumber</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_CustomerPersonalArea_PhoneNumberPH --></label>
+        <name>B2BStore_CustomerPersonalArea_PhoneNumberPH</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_CustomerPersonalArea_SubmitButton --></label>
+        <name>B2BStore_CustomerPersonalArea_SubmitButton</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_CustomerPersonalArea_Title --></label>
+        <name>B2BStore_CustomerPersonalArea_Title</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_CustomerPersonalArea_UserProfile --></label>
+        <name>B2BStore_CustomerPersonalArea_UserProfile</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore Delivery Method --></label>
+        <name>B2BStore_Delivery_Method</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_Email address of the selected contact --></label>
+        <name>B2BStore_Email_address_of_the_selected_contact</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore Enter a PO number --></label>
+        <name>B2BStore_Enter_a_PO_number</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_Enter the email that will receive the order confirmation --></label>
+        <name>B2BStore_Enter_the_email_that_will_receive_the_order_confirmation</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_Error --></label>
+        <name>B2BStore_Error</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore Error when adding products to cart --></label>
+        <name>B2BStore_Error_when_adding_products_to_cart</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_Estimated GST/HST --></label>
+        <name>B2BStore_Estimated_GST_HST</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_Estimated PST/QST --></label>
+        <name>B2BStore_Estimated_PST_QST</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore GoToPayment --></label>
+        <name>B2BStore_GoToPayment</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_Go Back To My Catalog --></label>
+        <name>B2BStore_Go_Back_To_My_Catalog</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore I Confirm That --></label>
+        <name>B2BStore_I_Confirm_That</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore I acknowledge that the payment terms are --></label>
+        <name>B2BStore_I_acknowledge_that_the_payment_terms_are</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_I acknowledge that the purchase of additional IOT devices --></label>
+        <name>B2BStore_I_acknowledge_that_the_purchase_of_additional_IOT_devices</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore I have read and agreed to the --></label>
+        <name>B2BStore_I_have_read_and_agreed_to_the</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_Insufficient_balance --></label>
+        <name>B2BStore_Insufficient_balance</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore Items were added to cart --></label>
+        <name>B2BStore_Items_were_added_to_cart</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_Login --></label>
+        <name>B2BStore_Login</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_LoginCreateAccountButton --></label>
+        <name>B2BStore_LoginCreateAccountButton</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_LoginCreateAccountPrivacyPolicy --></label>
+        <name>B2BStore_LoginCreateAccountPrivacyPolicy</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_LoginCreateAccountSubTitle --></label>
+        <name>B2BStore_LoginCreateAccountSubTitle</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_LoginCreateAccountText --></label>
+        <name>B2BStore_LoginCreateAccountText</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_LoginCreateAccountTitle --></label>
+        <name>B2BStore_LoginCreateAccountTitle</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_LoginForgotYourPassword --></label>
+        <name>B2BStore_LoginForgotYourPassword</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_LoginPassword --></label>
+        <name>B2BStore_LoginPassword</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_LoginPasswordPlaceholder --></label>
+        <name>B2BStore_LoginPasswordPlaceholder</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_LoginSubTitle --></label>
+        <name>B2BStore_LoginSubTitle</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_LoginTitle --></label>
+        <name>B2BStore_LoginTitle</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_LoginUserNamePlaceholder --></label>
+        <name>B2BStore_LoginUserNamePlaceholder</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_LoginUsername --></label>
+        <name>B2BStore_LoginUsername</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_Monthly Fee --></label>
+        <name>B2BStore_Monthly_Fee</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore Next --></label>
+        <name>B2BStore_Next</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_No --></label>
+        <name>B2BStore_No</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_NoBillToContact --></label>
+        <name>B2BStore_NoBillToContact</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_NoEmail --></label>
+        <name>B2BStore_NoEmail</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_NoShipToContact --></label>
+        <name>B2BStore_NoShipToContact</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_Notify the receiver --></label>
+        <name>B2BStore_Notify_the_receiver</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_Order Total --></label>
+        <name>B2BStore_Order_Total</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore PAYMENT METHOD --></label>
+        <name>B2BStore_PAYMENT_METHOD</name>
+    </customLabels>
+    <customLabels>
+        <label>Pagamento</label>
+        <name>B2BStore_Payment</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_Picking Address --></label>
+        <name>B2BStore_Picking_Address</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore Place my order --></label>
+        <name>B2BStore_Place_my_order</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_Please enter the email address below --></label>
+        <name>B2BStore_Please_enter_the_email_address_below</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore Previous --></label>
+        <name>B2BStore_Previous</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_Price --></label>
+        <name>B2BStore_Price</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_Product Name --></label>
+        <name>B2BStore_Product_Name</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_Quantity --></label>
+        <name>B2BStore_Quantity</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore Reordering --></label>
+        <name>B2BStore_Reorder</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_Select Account --></label>
+        <name>B2BStore_Select_Account</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_Select billing account --></label>
+        <name>B2BStore_Select_billing_account</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore Ship to Account --></label>
+        <name>B2BStore_Ship_to_Account</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_ShippingAddress --></label>
+        <name>B2BStore_ShippingAddress</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_Software --></label>
+        <name>B2BStore_Software</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore Standard Delivery --></label>
+        <name>B2BStore_Standard_Delivery</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_Subtotal --></label>
+        <name>B2BStore_Subtotal</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_Success --></label>
+        <name>B2BStore_Success</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_Tax --></label>
+        <name>B2BStore_Tax</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore Terms and Conditions --></label>
+        <name>B2BStore_Terms_and_Conditions</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_﻿Thank you for your order. --></label>
+        <name>B2BStore_Thank_you_for_your_order</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_Total Before Tax --></label>
+        <name>B2BStore_Total_Before_Tax</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore Type Here --></label>
+        <name>B2BStore_Type_Here</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_We will reach out to you shortly to confirm your order --></label>
+        <name>B2BStore_We_will_reach_out_to_you_shortly_to_confirm_your_order</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore Yes --></label>
+        <name>B2BStore_Yes</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_You will receive a copy of the order confirmation --></label>
+        <name>B2BStore_You_will_receive_a_copy_of_the_order_confirmation</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore Your Reference --></label>
+        <name>B2BStore_Your_Reference</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_Your order exceeds the maximum limit of $10,000 for online orders --></label>
+        <name>B2BStore_Your_order_exceeds_the_maximum_limit_of_10_000_for_online_orders</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_addressForm_error_message_1 --></label>
+        <name>B2BStore_addressForm_error_message_1</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_checkout_page_Cloud_Agreement --></label>
+        <name>B2BStore_checkout_page_Cloud_Agreement</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_checkout_page_Terms_Conditions --></label>
+        <name>B2BStore_checkout_page_Terms_Conditions</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_checkout_page_Warranty_Policy --></label>
+        <name>B2BStore_checkout_page_Warranty_Policy</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_contact_Message --></label>
+        <name>B2BStore_contact_Message</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_contact_Message_end --></label>
+        <name>B2BStore_contact_Message_end</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_contact_Message_placeholder --></label>
+        <name>B2BStore_contact_Message_placeholder</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_contact_header --></label>
+        <name>B2BStore_contact_header</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_contact_phone_number --></label>
+        <name>B2BStore_contact_phone_number</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_contact_phone_number --></label>
+        <name>B2BStore_contact_phone_number_valide</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_contact_surname_email --></label>
+        <name>B2BStore_contact_surname_email</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_email_Shipping --></label>
+        <name>B2BStore_email_Shipping</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_email_Tax --></label>
+        <name>B2BStore_email_Tax</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_email_subtotal --></label>
+        <name>B2BStore_email_subtotal</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_email_total --></label>
+        <name>B2BStore_email_total</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_email_your_easel --></label>
+        <name>B2BStore_email_your_easel</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_errorMessage_checkbox --></label>
+        <name>B2BStore_errorMessage_checkbox</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_examplesTemplates --></label>
+        <name>B2BStore_examplesTemplates</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_examplesTemplates_content --></label>
+        <name>B2BStore_examplesTemplates_content</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_examplesTemplates_vusion2_6 --></label>
+        <name>B2BStore_examplesTemplates_vusion2_6</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_examplesTemplates_vusion4_2 --></label>
+        <name>B2BStore_examplesTemplates_vusion4_2</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_examplesTemplates_vusion6 --></label>
+        <name>B2BStore_examplesTemplates_vusion6</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_fixture_kickstands --></label>
+        <name>B2BStore_fixture_kickstands</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_fixture_kickstands_placeholder --></label>
+        <name>B2BStore_fixture_kickstands_placeholder</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_fixture_universal_clip --></label>
+        <name>B2BStore_fixture_universal_clip</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_fixture_universal_clip_placeholder --></label>
+        <name>B2BStore_fixture_universal_clip_placeholder</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_fixture_with_adhesives --></label>
+        <name>B2BStore_fixture_with_adhesives</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore incoming --></label>
+        <name>B2BStore_incoming</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_orderForm_Subtotal --></label>
+        <name>B2BStore_orderForm_Subtotal</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_orderForm_agree_1 --></label>
+        <name>B2BStore_orderForm_agree_1</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_orderForm_agree_2 --></label>
+        <name>B2BStore_orderForm_agree_2</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_orderForm_agree_3 --></label>
+        <name>B2BStore_orderForm_agree_3</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_orderForm_agree_4 --></label>
+        <name>B2BStore_orderForm_agree_4</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_orderForm_cloud_agreement_1 --></label>
+        <name>B2BStore_orderForm_cloud_agreement_1</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_orderForm_cloud_agreement_2 --></label>
+        <name>B2BStore_orderForm_cloud_agreement_2</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_orderForm_cloud_agreement_3 --></label>
+        <name>B2BStore_orderForm_cloud_agreement_3</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_orderForm_detailsOrder --></label>
+        <name>B2BStore_orderForm_detailsOrder</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_orderForm_shipping --></label>
+        <name>B2BStore_orderForm_shipping</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_orderForm_tax --></label>
+        <name>B2BStore_orderForm_tax</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_orderForm_total --></label>
+        <name>B2BStore_orderForm_total</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_orderForm_your_easel_solution --></label>
+        <name>B2BStore_orderForm_your_easel_solution</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_payementBilling_error_message_1 --></label>
+        <name>B2BStore_payementBilling_error_message_1</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_payementBilling_error_message_2 --></label>
+        <name>B2BStore_payementBilling_error_message_2</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_proceed_button --></label>
+        <name>B2BStore_proceed_button</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_questionnaire_createCartItems_error --></label>
+        <name>B2BStore_questionnaire_createCartItems_error</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_questionnaire_form_end_message1 --></label>
+        <name>B2BStore_questionnaire_form_end_message1</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_questionnaire_form_end_message2 --></label>
+        <name>B2BStore_questionnaire_form_end_message2</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_questionnaire_form_message_1 --></label>
+        <name>B2BStore_questionnaire_form_message_1</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_questionnaire_form_message_2 --></label>
+        <name>B2BStore_questionnaire_form_message_2</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_questionnaire_form_pos_provider --></label>
+        <name>B2BStore_questionnaire_form_pos_provider</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_questionnaire_largeitems_placeholder --></label>
+        <name>B2BStore_questionnaire_largeitems_placeholder</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_questionnaire_mediumitems_placeholder --></label>
+        <name>B2BStore_questionnaire_mediumitems_placeholder</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_questionnaire_previous_step --></label>
+        <name>B2BStore_questionnaire_previous_step</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_questionnaire_see_examples --></label>
+        <name>B2BStore_questionnaire_see_examples</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_questionnaire_select_pricing_tool --></label>
+        <name>B2BStore_questionnaire_select_pricing_tool</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_questionnaire_sku_placeholder --></label>
+        <name>B2BStore_questionnaire_sku_placeholder</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_questionnaire_smallitems_placeholder --></label>
+        <name>B2BStore_questionnaire_smallitems_placeholder</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_questionnaire_step1 --></label>
+        <name>B2BStore_questionnaire_step1</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_questionnaire_step2 --></label>
+        <name>B2BStore_questionnaire_step2</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_questionnaire_step3 --></label>
+        <name>B2BStore_questionnaire_step3</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_questionnaire_supported_providers --></label>
+        <name>B2BStore_questionnaire_supported_providers</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_select_fixtures --></label>
+        <name>B2BStore_select_fixtures</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_select_solution_AccessPoint --></label>
+        <name>B2BStore_select_solution_AccessPoint</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_select_solution_ApplianceStores --></label>
+        <name>B2BStore_select_solution_ApplianceStores</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_select_solution_CustomAssortment --></label>
+        <name>B2BStore_select_solution_CustomAssortment</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_select_solution_ElectronicStores --></label>
+        <name>B2BStore_select_solution_ElectronicStores</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_select_solution_FashionStores --></label>
+        <name>B2BStore_select_solution_FashionStores</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_select_solution_FurnitureStores --></label>
+        <name>B2BStore_select_solution_FurnitureStores</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_select_solution_UnivClips --></label>
+        <name>B2BStore_select_solution_UnivClips</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_select_solution_UnivClipsStands --></label>
+        <name>B2BStore_select_solution_UnivClipsStands</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_select_solution_allSize --></label>
+        <name>B2BStore_select_solution_allSize</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_select_solution_cloudSubscription --></label>
+        <name>B2BStore_select_solution_cloudSubscription</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_select_solution_custom --></label>
+        <name>B2BStore_select_solution_custom</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_select_solution_groceryStores --></label>
+        <name>B2BStore_select_solution_groceryStores</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_select_solution_large --></label>
+        <name>B2BStore_select_solution_large</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_select_solution_largeLabels --></label>
+        <name>B2BStore_select_solution_largeLabels</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_select_solution_largerItems --></label>
+        <name>B2BStore_select_solution_largerItems</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_select_solution_medium --></label>
+        <name>B2BStore_select_solution_medium</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_select_solution_mediumLabels --></label>
+        <name>B2BStore_select_solution_mediumLabels</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_select_solution_mixOfSize --></label>
+        <name>B2BStore_select_solution_mixOfSize</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_select_solution_pharmacies --></label>
+        <name>B2BStore_select_solution_pharmacies</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_select_solution_plus --></label>
+        <name>B2BStore_select_solution_plus</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_select_solution_smallerItems --></label>
+        <name>B2BStore_select_solution_smallerItems</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_select_solution_standard --></label>
+        <name>B2BStore_select_solution_standard</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore_submit_button --></label>
+        <name>B2BStore_submit_button</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- B2BStore without Tax --></label>
+        <name>B2BStore_without_Tax</name>
+    </customLabels>
+</Translations>

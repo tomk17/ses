@@ -1,0 +1,21 @@
+.THIS .disabled{
+    border: 2px solid #f49744!important;
+    background: linear-gradient(45deg, #FF9646 0%, #FFD264 100%)!important;
+    color:black!important;
+    font-weight:800!important;
+}
+
+.THIS .enabled{
+    border: 2px solid #D4D4D4!important;
+    background: inherit!important;
+    color:inherit!important;
+    font-weight:inherit!important;
+}
+
+.THIS button:hover + .slds-popover.slds-popover_tooltip.slds-hide {
+    display : block!important;
+}
+
+.THIS lightning-icon svg {
+    width:16px!important;
+}

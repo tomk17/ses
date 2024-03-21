@@ -1,0 +1,412 @@
+{
+  "activeBrandingSetId" : "9357131e-8cb9-4d19-a121-78383a2dfabf",
+  "customCSS" : ".themeBottomBorder{\n      box-shadow:  0 0 5px rgb(0 0 0 / 25%);\n}\n\n/*Min height of website*/\n.body.isPageWidthFixed-true {\n    min-height: 850px;\n}\n\n/*Toast message custom success*/\n.slds-theme--success.slds-notify--toast.slds-notify.slds-notify--toast.forceToastMessage {\n    width: 100%;\n    font-family: 'MaaxBold';\n    margin-top: 110px;\n    margin-left: auto;\n    margin-right: auto;\n    padding-left: 40%;\n}\n\n\n/*Toast message custom*/\n.slds-theme--error.slds-notify--toast.slds-notify.slds-notify--toast.forceToastMessage {\n    width: 100%;\n    font-family: 'MaaxBold';\n    background-color: #f00000;\n    margin-top: 110px;\n    margin-left: auto;\n    margin-right: auto;\n    padding-left: 40%;\n}\n\n.toastTitle.slds-text-heading--small {\n    font-family: 'MaaxBold';\n}\n\nspan.toastMessage.forceActionsText {\n    font-family: 'MaaxRegular';\n}\n\n.slds-theme--warning.slds-notify--toast.slds-notify.slds-notify--toast.forceToastMessage {\n    width: 100%;\n    margin-top: 110px;\n    margin-left: auto;\n    margin-right: auto;\n    padding-left: 30%;\n}\n\n/*Replace spinner from B2B site with this one from lightning*/\n.siteforceLoadingBalls {\n    visibility: hidden;\n}\n.siteforceLoadingBalls:after {\n    visibility: visible;\n    background-image: url(/B2BStore/s/gifsalesforce.gif);\n    background-size: 80px 80px;\n    display: block;\n    width: 80px;\n    height: 80px;\n    content: \"\";\n}\n.siteforceSpinnerManager .mask, slds-spinner_container, lightning-spinner.slds-spinner_container[c-b2b_spinner_from_salesforce_b2b_spinner_from_salesforce] {\n    opacity: 0.5;\n    margin-left: 0px;\n    background-color: white !important;\n}\n\n.siteforceSpinnerManager .mask{\n    margin-top: 120px !important; \n}\n\n@font-face {\n    font-family: 'MaaxRegular';\n    src: url('/B2BStore/s/sfsites/c/resource/MaaxFonts/Maax/Regular/MaaxRegular.woff') format('woff');\n}\n\n@font-face {\n    font-family: 'MaaxItalic';\n    src: url('/B2BStore/s/sfsites/c/resource/MaaxFonts/Maax/Italic/MaaxItalic.woff') format('woff');\n}\n\n@font-face {\n    font-family: 'MaaxBold';\n    src: url('/B2BStore/s/sfsites/c/resource/MaaxFonts/Maax/Bold/MaaxBold.woff') format('woff');\n}\n\n@font-face {\n    font-family: 'MaaxBoldItalic';\n    src: url('/B2BStore/s/sfsites/c/resource/MaaxFonts/Maax/BoldItalic/MaaxBoldItalic.woff') format('woff');\n}\n\n\n/*Customer Area - My profil page */\nbody.comm-page-custom-personal-area lightning-input label {\n  font-size: 16px !important;\n  color: #7F8C8D !important;\n  font-family: 'MaaxBold';\n}\n\nbody.comm-page-custom-personal-area {\n    background-color: #f4f4f4;\n}\n\nbody.comm-page-custom-personal-area .contentRegion.comm-layout-column {    \n    width: 72%;    \n    margin: auto;\n}\n\n\n/*Home Page customization \nAbout us page */\nbody.comm-page-home .js-dynamic-collection ,\nbody.comm-page-custom-about-us .js-dynamic-collection\n {\n    width: 60%;\n    margin: auto;\n}\n\n\n/*All asterisk next to required field must be aligned to right */\nabbr.slds-required {\n\tfont-family: 'MaaxBold';\n    float: right;\n    padding-left: 2px;\n    color: #f00000;\n}\n\n/* Override color of carousel button red */\n.forceCommunityCarousel a.slds-carousel__indicator-action.slds-is-active {\n    background: #f00000 !important;\n    border-color: #f00000 !important;\n}\n\n/* CSS trick which enable the fact to underline naviguation menu \nfor the current tab */\n\nbody.comm-page-custom-solution-questionnaire community_navigation-multi-level-navigation-container [data-id=\"1\"] span {\n    text-decoration: underline 2px solid red;\n    font-family: 'MaaxBold';\n}\nbody.comm-page-custom-why-easel community_navigation-multi-level-navigation-container [data-id=\"2\"] span {\n    text-decoration: underline 2px solid red;\n    font-family: 'MaaxBold';\n}\nbody.comm-page-custom-how-it-works community_navigation-multi-level-navigation-container [data-id=\"3\"] span {\n    text-decoration: underline 2px solid red;\n    font-family: 'MaaxBold';\n}\nbody.comm-page-custom-about-us community_navigation-multi-level-navigation-container [data-id=\"4\"] span {\n    text-decoration: underline 2px solid red;\n    font-family: 'MaaxBold';\n}\nbody.comm-page-contactsupport community_navigation-multi-level-navigation-container [data-id=\"5\"] span {\n    text-decoration: underline 2px solid red;\n    font-family: 'MaaxBold';\n}\n\na.horizontalMenuItem:hover {\n    font-family: 'MaaxBold';\n    text-decoration: underline 2px solid #f00000;\n}\n\n.horizontalMenuItem[community_navigation-multiLevelNavigation_multiLevelNavigation] span[community_navigation-multiLevelNavigation_multiLevelNavigation] {\n    font-size: 16px;\n}\n\n/*Not able to add CSS on lwc for input field label on contactsupport because of shadow Dom from Salesforce \nso here a workaround to apply style only on label from input fields & textarea */\nbody.comm-page-contactsupport lightning-textarea label, \nbody.comm-page-contactsupport lightning-input label,\nbody.comm-page-custom-solution-questionnaire lightning-textarea label, \nbody.comm-page-custom-solution-questionnaire lightning-input label {\n  font-size: 16px !important;\n  color: Black !important;\n  font-family: 'MaaxBold';\n}\n\nbody.comm-page-custom-personal-area lightning-input label {\n  font-size: 16px !important;\n  color: #7F8C8D !important;\n  font-family: 'MaaxBold';\n}\n\nbody.comm-page-contactsupport lightning-textarea, body.comm-page-contactsupport lightning-input ,\nbody.comm-page-custom-solution-questionnaire lightning-textarea, body.comm-page-custom-solution-questionnaire lightning-input {\n      padding-top: 20px !important;\n}\n\n\n/* workaround to disable the quantity selection on cart \nAdd color black and bold on quantity input*/\nb2b_buyer_cart-contents b2b_buyer_cart-quantity-selector input[b2b_buyer_cart-quantityselector_quantityselector]{\n    pointer-events: none;\n  -webkit-user-select: none;\n    color: black !important;\n    font-family: 'MaaxBold';\n}\nb2b_buyer_cart-contents b2b_buyer_cart-quantity-selector div[b2b_buyer_cart-quantityselector_quantityselector]{\n    pointer-events: none;\n  -webkit-user-select: none;\n}\n\n/* workaround to hide the Home option on the navigation menu */\nul[community_navigation-multilevelnavigation_multilevelnavigation] li:first-child { \n  display: none;\n  visibility: hidden;\n}\n\n/* workaround to remove the search bar */\ndiv.searchBar{\n\tdisplay:none;    \n}\n\n.comm-content-header{\n    padding:0px !important;\n}\n\n/** Custom code for Cart page */\n/*1. Align button on the bottom of the screen*/\n[commerce_checkout-checkoutButton_checkoutButton-host] {\n    margin-right: 50px !important;\n} \n\n/*fix issue on read only field street textarea*/\n.slds-textarea[disabled], .slds-textarea.slds-is-disabled {\n    color: var(--lwc-colorTextInputDisabled,rgb(107, 109, 112));\n}\n\n/*Space on clear my cart*/\nbody.comm-page-detail-0a6 .slds-col--padded.slds-size--12-of-12.slds-medium-size--8-of-12.slds-large-size--8-of-12.comm-layout-column {\n    padding-bottom: 50px;\n}\n\nbody.comm-page-detail-0a6 h2 .slds-text-heading_medium .slds-hyphenate{\n    font-size: 22px;\n}\n\n\n/*Space on clear my cart*/\nbody.comm-page-detail-0a6 lightning-button.footer-action.rightPadding {\n    padding-right: 20px;\n}\n\n/*font bold on button proceed checkout */\nbody.comm-page-detail-0a6 commerce_checkout-checkout-button {\n    font-family: 'MaaxBold' !important;\n    font-size: 18px;\n    height: 50px;\n}\n\n/*Fixing width of My cart page*/\nbody.comm-page-detail-0a6 .slds-grid.slds-wrap.slds-medium-nowrap.slds-large-nowrap {\n    max-width: 1435px;\n    margin: auto;\n}\n\n/*Hide cross button allowing deletion*/\nbody.comm-page-detail-0a6 lightning-primitive-icon {\n    display: none;\n}\n\nbody.comm-page-detail-0a6 b2b_buyer_cart-async-alert.b2b_buyer_builderCartContents {\n    padding-left: 50px;\n}\n/*2.1 Put black border on the bottom of the cart*/\nbody.comm-page-detail-0a6 header[b2b_buyer_cart-managedcontents_managedcontents].slds-p-bottom_large {\n    border-bottom-width: 2px;\n    border-bottom-style: solid;\n    border-bottom-color: black;\n}\n\n/*2.2 Put black border on the bottom of Total Card*/\nbody.comm-page-detail-0a6 h2.summary-header.slds-p-left_medium {\n    border-bottom-width: 2px;\n    border-bottom-style: solid;\n    border-bottom-color: black;\n    font-size: 1.7rem;\n}\n\n/*2.3 Put text bold for total */\nbody.comm-page-detail-0a6 span.slds-text-heading_medium {\n    font-family: 'MaaxBold';\n}\n\n/*3. not display the \"sort by\" area */\nbody.comm-page-detail-0a6 lightning-combobox.sort-menu.slds-form-element {\n    display: none;\n}\n\n/*4. display price in bold and black */\nbody.comm-page-detail-0a6 b2b_buyer_pricing-formatted-price.slds-text-heading_large {\n    text-align: center;\n    font-size: large;\n    color: black !important;\n    font-family: 'MaaxBold';\n}\n\n/*5. display price unit & sku name in boldand black */\nbody.comm-page-detail-0a6 body.comm-page-detail-0a6 b2b_buyer_pricing-formatted-price, dd.slds-truncate {\n    color: black !important;\n    font-family: 'MaaxBold';\n}\n\n/*6. padding inside Cart content + background color white and box shadow*/\nbody.comm-page-detail-0a6 [b2b_buyer_cart-contents_contents-host]{\n    background-color: white !important;\n    padding: 2vw;\n    box-shadow: 0 0 5px rgb(0 0 0 / 25%);\n    border-bottom-color: #f00000;\n    border-bottom-width: medium;\n    border-bottom-style: solid;\n    margin-left: 50px;\n    \n}\n\n/*7. Change background besides cart and card total */\nbody.comm-page-detail-0a6 .siteforceSldsTwoCol84Layout.siteforceContentArea {\n    background-color: #f4f4f4;\n    min-height: 850px;\n}\n\n.comm-page-custom-personal-area {\n    background-color: #f4f4f4;\n}\n\n/*8.Button on cart pop- */\nbody.comm-page-detail-0a6 button.slds-size_1-of-1.slds-button.slds-button_brand {\n    background: #f00000;\n    border-color: #f00000;\n    border-radius: 28px;\n    font-family: 'MaaxBold';\n}\n\nbody.comm-page-detail-0a6 button[b2b_buyer_cart-managedContents_managedContents] {\n    border-radius: 28px;\n    font-family: 'MaaxBold';\n}\n\nbody.comm-page-detail-0a6 button[commerce_checkout-checkoutbutton_checkoutbutton] {\n    text-transform: none;\n}\n\nbody.comm-page-detail-0a6 header.slds-modal__header {\n     padding-top: 50px;    \n     padding-bottom: 30px;\n     border-radius: 20px 20px 0 0;\n     border-bottom: 1px solid #7F8C8D;\n}\n\n/*10. Add red undline bar */\nbody.comm-page-detail-0a6 .slds-modal__content.slds-p-around_medium.slds-modal__content_has-hidden-footer {\n    border-bottom-width: medium;\n    border-bottom-style: solid;\n    border-bottom-color: #f00000;\n    border-radius: 0 0 20px 20px;  \n    padding-top: 30px; \n    padding-bottom: 40px;\n}\n\nbody.comm-page-detail-0a6 h2.slds-text-heading_medium.slds-hyphenate {\n    font-size: 22px;\n}\n\n\n/* workaround to push the first product field to replace the product name */\nb2b_buyer_cart-items ul[b2b_buyer_cart-items_items] li[b2b_buyer_cart-items_items] div[b2b_buyer_cart-items_items] h3[b2b_buyer_cart-items_items] {\n\tvisibility: hidden;\n}\n\nb2b_buyer_cart-items ul[b2b_buyer_cart-items_items] li[b2b_buyer_cart-items_items] div[b2b_buyer_cart-items_items] dl[b2b_buyer_cart-items_items] {\n\tposition:relative;\n}\n\nb2b_buyer_cart-items ul[b2b_buyer_cart-items_items] li[b2b_buyer_cart-items_items] div[b2b_buyer_cart-items_items] dl[b2b_buyer_cart-items_items] dt:nth-child(3){\n\tdisplay:none;\n}\n\nb2b_buyer_cart-items ul[b2b_buyer_cart-items_items] li[b2b_buyer_cart-items_items] div[b2b_buyer_cart-items_items] dl[b2b_buyer_cart-items_items] dd:nth-child(4){\n    color: black;\n    font-size: x-large;\n    font-size: large;\n    font-weight: bold;\n    width: 100%;\n    position: absolute;\n    top: 0;\n    margin-top: -35px;\n}\n\n\n/** Custom code for Checkout page */\nbody.comm-page-checkout span abbr.slds-required {\n  display: none;\n}\nbody.comm-page-checkout lightning-input.text_normal.slds-form-element.slds-has-error {\n    width: 25px;\n}\nlightning-input.text_normal.slds-form-element.slds-has-error .slds-form-element__help {\n    width: 180px;\n}\n\nbody.comm-page-checkout .slds-spinner_container {\n    position: fixed !important;\n}\n\nbody.comm-page-checkout lightning-input.fontSizeTextSmall.slds-form-element label.slds-form-element__label{\n  font-size: 16px !important;\n}\n\nbody.comm-page-checkout .siteforceSldsOneColLayout.siteforceContentArea {\n    min-height: 840px;\n    background-color: #f6f6f6;\n}\n\n/*Display error message from flow at bottom of the page*/\nbody.comm-page-checkout .slds-m-bottom_x-small {\n    bottom: 100px;\n    left: 200px;\n    display: block;\n    position: absolute;\n}\n\n/* Reduce cart icon on the custom header*/\nbody.comm-page-checkout svg.slds-icon.slds-global-actions__item-action.slds-m-right_large {\n    height: 25px;\n}\n\nbody.comm-page-checkout .slds-text-color_error.slds-text-body_small.slds-m-bottom--x-small.slds-text-color_error.slds-text-body_small.slds-m-bottom--x-small.flowruntimeRichTextWrapper.flowruntimeErrorText {\n    font-family: 'MaaxBold';\n    position: absolute;\n    bottom: 125px;\n    left: 200px;\n}\n\n/** END - Custom code for Checout page */\n\n\ndiv.b2b_buyer_builderCartSummary {\n    background-color:white !important;\n    border-bottom-color: #f00000;\n    border-bottom-width: medium;\n    border-bottom-style: solid;\n    box-shadow: 0 0 5px rgb(0 0 0 / 25%);\n    padding: 50px;\n    margin-right: 50px;\n}\n\n\n\narticle.slds-card.forceCommunityCheckoutFlow{\n\tborder-style: none;\n}\n\ndiv.header div.centerContainer {\n    border-bottom-style: solid;\n    border-bottom-color: #f00000;\n    border-bottom-width: 1px;\n}\n\ndiv#footer div.ui-widget {\n    padding-bottom: 0;\n    vertical-align: bottomline;\n}\n\n/*body.comm-page-home div.body .ui-widget:first-child {*/\n/*\twidth: 100vw;*/\n/*\tmargin-left: 50%;*/\n/*\ttransform: translateX(-50%);*/\n/*}*/\n\n.comm-page-custom-privacy-policy { background-color: #f4f4f4; }\n.comm-page-custom-privacy-policy { background-color: #f4f4f4; }\n\n.comm-page-custom-privacy-policy div[data-region-name=\"1\"] {\n    margin: 34px 0 !important;\n    background-color: #fff; \n    padding: 40px; \n    margin-top:-40px; \n    box-shadow: 0 0 5px rgb(0 0 0 / 25%);\n}\n.title { text-align:center; padding-bottom: 20px;}\n\n.comm-page-custom-general-terms-of-service { background-color: #f4f4f4; }\n.comm-page-custom-general-terms-of-service div[data-region-name=\"1\"] {\n    margin: 34px 0 !important;\n    background-color: #fff; \n    padding: 40px; \n    margin-top:-40px; \n    box-shadow: 0 0 5px rgb(0 0 0 / 25%);\n}\n.title { text-align:center; padding-bottom: 20px;}\n\n.comm-page-contactsupport { background-color: #f4f4f4; }\n.comm-page-custom-hardware-policies-and-limited-warranty div[data-region-name=\"1\"] {\n    margin: 34px 0 !important;\n    background-color: #fff; \n    padding: 40px; \n    margin-top:-40px; \n    box-shadow: 0 0 5px rgb(0 0 0 / 25%);\n}\n.title { text-align:center; padding-bottom: 20px;}\n\n.comm-page-custom-cloud-agreement { background-color: #f4f4f4; }\n.comm-page-custom-cloud-agreement div[data-region-name=\"1\"] {\n    margin: 34px 0 !important;\n    background-color: #fff; \n    padding: 40px; \n    margin-top:-40px; \n    box-shadow: 0 0 5px rgb(0 0 0 / 25%);\n}\n.title { text-align:center; padding-bottom: 20px;}\n/*\n* Account creation class\n*/\n\nbody.comm-page-custom-account-creation .slds-form-element__control.slds-grow,\nbody.comm-page-contactsupport .slds-form-element__control.slds-grow,\nbody.comm-page-custom-solution-questionnaire .slds-form-element__control.slds-grow,\nbody.comm-page-custom-personal-area .slds-form-element__control.slds-grow {\n  font-size: 16px;\n}\n\nbody.comm-page-custom-account-creation span.slds-form-element__label {\n    color: black !important;\n    font-size: 16px !important;\n}\n\nbody.comm-page-custom-account-creation .customAbbr {\n  display: block !important;\n}\n\nbody.comm-page-custom-account-creation .createAccountCheckboxInputMandatory abbr.slds-required {\n  display: none !important;;\n}\n\n.formAccountCreation label{\n    color: black;\n    font-family: 'MaaxBold';\n    font-size: 18px;\n}\n\n\nbody.comm-page-custom-account-creation {\n    background: #f6f6f6;\n}\n\n\n/*Page checkout use custom CSS on it*/\n\n/*Page checkout contain */\n.slds-card__body.slds-p-horizontal_small.flowruntimeBody {\n    max-width: 1275px ;\n    margin: auto;\n}\n\n/*put background on shipping page */\nbody.comm-page-checkout .slds-card__body.slds-p-horizontal_small.flowruntimeBody,\nbody.comm-page-checkout .slds-col--padded.contentRegion.comm-layout-column ,\nbody.comm-page-checkout .content ,\nbody.comm-page-checkout .b2bBodyWrapper.isHeroUnderHeader-false.isHeaderPinned-false.siteforceB2bBody{\n    background: #f6f6f6;\n}\n\nbody.comm-page-checkout header.slds-global-header_container.slds-is-relative {\n    background: white;\n}\n\nbody.comm-page-checkout .slds-form-element__control.slds-grow,\nbody.comm-page-checkout .slds-form-element__control {\n  font-size: 16px;\n}\n\nbody.comm-page-checkout span.slds-form-element__label {\n    font-size: 18px !important;\n}\n\nbody.comm-page-checkout label.slds-form-element__label,\nbody.comm-page-checkout lightning-picklist label,\nbody.comm-page-checkout lightning-textarea label,\nbody.comm-page-checkout lightning-input label,\nbody.comm-page-checkout span.slds-form-element__label {\n    color: black;\n    font-family: 'MaaxBold';\n    padding-top: 15px !important;\n    font-size: 18px;\n}\n\n/*align field city on shipping form*/\nbody.comm-page-checkout lightning-input.slds-form-element.slds-show.slds-size_4-of-6 {\n    width: 49%;\n}\n\nbody.comm-page-checkout lightning-picklist.slds-form-element.slds-show.slds-size_2-of-6 {\n    padding-left: 23px !important;\n    width: 51%;\n}\n\nbody.comm-page-checkout button.slds-button.slds-button_brand {\n    display:none;\n    /*background: #f00000;\n    border-color: #f00000;\n    border-radius: 25px;\n    font-family: 'MaaxBold';\n    width: 150px;\n    position: absolute;\n    bottom: 125px;\n    right: 190px;\n    margin-top: -35px;*/\n}\n\nbody.comm-page-checkout .mainFormDiv {\n    margin-left: 150px !important;\n    margin-right: 150px !important;\n}\n\nbody.comm-page-checkout lightning-base-combobox-item {\n    font-size: 16px;\n}\n\nbody.comm-page-checkout .headerFormDiv {\n    margin-left: 150px !important;\n    margin-right: 150px !important;\n}\n\nbody.comm-page-checkout span.currentProcessStep {\n    font-family: 'MaaxBold';\n}\n\nbody.comm-page-checkout .padding_top {\n      padding-top: 15px\n}\n\nbody.comm-page-checkout .text_normal .slds-form-element__label{\n    font-family: 'MaaxRegular' !important;\n}\n\nbody.comm-page-checkout button.slds-button.slds-button_neutral {\n    /*border-radius: 25px;\n    font-family: 'MaaxBold';\n    width: 150px;\n    position: absolute;\n    bottom: 125px;\n    left: 205px;\n    margin-top: -35px;*/\n    display:none;\n}\n\nbody.comm-page-checkout .actionsRight {\n    padding-top: 15px;\n}\n\n/*\n* Area of orders page\n*/\n/*put text in black & bold */\nbody.comm-page-list-1Os span.slds-truncate ,\nbody.comm-page-list span.slds-truncate {\n    color: black;\n    font-family: 'MaaxBold';\n    font-size: 14px;\n}\n\nbody.comm-page-list-1Os li a span.slds-truncate,\nbody.comm-page-list li a span.slds-truncate { \n    font-family: 'MaaxRegular' !important; \n    font-size: 12px !important;\n}\n\nbody.comm-page-list-1Os a.outputLookupLink.slds-truncate,\nbody.comm-page-list a.outputLookupLink.slds-truncate{\n    font-size: 14px;\n}\n\nbody.comm-page-list-1Os .forceOutputCurrency,\nbody.comm-page-list .forceOutputCurrency,\nbody.comm-page-list-1Os .forceOutputCurrency, body.comm-page-list-1Os td.slds-cell-edit.cellContainer span.slds-truncate,\nbody.comm-page-list .forceOutputCurrency, body.comm-page-list-1Os td.slds-cell-edit.cellContainer span.slds-truncate{\n    font-family: 'MaaxRegular' !important;\n}\n\nbody.comm-page-list-1Os .slds-col.slds-has-flexi-truncate.firstHeaderRow,\nbody.comm-page-list .slds-col.slds-has-flexi-truncate.firstHeaderRow {\n    border-bottom: 1px solid;\n    padding-bottom: 15px;\n}\n\nbody.comm-page-list-1Os button.slds-button.slds-button_icon.slds-button_icon-more,\nbody.comm-page-list button.slds-button.slds-button_icon.slds-button_icon-more {\n    display: none;\n}\n\nbody.comm-page-list-1Os th.actionColumnHeader ,\nbody.comm-page-list th.actionColumnHeader {\n    display: none;\n}\n\nbody.comm-page-list-1Os .slds-col.slds-align-bottom ,\nbody.comm-page-list .slds-col.slds-align-bottom {\n    padding-top: 15px;\n}\n\nbody.comm-page-list-1Os .slds-table tbody tr td:last-child ,\nbody.comm-page-list td:last-child  {\n    display: none;\n}\n\nbody.comm-page-list-1Os lightning-layout.menuDiv.slds-grid.slds-wrap,\nbody.comm-page-list lightning-layout.menuDiv.slds-grid.slds-wrap,\nbody.comm-page-custom-personal-area lightning-layout.menuDiv.slds-grid.slds-wrap{\n    width: 300px;\n}\n\nbody.comm-page-list-1Os  .body.isPageWidthFixed-true,\nbody.comm-page-list .body.isPageWidthFixed-true,\nbody.comm-page-custom-personal-area .body.isPageWidthFixed-true{\n    background: #f4f4f4;\n}\n\nbody.comm-page-list-1Os .slds-grid.slds-wrap.slds-medium-nowrap.slds-large-nowrap,\nbody.comm-page-list .slds-grid.slds-wrap.slds-medium-nowrap.slds-large-nowrap,\nbody.comm-page-custom-personal-area .slds-grid.slds-wrap.slds-medium-nowrap.slds-large-nowrap{\n    width: 80%;\n    margin-left: 90px;\n}\n\nbody.comm-page-list-1Os lightning-layout.menuDiv.slds-grid.slds-wrap, \nbody.comm-page-list lightning-layout.menuDiv.slds-grid.slds-wrap ,\nbody.comm-page-custom-personal-area lightning-layout.menuDiv.slds-grid.slds-wrap {\n    margin-top: 0px;\n    margin-right: 0px;\n}\n\nbody.comm-page-list-1Os .test-listViewManager.slds-card.slds-card_boundary.slds-grid.slds-grid--vertical.forceListViewManager.forceCommunityRecordListDesktop.forceCommunityObjectHome ,\nbody.comm-page-list .test-listViewManager.slds-card.slds-card_boundary.slds-grid.slds-grid--vertical.forceListViewManager.forceCommunityRecordListDesktop.forceCommunityObjectHome {\n    padding: 50px;\n    padding-top: 30px;\n    box-shadow: 0 0 5px rgb(0 0 0 / 25%);\n}\n\nbody.comm-page-list-1Os  span.triggerLinkText.selectedListView.uiOutputText,\nbody.comm-page-list span.triggerLinkText.selectedListView.uiOutputText {\n    font-size: 22px;\n}\n\n\n/*\n*\n* Area of order detail page\n*\n*/\nbody.comm-page-detail-1Os figure[b2b_buyer_orders-item_item]{\n     height: 130px !important;\n}\n\nbody.comm-page-detail-1Os li.slds-p-bottom_xxx-small.slds-grid.slds-wrap{\n    font-size: 18px;\n}\n\nbody.comm-page-detail-1Os li.slds-p-bottom_xxx-small.slds-grid.slds-wrap:first-child,\nbody.comm-page-detail-1Os .field-item.slds-grid.slds-m-bottom_xx-small.slds-grid_align-spread.slds-text-title_bold  {\n    font-family: 'MaaxBold';\n}\n\nbody.comm-page-detail-1Os b2b_buyer_orders-product-title.item-name {\n    display: none;\n}\n\nbody.comm-page-detail-1Os span.slds-text-title_bold ,\nbody.comm-page-detail-1Os button.section-control.slds-button.slds-button_reset.slds-accordion__summary-action{\n    font-size: 20px;\n}\n\n\nbody.comm-page-detail-1Os lightning-formatted-rich-text.slds-truncate_container_75.slds-rich-text-editor__output {\n    font-family: 'MaaxBold';\n}\n\nbody.comm-page-detail-1Os .slds-grid.slds-wrap.slds-m-horizontal_medium.slds-m-bottom_x-small.slds-grid_align-spread,\nbody.comm-page-detail-1Os .slds-grid.slds-grid_vertical.slds-m-bottom_x-small.slds-p-horizontal_medium,\nbody.comm-page-detail-1Os .field-item.slds-grid.slds-m-bottom_xx-small.slds-grid_align-spread.slds-text-title_bold {\n    font-size: 18px;\n}\n\n\nbody.comm-page-detail-1Os .b2bBodyWrapper.isHeroUnderHeader-false.isHeaderPinned-true.siteforceB2bBody {\n    background-color: #f4f4f4;\n}\n\nbody.comm-page-detail-1Os .cb-section_backgroundOverlay {\n    background: #f4f4f4;\n}\n\nbody.comm-page-detail-1Os .cb-section_column.slds-size_12-of-12.slds-max-medium-size_12-of-12 {\n    background: white;\n    box-shadow: 0 0 5px rgb(0 0 0 / 25%);\n    padding: 50px;\n    margin-top: 60px;\n    margin-bottom: 60px;\n}\n\nbody.comm-page-detail-1Os a.toggle.slds-th__action.slds-text-link--reset {\n    font-family: 'MaaxBold';\n    color: black;\n}\n\nbody.comm-page-detail-1Os .slds-table tbody tr td:last-child ,\nbody.comm-page-detail-1Os td:last-child  {\n    display: none;\n}\n\nbody.comm-page-detail-1Os p.slds-text-body--small {\n    padding-top: 10px;\n}\n\n\n/* Rework button view all*/\nbody.comm-page-detail-1Os button.slds-button.slds-button_neutral {\n    background: #f00000;\n    border-color: #f00000;\n    color: white;\n    font-family: 'MaaxBold';\n    border-radius: 28px;\n    margin-top: 15px;\n}\n\n\nbody.comm-page-detail-1Os h1.listTitle.slds-text-heading--medium {\n    padding-bottom: 20px;\n}\n\nbody.comm-page-detail-1Os .slds-card.details-card[b2b_buyer_orders-details_details] {\n    border-left: none;\n    border-right: none;\n    border-top: none;\n}\n \nbody.comm-page-detail-1Os .slds-card.totals-card[b2b_buyer_orders-totals_totals] {\n    border-left: none;\n    border-right: none;\n    border-top: none;\n}\n\nbody.comm-page-detail-1Os span.slds-no-space.slds-truncate.slds-hyphenate {\n    color: #7F8C8D;\n}\n\nbody.comm-page-detail-1Os .ordersummary-container.slds-grid.slds-grid_align-spread {\n    border-bottom: 1px solid black;\n    padding-bottom: 15px;\n}\n\nbody.comm-page-detail-1Os button.slds-button.slds-button_brand.slds-shrink-none.slds-grid_align-center {\n    font-family: 'MaaxBold';\n}\n\nbody.comm-page-detail-1Os button.slds-button.slds-button_brand.slds-shrink-none.slds-grid_align-center {\n    display: none;\n}\n\n/**\n*Area questionnaire \n**/\n\t\n\nbody.comm-page-custom-solution-questionnaire span.slds-form-element__label {\n    color: black;\n    font-size : 16px;\n}\n\nbody.comm-page-custom-solution-questionnaire .slds-form-element__control .slds-radio,\nbody.comm-page-custom-solution-questionnaire .slds-form-element__control .slds-checkbox {\n    display: inline-block;\n    margin: 0 1rem;\n    direction: rtl;\n}\n\nbody.comm-page-custom-solution-questionnaire span.slds-radio_faux::after {\n    background-color: #F00000!important;\n}\n\nbody.comm-page-custom-solution-questionnaire  input.slds-combobox__input {\n\tborder-radius: 100px;\n    font-size: 16px;\n}\n\nbody.comm-page-custom-solution-questionnaire lightning-input.b2b-underlined-input input {\n    border-top: none;\n    border-right: none;\n    border-left: none;\n    border-radius: 0;\n}\n\nbody.comm-page-custom-solution-questionnaire .slds-align_absolute-center lightning-combobox div[role=listbox] lightning-base-combobox-item {\n    flex-direction: row-reverse;\n}\n\nbody.comm-page-custom-solution-questionnaire .slds-text-align_center lightning-combobox div[role=listbox] lightning-base-combobox-item {\n    flex-direction: row-reverse;\n}\n\nbody.comm-page-custom-solution-questionnaire .slds-align_absolute-center lightning-combobox div[role=listbox] lightning-base-combobox-item .slds-media__body {\n    text-align: start;\n}\n\nbody.comm-page-custom-solution-questionnaire .slds-text-align_center lightning-combobox div[role=listbox] lightning-base-combobox-item .slds-media__body {\n    text-align: start;\n}\n\nbody.comm-page-custom-solution-questionnaire div.slds-accordion__summary {\n    margin-bottom: 2px !important;\n    padding-bottom: 0;\n    height: 110px;\n}\n\nbody.comm-page-custom-solution-questionnaire div#lgt-accordion-section-17 {\n    box-shadow: 0px 2px 7px rgb(0 0 0 / 15%);\n}\n\nbody.comm-page-custom-solution-questionnaire h3.slds-accordion__summary-heading {\n    box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.15);\n  } \n\nbody.comm-page-custom-solution-questionnaire section h3.slds-accordion__summary-heading {\n\tbackground-color: #F6F6F6;\n\tborder-radius: 0.5rem;\n    font-size: 32px;\n\tpadding: 1.5rem;\n    \n}\n\nbody.comm-page-custom-solution-questionnaire section h3.slds-accordion__summary-heading button{\n\tposition: initial;\n}\n\nbody.comm-page-custom-solution-questionnaire section h3.slds-accordion__summary-heading lightning-primitive-icon {\n\tdisplay: none;\n}\n\nbody.comm-page-custom-solution-questionnaire section.slds-is-open h3.slds-accordion__summary-heading {\n\tbackground-color: #2B2B2B;\n\tcolor: white;\n    font-size: 32px;\n}\n\nbody.comm-page-custom-solution-questionnaire button.section-control.slds-button.slds-button_reset.slds-accordion__summary-action:hover,\nbody.comm-page-custom-solution-questionnaire button.section-control.slds-button.slds-button_reset.slds-accordion__summary-action:focus {\n\tcolor: white;\n}\n\nlightning-accordion-section section.slds-accordion__section {\n\tpadding: 2px 0;\n}\n\n\nbody.comm-page-custom-solution-questionnaire .custom-icon_red svg,\nbody.comm-page-custom-solution-questionnaire .custom-icon_red_checked svg{\n    fill : #f00000;\n}\n\nbody.comm-page-custom-solution-questionnaire .custom-icon_red svg{\n    padding: 0.1rem;\n}\n\nbody.comm-page-custom-solution-questionnaire lightning-button.red-button button:disabled {\n    background-color: #fbb3b3;\n    border-color: #fbb3b3;\n    color: white;\n}\n\nbody.comm-page-custom-solution-questionnaire button.slds-button.red-button {\n    font-size: 18px !important;\n    background-color: #F00000;\n    border-color: #F00000;\n    border-radius: 2rem;\n\tcolor: white;\n    font-family: 'MaaxBold';\n    width: 20%;\n    padding-top: 5px;\n    padding-bottom: 5px;\n    display: inline-block;\n    margin-top: 1.5rem;\n}\nbody.comm-page-custom-solution-questionnaire button.slds-button.red-button.solution {\n    width: 200px !important;\n    margin-bottom: 18px;\n}\n\nbody.comm-page-custom-solution-questionnaire lightning-button.red-button.solution button {\n    width: 35% !important;\n}\n\nbody.comm-page-custom-solution-questionnaire lightning-button.red-button button {\n    font-size: 18px !important;\n    background-color: #F00000;\n    border-color: #F00000;\n    border-radius: 2rem;\n\tcolor: white;\n    font-family: 'MaaxBold';\n    width: 20%;\n    padding-top: 5px;\n    padding-bottom: 5px;\n    display: inline-block;\n}\n\nbody.comm-page-custom-solution-questionnaire lightning-button.red-button button:hover,\nbody.comm-page-custom-solution-questionnaire button.slds-button.red-button button:hover{\n\tbackground-color: #E00000;\n\tborder-color: #E00000;\n\tcolor: white;\n}\n\nbody.comm-page-custom-solution-questionnaire lightning-accordion-section section div.slds-accordion__content {\n    border-style: solid;\n    border-radius: 10px;\n    border-width: thin;\n    border-color: darkgrey;\n    padding: 12px;\n    height:auto;\n    visibility:visible;\n    transition: 1.0s;\n    box-shadow: 0px 2px 7px rgb(0 0 0 / 15%);\n}\n\nbody.comm-page-custom-solution-questionnaire div[show_custom_solution] {\n    height:auto;\n    visibility:visible;    \n    transition:1.0s;\n}\n\nbody.comm-page-custom-solution-questionnaire div[show_custom_solution=\"false\"] {\n    opacity:0;\n    max-height:0px;\n    overflow:hidden;\n    display:block;\n}\n\n\nbody.comm-page-custom-solution-questionnaire lightning-accordion-section section.slds-is-open div.slds-accordion__content {\n\tmax-height:1500px;\n}\n\nbody.comm-page-custom-solution-questionnaire lightning-accordion-section section:not(.slds-is-open) div.slds-accordion__content {\n    display:block;\n\tmax-height:0px;\n    padding:0px;\n}\n\nbody.comm-page-custom-solution-questionnaire button.slds-button.slds-button_icon.slds-button_icon-bare {\n    padding-bottom: 4px;\n}\n\nbody.comm-page-custom-solution-questionnaire .colorCustomGray button.slds-button,\nbody.comm-page-custom-solution-questionnaire .see_example_products button.slds-button{\n    color : #7F8C8D;\n    font-size: 14px;\n}\n\nbody.comm-page-custom-solution-questionnaire .slds-carousel__indicator-action:focus,\nbody.comm-page-custom-solution-questionnaire .slds-carousel__indicator-action.slds-is-active,\nbody.comm-page-custom-solution-questionnaire .slds-carousel__indicator-action.slds-is-active:hover{\n            background: #f00000;\n            border-color: #f00000;\n        }\n\nbody.comm-page-custom-solution-questionnaire li.slds-tabs_default__item.slds-tabs_default__overflow-button{\n            width : 0px !important;\n            display : none;\n        }\n        \nbody.comm-page-custom-solution-questionnaire div.slds-modal__content {\n                border-bottom: red solid 3px;\n            }\n\nbody.comm-page-custom-solution-questionnaire span [interop-carousel_carousel] {\n                display: none;\n            }\n\nbody.comm-page-custom-solution-questionnaire .content-container.slds-carousel__content {\n                display: none;\n            }\n\nbody.comm-page-custom-solution-questionnaire a.slds-carousel__panel-action.slds-text-link_reset {\n                border: none;\n            }\n\nbody.comm-page-custom-solution-questionnaire .slds-carousel__image img {\n                display: block;\n                margin-left: auto;\n                margin-right: auto;\n                width: auto;\n            }\n\nbody.comm-page-custom-solution-questionnaire lightning-tab-bar ul {\n                border-radius: 10px;\n                border: none !important;\n            }\n\nbody.comm-page-custom-solution-questionnaire .slds-tabs_default {\n                margin-left: 15px;\n            }\n\nbody.comm-page-custom-solution-questionnaire lightning-tab[role=\"tabpanel\"] {\n                border-style: solid;\n                border-radius: 10px;\n                border-width: 1px;\n                border-color: #2B2B2B;\n                width: 520px;\n            }\n\nbody.comm-page-custom-solution-questionnaire lightning-tab-bar li{\n                background-color: #F6F6F6;\n                border-radius: 10px;\n            }\n\nbody.comm-page-custom-solution-questionnaire lightning-tab-bar li.slds-is-active {\n                background-color: #F00000;\n                border-radius: 10px;\n                box-shadow: 0 0 5px rgb(0 0 0 / 25%);\n            }\n\nbody.comm-page-custom-solution-questionnaire lightning-tab-bar li a {\n                font-size: 1rem !important;\n                font-weight: bold !important;\n                margin: 10px;\n                text-align: center;\n                color: black !important;\n                font-family: 'MaaxBold';\n            }\n\nbody.comm-page-custom-solution-questionnaire li.slds-tabs_default__item {\n                width: 173px;\n            }\n\nbody.comm-page-custom-solution-questionnaire .slds-tabs_default__nav{\n                box-shadow: 0 0 5px rgb(0 0 0 / 25%);\n                width: 520px;\n                background-color: #f6f6f6;\n            }\n            \nbody.comm-page-custom-solution-questionnaire lightning-tab-bar li.slds-is-active a {\n                color: white !important;\n            }\n\nbody.comm-page-custom-solution-questionnaire .slds-tabs_default__item::after,\nbody.comm-page-custom-solution-questionnaire .slds-tabs--default__item::after {\n                display: none !important;\n            }\n\nbody.comm-page-custom-solution-questionnaire .slds-carousel__indicator a {\n                background-color: lightgray;\n                border: none;\n                height: 10px;\n                width: 10px;\n            }\n\nbody.comm-page-custom-solution-questionnaire .slds-carousel__indicator a.slds-is-active {\n                background-color: darkgray;\n            }\n\nbody.comm-page-custom-solution-questionnaire div.slds-carousel__panels {\n                height: 300px;\n                position: relative;\n            }\n\nbody.comm-page-custom-solution-questionnaire slot[interop-carousel_carousel] {\n                position: absolute;\n                top: 50%;\n                transform: translateY(-50%);\n            }",
+  "developerName" : "b2b",
+  "id" : "ac9ef7b8-0a0f-4a30-b2e0-32772d8ea801",
+  "label" : "B2B Commerce",
+  "layouts" : {
+    "Checkout" : "25fe1852-c744-47e4-bca7-c336b81ace5d",
+    "Home" : "5265c624-b923-4a95-bdc4-db928132b08b",
+    "Inner" : "f7f2f4f1-9cc4-4c0f-b71f-da7c388ff679",
+    "Login" : "270b293e-26bf-479e-a717-3c021def5d90",
+    "ServiceNotAvailable" : "4849fcde-adfc-4ffa-9631-d1db881447de"
+  },
+  "type" : "theme",
+  "views" : [ {
+    "componentAttributes" : { },
+    "componentName" : "salesforceIdentity:loginBody2",
+    "id" : "270b293e-26bf-479e-a717-3c021def5d90",
+    "label" : "Login",
+    "regions" : [ {
+      "id" : "2550c8fc-1fdc-4a6c-ba9a-511e85f9a56e",
+      "regionName" : "header",
+      "type" : "region"
+    }, {
+      "id" : "743a89aa-bc13-4458-b41a-46bee4dffdd2",
+      "regionName" : "content",
+      "type" : "region"
+    }, {
+      "id" : "ae4eb39d-9a7e-4f56-af41-a8a692eb3355",
+      "regionName" : "footer",
+      "type" : "region"
+    } ],
+    "type" : "view"
+  }, {
+    "componentAttributes" : {
+      "fixedPageWidth" : 1920,
+      "headerBgColor" : "rgba(0, 0, 0, 0)",
+      "isHeaderPinned" : true,
+      "isHeroUnderHeader" : false,
+      "isPageWidthFixed" : true,
+      "showHeader" : true,
+      "showHero" : false
+    },
+    "componentName" : "siteforce:b2bBody",
+    "id" : "f7f2f4f1-9cc4-4c0f-b71f-da7c388ff679",
+    "label" : "Default",
+    "regions" : [ {
+      "components" : [ {
+        "componentAttributes" : {
+          "backgroundColor" : "#ffffff",
+          "borderBottomColor" : "rgba(255, 255, 255, 0)",
+          "headerWidth" : 1300,
+          "showNotifications" : false
+        },
+        "componentName" : "forceCommunity:themeHeaderB2B",
+        "id" : "8b25bc98-3cb7-4a53-8746-b805ed9a2082",
+        "regions" : [ {
+          "components" : [ {
+            "componentAttributes" : {
+              "buttonBackgroundColor" : "",
+              "buttonBackgroundHoverColor" : "",
+              "buttonBorderColor" : "rgba(0, 0, 0, 0)",
+              "buttonBorderRadius" : 0,
+              "buttonText" : "Log in",
+              "buttonTextColor" : "",
+              "buttonTextHoverColor" : "",
+              "customizableUserProfileMenuEditor" : "Default_User_Profile_Menu",
+              "menuStyleSettings" : "{\"selectedMenuStyleSetting\":\"iconAndName\",\"selectedIconSetting\":\"companyLogo\",\"includeCompanyName\":true,\"selectedTextOrientationSetting\":\"left\"}"
+            },
+            "componentName" : "forceCommunity:customizableUserProfileMenu",
+            "id" : "e0c109cb-823c-4fd8-8969-66082caf2d70",
+            "renditionMap" : { },
+            "type" : "component"
+          } ],
+          "id" : "1e488c3c-9035-4c5c-b0b5-881b6a899ea3",
+          "regionName" : "themeHeaderProfileMenu",
+          "type" : "region"
+        }, {
+          "components" : [ {
+            "componentAttributes" : {
+              "backgroundColor" : "",
+              "borderColor" : "",
+              "borderRadius" : "0",
+              "buttonBackgroundColor" : "",
+              "buttonBackgroundHoverColor" : "",
+              "iconColor" : "",
+              "placeholderText" : "Enter keyword or SKU number",
+              "placeholderTextColor" : "#4a4a4a",
+              "showSearchButton" : true,
+              "showSearchSuggestionsSetup" : "",
+              "suggestionsBackgroundColor" : "rgb(255, 255, 255)",
+              "suggestionsBackgroundHoverColor" : "rgb(249, 249, 250)",
+              "suggestionsDividerColor" : "rgb(217, 219, 221)",
+              "suggestionsTextColor" : "",
+              "suggestionsTextHoverColor" : "",
+              "textColor" : ""
+            },
+            "componentName" : "b2b_search_builder:searchInput",
+            "id" : "2eb49791-a1e6-429d-bfa8-f68b5c643ece",
+            "renditionMap" : { },
+            "type" : "component"
+          } ],
+          "id" : "bb0093b2-797c-4095-9687-58bf64a7190a",
+          "regionName" : "search",
+          "type" : "region"
+        }, {
+          "components" : [ {
+            "componentAttributes" : {
+              "NavigationMenuEditorRefresh" : "Default_Navigation3",
+              "hideAppLauncher" : true,
+              "menuAlignment" : "center"
+            },
+            "componentName" : "forceCommunity:multiLevelNavigation",
+            "id" : "9a540daa-dadc-4358-8d1f-b0e15a579eb4",
+            "renditionMap" : { },
+            "type" : "component"
+          } ],
+          "id" : "d8d6d8d0-1309-4057-9899-1dbe2c024a50",
+          "regionName" : "nav",
+          "type" : "region"
+        }, {
+          "components" : [ {
+            "componentAttributes" : {
+              "cartCountType" : "UniqueProductCount"
+            },
+            "componentName" : "b2b_buyer_builder:cartBadge",
+            "id" : "8ab7f7f5-d6d4-49ed-a488-20e60f7f91a1",
+            "renditionMap" : { },
+            "type" : "component"
+          } ],
+          "id" : "098504df-9f08-4c01-872e-e0313894642c",
+          "regionName" : "cart",
+          "type" : "region"
+        } ],
+        "renditionMap" : { },
+        "type" : "component"
+      } ],
+      "id" : "e936c678-c335-426f-90a5-5ca957d96153",
+      "regionName" : "themeHeader",
+      "type" : "region"
+    }, {
+      "components" : [ {
+        "componentAttributes" : {
+          "richTextValue" : "<div class=\"slds-grid slds-wrap slds-grid_align-center slds-grid_vertical-align-center\"\n     style=\"background-color: #2B2B2B; height: 120px;\">\t\t\n\t<div class=\"slds-col slds-size_1-of-3 slds-small-size--1-of-3 slds-p-vertical_medium slds-grid_align-left slds-grid_vertical-align-center\"\n         style=\"padding-top: 0px; text-align: center;\">\n        <img src=\"/SES-Imagotag-white.png\" style=\"width: 143px; height: 28px;\"/>\n    </div>\n        \n    <div class=\"slds-col slds-size_1-of-3 slds-small-size-1-of-3 slds-p-vertical_medium slds-align_absolute-center\"\n         style=\"display:block\">\n    \t<span>\n            <p style=\"text-align: center; padding-top: 40px; color: white;\">\n            <a href=\"/B2BStore/s/contactsupport\" style=\"color: white;\">Contacts</a> | \n            <a href=\"/B2BStore/s/hardware-policies-and-limited-warranty\" style=\"color: white;\">Warranty Policy</a> | \n            <a href=\"/B2BStore/s/general-terms-of-service\" style=\"color: white;\">Standard Terms and Conditions</a> |\n            <a href=\"/B2BStore/s/privacy-policy\" style=\"color: white;\">Privacy Policy</a>\n            </p>\n        </span>\n        \n    \t<span>\n            <p style=\"display: box; color: white; margin-left: auto; text-align: center; padding-top: 20px; padding-bottom: 20px;\">© 2021 SES Imagotag</p>\n        </span>\n    </div>\n    <div class=\"slds-col slds-size_1-of-3 slds-small-size--1-of-3 slds-p-vertical_medium slds-align_absolute-center\">\n    </div>\n</div>"
+        },
+        "componentName" : "forceCommunity:htmlBlock",
+        "id" : "5f7f8821-c26d-4234-a72a-70e07e3ed363",
+        "renditionMap" : { },
+        "type" : "component"
+      } ],
+      "id" : "d6b23072-b418-4953-a7b9-a2229dc30031",
+      "regionName" : "themeFooter",
+      "type" : "region"
+    } ],
+    "type" : "view"
+  }, {
+    "componentAttributes" : {
+      "fixedPageWidth" : 1170,
+      "headerBgColor" : "rgba(0, 0, 0, 0)",
+      "isHeaderPinned" : false,
+      "isHeroUnderHeader" : false,
+      "isPageWidthFixed" : true,
+      "showHeader" : true,
+      "showHero" : true
+    },
+    "componentName" : "siteforce:b2bBody",
+    "id" : "25fe1852-c744-47e4-bca7-c336b81ace5d",
+    "label" : "Checkout",
+    "regions" : [ {
+      "components" : [ {
+        "componentAttributes" : { },
+        "componentName" : "forceCommunity:checkoutHeaderWrapper",
+        "id" : "a3c50073-570a-4db2-8716-a2660c4660d0",
+        "renditionMap" : { },
+        "type" : "component"
+      } ],
+      "id" : "31aa433e-a51f-4c3a-852d-1dbcd1103986",
+      "regionName" : "themeHeader",
+      "type" : "region"
+    }, {
+      "id" : "e3788d6b-ec4b-4370-ae56-b96664956e94",
+      "regionName" : "themeFooter",
+      "type" : "region"
+    } ],
+    "type" : "view"
+  }, {
+    "componentAttributes" : {
+      "fixedPageWidth" : 1920,
+      "headerBgColor" : "rgba(0, 0, 0, 0)",
+      "isHeaderPinned" : true,
+      "isHeroUnderHeader" : false,
+      "isPageWidthFixed" : true,
+      "showHeader" : true,
+      "showHero" : false
+    },
+    "componentName" : "siteforce:b2bBody",
+    "id" : "5265c624-b923-4a95-bdc4-db928132b08b",
+    "label" : "Home",
+    "regions" : [ {
+      "components" : [ {
+        "componentAttributes" : {
+          "backgroundColor" : "#ffffff",
+          "borderBottomColor" : "rgba(255, 255, 255, 0)",
+          "headerWidth" : 1300,
+          "showNotifications" : false
+        },
+        "componentName" : "forceCommunity:themeHeaderB2B",
+        "id" : "c789b165-0123-4804-b518-86d21838b44e",
+        "regions" : [ {
+          "components" : [ {
+            "componentAttributes" : {
+              "buttonBackgroundColor" : "",
+              "buttonBackgroundHoverColor" : "",
+              "buttonBorderColor" : "rgba(0, 0, 0, 0)",
+              "buttonBorderRadius" : 0,
+              "buttonText" : "Log in",
+              "buttonTextColor" : "",
+              "buttonTextHoverColor" : "",
+              "customizableUserProfileMenuEditor" : "Default_User_Profile_Menu",
+              "menuStyleSettings" : "{\"selectedMenuStyleSetting\":\"iconAndName\",\"selectedIconSetting\":\"companyLogo\",\"includeCompanyName\":true,\"selectedTextOrientationSetting\":\"left\"}"
+            },
+            "componentName" : "forceCommunity:customizableUserProfileMenu",
+            "id" : "c013f6c6-b05a-4c34-9088-54dc944e8b17",
+            "renditionMap" : { },
+            "type" : "component"
+          } ],
+          "id" : "c4a847ab-ec21-45e2-aaac-f0a79ff30cc9",
+          "regionName" : "themeHeaderProfileMenu",
+          "type" : "region"
+        }, {
+          "components" : [ {
+            "componentAttributes" : {
+              "backgroundColor" : "",
+              "borderColor" : "",
+              "borderRadius" : "0",
+              "buttonBackgroundColor" : "",
+              "buttonBackgroundHoverColor" : "",
+              "iconColor" : "",
+              "placeholderText" : "Enter keyword or SKU number",
+              "placeholderTextColor" : "#4a4a4a",
+              "showSearchButton" : true,
+              "showSearchSuggestionsSetup" : false,
+              "suggestionsBackgroundColor" : "rgb(255, 255, 255)",
+              "suggestionsBackgroundHoverColor" : "rgb(249, 249, 250)",
+              "suggestionsDividerColor" : "rgb(217, 219, 221)",
+              "suggestionsTextColor" : "",
+              "suggestionsTextHoverColor" : "",
+              "textColor" : ""
+            },
+            "componentName" : "b2b_search_builder:searchInput",
+            "id" : "1324c752-9f19-45f5-bd09-c6158dcc3e51",
+            "renditionMap" : { },
+            "type" : "component"
+          } ],
+          "id" : "54934ad8-4e63-4022-bcec-b5ccddecfde8",
+          "regionName" : "search",
+          "type" : "region"
+        }, {
+          "components" : [ {
+            "componentAttributes" : {
+              "NavigationMenuEditorRefresh" : "",
+              "hideAppLauncher" : true,
+              "menuAlignment" : "center"
+            },
+            "componentName" : "forceCommunity:multiLevelNavigation",
+            "id" : "8f394ee4-d3fd-4a25-a271-74b51b45c6a8",
+            "renditionMap" : { },
+            "type" : "component"
+          } ],
+          "id" : "ff7990c8-0f13-4ce2-bc2c-65c3d45ad4c4",
+          "regionName" : "nav",
+          "type" : "region"
+        }, {
+          "components" : [ {
+            "componentAttributes" : {
+              "cartCountType" : "UniqueProductCount"
+            },
+            "componentName" : "b2b_buyer_builder:cartBadge",
+            "id" : "06bef34b-f0f8-445b-8deb-850e3c692cc2",
+            "renditionMap" : { },
+            "type" : "component"
+          } ],
+          "id" : "cc869c5b-7b0a-47bf-a364-8956779747cd",
+          "regionName" : "cart",
+          "type" : "region"
+        } ],
+        "renditionMap" : { },
+        "type" : "component"
+      } ],
+      "id" : "538c4565-216b-4b97-aa53-8106a7e3ce97",
+      "regionName" : "themeHeader",
+      "type" : "region"
+    }, {
+      "components" : [ {
+        "componentAttributes" : {
+          "bgImage" : "background: #FFFFFF url(/sfsites/assets/themes/b2b-background.jpg) center /cover",
+          "bgOverlayColor" : "rgba(0, 0, 0, 0.46)",
+          "captionText" : "Get Excited",
+          "captionTextColor" : "rgba(255, 255, 255, 1)",
+          "captionTextShadowColor" : "rgba(0, 0, 0, 0)",
+          "contentAlignment" : "center",
+          "contentWidth" : 65,
+          "ctaBtnOneBgColor" : "rgba(17, 17, 17, 1)",
+          "ctaBtnOneBgHoverColor" : "rgba(0, 0, 255, 1)",
+          "ctaBtnOneBorderColor" : "rgba(0, 0, 0, 1)",
+          "ctaBtnOneOpenNewTab" : false,
+          "ctaBtnOneText" : "Let's go!",
+          "ctaBtnOneTextColor" : "rgba(255, 255, 255, 1)",
+          "ctaBtnOneTextHoverColor" : "rgba(255, 255, 255, 1)",
+          "ctaBtnOneUrl" : "",
+          "ctaBtnRadius" : 0,
+          "ctaBtnTwoBgColor" : "rgba(255, 255, 255, 1)",
+          "ctaBtnTwoBgHoverColor" : "rgba(0, 0, 255, 1)",
+          "ctaBtnTwoBorderColor" : "rgba(17, 17, 17, 1)",
+          "ctaBtnTwoOpenNewTab" : false,
+          "ctaBtnTwoText" : "Help",
+          "ctaBtnTwoTextColor" : "rgba(17, 17, 17, 1)",
+          "ctaBtnTwoTextHoverColor" : "rgba(255, 255, 255, 1)",
+          "ctaBtnTwoUrl" : "",
+          "ctaShowBtnOne" : true,
+          "ctaShowBtnTwo" : true,
+          "fixedHeroWidth" : true,
+          "heroHeight" : 275,
+          "heroWidth" : 1280,
+          "showCaption" : false,
+          "showSubtitle" : true,
+          "showTitle" : true,
+          "subtitleText" : "Are you ready?",
+          "subtitleTextColor" : "rgba(255, 255, 255, 1)",
+          "subtitleTextShadowColor" : "rgba(0, 0, 0, 0)",
+          "titleText" : "It's almost here.",
+          "titleTextColor" : "rgba(255, 255, 255, 1)",
+          "titleTextShadowColor" : "rgba(0, 0, 0, 0)",
+          "type" : "callToAction"
+        },
+        "componentName" : "forceCommunity:themeHeroStarter",
+        "id" : "e308ccad-185c-456f-ae5d-7e3765f1f144",
+        "regions" : [ {
+          "components" : [ {
+            "componentAttributes" : {
+              "backgroundColor" : "",
+              "borderColor" : "",
+              "borderRadius" : "0",
+              "buttonBackgroundColor" : "",
+              "buttonBackgroundHoverColor" : "",
+              "iconColor" : "",
+              "placeholderText" : "Enter keyword or SKU number",
+              "placeholderTextColor" : "#4a4a4a",
+              "showSearchButton" : true,
+              "showSearchSuggestionsSetup" : "",
+              "suggestionsBackgroundColor" : "rgb(255, 255, 255)",
+              "suggestionsBackgroundHoverColor" : "rgb(249, 249, 250)",
+              "suggestionsDividerColor" : "rgb(217, 219, 221)",
+              "suggestionsTextColor" : "",
+              "suggestionsTextHoverColor" : "",
+              "textColor" : ""
+            },
+            "componentName" : "b2b_search_builder:searchInput",
+            "id" : "b18e8af9-b880-44a1-b27d-b1d71f199c12",
+            "renditionMap" : { },
+            "type" : "component"
+          } ],
+          "id" : "b8b3462f-9b2a-407d-8d32-ed2e34d9f9d0",
+          "regionName" : "search",
+          "type" : "region"
+        } ],
+        "renditionMap" : { },
+        "type" : "component"
+      } ],
+      "id" : "85b55f3b-d66a-4c37-96a3-d5419265ef7f",
+      "regionName" : "themeHero",
+      "type" : "region"
+    }, {
+      "components" : [ {
+        "componentAttributes" : {
+          "richTextValue" : "<div class=\"slds-grid slds-wrap slds-grid_align-center slds-grid_vertical-align-center\"\n     style=\"background-color: #2B2B2B; height: 120px;\">\t\t\n\t<div class=\"slds-col slds-size_1-of-3 slds-small-size--1-of-3 slds-p-vertical_medium slds-grid_align-left slds-grid_vertical-align-center\"\n         style=\"padding-top: 0px; text-align: center;\">\n        <img src=\"/SES-Imagotag-white.png\" style=\"width: 143px; height: 28px;\"/>\n    </div>\n        \n    <div class=\"slds-col slds-size_1-of-3 slds-small-size-1-of-3 slds-p-vertical_medium slds-align_absolute-center\"\n         style=\"display:block\">\n    \t<span>\n            <p style=\"text-align: center; padding-top: 40px; color: white;\">\n            <a href=\"/B2BStore/s/contactsupport\" style=\"color: white;\">Contacts</a> | \n            <a href=\"/B2BStore/s/hardware-policies-and-limited-warranty\" style=\"color: white;\">Warranty Policy</a> | \n            <a href=\"/B2BStore/s/general-terms-of-service\" style=\"color: white;\">Standard Terms and Conditions</a> |\n            <a href=\"/B2BStore/s/privacy-policy\" style=\"color: white;\">Privacy Policy</a>\n            </p>\n        </span>\n        \n    \t<span>\n            <p style=\"display: box; color: white; margin-left: auto; text-align: center; padding-top: 20px; padding-bottom: 20px;\">© 2021 SES Imagotag</p>\n        </span>\n    </div>\n    <div class=\"slds-col slds-size_1-of-3 slds-small-size--1-of-3 slds-p-vertical_medium slds-align_absolute-center\">\n    </div>\n</div>"
+        },
+        "componentName" : "forceCommunity:htmlBlock",
+        "id" : "cf9d8caf-020d-4a43-88ef-8f61086511a0",
+        "renditionMap" : { },
+        "type" : "component"
+      } ],
+      "id" : "cc0851f5-2edf-4466-a419-1b042a92a9c7",
+      "regionName" : "themeFooter",
+      "type" : "region"
+    } ],
+    "type" : "view"
+  }, {
+    "componentAttributes" : {
+      "fixedPageWidth" : 1170,
+      "headerBgColor" : "rgba(0, 0, 0, 0)",
+      "isHeaderPinned" : false,
+      "isHeroUnderHeader" : false,
+      "isPageWidthFixed" : true,
+      "showHeader" : true,
+      "showHero" : true
+    },
+    "componentName" : "siteforce:themeLayoutStarter",
+    "id" : "4849fcde-adfc-4ffa-9631-d1db881447de",
+    "label" : "ServiceNotAvailable",
+    "regions" : [ {
+      "id" : "335cc1a0-5bc1-40c8-9d88-bd9feef183cc",
+      "regionName" : "themeHeader",
+      "type" : "region"
+    }, {
+      "id" : "f31776db-04db-4134-b409-117fec4a6e86",
+      "regionName" : "themeFooter",
+      "type" : "region"
+    } ],
+    "type" : "view"
+  } ]
+}

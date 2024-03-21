@@ -1,0 +1,81 @@
+<aura:component implements="lightning:availableForFlowScreens" controller="B2BPaymentPOOnlyController">
+    <aura:attribute Name="poNumber" type="String" />
+    <aura:attribute name="AccountFromCart" type="Account" />
+    <aura:attribute Name="paymentTerm" type="String" />
+    <aura:attribute Name="valueCheckbox1" type="Boolean" default="false"/>
+    <aura:attribute Name="valueCheckbox2" type="Boolean" default="false"/>
+    <aura:attribute Name="valueCheckbox3" type="Boolean" default="false"/>
+    <aura:attribute name="languageFromUser" type="String" default="en_US"/>
+    <aura:attribute name="termsAndCondition" type="String"/>
+    <aura:attribute Name="warning" type="Boolean" default="false"/>
+    <aura:handler name = "init" value = "{!this}" action = "{!c.onInit}"/>
+    
+    <h2 class="slds-p-around_x-small slds-text-title_caps">{!$Label.c.B2BStore_I_Confirm_That}</h2>
+    <div class="slds-box" style="{!(v.warning ? 'margin-top:10px;margin-bottom:10px;border:1px solid red' : 'margin-top:10px;margin-bottom:10px;')}">
+        <fieldset class="slds-form-element slds-is-required">
+            <div class="slds-form-element__control">
+                <div class="slds-checkbox">
+                    <abbr class="slds-required" title="required">*</abbr>
+                    <input type="checkbox" aura:id="checkbox1" id="checkbox-unique-id-90" value="checkbox-unique-id-90" onchange="{!c.handleChange1}"/>
+                    <label class="slds-checkbox__label" for="checkbox-unique-id-90">
+                        <span class="slds-checkbox_faux"></span>
+                        <span style="font-size:14px" for="terms"> {!$Label.c.B2BStore_I_have_read_and_agreed_to_the} <a href="{!$Resource.termsandcondition + v.termsAndCondition}" style="margin-left:4px" target="_blank"> <b>{!$Label.c.B2BStore_Terms_and_Conditions}.</b></a></span>
+                    </label>
+                </div>
+                <aura:if isTrue="{!notequals(v.AccountFromCart.ShippingCountry, 'United States')}">
+                    <div class="slds-checkbox">
+                        <abbr class="slds-required" title="required">*</abbr>
+                        <input type="checkbox" name="options" aura:id="checkbox2" id="checkbox-unique-id-91" onchange="{!c.handleChange2}"/>
+                        <label class="slds-checkbox__label" for="checkbox-unique-id-91">
+                            <span class="slds-checkbox_faux"></span>
+                            <span style="font-size:14px" for="terms"> {!$Label.c.B2BStore_I_acknowledge_that_the_payment_terms_are} <b><span style="margin-left:4px">{!v.paymentTerm}.</span></b></span>
+                        </label>
+                    </div>
+                </aura:if>
+                <aura:if isTrue="{!v.AccountFromCart.ShippingCountry == 'Canada' || v.AccountFromCart.ShippingCountry == 'United States'}">
+                    <div class="slds-checkbox">
+                        <abbr class="slds-required" title="required">*</abbr>
+                        <input type="checkbox" name="options" aura:id="checkbox3" id="checkbox-unique-id-92" onchange="{!c.handleChange3}"/>
+                        <label class="slds-checkbox__label" for="checkbox-unique-id-92">
+                            <span class="slds-checkbox_faux"></span>
+                            <span style="font-size:14px" for="terms">{!$Label.c.B2BStore_I_acknowledge_that_the_purchase_of_additional_IOT_devices}.</span>
+                        </label>
+                    </div>
+                </aura:if>
+                
+            </div>
+        </fieldset>
+    </div>
+    <!--<div style="display:flex">
+        <h2 class="slds-p-around_x-small slds-text-title_caps">{!$Label.c.B2BStore_PAYMENT_METHOD}</h2>
+    </div>-->
+    <div class="slds-box" style="margin-top:10px;margin-bottom:10px">
+        <div class="row">
+            <div style="position:relative; display:flex">
+                <p>{!$Label.c.B2BStore_Enter_a_PO_number}</p>
+                <button class="slds-button slds-button_icon slds-button slds-button_icon" style="top: -7px; margin-left: 7px" aria-describedby="help" aria-disabled="true" title="Help">
+                    <lightning:icon iconName="utility:info" alternativeText="Info!" title="Info" />
+                    <span class="slds-assistive-text">Help</span>
+                </button>
+                <div class="slds-popover slds-popover_tooltip slds-nubbin_bottom-left slds-hide" role="tooltip" id="help" style="position: absolute;bottom: 42px;width: 500px; left:107px">
+                    <div class="slds-popover__body">{!$Label.c.B2BStore_Adding_a_purchase_order_number}.</div>
+                </div>
+            </div>
+            <lightning:input style="margin-top: -20px" name="input1" value="{!v.poNumber}"/>
+        </div>
+    </div>
+    <div>
+        <div class="slds-card__footer slds-p-vertical_x-small noPadRight">
+            <aura:if isTrue="{!v.AccountFromCart.ShippingCountry == 'United States'}">
+                <!-- <lightning:button class="{!or(or(not(v.valueCheckbox2),not(v.valueCheckbox1)),not(v.valueCheckbox3)) ? 
+                                         'slds-button slds-button_brand enabled' : 'slds-button slds-button_brand disabled'}" aura:id="NEXT" label="{!$Label.c.B2BStore_GoToPayment}" onclick="{!c.onButtonPressed}" /> -->
+                <lightning:button class="{!or(not(v.valueCheckbox1),not(v.valueCheckbox3)) ? 
+                                            'slds-button slds-button_brand enabled' : 'slds-button slds-button_brand disabled'}" aura:id="NEXT" label="{!$Label.c.B2BStore_GoToPayment}" onclick="{!c.onButtonPressed}" />
+                <aura:set attribute="else">
+                    <lightning:button class="{!or(or(not(v.valueCheckbox2),not(v.valueCheckbox1)),not(v.valueCheckbox3)) ? 
+                                             'slds-button slds-button_brand enabled' : 'slds-button slds-button_brand disabled'}" aura:id="NEXT" label="{!$Label.c.B2BStore_Place_my_order}" onclick="{!c.onButtonPressed}" />                </aura:set>
+            </aura:if>
+        </div>
+    </div>
+
+</aura:component>

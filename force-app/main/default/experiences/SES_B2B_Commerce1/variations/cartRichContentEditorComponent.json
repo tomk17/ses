@@ -1,0 +1,13 @@
+{
+  "componentVariants" : [ {
+    "id" : "44073f2f-1edf-4a51-bf4a-fe15b2c7ba01",
+    "propertyOverrides" : {
+      "isVisible" : true
+    },
+    "targetId" : "6d0eb63b-1085-48c0-95d2-d0db8845a8dc",
+    "type" : "componentVariant"
+  } ],
+  "developerName" : "Cart_Rich_Content_Editor_Component",
+  "id" : "bf5bf2dd-7d35-4e1a-9763-1bf120b0cc0a",
+  "type" : "experienceVariation"
+}

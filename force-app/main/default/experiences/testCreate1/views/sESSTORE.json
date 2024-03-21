@@ -1,0 +1,38 @@
+{
+  "appPageId" : "96e97e94-6f8c-4ac5-bdd3-56b4ba07e990",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "dataProviders" : [ ],
+  "id" : "f3e1be28-d5de-416b-aef1-4ca6e0473bcb",
+  "label" : "SES STORE",
+  "regions" : [ {
+    "id" : "850c3415-0b5d-4024-bf92-68bb7a47b95d",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "id" : "72a16e71-2268-403b-bc13-8c8a0fa1ef0a",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "c9668763-d2b3-40c7-a2c8-2c5a99025af9",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "SES STORE"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "20e74020-7041-4b9a-8c05-50a6adea1eb2",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "87549f25-f9fc-4550-ad74-f63716e791c0",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "custom-ses-store"
+}

@@ -1,0 +1,72 @@
+{
+  "appPageId" : "0f39f530-1371-40d3-9005-f22e4fda9f38",
+  "componentName" : "siteforce:sldsTwoCol48Layout",
+  "dataProviders" : [ ],
+  "id" : "41099ded-449f-4cc0-b9be-a0fca5c16fd6",
+  "label" : "Order Summary List",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "richTextValue" : "<div style=\"height:45px;background: #f4f4f4;\"></div>"
+      },
+      "componentName" : "forceCommunity:htmlBlock",
+      "id" : "de7c807a-2dfd-4260-8105-7bf11218cdc9",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "101ea2ed-2f97-4bea-af1c-ea8cb41e5b08",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "enableInlineEdit" : false,
+        "filterName" : "{!filterId}",
+        "layout" : "FULL",
+        "pageSize" : 25,
+        "scope" : "{!objectName}",
+        "showActionBar" : false,
+        "showChartsPanel" : false,
+        "showDisplay" : "showall",
+        "showFilterPanel" : false,
+        "showImageIcon" : false,
+        "showManualRefreshButton" : false,
+        "showObjectName" : false,
+        "showPinnedList" : true,
+        "showSearchBar" : false
+      },
+      "componentName" : "forceCommunity:objectHome",
+      "id" : "dc3c068a-054f-4115-9484-943123b2c9ab",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "1fc684a9-4703-49df-a312-1a8ad9392284",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "8488e035-88b7-45c4-a38f-b3ec559f1217",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "debugMode" : false,
+        "isPageOrder" : true,
+        "isPageUserProfile" : false
+      },
+      "componentName" : "c:b2bCustomerLeftMenu",
+      "id" : "7aceabea-74b7-4761-b219-3b70bc67de5f",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "3b5eff23-c17f-4570-8217-4ac2cde09ae5",
+    "regionName" : "sidebar",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "list-1Os"
+}

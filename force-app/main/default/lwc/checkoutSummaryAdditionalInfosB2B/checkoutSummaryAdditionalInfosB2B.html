@@ -1,0 +1,157 @@
+<template>
+        <template lwc:if={contentReady}>
+            <div class="summary-details checkout-step-component">
+            <!--<h2 class="slds-p-around_x-small slds-text-title_caps">{label.shippingContact}</h2>-->
+                <div class="slds-box inheritPadding">
+                        <div class="slds-grid slds-wrap">
+                            <div class="changePadding slds-size_1-of-2 slds-p-horizontal_medium" style="border-right: 1px solid #D4D4D4">
+                                <p><b>{label.selectedContact} : </b></p>
+                                <template lwc:if={email}>
+                                    <p>{email}</p>
+                                </template>
+                                <template lwc:else>
+                                    <p>{label.noEmail}</p>
+                                </template> 
+                            </div>
+                            <div class="changePadding slds-size_1-of-2 slds-p-horizontal_medium">
+                                <p style="margin-left:15px"><b>{label.additionalEmailAddress} : </b></p>
+                                <template lwc:if={optionalEmail}>
+                                    <p style="margin-left:15px">{optionalEmail}</p>
+                                </template>
+                                <template lwc:else>
+                                    <p style="margin-left:15px">{label.noEmail}</p>
+                                </template>
+                            </div>
+                        </div>
+
+                </div>
+                <template lwc:if={products}>
+                    <table class="summary-details-product-table slds-table slds-table_cell-buffer slds-no-row-hover slds-table_bordered" aria-labelledby="element-with-table-label other-element-with-table-label">
+                        <thead>
+                            <tr class="slds-line-height_reset">
+                                <th class="backgroundTH begin" style="width:58%" scope="col">
+                                    <div class="slds-truncate" title="Opportunity Name">{label.productName}</div>
+                                </th>
+                                <th class="backgroundTH middle" style="width:90px" scope="col">
+                                    <div class="slds-truncate" title="Account Name">{label.quantity}</div>
+                                </th>
+                                <th class="backgroundTH middle" style="width:240px" scope="col">
+                                    <div class="slds-truncate" title="Account Name">{label.availablity}</div>
+                                </th>
+                                <th class="backgroundTH end" style="width:90px" scope="col">
+                                    <div class="slds-truncate" title="Close Date">{label.price}</div>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <template for:each={products} for:item="product">
+                                <tr key={product.Product2Id} class="slds-hint-parent">
+                                    <th data-label="Opportunity Name" scope="row" class="begin" style="overflow:hidden">
+                                        <div class="slds-truncate" title="name">{product.Product2.Name}</div>
+                                    </th>
+                                    <td data-label="Account Name">
+                                        <div class="slds-truncate" title="quantity">{product.Quantity}</div>
+                                    </td>
+                                    <td data-label="Account Name">
+                                        <template lwc:if={product.isReplenishment}>
+                                            <p>{label.atp1}<br/>
+                                            <span style="font-style: italic;color: #b9b8b8d4;">{label.atp2}</span>
+                                            </p>
+                                        </template>
+                                        <template lwc:if={product.isInStock}>
+                                            <p>{label.atp3}<br/>
+                                                <span style="font-style: italic;color: #b9b8b8d4;">{label.atp4}</span>
+                                            </p>
+                                        </template>
+                                        <template lwc:if={product.isUndefinedStock}>
+                                            <p>{label.atp5}<br/></p>
+                                        </template>
+                                    </td>
+                                    <td data-label="Close Date" class="end">
+                                        <lightning-formatted-number value={product.TotalPrice} format-style="currency" currency-code={currency} currency-display-as="symbol"></lightning-formatted-number>
+                                    </td>
+                                </tr>
+                            </template>
+                        </tbody>
+                    </table>
+                </template>
+                
+                <template lwc:if={softwares}>
+                    <table class="summary-details-product-table slds-table slds-table_cell-buffer slds-no-row-hover slds-table_bordered" aria-labelledby="element-with-table-label other-element-with-table-label">
+                        <thead>
+                            <tr class="slds-line-height_reset">
+                                <th class="backgroundTH begin" style="width:70%" scope="col">
+                                    <div class="slds-truncate" title="Opportunity Name">{label.software}</div>
+                                </th>
+                                <th class="backgroundTH middle" scope="col">
+                                    <div class="slds-truncate" title="Account Name">{label.quantity}</div>
+                                </th>
+                                <th class="backgroundTH end" scope="col">
+                                    <div class="slds-truncate" title="Close Date">{label.monthlyfee}</div>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <template for:each={softwares} for:item="software">
+                                <tr class="slds-hint-parent" key={software.Id}>
+                                    <th data-label="Opportunity Name" scope="row" class="begin" style="overflow:hidden">
+                                        <div class="slds-truncate" title="name">{software.Product2.Name}</div>
+                                    </th>
+                                    <td data-label="Account Name">
+                                        <div class="slds-truncate" title="quantity">{software.Quantity}</div>
+                                    </td>
+                                    <td data-label="Close Date" class="end">
+                                        <lightning-formatted-number value={software.TotalPrice} format-style="currency" currency-code={currency} currency-display-as="symbol"></lightning-formatted-number>
+                                    </td>
+                                </tr>
+                            </template>
+                        </tbody>
+                    </table>
+                </template>
+                
+                <div class="slds-box inheritPadding" style="margin-bottom:15px">
+                    <div class="slds-text-body_regular row body" style="margin-bottom:12px;font-weight:700">
+                        {label.deliveryMethod}
+                    </div>
+                    <div class="slds-text-body_regular row body">
+                        {label.standardMethod}
+                    </div>
+                </div>
+                <c-checkout-summary-b2-b-totals 
+                    cart-id={cartId}
+                ></c-checkout-summary-b2-b-totals>
+            </div>
+            <template lwc:if={needPayment}>
+                <div class="payment-container">
+                    <h2 class="slds-accordion__summary-heading slds-text-heading_medium">4. Paiement</h2>
+                </div>
+                <c-payment-method-b2-b
+                    cart-id={cartId}
+                    hidePurchaseOrder="false"
+                    hideCreditCard="false"
+                    poRequired="false"
+                    selectedPaymentType="CardPayment"
+                    hideBillingAddress="true"
+                    billingAddressRequired="false"
+                    cardHolderNameRequired="false"
+                    cardHolderLastNameRequired="false"
+                    cardTypeRequired="false"
+                    cvvRequired="false"
+                    expiryMonthRequired="false"
+                    expiryYearRequired="false"
+                    hideCardHolderName="false"
+                    hideCardHolderLastName="false"
+                    hideCardType="false"
+                    hideCvv="false"
+                    hideExpiryMonth="false"
+                    hideExpiryYear="false"
+                ></c-payment-method-b2-b>
+            </template>
+    </template>
+        <template lwc:else>
+            <div class="spinner">
+                <lightning-spinner alternative-text="Loading" size="medium"></lightning-spinner>
+            </div>
+        </template>
+
+</template>

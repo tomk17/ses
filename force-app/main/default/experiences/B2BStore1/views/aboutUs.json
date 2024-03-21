@@ -1,0 +1,394 @@
+{
+  "appPageId" : "0f39f530-1371-40d3-9005-f22e4fda9f38",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "dataProviders" : [ ],
+  "id" : "ce6c11df-85bc-4a3e-9c72-95f97ce4e3c7",
+  "label" : "About Us",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "richTextValue" : "<div class=\"slds-grid slds-wrap slds-gutters_x-small slds-grid_align-center slds-grid_vertical-align-center\">\n\t<div class=\"slds-col slds-size_1-of-1 slds-align_absolute-center\"\n\t\t\t style=\"background-color: white;height:30vw; max-height:519px;\">\n        \t<img src=\"/Hero_AboutUs.png\" alt=\"About Us\" style=\"width:100%;height:100%;\">\n\t</div>\n    <div class=\"slds-col slds-size_1-of-1\"\n         style=\"margin-top:max(-15vw,-255px);\">\n\t\t<div class=\"slds-grid slds-wrap slds-gutters_x-small slds-grid_align-center slds-grid_vertical-align-center\">\n            <div class=\"slds-col slds-size_1-of-5 slds-p-vertical_medium\">\n            </div>\n            <div class=\"slds-col slds-size_3-of-5 slds-p-vertical_large slds-grid_vertical-align-center\">\n                <div class=\"slds-p-vertical_large slds-grid_vertical-align-center\"\n                     style=\"position: relative;\n                            background-color: #f4f4f4;\n                            padding: 4vw;\n                            padding-bottom:min(2vw,52px);\n                            text-align: center;\n                            border-radius:20px;\n                            max-width: 1110px;\n                            height:440px;\">\n                    <h1 style=\"color: black;font-size:min(2.5vw, 43px);\">It starts with you.</h1>\n                    <p style=\"padding-top: 3vw;\n                              color: black;\n                              font-size:min(1.6vw, 28px);\n                              width: 75%;\n                              text-align: center;\n                              margin: auto;\">SES-imagotag was established to invent smarter ways to run a retail store. Thanks to our customers and partners we’ve become a trusted name in retail for over 25 years.</p>\n                </div>\n            </div>\n            <div class=\"slds-col slds-size_1-of-5 slds-p-vertical_medium\">                \n            </div>\n        </div>\n    </div>\n</div>"
+      },
+      "componentName" : "forceCommunity:htmlBlock",
+      "id" : "6d7f60f9-aef6-488e-b4b6-e41387475112",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "33d1351b-172c-4cce-973c-1a6c9d6b2c6b",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "richTextValue" : "<div style=\"height:6.5vw;\">\n</div>"
+      },
+      "componentName" : "forceCommunity:htmlBlock",
+      "id" : "82d5bfb6-0e31-4245-80c5-4709f7594d0f",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "richTextValue" : "<h1 style=\"color: black; font-size:min(2.5vw, 43px);text-align: center\">We help all sizes of business, all over the globe</h1>\n<div style=\"height:1vw;\">\n</div>\n<p style=\"color:black;\n          font-size:min(1.6vw, 28px);\n          text-align:center;\n          width: 50%;\n          margin: auto;\">We're proud to work with over 200 retailers and 20.000 stores worldwide to offer technology that benefits both retailers and shoppers.</p>"
+      },
+      "componentName" : "forceCommunity:htmlBlock",
+      "id" : "277398d7-3e69-4470-b8a1-c6933003517a",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "richTextValue" : "<div style=\"height:3vw;\">\n</div>"
+      },
+      "componentName" : "forceCommunity:htmlBlock",
+      "id" : "88f31b31-7f55-4676-8a93-69929db41c13",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "config" : {
+          "contentItemContentKey" : "MCPDWHMTP7PNBJXNXGHPI3ZLEVI4",
+          "layoutDefinition" : {
+            "attributes" : {
+              "additionalLinks" : "{}",
+              "backgroundPosition" : "center center",
+              "backgroundSize" : "contain",
+              "bannerAspectRatio" : "16:9",
+              "bannerHeight" : "300",
+              "bannerSubTitleTextColor" : "#ffffff",
+              "bannerTitleTextColor" : "#ffffff",
+              "callToActionButtonBackgroundColor" : "",
+              "callToActionButtonBackgroundColorHover" : "",
+              "callToActionButtonBorderColor" : "",
+              "callToActionButtonBorderColorHover" : "",
+              "callToActionButtonBorderStyles" : "",
+              "callToActionButtonTextColor" : "",
+              "callToActionButtonTextColorHover" : "",
+              "callToActionLabel" : "View",
+              "componentHoverEffect" : "none",
+              "contentWidth" : "72",
+              "dateFormat" : "none",
+              "datetime" : "",
+              "datetimeFontSize" : "regular",
+              "datetimeTextColor" : "#ffffff",
+              "datetimeTextDecoration" : "",
+              "defaultLinksOverrides" : "{}",
+              "displayDayOfWeek" : false,
+              "eyebrowFontSize" : "regular",
+              "eyebrowHighlightColor" : "",
+              "eyebrowText" : "",
+              "eyebrowTextColor" : "#ffffff",
+              "eyebrowTextDecoration" : "",
+              "flagAlignment" : "top left",
+              "flagBackgroundColor" : "#ff0000",
+              "flagBorderColor" : "#ffffff",
+              "flagBorderStyles" : "{\"borderTopLeftRadius\":{\"value\":\"0\"},\"borderTopRightRadius\":{\"value\":\"0\"},\"borderBottomRightRadius\":{\"value\":\"0\"},\"borderBottomLeftRadius\":{\"value\":\"0\"}}",
+              "flagRotation" : 0,
+              "flagSpacing" : "medium",
+              "flagText" : "",
+              "flagTextColor" : "#ffffff",
+              "flagTextDecoration" : "",
+              "hideTextElementsForVideo" : false,
+              "imageAltText" : "{!CurrentItem.source.url}",
+              "imageUrl" : "{!CurrentItem.source.url}",
+              "metadata1HighlightColor" : "",
+              "metadata1Text" : "",
+              "metadata2HighlightColor" : "",
+              "metadata2Text" : "",
+              "metadataFontSize" : "regular",
+              "metadataTextColor" : "#ffffff",
+              "metadataTextDecoration" : "",
+              "overlayBackgroundColor" : "rgba(0, 0, 0, 0)",
+              "showButton" : false,
+              "showCaption" : false,
+              "showDateTime" : false,
+              "showEyebrow" : false,
+              "showEyebrowHighlight" : false,
+              "showFlag" : false,
+              "showMetadata1" : false,
+              "showMetadata1Highlight" : false,
+              "showMetadata2" : false,
+              "showMetadata2Highlight" : false,
+              "showTitle" : false,
+              "showTitleHighlight" : false,
+              "subTitle" : "",
+              "subTitleFontSize" : "regular",
+              "textAlignment" : "center center",
+              "timeFormat" : "none",
+              "timeZoneDisplay" : "short",
+              "timeZoneOptions" : "none",
+              "title" : "",
+              "titleFontSize" : "large",
+              "titleHeadingTag" : "p",
+              "titleHighlightColor" : "",
+              "titleTextDecoration" : "",
+              "useAspectRatio" : false,
+              "videoUrl" : ""
+            },
+            "componentName" : "forceCommunity:bannerLayout"
+          },
+          "schemaVersion" : "V2.0"
+        }
+      },
+      "componentName" : "forceCommunity:managedContent",
+      "id" : "06dbf453-f383-47c5-906a-5778dd8c8cff",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "richTextValue" : "<div style=\"height:3vw;\">\n</div>"
+      },
+      "componentName" : "forceCommunity:htmlBlock",
+      "id" : "626f3d2d-b870-4679-9a8e-7d722ec379a8",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "richTextValue" : "<p style=\"color:black;\n          font-size:min(1.6vw, 28px);\n          text-align:center;\n          width: 50%;\n          margin: auto;\">With more than 200 retailers and 20,000 stores, SES-imagotag is the global n°1 Electronic Shelf Labels company.</p>"
+      },
+      "componentName" : "forceCommunity:htmlBlock",
+      "id" : "845ed016-30c1-4cb8-a1cb-752d5bd2a401",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "richTextValue" : "<div style=\"height:6.5vw;\">\n</div>"
+      },
+      "componentName" : "forceCommunity:htmlBlock",
+      "id" : "e7224d82-a56e-43a8-a654-6b976a7fc5bb",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "richTextValue" : "<div class=\"slds-grid slds-wrap slds-grid_align-center slds-grid_vertical-align-center\">\t\t\n\t<div class=\"slds-col slds-align_absolute-center\">\n\t\t<div style=\"position:relative;\n                    width:80vw;\n                    max-width:1335px;\n                    height:40vw;\n                    max-height:678px;\">\n\t\t\t\n            <div style=\"position:absolute;\n                        left:0vw;\n                        width:40vw;\n                        max-width:678px;\n                        z-index:-1;\">\n                <img src=\"/OurPromise.png\" alt=\"Our Promise\"\n                       style=\"border-radius: 20px; \n                              width:100%;\n                              box-shadow: 1px 1px 5px rgb(0 0 0 / 25%);\">\n            </div>\n            \n            <div style=\"position:absolute;\n                        left:44%;\n                        top:25%;\n                        width:45vw;\n                        max-width:764px;\n                        height:30vw;\n                        max-height:520px;\">                \n                <div class=\"slds-grid slds-wrap slds-gutters_x-small slds-grid_align-center slds-grid_vertical-align-center\"\n\t\t\t\t\tstyle=\"background-color: #f4f4f4;\n\t\t\t\t\t\theight: 100%; \n\t\t\t\t\t\twidth: 100%;      \t\t\t\t\n\t\t\t\t\t\ttext-align: left;\n\t\t\t\t\t\tborder-radius:20px;\n\t\t\t\t\t\tpadding:3vw;\n\t\t\t\t\t\tbox-shadow: 1px 1px 5px rgb(0 0 0 / 25%);\">\n\t\t\t\t\t<div class=\"slds-col slds-size_1-of-1 slds-grid_align-left\">\n\t\t\t\t\t\t<h1 style=\"color: black; font-size:min(2.5vw, 43px);\">Our promise</h1>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class=\"slds-col slds-size_1-of-1 slds-grid_align-left\">\n\t\t\t\t\t\t<p style=\"padding-top: min(2vw, 68px);\n\t\t\t\t\t\t\t  color: black;\n\t\t\t\t\t\t\t  font-size:min(1.6vw, 28px);\">We're here to support your business with reliable, secure and painless store labeling solutions that you can depend on. We will work hard to earn and keep your trust by providing best in-class support and product innovation for small business retail.</p>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n                          \n            </div>\n            \n        </div>\n\t</div>\n</div>"
+      },
+      "componentName" : "forceCommunity:htmlBlock",
+      "id" : "352e298e-929d-4a92-8a73-f08637905c49",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "richTextValue" : "<div style=\"height:6.5vw;\">\n</div>"
+      },
+      "componentName" : "forceCommunity:htmlBlock",
+      "id" : "e53a7160-3355-46cd-8a88-b1bd40703065",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "richTextValue" : "<div style=\"background-color: white; height: 30vw; text-align: center\">\n    <h1 style=\"padding-right: 6vw; padding-left: 6vw; padding-top: 3vw; color: black; font-size:min(2.5vw, 43px);\">What numbers say about us?</h1>\n            \n\t<span style=\"display: inline-flex; align:center;\">\n        <span class=\"column\"; style=\"display: inline; width: 30%; margin: 3vw;\" >\n            <img src=\"/Countries.png\" alt=\"61 Countries\" style=\"width:5.5vw; max-width:94px; margin: 2.5vw\"/>\n            <span><h3 style=\"color:black; font-size: min(1.8vw, 36px);\">61</h3></span>\n            <span style=\"color:black; font-size: min(1.6vw, 32px);\">Countries</span>\n        </span>\n        <span class=\"column\"; style=\"display: inline; width: 30%; margin: 3vw;\" >\n            <img src=\"/Worldwideoffices.png\" alt=\"13 Worldwide Offices\" style=\"width:5.5vw; max-width:94px; margin: 2.5vw\"/>\n            <span><h3 style=\"color:black; font-size: min(1.8vw, 36px)\">13</h3></span>\n            <span style=\"color:black; font-size: min(1.6vw, 32px);\">Wordwide Offices</span>\n        </span>\n        <span class=\"column\"; style=\"display: inline; width: 30%; margin: 3vw;\" >\n            <img src=\"/Shops.png\" alt=\"17.000 Stores\" style=\"width:5.5vw; max-width:94px; margin: 2.5vw\"/>\n            <span><h3 style=\"color:black; font-size: min(1.8vw, 36px)\">17.000</h3></span>\n            <span style=\"color:black; font-size: min(1.6vw, 32px);\">Stores</span>\n        </span>\n        <span class=\"column\"; style=\"display: inline; width: 30%; margin: 3vw;\" >\n            <img src=\"/ESLs.png\" alt=\"160 M ESLs\" style=\"width:5.5vw; max-width:94px; margin: 2.5vw\"/>\n            <span><h3 style=\"color:black; font-size: min(1.8vw, 36px);\">60 M</h3></span>\n        \t<span style=\"color:black; font-size: min(1.6vw, 32px);\">ESLs</span>\n\t\t</span>\n    </span>\n</div>"
+      },
+      "componentName" : "forceCommunity:htmlBlock",
+      "id" : "ffc36d74-137b-415b-9025-cfbbab8cb81e",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "richTextValue" : "<div style=\"height:6.5vw;\">\n</div>"
+      },
+      "componentName" : "forceCommunity:htmlBlock",
+      "id" : "324b1388-4a73-43ed-be07-7a70d8e0a0e8",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "richTextValue" : "<h1 style=\"color: black; font-size:min(2.5vw, 43px);text-align: center\">What our clients have to say</h1>\n<div style=\"height:1vw;\">\n</div>\n<p style=\"color:black; font-size:min(1.6vw, 28px); text-align:center\">Don't take our word for it. Hear what our Customers say.</p>"
+      },
+      "componentName" : "forceCommunity:htmlBlock",
+      "id" : "d87751ed-037a-4a6c-8f6a-e1f432cc8cac",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "richTextValue" : "<div align=\"center\">\n<iframe width=\"1000\"\n        height=\"500\"\n        src=\"https://www.youtube.com/embed/PKUYeOjxjG0\"\n        style=\"border-radius:25px;\n               border:none;\n               box-shadow:1px 1px 5px rgb(0 0 0 / 25%);\"></iframe>\n</div>"
+      },
+      "componentName" : "forceCommunity:htmlBlock",
+      "id" : "9d9c0450-53c1-45b5-83d7-0dbb02a6393f",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "richTextValue" : "<div style=\"height:6.5vw;\">\n</div>"
+      },
+      "componentName" : "forceCommunity:htmlBlock",
+      "id" : "85ac01c8-a7a7-4177-8260-ec88c1b16450",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "richTextValue" : "<h1 style=\"color: black; font-size:min(2.5vw, 43px);text-align: center\">You're in good company</h1>"
+      },
+      "componentName" : "forceCommunity:htmlBlock",
+      "id" : "95a2f35a-08c5-46f5-9681-b797188cb3b4",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "richTextValue" : "<div style=\"height:2vw;\">\n</div>"
+      },
+      "componentName" : "forceCommunity:htmlBlock",
+      "id" : "f765a634-bafe-4422-8d53-aa519f2c62f1",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "config" : {
+          "collectionLayoutDefinition" : {
+            "attributes" : {
+              "contentIndicatorSpacing" : "none",
+              "limitItems" : 5,
+              "showProgressArrows" : true,
+              "showProgressIndicator" : false,
+              "transitionSpeed" : 600,
+              "transitionType" : "slide"
+            },
+            "componentName" : "forceCommunity:dynamicCollectionCarousel"
+          },
+          "dataProviderDefinition" : {
+            "attributes" : {
+              "dataProviderInfo" : {
+                "apiName" : "Testimonials_About_us"
+              },
+              "dataProviderType" : "NamedCollection"
+            },
+            "componentName" : "forceCommunity:managedContentCollectionDataProvider"
+          },
+          "itemLayoutDefinition" : {
+            "attributes" : {
+              "additionalLinks" : "{}",
+              "backgroundPosition" : "center center",
+              "backgroundSize" : "contain",
+              "bannerAspectRatio" : "16:9",
+              "bannerHeight" : "200",
+              "bannerSubTitleTextColor" : "#ffffff",
+              "bannerTitleTextColor" : "#ffffff",
+              "callToActionButtonBackgroundColor" : "",
+              "callToActionButtonBackgroundColorHover" : "",
+              "callToActionButtonBorderColor" : "",
+              "callToActionButtonBorderColorHover" : "",
+              "callToActionButtonBorderStyles" : "",
+              "callToActionButtonTextColor" : "",
+              "callToActionButtonTextColorHover" : "",
+              "callToActionLabel" : "View",
+              "componentHoverEffect" : "none",
+              "contentWidth" : "26",
+              "dateFormat" : "none",
+              "datetime" : "",
+              "datetimeFontSize" : "regular",
+              "datetimeTextColor" : "#ffffff",
+              "datetimeTextDecoration" : "",
+              "defaultLinksOverrides" : "{}",
+              "displayDayOfWeek" : false,
+              "eyebrowFontSize" : "regular",
+              "eyebrowHighlightColor" : "",
+              "eyebrowText" : "",
+              "eyebrowTextColor" : "#ffffff",
+              "eyebrowTextDecoration" : "",
+              "flagAlignment" : "top left",
+              "flagBackgroundColor" : "#ff0000",
+              "flagBorderColor" : "#ffffff",
+              "flagBorderStyles" : "{\"borderTopLeftRadius\":{\"value\":\"0\"},\"borderTopRightRadius\":{\"value\":\"0\"},\"borderBottomRightRadius\":{\"value\":\"0\"},\"borderBottomLeftRadius\":{\"value\":\"0\"}}",
+              "flagRotation" : 0,
+              "flagSpacing" : "medium",
+              "flagText" : "",
+              "flagTextColor" : "#ffffff",
+              "flagTextDecoration" : "",
+              "hideTextElementsForVideo" : false,
+              "imageAltText" : "",
+              "imageUrl" : "{!CurrentItem.source.url}",
+              "metadata1HighlightColor" : "",
+              "metadata1Text" : "",
+              "metadata2HighlightColor" : "",
+              "metadata2Text" : "",
+              "metadataFontSize" : "regular",
+              "metadataTextColor" : "#ffffff",
+              "metadataTextDecoration" : "",
+              "overlayBackgroundColor" : "rgba(0, 0, 0, 0)",
+              "showButton" : false,
+              "showCaption" : false,
+              "showDateTime" : false,
+              "showEyebrow" : false,
+              "showEyebrowHighlight" : false,
+              "showFlag" : false,
+              "showMetadata1" : false,
+              "showMetadata1Highlight" : false,
+              "showMetadata2" : false,
+              "showMetadata2Highlight" : false,
+              "showTitle" : false,
+              "showTitleHighlight" : false,
+              "subTitle" : "",
+              "subTitleFontSize" : "regular",
+              "textAlignment" : "center center",
+              "timeFormat" : "none",
+              "timeZoneDisplay" : "short",
+              "timeZoneOptions" : "none",
+              "title" : "",
+              "titleFontSize" : "large",
+              "titleHeadingTag" : "p",
+              "titleHighlightColor" : "",
+              "titleTextDecoration" : "",
+              "useAspectRatio" : false,
+              "videoUrl" : ""
+            },
+            "componentName" : "forceCommunity:bannerLayout"
+          },
+          "schemaVersion" : "V2.0"
+        }
+      },
+      "componentName" : "forceCommunity:dynamicCollection",
+      "id" : "352a8331-0e6b-41a7-955a-a39650ae08d8",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "richTextValue" : "<div style=\"height:6.5vw;\">\n</div>"
+      },
+      "componentName" : "forceCommunity:htmlBlock",
+      "id" : "fcdb4927-15a9-483e-a52a-683abc13c121",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "161e697e-8d75-4cf8-9d31-65e68801f3a7",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "7d892e4e-ed71-442a-902c-7b9380caa478",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "About Us"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "323f95b8-c509-44c4-b37b-30c2c1d517a5",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "05ddb0fc-eb79-43ae-9ba1-96ffa2de4aca",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "custom-about-us"
+}

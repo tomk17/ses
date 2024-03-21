@@ -1,0 +1,5 @@
+<design:component>
+    <design:attribute name="AccountFromCart" label="Account from Cart" />
+    <design:attribute name="languageFromUser" label="Language from User" />
+    <design:attribute name="poNumber" label="PO Number" />
+</design:component>

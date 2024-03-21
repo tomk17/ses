@@ -1,0 +1,65 @@
+{
+  "appPageId" : "0f39f530-1371-40d3-9005-f22e4fda9f38",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "dataProviders" : [ ],
+  "id" : "559beaa5-d237-408b-a459-067fa6c6f5d0",
+  "label" : "Search Results",
+  "regions" : [ {
+    "id" : "230ce683-637a-4a68-b4fe-06bcd10db163",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "addToCartButtonBackgroundColor" : "",
+        "addToCartButtonBackgroundHoverColor" : "",
+        "addToCartButtonBorderColor" : "",
+        "addToCartButtonBorderRadius" : "0",
+        "addToCartButtonText" : "ADD TO CART",
+        "addToCartButtonTextColor" : "",
+        "addToCartButtonTextHoverColor" : "",
+        "breadcrumbsColor" : "",
+        "breadcrumbsFontSize" : "small",
+        "cardAlignment" : "center",
+        "cardBackgroundColor" : "",
+        "cardBorderColor" : "rgba(255, 255, 255, 0)",
+        "cardBorderRadius" : "0",
+        "cardContentMapping" : "[{\"name\":\"Name\",\"showLabel\":false,\"label\":\"Product Name\",\"displayName\":\"Product Name\",\"type\":\"STRING\",\"fontSize\":\"medium\",\"fontColor\":\"rgba(0, 0, 0, 0.8)\"},{\"name\":\"VariationAttributes\",\"showLabel\":false,\"label\":\"Variation Attributes\",\"displayName\":\"More options available\",\"type\":\"VARIATION\",\"fontSize\":\"medium\",\"fontColor\":\"rgba(0, 0, 0, 0.8)\"}]",
+        "cardDividerColor" : "rgb(221, 219, 218)",
+        "gridColumnSpacing" : "small",
+        "gridMaxColumnsDisplayed" : "4",
+        "gridRowSpacing" : "large",
+        "listRowSpacing" : "small",
+        "negotiatedPriceTextColor" : "",
+        "negotiatedPriceTextSize" : "medium",
+        "originalPriceTextColor" : "",
+        "originalPriceTextSize" : "small",
+        "pageResultsType" : "searchResults",
+        "pageTitleFontColor" : "",
+        "pageTitleFontSize" : "large",
+        "resultsLayout" : "grid",
+        "showAddToCartButton" : true,
+        "showBreadCrumbs" : true,
+        "showNegotiatedPrice" : true,
+        "showOriginalPrice" : true,
+        "showProductImage" : true,
+        "viewOptionsButtonText" : "VIEW OPTIONS"
+      },
+      "componentName" : "b2b_search_builder:resultsDisplay",
+      "id" : "d438d5ef-17fd-472b-9dc7-7d94872c115f",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "060c996f-b529-4c38-ae36-4690ae6ed577",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "ef947f62-2c61-46cc-97b0-386a979784ff",
+    "regionName" : "footer",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "global-search"
+}

@@ -1,0 +1,47 @@
+.header{
+    height: 50px;
+    margin-bottom: 30px;
+    display: flex;
+}
+
+@font-face {
+    font-family: 'Maax_Regular';
+    src: url(/resource/Maax_Regular_205TF);
+}
+
+p {
+    font-family: 'Maax_Regular';
+}
+
+.step {
+    height: 100%;
+    /*width: 33.33%;*/
+    display: flex;
+    justify-content: center;
+    font-family: 'Maax regular';
+    align-items: center;
+    color: #a5a5a5;
+    font-size: 1.3em;
+}
+
+.currentStep {
+    color: black;
+    font-weight: 700;
+    position: relative;
+    font-size: 1.4em;
+    /*border: 2px solid black;
+    border-radius: 5px;*/
+}
+
+.currentStep:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: inline-block;
+    height: 2px;
+    width: 100%;
+    background: linear-gradient(45deg, #FF9646 0%, #FFD264 100%);
+    margin-top: 5px;
+    /*margin-left: 10%;*/
+}

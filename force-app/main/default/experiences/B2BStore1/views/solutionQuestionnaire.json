@@ -1,0 +1,48 @@
+{
+  "appPageId" : "0f39f530-1371-40d3-9005-f22e4fda9f38",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "dataProviders" : [ ],
+  "id" : "ea340038-f3b4-4cf9-a81b-d4cbf26fe959",
+  "label" : "Solution Questionnaire",
+  "regions" : [ {
+    "id" : "5726c7ad-118d-495e-a134-04b44d722601",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "debugMode" : false
+      },
+      "componentName" : "c:b2bSolutionQuestionnaire",
+      "id" : "65eb1e5f-d16d-4384-8deb-0eea517c72cb",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "4444a619-9327-47d6-a406-807b078a07c8",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "de6fb6fe-501b-4eab-b30a-d9fdfaba612d",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Solution Questionnaire"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "f686f199-df95-4ff8-b990-2eae3007d2cf",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "a8709e00-f078-47f7-ade4-f937487fd862",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "custom-solution-questionnaire"
+}

@@ -1,0 +1,19 @@
+{
+    "__metadata":{
+        "id":"https://SAP.SES-IMAGOTAG.COM:44300/sap/opu/odata/sap/ZC_CUSTOMERASSET_CDS/ZC_CUSTOMERASSET(SerialNumber='B2205210019',DeliveryNumber='80077063',ShipToNumber='BE0329462',Material='3448')",
+        "uri":"https://SAP.SES-IMAGOTAG.COM:44300/sap/opu/odata/sap/ZC_CUSTOMERASSET_CDS/ZC_CUSTOMERASSET(SerialNumber='B2205210019',DeliveryNumber='80077063',ShipToNumber='BE0329462',Material='3448')",
+        "type":"ZC_CUSTOMERASSET_CDS.ZC_CUSTOMERASSETType"
+    },
+    "SerialNumber":"B2205210019",
+    "DeliveryNumber":"80077063",
+    "ShipToNumber":"BE0329462",
+    "Material":"3448",
+    "ShipToName":"Carrefour Market KIELDRECHT",
+    "SalesOrder":"75147",
+    "MaterialDesc":"VUSION 2.2 BWR GL340 F/sw B/an",
+    "Quantity":"100",
+    "UoM":"/PC",
+    "WarrantyStartDate":"/Date(1654819200000)/",
+    "WarrantyEndDate":"/Date(1686355200000)/",
+    "NetValue":"2727.000"
+}

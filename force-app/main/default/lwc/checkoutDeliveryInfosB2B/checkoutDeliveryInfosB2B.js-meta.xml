@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>57.0</apiVersion>
+    <isExposed>true</isExposed>
+    <masterLabel>Checkout delivery infos (LWR)</masterLabel>
+    <targets>
+        <target>lightningCommunity__Page</target>
+        <target>lightningCommunity__Default</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightningCommunity__Default">
+            <property 
+                label="mode" 
+                name="componentMode" 
+                type="String" 
+                datasource="Shipping,Billing" 
+                default="Shipping"
+                description="select wether this component is used for shipping or billing process"/>
+            <property 
+                label="EN Trems and Conditions" 
+                name="enTermsAndConditionLink" 
+                type="String" 
+                default="/2022_General_Terms_and_Conditions_GLOBAL_EN_CLEAN.pdf"
+                description="Ressource url for English terms and conditions"/>
+            <property 
+                label="FR Trems and Conditions" 
+                name="frTermsAndConditionLink" 
+                type="String" 
+                default="/2022_General_Terms_and_Conditions_EUROPE_FR_CLEAN.pdf"
+                description="Ressource url for French terms and conditions"/>
+            <property 
+                label="CA-FR Trems and Conditions" 
+                name="caFrTermsAndConditionLink" 
+                default="/2020_General_Terms_and_Conditions__CANADA_FR_CLEAN.pdf"
+                type="String" 
+                description="Ressource url for Canadian French terms and conditions"/>
+            <property 
+                label="CA-EN Trems and Conditions" 
+                name="caEnTermsAndConditionLink" 
+                type="String" 
+                default="/2020_General_Terms_and_Conditions__Global_CANADA__EN_CLEAN.pdf"
+                description="Ressource url for Canadian English terms and conditions"/>
+            <property 
+                label="US Trems and Conditions" 
+                name="usTermsAndConditionLink" 
+                type="String" 
+                default="/2020_General_Terms_and_Conditions__Global_USA_CLEAN.pdf"
+                description="Ressource url for USA terms and conditions"/>
+            <property 
+                label="IT Trems and Conditions" 
+                name="itTermsAndConditionLink" 
+                type="String" 
+                default="/2022_General_Terms_and_Conditions_EUROPE_IT_CLEAN.pdf"
+                description="Ressource url for Italian terms and conditions"/>
+            <property 
+                label="DE Trems and Conditions" 
+                name="deTermsAndConditionLink" 
+                type="String" 
+                default="/2022_General_Terms_and_Conditions_EUROPE_DE_CLEAN.pdf"
+                description="Ressource url for German terms and conditions"/>
+        </targetConfig>
+
+    </targetConfigs>
+</LightningComponentBundle>

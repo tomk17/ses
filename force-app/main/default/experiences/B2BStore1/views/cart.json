@@ -1,0 +1,80 @@
+{
+  "appPageId" : "0f39f530-1371-40d3-9005-f22e4fda9f38",
+  "componentName" : "siteforce:sldsTwoCol84Layout",
+  "dataProviders" : [ ],
+  "id" : "18c71230-3471-4058-bea6-03edde54ca49",
+  "label" : "Cart",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "richTextValue" : "<p style=\"height:50px;\"></p>"
+      },
+      "componentName" : "forceCommunity:htmlBlock",
+      "id" : "0365ecf7-6e1d-432b-8f28-4fbc0a7896ff",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "66784732-e12d-429d-955d-95da84985ce1",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "effectiveAccountId" : "{!CurrentUser.effectiveAccountId}",
+        "recordId" : "{!recordId}"
+      },
+      "componentName" : "c:b2bCartContents",
+      "id" : "170be8d2-037d-4eea-9266-8ccaee97de90",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "3ea0730c-9394-4349-97d9-f50f52ceccef",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "backgroundColor" : "rgb(241, 241, 241)",
+        "finalPriceFontColor" : "",
+        "finalPriceFontSize" : "large",
+        "originalPriceFontColor" : "",
+        "originalPriceFontSize" : "small",
+        "showOriginalPrice" : true
+      },
+      "componentName" : "b2b_buyer_builder:cartSummary",
+      "id" : "243fb08a-c850-44dc-b5ba-65466590f3e4",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "buttonAlignment" : "left",
+        "buttonBgColor" : "rgb(240, 0, 0)",
+        "buttonBgHoverColor" : "rgb(240, 0, 0)",
+        "buttonBorderColor" : "rgb(240, 0, 0)",
+        "buttonMaxWidth" : "100",
+        "buttonRadius" : "50",
+        "buttonText" : "Proceed To Checkout",
+        "buttonTextColor" : "rgb(240, 240, 240)",
+        "buttonTextHoverColor" : ""
+      },
+      "componentName" : "b2b_buyer_builder:checkoutButtonWrapper",
+      "id" : "8c440d6e-fc7e-4577-8a60-cbd272776ff7",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "40682894-594b-4deb-80d0-8bdcd50a3d39",
+    "regionName" : "sidebar",
+    "type" : "region"
+  }, {
+    "id" : "d91bd0c3-9723-4a1e-9e87-1f5e7a23a750",
+    "regionName" : "footer",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "detail-0a6"
+}

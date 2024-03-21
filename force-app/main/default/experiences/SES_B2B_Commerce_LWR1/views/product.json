@@ -1,0 +1,311 @@
+{
+  "appPageId" : "420337f2-f879-4442-ac4d-7a772ca6fa6a",
+  "componentName" : "community_layout:sldsFlexibleLayout",
+  "dataProviders" : [ {
+    "componentName" : "commerce_data_provider:productDataProvider",
+    "componentAttributes" : {
+      "recordId" : "{!recordId}",
+      "sfdcExpressionKey" : "Product"
+    }
+  } ],
+  "id" : "985d26c9-d020-45cf-bddb-81cd04e114f9",
+  "label" : "Product",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "backgroundImageConfig" : "",
+        "backgroundImageOverlay" : "rgba(0,0,0,0)",
+        "sectionConfig" : "{\"UUID\":\"72f79b07-59b8-4c13-9d92-303daff45596\",\"columns\":[{\"UUID\":\"eb8e7a8a-b968-4040-a112-37078b5b88d4\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":null}]}"
+      },
+      "componentName" : "community_layout:section",
+      "id" : "72f79b07-59b8-4c13-9d92-303daff45596",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : {
+            "bannerName" : "bannerProductDetails.png"
+          },
+          "componentName" : "c:sesBannerB2BStore",
+          "id" : "5edb6de1-4bcb-43ea-8284-fb593bf54355",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "eb8e7a8a-b968-4040-a112-37078b5b88d4",
+        "regionLabel" : "Column 1",
+        "regionName" : "col1",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "scopedBrandingSetId" : null,
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "backgroundImageConfig" : "",
+        "backgroundImageOverlay" : "rgba(0,0,0,0)",
+        "sectionConfig" : "{\"UUID\":\"6c8ae3cb-3085-437a-a081-61d704bedfb7\",\"columns\":[{\"UUID\":\"3b60541a-7d0f-4887-9f2d-405b2ce4a58b\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"1\",\"seedComponents\":null},{\"UUID\":\"aa208a65-f1c1-4707-8269-51481d3bc52a\",\"columnName\":\"Column 2\",\"columnKey\":\"col2\",\"columnWidth\":\"4\",\"seedComponents\":null},{\"UUID\":\"69621079-9818-4cc2-a90f-ef305ba00417\",\"columnName\":\"Column 3\",\"columnKey\":\"bb344\",\"columnWidth\":\"1\",\"seedComponents\":[]},{\"UUID\":\"1c3a546b-a3cd-477a-b518-298eb425beb6\",\"columnName\":\"Column 4\",\"columnKey\":\"03195\",\"columnWidth\":\"6\",\"seedComponents\":[]}]}"
+      },
+      "componentName" : "community_layout:section",
+      "id" : "6c8ae3cb-3085-437a-a081-61d704bedfb7",
+      "regions" : [ {
+        "id" : "3b60541a-7d0f-4887-9f2d-405b2ce4a58b",
+        "regionLabel" : "Column 1",
+        "regionName" : "col1",
+        "renditionMap" : { },
+        "type" : "region"
+      }, {
+        "id" : "aa208a65-f1c1-4707-8269-51481d3bc52a",
+        "regionLabel" : "Column 2",
+        "regionName" : "col2",
+        "renditionMap" : { },
+        "type" : "region"
+      }, {
+        "id" : "69621079-9818-4cc2-a90f-ef305ba00417",
+        "regionLabel" : "Column 3",
+        "regionName" : "bb344",
+        "renditionMap" : { },
+        "type" : "region"
+      }, {
+        "id" : "1c3a546b-a3cd-477a-b518-298eb425beb6",
+        "regionLabel" : "Column 4",
+        "regionName" : "03195",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "scopedBrandingSetId" : null,
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "backgroundImageConfig" : "",
+        "backgroundImageOverlay" : "rgba(0,0,0,0)",
+        "sectionConfig" : "{\"UUID\":\"7395f00d-35ca-415c-a4fe-6fd4a48e229d\",\"columns\":[{\"UUID\":\"5d3ed450-4f75-4d0d-aeb7-dcf3fb200c4d\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"1\",\"seedComponents\":[]},{\"UUID\":\"abcfbf94-8c59-4d30-b467-787f4f843640\",\"columnName\":\"Column 2\",\"columnKey\":\"e4384\",\"columnWidth\":\"4\",\"seedComponents\":[]},{\"UUID\":\"f74847f6-7768-46b0-b22a-41da313ae023\",\"columnName\":\"Column 3\",\"columnKey\":\"afaff\",\"columnWidth\":\"1\",\"seedComponents\":[]},{\"UUID\":\"e1d82f7a-46e6-4183-927e-427c8fb273ff\",\"columnName\":\"Column 4\",\"columnKey\":\"64dd9\",\"columnWidth\":\"6\",\"seedComponents\":[]}]}"
+      },
+      "componentName" : "community_layout:section",
+      "id" : "7395f00d-35ca-415c-a4fe-6fd4a48e229d",
+      "regions" : [ {
+        "id" : "5d3ed450-4f75-4d0d-aeb7-dcf3fb200c4d",
+        "regionLabel" : "Column 1",
+        "regionName" : "col1",
+        "renditionMap" : { },
+        "type" : "region"
+      }, {
+        "components" : [ {
+          "componentAttributes" : {
+            "carouselPageSize" : 1,
+            "carouselPosition" : "below",
+            "product" : "{!Product.Details}",
+            "showCarousel" : true
+          },
+          "componentName" : "commerce_builder:productGallery",
+          "id" : "24c0e57c-f6ae-45ad-b9c9-f53438b0fb1e",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "abcfbf94-8c59-4d30-b467-787f4f843640",
+        "regionLabel" : "Column 2",
+        "regionName" : "e4384",
+        "renditionMap" : { },
+        "type" : "region"
+      }, {
+        "id" : "f74847f6-7768-46b0-b22a-41da313ae023",
+        "regionLabel" : "Column 3",
+        "regionName" : "afaff",
+        "renditionMap" : { },
+        "type" : "region"
+      }, {
+        "components" : [ {
+          "componentAttributes" : {
+            "identifierName" : "Product code",
+            "product" : "{!Product.Details}",
+            "productDetailSummaryFieldMapping" : "[{\"name\":\"Tech_DisplayColor__c\",\"label\":\"Display Color\",\"type\":\"STRING\"},{\"name\":\"TechB2B_Size__c\",\"label\":\"Display size\",\"type\":\"STRING\"},{\"name\":\"Tech_B2B_BillingType__c\",\"label\":\"Billed\",\"type\":\"PICKLIST\"}]"
+          },
+          "componentName" : "commerce_builder:heading",
+          "id" : "971deb6d-c9ac-47d7-85c1-da2e703cddb2",
+          "regions" : [ {
+            "components" : [ {
+              "componentAttributes" : {
+                "backgroundColor" : "",
+                "paddingHorizontal" : "none",
+                "paddingVertical" : "none",
+                "text" : "{!Product.Details.fields.Name}",
+                "textAlign" : "left",
+                "textDecoration" : "{}",
+                "textDisplayInfo" : "{\"headingTag\": \"h1\", \"textStyle\": \"heading-medium\"}"
+              },
+              "componentName" : "dxp_base:textBlock",
+              "id" : "f60625a7-efba-4f0b-9b7e-a1ccc1a8c62b",
+              "renderPriority" : "NEUTRAL",
+              "renditionMap" : { },
+              "type" : "component"
+            } ],
+            "id" : "fef6df4a-0a73-4a35-9b39-d3cb9e3c7f30",
+            "regionName" : "heading",
+            "type" : "region"
+          } ],
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : {
+            "fr" : "c2180e15-87ab-413a-91ea-8a63413a0040"
+          },
+          "renditions" : [ {
+            "id" : "c2180e15-87ab-413a-91ea-8a63413a0040",
+            "renditionValue" : {
+              "componentAttributes" : {
+                "identifierName" : "Code produit",
+                "productDetailSummaryFieldMapping" : "[{\"name\":\"Tech_DisplayColor__c\",\"label\":\"Display Color\",\"type\":\"STRING\"},{\"name\":\"TechB2B_Size__c\",\"label\":\"Display size\",\"type\":\"STRING\"},{\"name\":\"Tech_B2B_BillingType__c\",\"label\":\"Facturé\",\"type\":\"PICKLIST\"}]"
+              }
+            },
+            "type" : "renditionComponent"
+          } ],
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "negotiatedPriceLabel" : "",
+            "negotiatedPriceTextSize" : "medium",
+            "originalPriceLabel" : "Original Price",
+            "originalPriceTextSize" : "small",
+            "product" : "{!Product.Details}",
+            "productPricing" : "{!Product.Pricing}",
+            "productTax" : "{!Product.Tax}",
+            "productVariant" : "{!Product.SelectedVariant}",
+            "showNegotiatedPrice" : true,
+            "showOriginalPrice" : true,
+            "showTaxIndication" : true,
+            "taxIncludedLabel" : "Tax Included",
+            "taxLabelSize" : "medium",
+            "unavailablePriceLabel" : "Price Unavailable"
+          },
+          "componentName" : "commerce_builder:productPricing",
+          "id" : "1f1bddda-9f1f-49d6-98c8-f9527255c22b",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "addToCartButtonBackgroundColor" : "rgb(255, 255, 255)",
+            "addToCartButtonBackgroundHoverColor" : "rgb(0, 0, 0)",
+            "addToCartButtonBorderColor" : "rgb(244, 151, 68)",
+            "addToCartButtonBorderRadius" : 5,
+            "addToCartButtonProcessingText" : "Adding...",
+            "addToCartButtonText" : "Add To Cart",
+            "addToCartButtonTextColor" : "rgb(0, 0, 0)",
+            "addToListButtonBorderRadius" : 0,
+            "addToListButtonText" : "Add To List",
+            "incrementValueGuideText" : "",
+            "maximumValueGuideText" : "",
+            "minimumValueGuideText" : "Minimum Order Quantity: {0}",
+            "outOfStockText" : "Out of Stock",
+            "product" : "{!Product.Details}",
+            "productInventory" : "{!Product.Inventory}",
+            "productVariant" : "{!Product.SelectedVariant}",
+            "quantitySelectorLabel" : "",
+            "showAddToListButton" : false
+          },
+          "componentName" : "commerce_builder:purchaseOptions",
+          "id" : "3fd69195-43c2-40fa-887d-a794ff3bbc48",
+          "regions" : [ {
+            "components" : [ {
+              "componentAttributes" : {
+                "backgroundColor" : "",
+                "paddingHorizontal" : "none",
+                "paddingVertical" : "none",
+                "text" : "Minimum Quantity is {!Product.Details.purchaseQuantityRule.minimumNumber} • Maximum Quantity is {!Product.Details.purchaseQuantityRule.maximumNumber} • Sold in increments of {!Product.Details.purchaseQuantityRule.incrementNumber}",
+                "textAlign" : "left",
+                "textDecoration" : "{}",
+                "textDisplayInfo" : "{\"headingTag\": \"h3\", \"textStyle\": \"heading-small\"}"
+              },
+              "componentName" : "dxp_base:textBlock",
+              "id" : "664a90c2-23b2-4e34-8d6a-0e578369a36d",
+              "renderPriority" : "NEUTRAL",
+              "renditionMap" : { },
+              "type" : "component"
+            } ],
+            "id" : "13b28874-a5b5-46bb-bba8-a489f04322f5",
+            "regionName" : "combinedPurchaseQuantityRuleInfo",
+            "type" : "region"
+          } ],
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : {
+            "fr" : "86639ed4-867e-47fb-a7be-31a19291fab2"
+          },
+          "renditions" : [ {
+            "id" : "86639ed4-867e-47fb-a7be-31a19291fab2",
+            "renditionValue" : {
+              "componentAttributes" : {
+                "addToCartButtonProcessingText" : "Ajout en cours...",
+                "addToCartButtonText" : "Ajouter au panier",
+                "outOfStockText" : "Rupture de stock"
+              }
+            },
+            "type" : "renditionComponent"
+          } ],
+          "type" : "component"
+        } ],
+        "id" : "e1d82f7a-46e6-4183-927e-427c8fb273ff",
+        "regionLabel" : "Column 4",
+        "regionName" : "64dd9",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "scopedBrandingSetId" : null,
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "backgroundImageConfig" : "",
+        "backgroundImageOverlay" : "rgba(0,0,0,0)",
+        "sectionConfig" : "{\"UUID\":\"d52606d9-f118-4212-8bc8-9bc72e7a4c43\",\"columns\":[{\"UUID\":\"e052b67b-cb12-44ef-9945-26a0266bf251\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":[]}]}"
+      },
+      "componentName" : "community_layout:section",
+      "id" : "d52606d9-f118-4212-8bc8-9bc72e7a4c43",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : {
+            "css" : "community_layout-section community_layout-column:nth-child(5), community_layout-section community_layout-column-spacer:nth-child(6), community_layout-section community_layout-column:nth-child(7) { background-color:#F7F7F7!important;} .community_layout-section_section community_layout-column:nth-child(5), .community_layout-section_section community_layout-column-spacer:nth-child(6), .community_layout-section_section community_layout-column:nth-child(7) { background-color:#F7F7F7!important;} @media screen and (min-width: 768px) and (max-width: 1024px) { .community_layout-section_section community_layout-column:nth-child(7) {padding-left:10%!important;} } @media (min-width: 1024px) { .community_layout-section_section community_layout-column:nth-child(7) { margin-left: -20px!important; } }"
+          },
+          "componentName" : "c:addCssOnSpecificPage",
+          "id" : "747a24b8-cd22-4a29-afc3-b415b0183beb",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "e052b67b-cb12-44ef-9945-26a0266bf251",
+        "regionLabel" : "Column 1",
+        "regionName" : "col1",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "scopedBrandingSetId" : null,
+      "type" : "component"
+    } ],
+    "id" : "ede82e3d-dad3-4d63-acca-86715c4ddf86",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "pageTitle" : "{!Record._Object}: {!Record._Title}",
+        "recordId" : "{!recordId}"
+      },
+      "componentName" : "community_builder:seoAssistant",
+      "id" : "e558cce5-417c-4861-b6e2-82c08c3ac222",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "11433fbc-bf01-4d9b-9cd1-d09fc0921afc",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "detail-01t"
+}

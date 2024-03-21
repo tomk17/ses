@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>56.0</apiVersion>
+    <isExposed>false</isExposed>
+    <masterLabel>Checkout Termes - Conditions and PO number (LWR)</masterLabel>
+    <!-- <targets>
+        <target>lightningCommunity__Page</target>
+        <target>lightningCommunity__Default</target>
+    </targets> -->
+    <!-- <targetConfigs>
+        <targetConfig targets="lightningCommunity__Default">
+            <property 
+                label="EN Trems and Conditions" 
+                name="enTermsAndConditionLink" 
+                type="String" 
+                description="Ressource url for English terms and conditions"/>
+            <property 
+                label="FR Trems and Conditions" 
+                name="frTermsAndConditionLink" 
+                type="String" 
+                description="Ressource url for French terms and conditions"/>
+            <property 
+                label="CA-FR Trems and Conditions" 
+                name="caFrTermsAndConditionLink" 
+                type="String" 
+                 description="Ressource url for Canadian French terms and conditions"/>
+            <property 
+                label="CA-EN Trems and Conditions" 
+                name="caEnTermsAndConditionLink" 
+                type="String" 
+                 description="Ressource url for Canadian English terms and conditions"/>
+            <property 
+                label="US Trems and Conditions" 
+                name="usTermsAndConditionLink" 
+                type="String" 
+                 description="Ressource url for USA terms and conditions"/>
+            <property 
+                label="IT Trems and Conditions" 
+                name="itTermsAndConditionLink" 
+                type="String" 
+                description="Ressource url for Italian terms and conditions"/>
+            <property 
+                label="DE Trems and Conditions" 
+                name="deTermsAndConditionLink" 
+                type="String" 
+                description="Ressource url for German terms and conditions"/>
+        </targetConfig>
+    </targetConfigs> -->
+</LightningComponentBundle>

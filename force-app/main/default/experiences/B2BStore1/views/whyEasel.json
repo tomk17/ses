@@ -1,0 +1,166 @@
+{
+  "appPageId" : "0f39f530-1371-40d3-9005-f22e4fda9f38",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "dataProviders" : [ ],
+  "id" : "0ea91034-4fe2-49c5-a1a4-eb8909801090",
+  "label" : "Why Easel",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "richTextValue" : "<div class=\"slds-grid slds-wrap slds-gutters_x-small slds-grid_align-center slds-grid_vertical-align-center\"\n     style=\"padding-left:0px; padding-right:0px;\">\n    \t<div class=\"slds-col slds-size_1-of-1 slds-align_absolute-center\"\n\t\t\t style=\"background-color: #f4f4f4;padding:min(2vw,34px) 0vw min(13vw,222px) 0vw;\">\n        \t<div class=\"slds-m-around_large slds-grid slds-wrap\"\n                 style=\"padding-left:0px; padding-right:0px;\">\n        \t\t\t<div class=\"slds-col slds-size_1-of-1 slds-align_absolute-center\">\n        \t\t\t<h1 style=\"color: black;text-align:center;font-size:min(2.5vw, 42px);padding-top: 20px;padding-bottom: 15px;\">Can Your Store Do This?</h1>\n    \t\t\t</div>\n                <div class=\"slds-col slds-size_1-of-1 slds-align_absolute-center\" style=\"padding-bottom:min(2vw,52px); width: 55%;\">\n\t\t\t\t\t<p style=\"color: black; font-size:min(1.6vw, 32px);text-align:center;\">Free up your time to spend with customers and focus on the things that are important to running your business.</p>\n\t\t\t\t</div>\n\t\t\t</div>\n\t</div>\n    <div class=\"slds-col slds-size_1-of-1\"\n         style=\"margin-top:max(-15vw,-255px);\">\n<div class=\"slds-grid slds-wrap slds-grid_align-center slds-grid_vertical-align-center\"\n     style=\"padding-left:0px; padding-right:0px; width:90%; margin: auto;\">\n     <div class=\"slds-col slds-show_medium slds-medium-size--1-of-12 slds-large-size--1-of-12 slds-p-vertical_medium\">\n     </div>\n            <div class=\"slds-col slds-size_1-of-5 slds-medium-size--2-of-12 slds-large-size--2-of-12 slds-p-vertical_medium slds-grid_align-center\"\n                 style=\"text-align:center;\">\n                <img src=\"/Hero_WhyEasel_01.png\" alt=\"Landing page\" style=\"border-radius:20px; left: 5vw;\">\n            </div>\n            <div class=\"slds-col slds-size_3-of-5 slds-medium-size--6-of-12 slds-large-size--6-of-12 slds-p-vertical_medium slds-grid_align-center\"\n                 style=\"text-align:center;\">\n                <img src=\"/Hero_WhyEasel_02.png\" alt=\"Landing page\" style=\"border-radius:20px; text-align: center;\">\n            </div>\n            <div class=\"slds-col slds-size_1-of-5 slds-medium-size--2-of-12 slds-large-size--2-of-12 slds-p-vertical_medium slds-grid_align-center\"\n                 style=\"text-align:center;\">\n                <img src=\"/Hero_WhyEasel_03.png\" alt=\"How it works\" style=\"border-radius:20px; right: 5vw;\">\n            </div>\n            <div class=\"slds-col slds-show_medium slds-medium-size--1-of-12 slds-large-size--1-of-12 slds-p-vertical_medium\">\n            </div>\n        </div>\n    </div>\n</div>"
+      },
+      "componentName" : "forceCommunity:htmlBlock",
+      "id" : "74157beb-4683-4c21-9b1a-7773e221f328",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "450c14fd-078c-4599-a164-e7603d13db19",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "richTextValue" : "<div style=\"height:6.5vw;\">\n</div>"
+      },
+      "componentName" : "forceCommunity:htmlBlock",
+      "id" : "c5e251fd-6c08-4f4a-a6d9-522641284628",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "richTextValue" : "<h1 style=\"color: black; font-size:min(2.5vw, 43px);text-align: center\">Why choose EASEL?</h1>"
+      },
+      "componentName" : "forceCommunity:htmlBlock",
+      "id" : "191cfd2f-01b3-4412-8614-7f2f982cb39a",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "richTextValue" : "<div style=\"height:2vw;\">\n</div>"
+      },
+      "componentName" : "forceCommunity:htmlBlock",
+      "id" : "8416df40-7a47-48ce-b9d3-63549bc83980",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "richTextValue" : "<div class=\"slds-grid slds-wrap slds-grid_align-center slds-grid_vertical-align-center\">\t\t\n\t<div class=\"slds-col slds-p-vertical_medium slds-align_absolute-center\">\n\t\t<div style=\"position:relative;\n                    width:100vw;\n                    max-width:1680px;\n                    height:33vw;\n                    max-height:560px;\">\n\t\t\t<div style=\"position:absolute;\n                        left:8%;\n                        width:40vw;\n                        max-width:678px\">                \n            \t<img src=\"/Reason1.png\" alt=\"Reason #1\"\n\t\t\t\t   style=\"border-radius: 20px; \n\t\t\t\t\t\t  width: 75%;\n                          box-shadow: 1px 1px 5px rgb(0 0 0 / 25%);\">\n            </div>\n            \n            \n            <div style=\"position:absolute;\n                        left:40%;\n                        width:50vw;\n                        max-width:848px;\n                        height:100%;\n                        max-height:560px;\">\n\t\t\t\t\n                <div class=\"slds-grid slds-wrap slds-gutters_x-small slds-align_absolute-center\"\n                     style=\"height: 100%;\n                            width: 100%;    \t\t\t\t\t\t\t\t\t\n                            text-align: left;\n                            border-radius:20px;\n                            padding-left:3vw;\n                            padding-right:3vw;\">\n                    <div class=\"slds-col slds-size_1-of-1 slds-grid_align-left\">\n                        <p style=\"\n                           letter-spacing: 0.6vw;\n                           font-size: min(1.6vw, 28px);\n                           color: #7F8C8D;\n                           font-family: 'MaaxBold';\"><b>REASON #1</b></p>\n                    </div>\n                    <div class=\"slds-col slds-size_1-of-1 slds-grid_align-left\">\n                        <h1 style=\"padding-top: 1vw;\n                                   font-size: min(2.5vw,43px);\n                           \t\t   color: black;\">Real-time price automation</h1>\n                    </div>\n                    <div class=\"slds-col slds-size_1-of-1 slds-grid_align-left\">\t\t\t\t\t\t\n                        <p style=\"padding-top: 2vw;\n                                  color: black;\n                                  font-size:min(1.6vw, 28px);\">With the rise of online competition the rate of price updates has risen dramatically. Each manually updated label introduces errors effecting customer satisfaction and taking up precious time from you and your employees.</p>\n                    </div>\n                </div>\n            </div>\n        </div>\n\t</div>\n</div>"
+      },
+      "componentName" : "forceCommunity:htmlBlock",
+      "id" : "38e74133-38f2-401b-8660-c76957eeff8f",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "richTextValue" : "<div style=\"height:6.5vw;\">\n</div>"
+      },
+      "componentName" : "forceCommunity:htmlBlock",
+      "id" : "5abbc263-3900-47a6-ac2a-7c193f08141b",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "richTextValue" : "<div class=\"slds-grid slds-wrap slds-grid_align-center slds-grid_vertical-align-center\">\t\t\n\t<div class=\"slds-col slds-p-vertical_medium slds-align_absolute-center\">\n\t\t<div style=\"position:relative;\n                    width:100vw;\n                    max-width:1680px;\n                    height:33vw;\n                    max-height:560px;\">\n\t\t\t\n            <div style=\"position:absolute;\n                        left:0vw;\n                        width:50vw;\n                        max-width:848px;\n                        height:100%;\">\n\t\t\t\t\n                <div class=\"slds-grid slds-wrap slds-gutters_x-small slds-align_absolute-center\"\n                     style=\"height: 100%;\n                            width: 100%;    \t\t\t\t\t\t\t\t\t\n                            text-align: left;\n                            border-radius:20px;\n                            padding-left:6.5vw;\">\n                    <div class=\"slds-col slds-size_1-of-1 slds-grid_align-left\">\n                        <p style=\"\n                           letter-spacing: 0.6vw;\n                           font-size: min(1.6vw, 28px);\n                           color: #7F8C8D;\n                           font-family: 'MaaxBold';\"><b>REASON #2</b></p>\n                    </div>\n                    <div class=\"slds-col slds-size_1-of-1 slds-grid_align-left\">\n                        <h1 style=\"padding-top: 1vw;\n                                   font-size: min(2.5vw, 43px);\n                           \t\t   color: black;\">Accurate prices at the shelf</h1>\n                    </div>\n                    <div class=\"slds-col slds-size_1-of-1 slds-grid_align-left\">\t\t\t\t\t\t\n                        <p style=\"padding-top: 2vw;\n                                  padding-right:3vw;\n                                  color: black;\n                                  font-size:min(1.6vw, 28px);\">Shoppers are sophisticated. In-aisle price checks and product reviews by customers are now the norm. Having accurate information at the shelf will help improve your customer’s shopping experience.</p>\n                    </div>\n                </div>\n            </div>\n            \n            \n            <div style=\"position: absolute;\n    \t\t\t\t\tleft: 46vw;\n   \t\t\t\t\t\twidth: 25vw;\n   \t\t\t\t\t    max-width: 21vw;\n   \t\t\t\t\t    height: 33vw;\t\n   \t\t\t\t\t    max-height: 662px;\t\n    \t\t\t\t\tmargin: auto;\">                \n                <img src=\"/Reason2.1.png\" alt=\"How it works\"\n                     style=\"width:80%; \n                            border-radius:20px;\n                            box-shadow: 1px 1px 5px rgb(0 0 0 / 25%);\">\n            </div>\n            \n            <div style=\"position:absolute;\n                        right: 2.6vw;\n                        width:25vw;\n                        max-width:21vw;\n                        height:33vw;\n                        max-height:662px;\">          \n                <img src=\"/Reason2.2.png\" alt=\"How it works\"\n                     style=\"width:80%;\n                            border-radius: 20px;\n                            box-shadow: 1px 1px 5px rgb(0 0 0 / 25%);\n                            left:8%;\">\n            </div>\n        </div>\n\t</div>\n</div>"
+      },
+      "componentName" : "forceCommunity:htmlBlock",
+      "id" : "9854e6e1-0faf-4559-ab16-a959bd2ffbd0",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "richTextValue" : "<div style=\"height:6.5vw;\">\n</div>"
+      },
+      "componentName" : "forceCommunity:htmlBlock",
+      "id" : "56ea480f-76bf-41d9-b874-f38649b41912",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "richTextValue" : "<div class=\"slds-grid slds-wrap slds-grid_align-center slds-grid_vertical-align-center\">\t\t\n\t<div class=\"slds-col slds-align_absolute-center\">\n\t\t<div style=\"position:relative;\n                    width:100vw;\n                    max-width:1680px;\n                    height:33vw;\n                    max-height:560px;\">\n\t\t\t<div style=\"position:absolute;\n                        left:8%;\n                        width:21.5vw;\n                        max-width:364px;\">                \n            \t<img src=\"/Reason3.png\" alt=\"Reason #3\"\n\t\t\t\t   style=\"border-radius: 20px; \n\t\t\t\t\t\t  width: 100%;\n                          box-shadow: 1px 1px 5px rgb(0 0 0 / 25%);\">\n            </div>\n            \n            \n            <div style=\"position:absolute;\n                        left:30%;\n                        width:69vw;\n                        max-width:1170px;\n                        height:100%;\">\n\t\t\t\t\n                <div class=\"slds-grid slds-wrap slds-gutters_x-small slds-align_absolute-center\"\n                     style=\"height: 100%;\n                            width: 100%;    \t\t\t\t\t\t\t\t\t\n                            text-align: left;\n                            border-radius:20px;\n                            padding-left:3vw;\n                            padding-right:6vw;\">\n                    <div class=\"slds-col slds-size_1-of-1 slds-grid_align-left\">\n                        <p style=\"\n                           letter-spacing: 0.6vw;\n                           font-size: min(1.6vw, 28px);\n                           color: #7F8C8D;\n                           font-family: 'MaaxBold';\"><b>REASON #3</b></p>\n                    </div>\n                    <div class=\"slds-col slds-size_1-of-1 slds-grid_align-left\">\n                        <h1 style=\"padding-top: 1vw;\n                                   font-size: min(2.5vw, 43px);\n                           \t\t   color: black;\">Match online and offline prices</h1>\n                    </div>\n                    <div class=\"slds-col slds-size_1-of-1 slds-grid_align-left\">\t\t\t\t\t\t\n                        <p style=\"padding-top: 2vw;\n                                  color: black;\n                                  font-size:min(1.6vw, 28px);\">Keep all of your in-store and online-store pricing in sync, all from one place. With automatically updating labels you now have the ability to update prices and launch promos as often as you need, even multiple times a day. Happy hour anyone?</p>\n                    </div>\n                </div>\n            </div>\n        </div>\n\t</div>\n</div>"
+      },
+      "componentName" : "forceCommunity:htmlBlock",
+      "id" : "2a05532a-54ed-4eb0-9883-5d5129f662d9",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "richTextValue" : "<div style=\"height:6.5vw;\">\n</div>"
+      },
+      "componentName" : "forceCommunity:htmlBlock",
+      "id" : "da601612-af86-4dac-b948-4d3e48c75a5e",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "richTextValue" : "<div class=\"slds-grid slds-wrap slds-grid_align-center slds-grid_vertical-align-center\">\t\t\n\t<div class=\"slds-col slds-p-vertical_medium slds-align_absolute-center\">\n\t\t<div style=\"position:relative;\n                    width:100vw;\n                    max-width:1680px;\n                    height:33vw;\n                    max-height:670px;\">\n\t\t\t\n            <div style=\"position:absolute;\n                        left:0vw;\n                        width:55vw;\n                        max-width:934px;\n                        height:100%;\">\n\t\t\t\t\n                <div class=\"slds-grid slds-wrap slds-gutters_x-small slds-align_absolute-center\"\n                     style=\"height: 100%;\n                            width: 100%;    \t\t\t\t\t\t\t\t\t\n                            text-align: left;\n                            border-radius:20px;\n                            padding-left:6.5vw;\">\n                    <div class=\"slds-col slds-size_1-of-1 slds-grid_align-left\">\n                        <p style=\"\n                           letter-spacing: 0.6vw;\n                           font-size: min(1.6vw, 28px);\n                           color: #7F8C8D;\n                           font-family: 'MaaxBold';\"><b>REASON #4</b></p>\n                    </div>\n                    <div class=\"slds-col slds-size_1-of-1 slds-grid_align-left\">\n                        <h1 style=\"padding-top: 1vw;\n                                   font-size: min(2.5vw, 43px);\n                           \t\t   color: black;\">More free time</h1>\n                    </div>\n                    <div class=\"slds-col slds-size_1-of-1 slds-grid_align-left\">\t\t\t\t\t\t\n                        <p style=\"padding-top: 2vw;\n                                  color: black;\n                                  font-size:min(1.6vw, 28px);\">Your time is precious and smarter shelves will help you focus on the things that matter. With Easel, stores see an 80% reduction in time spent managing their shelves. What will you do with the time you save?</p>\n                    </div>\n                </div>\n            </div>\n            \n            \n            <div style=\"position:absolute;\n                        left: 60%;\n                        width:44vw;\n                        max-width:746px;\n                        height:33vw;\n                        max-height:670px;\">                \n                <img src=\"/Reason4.png\" alt=\"How it works\"\n                     style=\"height:100%; \n                            border-radius: 20px;\n                            box-shadow: 1px 1px 5px rgb(0 0 0 / 25%);\">\n            </div>\n        </div>\n\t</div>\n</div>"
+      },
+      "componentName" : "forceCommunity:htmlBlock",
+      "id" : "87a7f671-e34c-4834-aa40-bf43e0c12d56",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "richTextValue" : "<div style=\"height:6.5vw;\">\n</div>"
+      },
+      "componentName" : "forceCommunity:htmlBlock",
+      "id" : "2588c6d9-262f-4360-abdd-ee32d12fb17e",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "richTextValue" : "<div class=\"slds-grid slds-wrap slds-grid_align-center slds-grid_vertical-align-center\">\t\t\n\t<div class=\"slds-col slds-p-vertical_medium slds-align_absolute-center\"\n         style=\"margin:auto;\">\n\t\t<div style=\"position:relative;\n                    width:80vw;\n                    max-width:1358px;\n                    height:40vw;\n                    max-height:678px;\">\n\t\t\t<div style=\"position:absolute;\n                        left:12%;\n                        width:50vw;     \n                        max-width:848px;\n                        z-index:-1;\n                        height: 100%;\">                \n                <img src=\"/FindaSolution_03.png\" alt=\"How it works\"\n                     style=\"border-radius:20px;height: 95%;\n                            box-shadow: 1px 1px 5px rgb(0 0 0 / 25%);\">                          \n            </div>\n            \n            \n            <div style=\"position:absolute;\n                        left:50%;\n                        top:20%;\n                        width:30vw;\n                        max-width:520px;\n                        height:100%;\n                        max-height:430px;\">\n\t\t\t\t<div class=\"slds-grid slds-wrap slds-gutters_x-small slds-grid_align-center slds-grid_vertical-align-center\"\n                    style=\"background-color: #f4f4f4;\n                           height: 90%;\n                           width: 100%;\n                           text-align: left;\n                           border-radius: 20px;\n                           padding-left: 3vw;\n                           padding-right: 3vw;\n                           padding-top: 3vw;\n                           padding-bottom: 3vw;\n                           box-shadow: 1px 1px 5px rgb(0 0 0 / 25%);\">\n                    <div class=\"slds-col slds-size_1-of-1 slds-grid_align-left\">\n                        <h1 style=\"color: black;font-size:min(2.5vw, 43px);\">Ready to take your store to the next level?</h1>\n                    </div>\n                    <div class=\"slds-col slds-size_1-of-1 slds-grid_align-right\">\n                        <a href=\"/B2BStore/s/solution-questionnaire\">\n                        <h3 style=\"padding-top: 2vw;\n                                   color: #f00000;\n                                   font-size:min(1.6vw, 28px);\n                                   text-align:right;\">Find a Solution &#8250;</h3></a>\n                    </div>\n                </div>\n            </div>\n        </div>\n\t</div>\n</div>"
+      },
+      "componentName" : "forceCommunity:htmlBlock",
+      "id" : "01af29e7-40bf-4616-8232-514b710d0728",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "richTextValue" : "<div style=\"height:6.5vw;\">\n</div>"
+      },
+      "componentName" : "forceCommunity:htmlBlock",
+      "id" : "f4d8f2cb-9be7-4ad9-8754-248ea1186943",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "2b790b46-1b93-4cf7-8b3b-2525279ae3cf",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "e4cfe76d-26e4-4d64-a570-a322e0a983c8",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Why Easel"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "7e936167-19c4-41fb-96aa-237ae78e9c99",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "2d0aaf95-46ce-4954-84a0-754a38641ac1",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "custom-why-easel"
+}

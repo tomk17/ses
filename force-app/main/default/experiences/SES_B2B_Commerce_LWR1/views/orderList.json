@@ -1,0 +1,50 @@
+{
+  "appPageId" : "420337f2-f879-4442-ac4d-7a772ca6fa6a",
+  "componentName" : "community_layout:sldsFlexibleLayout",
+  "dataProviders" : [ ],
+  "id" : "dc1373db-b213-4af3-af5b-b7bf0d57fd19",
+  "label" : "Order List",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "backgroundImageConfig" : "",
+        "backgroundImageOverlay" : "rgba(0,0,0,0)",
+        "sectionConfig" : "{\"UUID\":\"05c38a33-63a9-4574-8f18-43a37fab64a9\",\"columns\":[{\"UUID\":\"d7da12a1-adf9-4a9b-99bd-29676974ec33\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":[]}]}"
+      },
+      "componentName" : "community_layout:section",
+      "id" : "05c38a33-63a9-4574-8f18-43a37fab64a9",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : {
+            "displayAddNewOrderButton" : true,
+            "displayViewRequestsButton" : true,
+            "paddingLeft" : "11%",
+            "paddingRight" : "11%",
+            "pageNameToNavigateTo" : "SES_STORE__c",
+            "reordering" : false
+          },
+          "componentName" : "c:sesCustomOrdersListComponent",
+          "id" : "b99eeec7-be22-4452-b340-15471c4ecd55",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "d7da12a1-adf9-4a9b-99bd-29676974ec33",
+        "regionLabel" : "Column 1",
+        "regionName" : "col1",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "scopedBrandingSetId" : null,
+      "type" : "component"
+    } ],
+    "id" : "2ad8ee54-7ada-41c6-ab32-89e465cdf03d",
+    "regionName" : "content",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "list-801"
+}

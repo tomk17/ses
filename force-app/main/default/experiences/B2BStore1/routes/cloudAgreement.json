@@ -1,0 +1,11 @@
+{
+  "activeViewId" : "a258cab7-5e6b-4dd8-91de-db9375d1a39f",
+  "appPageId" : "0f39f530-1371-40d3-9005-f22e4fda9f38",
+  "configurationTags" : [ ],
+  "id" : "1f9277ce-4b3b-4d6b-b11b-bc817227134d",
+  "label" : "Cloud Agreement",
+  "pageAccess" : "UseParent",
+  "routeType" : "custom-cloud-agreement",
+  "type" : "route",
+  "urlPrefix" : "cloud-agreement"
+}

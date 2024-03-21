@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningMessageChannel xmlns="http://soap.sforce.com/2006/04/metadata">
+    <masterLabel>Termes and conditions and PO numer Message Channel</masterLabel>
+    <description>Message channel from Terms and PO number component.</description>
+    <isExposed>true</isExposed>
+    <lightningMessageFields>
+        <description>Terms and PO numer done</description>
+        <fieldName>termsAndConditionsDone</fieldName>
+    </lightningMessageFields>
+</LightningMessageChannel>

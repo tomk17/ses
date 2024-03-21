@@ -1,0 +1,169 @@
+<aura:component implements="lightning:availableForFlowScreens" controller="B2BPicklistForFlowScreenController">
+    <aura:attribute name="Cart" type="WebCart" />
+    <aura:attribute name="AccountFromCart" type="Account" />
+    <aura:attribute name="boolship" type="Boolean" />
+    <aura:attribute name="boolbill" type="Boolean" />
+    <aura:attribute name="AccountsFromController" type="Account[]" />
+    <aura:attribute name="ContactsFromController" type="Contact[]" />
+    <aura:attribute Name="selectedShipTo" type="String" />
+    <aura:attribute Name="selectedContactTo" type="String" />
+    <aura:attribute name="AccountSelected" type="Account" />
+    <aura:attribute name="ContactSelected" type="Contact" />
+    <aura:attribute name="idAccountSelected" type="String" />
+    
+    <aura:attribute name="PickingAccountSelected" type="Account" />
+
+    <aura:attribute name="iconName" type="String" default="utility:tour"/>
+    <aura:attribute name="labelCardAccount" type="String" default="{!$Label.c.B2BStore_ShippingAddress}" />
+    <aura:attribute name="labelCardContact" type="String" default="{!$Label.c.ShippingContact}" />
+    <aura:attribute name="labelSelect" type="String" default="{!$Label.c.B2BStore_Select_Account}" />
+    <aura:attribute name="labelContactSelect" type="String" default="{!$Label.c.B2BStore_Notify_the_receiver}" />
+    <aura:attribute name="labelRadioGroup" type="String" default="{!$Label.c.B2BStore_AdditionalEmailTrackingNotification}" />
+    <aura:attribute name="labelWarning" type="String" default="{!$Label.c.B2BStore_NoShipToContact}" />
+	<aura:attribute name="options" type="List"/>
+    <aura:attribute name="value" type="String" default="No"/>
+    <aura:attribute name="findContact" type="Boolean" default="false"/>
+    <aura:attribute name="valueInput" type="String" />
+    <aura:attribute name="emailSelected" type="String" />
+    <aura:attribute name="idContactSelected" type="String" />
+
+    <aura:handler name = "init" value = "{!this}" action = "{!c.onInit}"/>
+        
+    <div class="slds-grid slds-grid_pull-padded-medium">
+        <div class="slds-col slds-size_1-of-2 slds-p-horizontal_medium">
+            
+            <article class="slds-card">
+                <div class="slds-card__header slds-grid">
+                    <header class="slds-media slds-media_center slds-has-flexi-truncate">
+                        <div class="slds-media__figure">
+                            <span title="account">
+                                <lightning:icon class="iconAddress" iconName="{!v.iconName}" alternativeText="Account" title="Account" />
+                                <span class="slds-assistive-text">account</span>
+                            </span>
+                        </div>
+                        <div class="slds-media__body">
+                            <h2 class="slds-card__header-title">
+                                <span>{!v.labelCardAccount}</span>
+                            </h2>
+                        </div>
+                    </header>
+                </div>
+                <div class="slds-card__body slds-card__body_inner">
+                    <lightning:select aura:id="selectAccount" name="selectAccount" label="{!v.labelSelect}"
+                                      value="{!v.selectedShipTo}" onchange="{!c.handleSelectChange}">
+                        <aura:iteration items="{!v.AccountsFromController}" var="acc">
+                            <option text="{!acc.Name}" value="{!acc.Id}" />
+                        </aura:iteration>
+                    </lightning:select>
+                    <aura:if isTrue="{!v.boolship}">
+                        <aura:if isTrue="{!v.AccountSelected.Incoterms__c == 'FCA' || v.AccountSelected.Incoterms__c == 'EXW'}">
+                            <b><p style="padding-top:25px;padding-bottom:10px">{!$Label.c.B2BStore_Picking_Address} : </p></b>
+                            <lightning:formattedAddress
+                                                        street= "{!v.PickingAccountSelected.ShippingAddress.street}"
+                                                        city= "{!v.PickingAccountSelected.ShippingAddress.city}"
+                                                        country= "{!v.PickingAccountSelected.ShippingAddress.country}"
+                                                        postalCode= "{!v.PickingAccountSelected.ShippingAddress.postalCode}"
+                                                        disabled="true"
+                                                        style="padding-top:10px; font-size:20px"
+                                                        />
+                            <aura:set attribute="else">
+                                <b><p style="padding-top:25px;padding-bottom:10px">{!$Label.c.B2BStore_ShippingAddress} : </p></b>
+                                <lightning:formattedAddress
+                                                            street= "{!v.AccountSelected.ShippingAddress.street}"
+                                                            city= "{!v.AccountSelected.ShippingAddress.city}"
+                                                            country= "{!v.AccountSelected.ShippingAddress.country}"
+                                                            postalCode= "{!v.AccountSelected.ShippingAddress.postalCode}"
+                                                            disabled="true"
+                                                            style="padding-top:10px; font-size:20px"
+                                                            />
+                            </aura:set>
+                        </aura:if>
+                    </aura:if>
+                    <aura:if isTrue="{!v.boolbill}">
+                        <b><p style="padding-top:25px;padding-bottom:10px">{!$Label.c.B2BStore_BillingAddress} : </p></b>
+                        <lightning:formattedAddress
+                                                    street= "{!v.AccountSelected.BillingAddress.street}"
+                                                    city= "{!v.AccountSelected.BillingAddress.city}"
+                                                    country= "{!v.AccountSelected.BillingAddress.country}"
+                                                    postalCode= "{!v.AccountSelected.BillingAddress.postalCode}"
+                                                    disabled="true"
+                                                    style="padding-top:10px; font-size:18px"
+                                                    />
+                    </aura:if>
+                </div>
+                <footer class="slds-card__footer">
+                </footer>
+            </article>
+        </div>
+        <!-- ***************************************************************************************** -->
+        <div class="slds-col slds-size_1-of-2 slds-p-horizontal_medium">
+            <article class="slds-card">
+                <div class="slds-card__header slds-grid">
+                    <header class="slds-media slds-media_center slds-has-flexi-truncate">
+                        <div class="slds-media__figure">
+                            <span title="account">
+                                <lightning:icon class="iconMail" iconName="utility:email" alternativeText="Account" title="Account" />
+                                <span class="slds-assistive-text">{!$Label.c.B2BStore_Contact}</span>
+                            </span>
+                        </div>
+                        <div class="slds-media__body">
+                            <h2 class="slds-card__header-title">
+                                <span>{!v.labelCardContact}</span>
+                            </h2>
+                        </div>
+                    </header>
+                </div>
+                <div class="slds-card__body slds-card__body_inner">
+                    <aura:if isTrue="{!v.findContact}">
+                        <lightning:select aura:id="selectContact" name="selectContact" label="{!v.labelContactSelect}" 
+                                          value="{!v.selectedContactTo}" onchange="{!c.handleSelectContactChange}">
+                            <aura:iteration items="{!v.ContactsFromController}" var="con">
+                                <option text="{!con.Name}" value="{!con.Id}" />
+                            </aura:iteration>
+                        </lightning:select>
+                        <aura:set attribute="else">
+                            <p>{!v.labelWarning}</p>
+                        </aura:set>
+                        
+                    </aura:if>
+                    <aura:if isTrue="{!v.findContact}">
+                        <p style="padding-top: 25px"><b>{!$Label.c.B2BStore_Email_address_of_the_selected_contact} :</b></p>
+                        <p style="padding-top: 10px; font-size:18px">{!v.ContactSelected.Email}</p>
+                    </aura:if>
+                    <aura:if isTrue="{!v.findContact}">
+                        <lightning:radioGroup aura:id="field"
+                                              label="{!v.labelRadioGroup}"
+                                              options="{!v.options}"
+                                              value="{!v.value}"
+                                              type="button"
+                                              onchange="{!c.handleRadioGroupChange}"
+                                              style="padding-top:10px"/>
+                    </aura:if>
+                    
+                    <aura:if isTrue="{!v.value == 'Yes'}">
+                        <lightning:input type="email" 
+                                         name="input1"
+                                         label="{!$Label.c.B2BStore_Please_enter_the_email_address_below}"
+                                         onchange="{!c.handleInputChange}"
+                                         value="{!v.valueInput}"
+                                         style="padding-top:10px"/>
+                    </aura:if>
+                    
+                    <aura:if isTrue="{!v.findContact == False}">
+                        <lightning:input type="email" 
+                                         name="input1"
+                                         placeholder="{!$Label.c.B2BStore_Type_Here}"
+                                         label="{!$Label.c.B2BStore_Enter_the_email_that_will_receive_the_order_confirmation}"
+                                         onchange="{!c.handleInputChange}"
+                                         value="{!v.valueInput}"
+                                         style="padding-top:10px"/>
+                    </aura:if>
+                </div>
+                <footer class="slds-card__footer">
+                    
+                </footer>
+            </article>
+        </div>
+    </div>
+
+</aura:component>

@@ -1,0 +1,43 @@
+.custom-btn-wrapper {
+    background: linear-gradient(90deg, rgba(226,123,71,1) 0%, rgba(254,211,138,1) 100%);
+    border-radius: 5px;
+    padding: 1px;
+    display: inline-block;
+    border: none;
+}
+
+button {
+    height: 100%;
+    padding: 10px 15px;
+    margin: 0;
+    transition: all 0.3s;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Maax_Regular';
+    font-size: 20px;
+}
+
+.wrapperClass {
+    width: 100%;
+    padding: 2px!important;
+}
+
+.buttonClass {
+    width: 100%;
+    font-size: 17px;
+    padding: 0.5rem 15px!important;
+}
+
+button:hover {
+    background: black!important;
+    color: white!important;
+}
+
+.buttonClass:hover {
+    background: rgb(242, 242, 242)!important;
+    color: black!important;
+}
+
+.special-hover-button:hover { 
+    color: #b5b5b5!important 
+}

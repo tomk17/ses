@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningMessageChannel xmlns="http://soap.sforce.com/2006/04/metadata">
+    <masterLabel>Toast Message Service</masterLabel>
+    <description>Message Channel to pass toast information</description>
+    <isExposed>true</isExposed>
+    <lightningMessageFields>
+        <description>This is the toast message</description>
+        <fieldName>message</fieldName>
+    </lightningMessageFields>
+    <lightningMessageFields>
+        <description>This is the toast title</description>
+        <fieldName>title</fieldName>
+    </lightningMessageFields>
+    <lightningMessageFields>
+        <description>This is the toast variant</description>
+        <fieldName>variant</fieldName>
+    </lightningMessageFields>
+</LightningMessageChannel>

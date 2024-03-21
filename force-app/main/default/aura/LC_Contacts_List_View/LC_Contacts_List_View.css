@@ -1,0 +1,73 @@
+.THIS .search-field {
+    padding: 1rem;
+    margin-right:0px;
+    float: right;
+}
+
+.THIS .inlineDiv{
+    /* display: inline-block; */
+    display: inline-flex;
+    float: right;
+}
+
+.THIS .whiteBg{
+    background:white;
+}
+
+.THIS .marginBottom{
+    margin-bottom: 5px;
+}
+
+.THIS .slds-button_brand, .THIS .slds-button--brand {
+    border: 1px solid #c4c6c7 !important;
+}
+
+.THIS .slds-button_brand:hover, .THIS .slds-button--brand:hover, .THIS .slds-button_brand:focus {
+    color: black;
+    padding: 2px 11px;
+}
+
+.THIS .slds-badge_lightest {
+    background: none!important;
+}
+
+.THIS .custom-btn-wrapper {
+    background: linear-gradient(90deg, rgba(226,123,71,1) 0%, rgba(254,211,138,1) 100%);
+    border-radius: 5px;
+    padding: 1px;
+    display: inline-block;
+    border: none;
+    margin-top: 21px;
+}
+
+.THIS .slds-button_neutral {
+    height: 39px!important;
+    margin-top: 21px!important;
+    border-color: rgb(196 198 199)!important;
+}
+
+.THIS button{
+    height: 100%;
+    padding: 9px 14px 5px 14px;
+    margin: 0;
+    font-family: 'Maax_Regular';
+    font-size: 15px;
+    background: white!important;
+} 
+
+.THIS .custom-btn-wrapper button:not(button[disabled]):not(button[disabled="true"]) {
+    height: 100%;
+    padding: 9px 14px 5px 14px;
+    margin: 0;
+    transition: all 0.3s;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Maax_Regular';
+    font-size: 15px;
+    background: white;
+}
+
+.THIS .custom-btn-wrapper button:hover:not(button[disabled]):not(button[disabled="true"]) {
+    background: black!important;
+    color: white!important;
+}

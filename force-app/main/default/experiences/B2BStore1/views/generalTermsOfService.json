@@ -1,0 +1,394 @@
+{
+  "appPageId" : "0f39f530-1371-40d3-9005-f22e4fda9f38",
+  "componentName" : "siteforce:dynamicLayout",
+  "dataProviders" : [ ],
+  "id" : "5fcd2de4-9d9a-4083-accd-52b1d9307339",
+  "label" : "General Terms of Service",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "background" : "background: rgba(0,0,0,0)",
+        "backgroundOverlay" : "rgba(0,0,0,0.5)",
+        "contentAreaWidth" : 60,
+        "sectionConfig" : {
+          "UUID" : "07126826-16c2-4690-93e5-63c6e41b3904",
+          "columns" : [ {
+            "UUID" : "34f72962-811f-461b-b444-6c830f36500b",
+            "columnKey" : "1",
+            "columnName" : "Column 1",
+            "columnWidth" : "12",
+            "seedComponents" : [ ]
+          } ]
+        },
+        "sectionHeight" : 400
+      },
+      "componentName" : "forceCommunity:section",
+      "id" : "07126826-16c2-4690-93e5-63c6e41b3904",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : {
+            "richTextValue" : "<h1 style=\"text-align: center;\">Standard Terms and Conditions</h1><p style=\"text-align: center;\"><span style=\"font-size: 20px;\">SES-imagotag</span></p>"
+          },
+          "componentName" : "forceCommunity:richTextInline",
+          "id" : "1bc952df-cb3b-41cc-ab64-3fd271bf0b47",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "richTextValue" : "<div class=\"container slds-text-align_center\"\n     style=\"margin: auto;padding-top: 20px; padding-bottom: 40px;\">\n\t\t<h2 style=\"color: black;\n                   text-align: center;\n                   border-bottom-size: 4px;\n                   border-bottom-style: solid;\n                   border-bottom-color: #f00000;\n                   border-bottom-width: 3px;\n                   border-bottom-height: 30px;\n                   display: inline-block;\"\n        >Preamble</h2>\n</div>"
+          },
+          "componentName" : "forceCommunity:htmlBlock",
+          "id" : "0180636c-7f85-465a-a3b9-2f037420b38e",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "richTextValue" : "<p style=\"text-align: justify;\">SES-imagotag, Inc. , with its principal place of business at 530 Lytton Avenue, 2nd Floor, Palo Alto, CA 94301 (<b>\"SESimagotag\"</b>), acting on its behalf and on behalf of its Affiliates, is a digital solutions specialist for physical retail and world leader of electronic labelling systems. The given Standard Terms and Conditions (<b>\"Conditions\"</b>) serve as legal basis for any contracts concluded between SES-imagotag and its customers in B2B-relationships relating to the sale and delivery of hardware and/or software products by SES-imagotag to the customers. The Conditions in their current version are available on the website (as defined below).</p>"
+          },
+          "componentName" : "forceCommunity:richTextInline",
+          "id" : "9a7fcfe9-7f55-406d-84f9-1bb2914b5241",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "richTextValue" : "<div class=\"container slds-text-align_center\"\n     style=\"margin: auto;padding-top: 20px; padding-bottom: 40px;\">\n\t\t<h2 style=\"color: black;\n                   text-align: center;\n                   border-bottom-size: 4px;\n                   border-bottom-style: solid;\n                   border-bottom-color: #f00000;\n                   border-bottom-width: 3px;\n                   border-bottom-height: 30px;\n                   display: inline-block;\"\n        >Article 1 - Definitions</h2>\n</div>"
+          },
+          "componentName" : "forceCommunity:htmlBlock",
+          "id" : "b92ff189-2b80-4b68-9437-b1051de0b022",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "richTextValue" : "<p style=\"text-align: justify;\"><i><u>Affiliate:</u></i> Means, when used with reference to a specified person, any other person that, directly or indirectly, through one or more intermediaries, controls, is controlled by or id under common control with, such specified person, where “control” (including the terms “controlling”, “controlled by” and “under common control with”) shall mean the direct or indirect power to direct or cause the direction of the management and</p><p style=\"text-align: justify;\">policies of an entity, through ownership of more than fifty percent (50%) of the share capital or of voting rights.</p><p style=\"text-align: justify;\"><br></p><p style=\"text-align: justify;\"><i><u>Intellectual Property:</u> </i>All ideas, inventions, designs, methods, developments, procedures, innovations, improvements, (computer) programs, software, processes, trains of thought, systems, documentation, construction documents and the like (including related know-how) and all (domestic and foreign) patent rights, trademark rights, rights to industrial designs and utility models, copyrights, integrated circuit layout design</p><p style=\"text-align: justify;\">protection rights and other industrial property rights and legally protected intellectual property rights of any kind and all registrations and notifications made in connection with such rights.</p><p style=\"text-align: justify;\"><br></p><p style=\"text-align: justify;\"><i><u>Contract:</u></i> The legal relationship between SES-imagotag and the Customer, based on the present Conditions, relating to the sale and delivery by SES-imagotag of any Product to the Customer.</p><p style=\"text-align: justify;\"><br></p><p style=\"text-align: justify;\"><i><u>Customer:</u></i> Any natural or legal person in a business relationship with SES-imagotag based on the present Conditions.</p><p style=\"text-align: justify;\"><br></p><p style=\"text-align: justify;\"><i><u>Documentation:</u></i> Text and/or graphical documents, whether in electronic or printed format, that describe the features, functions and operation of the Software, which materials are designed to facilitate use of the Software which are provided by SES-imagotag to the Customer in accordance with these Conditions.</p><p style=\"text-align: justify;\"><br></p><p style=\"text-align: justify;\"><i><u>Force Majeure Event:</u></i> Any unforeseeable event outside the sphere and control of SES-imagotag. An event shall be deemed unforeseeable if it could not be foreseen by a diligent person or if SES-imagotag did not foresee it merely due to slight negligence.</p><p style=\"text-align: justify;\"><br></p><p style=\"text-align: justify;\"><i><u>Price List:</u></i> The SES-imagotag standard price list for each Product, as amended from time to time, which is available upon request.</p><p style=\"text-align: justify;\"><br></p><p style=\"text-align: justify;\"><i><u>Product/Product Range:</u></i> A product from the Product Range. Product Range shall include all hardware and software products manufactured, conceived, developed, marketed, distributed and/or sold by SES-imagotag (individually or jointly with others).</p><p style=\"text-align: justify;\"><br></p><p style=\"text-align: justify;\"><i><u>Software:</u></i> Programs and application program interface (API), including but not limited to cloud platforms and on-premises</p><p style=\"text-align: justify;\">solutions, licensed by SES-imagotag to the Customer. The Software may include any other software programs needed for its functioning.</p><p style=\"text-align: justify;\"><br></p><p style=\"text-align: justify;\"><i><u>Website:</u></i> SES-imagotag's website, available at www.sesimagotag.com and appertaining subdomains.</p>"
+          },
+          "componentName" : "forceCommunity:richTextInline",
+          "id" : "4ea942aa-30af-40a6-a444-f5bd8149655e",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "richTextValue" : "<div class=\"container slds-text-align_center\"\n     style=\"margin: auto;padding-top: 20px; padding-bottom: 40px;\">\n\t\t<h2 style=\"color: black;\n                   text-align: center;\n                   border-bottom-size: 4px;\n                   border-bottom-style: solid;\n                   border-bottom-color: #f00000;\n                   border-bottom-width: 3px;\n                   border-bottom-height: 30px;\n                   display: inline-block;\"\n        >Article 2 - Applicability of these Conditions</h2>\n</div>"
+          },
+          "componentName" : "forceCommunity:htmlBlock",
+          "id" : "b0008460-467a-45cf-9211-0b5a6f90fa8f",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "richTextValue" : "<p style=\"text-align: justify;\"><b>(1)</b> These Conditions, as amended from time to time, shall govern the legal and economic framework conditions of any Contract concluded between SES-imagotag and the Customer.</p><p style=\"text-align: justify;\"><br></p><p style=\"text-align: justify;\"><b>(2) </b>The general terms and conditions of a Customer shall not be applicable to any Contract unless accepted in writing by SESimagotag on a case-by-case basis.</p><p style=\"text-align: justify;\"><br></p><p style=\"text-align: justify;\"><b>(3)</b> If the terms and conditions (including definitions) of a specifif contract concluded between SES-imagotag and a Customer are inconsistent with the provisions contained in these Conditions, the provisions of the relevant contract will prevail.</p><p style=\"text-align: justify;\"><br></p><p style=\"text-align: justify;\"><b>(4) </b>These Conditions are for the sole benefit of the parties hereto and their respective successors and permitted assigns and nothing herein, express or implied, is intended to or shall confer upon any other person or entity any legal or equitable right, benefit or remedy of any nature whatsoever under or by reason of these Conditions or any Contract.</p>"
+          },
+          "componentName" : "forceCommunity:richTextInline",
+          "id" : "299c2c77-43c6-4b9c-b807-6989ab840321",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "richTextValue" : "<div class=\"container slds-text-align_center\"\n     style=\"margin: auto;padding-top: 20px; padding-bottom: 40px;\">\n\t\t<h2 style=\"color: black;\n                   text-align: center;\n                   border-bottom-size: 4px;\n                   border-bottom-style: solid;\n                   border-bottom-color: #f00000;\n                   border-bottom-width: 3px;\n                   border-bottom-height: 30px;\n                   display: inline-block;\"\n        >Article 3 - Conclusion of a Contract</h2>\n</div>"
+          },
+          "componentName" : "forceCommunity:htmlBlock",
+          "id" : "f77a606f-39cc-43ba-adef-36805e4411e5",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "richTextValue" : "<p style=\"text-align: justify;\"><b>(1)</b> A Contract shall come into existence only upon acceptance by SES-imagotag of a binding offer made by the Customer in accordance with these Conditions.</p><p style=\"text-align: justify;\"><br></p><p style=\"text-align: justify;\"><b>(2)</b> The Customer makes a binding offer by placing a written order with SES-imagotag. Such order shall the following items (if applicable):</p><p style=\"text-align: justify;\"><br></p><p style=\"text-align: justify;\"><b>a.</b> type of Product to be delivered;</p><p style=\"text-align: justify;\"><b>b.</b> number of Product units to be delivered.</p><p style=\"text-align: justify;\"><br></p><p style=\"text-align: justify;\"><b>(3)</b> Any offer by SES-imagotag relating to a Product (be it by way of the Website, promotions, flyers or otherwise) shall be nonbinding and shall merely constitute an invitation to make an offer (invitatio ad offerendum). The binding offer is always made by the Customer.</p><p style=\"text-align: justify;\"><br></p><p style=\"text-align: justify;\"><b>(4)</b> Any Contract concluded by and between SES-imagotag and any Customer shall be governed by the given Conditions. Consequently, any order by the Customer in relation to a Product shall in each case be deemed to <b>(i)</b> have been placed exclusively based on and subject to the provisions contained herein and <b>(ii)</b> include the given Conditions. When a Product is ordered by the Customer, this shall be considered to imply acceptance by the Customer of these Conditions.</p><p style=\"text-align: justify;\"><br></p><p style=\"text-align: justify;\"><b>(5)</b> Acceptance by SES-imagotag of any order/offer must be given in writing. In its written acceptance of the Customer's respective order/offer, SES-imagotag shall specify a delivery/performance period for the relevant Contract. The delivery/performance period shall be determined by SESimagotag in a way to ensure delivery/performance under the Contract within an adequate time frame after acceptance of the order/offer by SES-imagotag. For the avoidance of doubt, a delivery/performance period of 4 (four) weeks from acceptance of the relevant order/offer shall in any case be deemed adequate.</p><p style=\"text-align: justify;\"><br></p><p style=\"text-align: justify;\"><b>(6)</b> Without prejudice to its other rights, SES-imagotag shall be entitled to decline acceptance of any order/offer made by the Customer without cause at its free discretion.</p><p style=\"text-align: justify;\"><br></p><p style=\"text-align: justify;\"><b>(7)</b> Any changes to an order/offer (be it with regard to the order volume, the type of Products to be delivered etc.) shall require the prior written acceptance by SES-imagotag.</p>"
+          },
+          "componentName" : "forceCommunity:richTextInline",
+          "id" : "e6d1e248-0c4b-422e-9031-df0e543ab01c",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "richTextValue" : "<div class=\"container slds-text-align_center\"\n     style=\"margin: auto;padding-top: 20px; padding-bottom: 40px;\">\n\t\t<h2 style=\"color: black;\n                   text-align: center;\n                   border-bottom-size: 4px;\n                   border-bottom-style: solid;\n                   border-bottom-color: #f00000;\n                   border-bottom-width: 3px;\n                   border-bottom-height: 30px;\n                   display: inline-block;\"\n        >Article 4 - Subject Matter of a Contract</h2>\n</div>"
+          },
+          "componentName" : "forceCommunity:htmlBlock",
+          "id" : "1035ab9f-7f03-4344-b0bd-bfd942e52a4b",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "richTextValue" : "<p style=\"text-align: justify;\"><b>(1)</b> The Products to be delivered by SES-imagotag to the Customer under any Contract shall in each case be determined on grounds of the relevant binding order/offer duly accepted by SES-imagotag in writing, as amended – as the case may be – by mutual written consent of the parties and subject to the provisions of the given Conditions.</p>"
+          },
+          "componentName" : "forceCommunity:richTextInline",
+          "id" : "24c11ce6-f464-4ce5-8e81-ddbdd783b0df",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "richTextValue" : "<div class=\"container slds-text-align_center\"\n     style=\"margin: auto;padding-top: 20px; padding-bottom: 40px;\">\n\t\t<h2 style=\"color: black;\n                   text-align: center;\n                   border-bottom-size: 4px;\n                   border-bottom-style: solid;\n                   border-bottom-color: #f00000;\n                   border-bottom-width: 3px;\n                   border-bottom-height: 30px;\n                   display: inline-block;\"\n        >Article 5 - Prices, Payment and Delivery</h2>\n</div>"
+          },
+          "componentName" : "forceCommunity:htmlBlock",
+          "id" : "713ea0b4-59ff-49d8-8db8-f711c9c85cad",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "richTextValue" : "<p style=\"text-align: justify;\"><b>(1)</b> The consideration payable to SES-imagotag under a Contract with regard to any Product shall be derived from and assessed on grounds of the Price List for the relevant Product in its current version at the time of placement of the relevant order/offer by the Customer.</p><p style=\"text-align: justify;\"><br></p><p style=\"text-align: justify;\"><b>(2)</b> Unless agreed otherwise by the parties in writing, the Customer shall make a down payment of 50% of the total consideration payable under the relevant Contract within longest 5 (five) days of receipt of the written acceptance by SES-imagotag of its respective order/offer. The remaining consideration shall be paid by the Customer within 30 (thirty) days of receipt of a respective written invoice by SESimagotag.</p><p style=\"text-align: justify;\"><br></p><p style=\"text-align: justify;\"><b>(3)</b> SES-imagotag may charge interest on any overdue amounts at the applicable statutory interest rates pursuant to applicable laws from the due date until SES-imagotag receives full payment.</p><p style=\"text-align: justify;\"><br></p><p style=\"text-align: justify;\"><b>(4)</b> All amounts due shall be paid by the Customer in full without any deduction or withholding and the Customer shall not assert any set-off or counterclaim against SES-imagotag to justify withholding payment under any Contract in whole or in part.</p><p style=\"text-align: justify;\"><br></p><p style=\"text-align: justify;\"><b>(5)</b> Delivery/Transfer of risk and ownership:</p><p style=\"text-align: justify;\"><br></p><p style=\"text-align: justify;\"><b>a.</b> If the parties fail to mutually agree on a delivery/performance period under a Contract in writing, the period indicated by SES-imagotag in its written acceptance (see Article 3 para (5)) of the relevant order/offer shall be binding on the parties, subject to the provisions of these Conditions.</p><p style=\"text-align: justify;\"><br></p><p style=\"text-align: justify;\"><b>b.</b> Force Majeure Events rendering the timely fulfilment of SES-imagotag's obligations under a Contract impossible or seriously hampering performance by SES-imagotag under a Contract shall entitle SES-imagotag to postpone performance of its respective obligations for the duration of such impediment plus a reasonable ramp-up period.</p><p style=\"text-align: justify;\"><br></p><p style=\"text-align: justify;\"><b>c.</b> The place of delivery for any Product shall be the corporate seat of the Customer unless agreed otherwise by the parties in writing.</p><p style=\"text-align: justify;\"><br></p><p style=\"text-align: justify;\"><b>d.</b> The risk of damage to or loss of hardware Products and/or physical copies of Software (e.g. CD, DVD, Bluray) shall transfer to the Customer at the moment such hardware Products or physical Software copies are dispatched for delivery to the Customer. The Customer accepts transport and delivery of the Products by any authorised postal or courier service. Upon its reasonable discretion, SES-imagotag may also choose to deliver Software by electronic transfer to the Customer (e.g. via Internet download), provided that the Customer has all means available which are required for such form of delivery.</p><p style=\"text-align: justify;\"><br></p><p style=\"text-align: justify;\"><b>e.</b> Delivery in instalments shall be accepted by the Customer unless agreed otherwise by the parties in writing. In case of partial delivery, the present Conditions shall be applicable to each part delivery.</p><p style=\"text-align: justify;\"><br></p><p style=\"text-align: justify;\"><b>f.</b> Applicable shipment costs are not included in the Price List for each Product. The Customer shall be obliged to bear the shipment costs reasonably incurred in connection with the delivery of any Product to the Customer.</p><p style=\"text-align: justify;\"><br></p><p style=\"text-align: justify;\"><b>g.</b> If the Customer fails to accept delivery of any Product in due time without a justified legal cause, the Customer shall compensate SES-imagotag for any damages and losses resulting therefrom.</p><p style=\"text-align: justify;\"><br></p><p style=\"text-align: justify;\"><b>h.</b> Ownership of hardware Products and/or physical copies of Software (e.g. CD, DVD, Blu-ray) delivered under any Contract shall transfer to the Customer at the moment such hardware Products or physical Software copies are dispatched for delivery to the Customer but in no event before the payment owed by the Customer for such Products under the relevant Contract, including any interest, has been effected in full.</p>"
+          },
+          "componentName" : "forceCommunity:richTextInline",
+          "id" : "e3add908-421a-4356-b22f-c26cf3f50ef2",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "richTextValue" : "<div class=\"container slds-text-align_center\"\n     style=\"margin: auto;padding-top: 20px; padding-bottom: 40px;\">\n\t\t<h2 style=\"color: black;\n                   text-align: center;\n                   border-bottom-size: 4px;\n                   border-bottom-style: solid;\n                   border-bottom-color: #f00000;\n                   border-bottom-width: 3px;\n                   border-bottom-height: 30px;\n                   display: inline-block;\"\n        >Article 6 - Warranty</h2>\n</div>"
+          },
+          "componentName" : "forceCommunity:htmlBlock",
+          "id" : "a4cab3df-ba7e-4d9b-a690-97fc284fc761",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "richTextValue" : "<p style=\"text-align: justify;\"><b>(1)</b> The warranty period for any Hardware shall be twelve (12) months starting with the date of invoice of the Product to the Customer in case of direct purchase. The warranty period for any Software shall be three (3) months from the point in time in which such Software has been handed over or otherwise been made available to the Customer. The terms and conditions applicable to this warranty are available upon request or at: <a href=\"https://www.ses-imagotag.com/en/2019-07-%2010_18169_Warranty-conditions_V2_EN/.%203\" rel=\"noopener noreferrer\" target=\"_blank\">https://www.ses-imagotag.com/en/2019-07- 10_18169_Warranty-conditions_V2_EN/.</a></p><p style=\"text-align: justify;\"><br></p><p style=\"text-align: justify;\"><b>(2)</b> The features, technical applicability and conditions of use of any Product sold by SES-imagotag under any Contract are outlined in a functional description or data sheet which is available for each Product on the Website (<b>\"Functional Description\"</b>).</p>"
+          },
+          "componentName" : "forceCommunity:richTextInline",
+          "id" : "94f644a5-d89a-401d-aea3-b4aa0e244c1c",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "richTextValue" : "<div class=\"container slds-text-align_center\"\n     style=\"margin: auto;padding-top: 20px; padding-bottom: 40px;\">\n\t\t<h2 style=\"color: black;\n                   text-align: center;\n                   border-bottom-size: 4px;\n                   border-bottom-style: solid;\n                   border-bottom-color: #f00000;\n                   border-bottom-width: 3px;\n                   border-bottom-height: 30px;\n                   display: inline-block;\"\n        >Article 7 - Inspection of Products, Notification of Defects</h2>\n</div>"
+          },
+          "componentName" : "forceCommunity:htmlBlock",
+          "id" : "2df628f1-3657-47ed-b84c-10f5cae1e7c2",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "richTextValue" : "<p style=\"text-align: justify;\"><b>(1)</b> The inspection obligations shall apply to the delivery of any Product (software and hardware). Therefore, upon delivery of a Product, the Customer shall subject such Product to a thorough functional test. Any defects, bugs or other errors of the Product (<b>\"Defects\"</b>) becoming apparent during the functional test shall be notified to SES-imagotag within a reasonable period, however, not later than within 14 (fourteen) days after delivery of the relevant Product to the Customer. Hidden Defects of a Product shall also be notified to SES-imagotag within a reasonable period not exceeding 5 (five) days from detectability of the relevant hidden Defect.</p><p style=\"text-align: justify;\"><br></p><p style=\"text-align: justify;\"><b>(2)</b> Notice of any Defect (<b>\"Defect Notice\"</b>) must be given electronically by e-mail to SES-imagotag or by physical letter sent to SES-imagotag's business address. In each case, the Defect Notice shall state precisely <b>(i)</b> the type of Defect, including a detailed description thereof,<b> (ii)</b> the application during which such Defect occurred and <b>(iii)</b> any measures already taken by the Customer to repair the Defect.</p><p style=\"text-align: justify;\"><br></p><p style=\"text-align: justify;\"><b>(3) </b>In its respective Defect Notice, the Customer shall appoint a responsible contact person and indicate such person's contact details to SES-imagotag.</p><p style=\"text-align: justify;\"><br></p><p style=\"text-align: justify;\"><b>(4)</b> If the Customer fails to timely notify SES-imagotag about any Defect, the Customer shall not be entitled to any legal remedies (in particular, any warranty or damage claims) with regard to such Defect.</p><p style=\"text-align: justify;\"><br></p><p style=\"text-align: justify;\"><b>(5)</b> The Customer's obligations pursuant to this Article 7 shall also apply to any Product which was repaired or replaced by SESimagotag following a Defect Notice.</p>"
+          },
+          "componentName" : "forceCommunity:richTextInline",
+          "id" : "da5ce0ee-4565-42f0-8fa4-c9007d7aaaa2",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "richTextValue" : "<div class=\"container slds-text-align_center\"\n     style=\"margin: auto;padding-top: 20px; padding-bottom: 40px;\">\n\t\t<h2 style=\"color: black;\n                   text-align: center;\n                   border-bottom-size: 4px;\n                   border-bottom-style: solid;\n                   border-bottom-color: #f00000;\n                   border-bottom-width: 3px;\n                   border-bottom-height: 30px;\n                   display: inline-block;\"\n        >Article 8 - Obligations of the Customer</h2>\n</div>"
+          },
+          "componentName" : "forceCommunity:htmlBlock",
+          "id" : "2f1b77ea-d81c-4306-9430-bf876b0183f1",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "richTextValue" : "<p style=\"text-align: justify;\"><b>(1)</b> The Customer shall use the Products in line with their respective Functional Description (see Article 6 para 2). It shall refrain from any actions causing an impairment of the functionality of the Products (e.g. use of non-compatible software, equipment etc.). SES-imagotag does not assume liability for any losses or damages suffered by the Customer as a result of a violation of the obligations set forth in this paragraph.</p><p style=\"text-align: justify;\"><br></p><p style=\"text-align: justify;\"><b>(2)</b> The Customer shall inform SES-imagotag without undue delay of any circumstance which may have a legal impact on the proper fulfilment and execution by SES-imagotag of any Contract, in particular any change in the Customer's company name, legal structure or address.</p><p style=\"text-align: justify;\"><br></p><p style=\"text-align: justify;\"><b>(3) </b>The Customer shall co-operate with SES-imagotag in all matters relating to the fulfilment of SES-imagotag's obligations under any Contract and shall provide SES-imagotag at own costs with such information, equipment and documentation (as far as available to the Customer) as SES-imagotag may reasonably request to perform its relevant obligations. Further, the Customer shall ensure that any information and documentation provided to SES-imagotag is accurate in all material respects.</p><p style=\"text-align: justify;\"><br></p><p style=\"text-align: justify;\"><b>(4)</b> Imminent changes to the system parameters of the Customer's electronic infrastructure – as far as such changes are relevant for the fulfilment of a specific Contract – must be notified in due time before SES-imagotag starts fulfilling its obligations under the relevant Contract.</p><p style=\"text-align: justify;\"><br></p><p style=\"text-align: justify;\"><b>(5) </b>The Customer grants SES-imagotag the irrevocable right to include the Customer's company name, logo and/or brand in a partner- or reference-list and to disclose such list as well as general information regarding the existence of a business relationship between SES-imagotag and the Customer to third parties.</p><p style=\"text-align: justify;\"><br></p><p style=\"text-align: justify;\"><b>(6)</b> Any test data and test facilities requested by SES-imagotag (upon its reasonable discretion) with regard to any Product delivered under any Contract shall be provided by the Customer in due time and at the Customer's own costs.</p><p style=\"text-align: justify;\"><br></p><p style=\"text-align: justify;\"><b>(7)</b> If, due to the Customer's fault, it becomes impossible for SESimagotag to perform any of its obligations under a Contract, the Customer shall compensate SES-imagotag for any relating damages and losses (including, in particular, any potential dismantling costs).</p><p style=\"text-align: justify;\"><br></p><p style=\"text-align: justify;\"><b>(8)</b> The Customer shall, without prejudice to any other rights of SES-imagotag hereunder, indemnify SES-imagotag for any loss or damage suffered by SES-imagotag as a result of the Customer’s breach of its obligations pursuant to this Article 8.</p><p style=\"text-align: justify;\"><br></p><p style=\"text-align: justify;\"><b>(9)</b> The Customer will reimburse SES-imagotag for necessary travel expenses incurred by SES-imagotag while performing the Contract (<b>“Travel Expenses”</b>).&nbsp;</p>"
+          },
+          "componentName" : "forceCommunity:richTextInline",
+          "id" : "cbabce63-44f3-4fd0-ad67-3a117d5c5fb7",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "richTextValue" : "<div class=\"container slds-text-align_center\"\n     style=\"margin: auto;padding-top: 20px; padding-bottom: 40px;\">\n\t\t<h2 style=\"color: black;\n                   text-align: center;\n                   border-bottom-size: 4px;\n                   border-bottom-style: solid;\n                   border-bottom-color: #f00000;\n                   border-bottom-width: 3px;\n                   border-bottom-height: 30px;\n                   display: inline-block;\"\n        >Article 9 - Usage restrictions for Software</h2>\n</div>"
+          },
+          "componentName" : "forceCommunity:htmlBlock",
+          "id" : "4c5887a0-6a2d-4bc2-b542-b8b5bdfe0bbd",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "richTextValue" : "<p style=\"text-align: justify;\"><b>(1) </b>The Customer shall not:</p><p style=\"text-align: justify;\"><br></p><p style=\"text-align: justify;\"><b>a.</b> copy or duplicate the Software;</p><p style=\"text-align: justify;\"><br></p><p style=\"text-align: justify;\"><b>b.</b> decompile, disassemble, reverse engineer or otherwise attempt to obtain or perceive the source code from which any software and APIs component of the Software is compiled or interpreted, and the Customer acknowledges that nothing in the Contract will be construed to grant the Customer any right to obtain or use such source code;</p><p style=\"text-align: justify;\"><br></p><p style=\"text-align: justify;\"><b>c.</b> distribute, or otherwise transfer the Software to any third party or incorporate the Software in any other software, product, or technology;</p><p style=\"text-align: justify;\"><br></p><p style=\"text-align: justify;\"><b>d.</b> modify the Software, or the Documentation, or create any derivative product from any of the foregoing, except with the prior written consent of SES-imagotag;</p><p style=\"text-align: justify;\"><br></p><p style=\"text-align: justify;\"><b>e.</b> assign, sublicense, sell, resell, lease, rent or otherwise transfer or convey, or pledge as security or otherwise encumber, part or entirety of its rights under these Conditions;</p><p style=\"text-align: justify;\"><br></p><p style=\"text-align: justify;\"><b>f.</b> upload and/or use any data, fonts, images and typefaces without having previously executed the appropriated end user license agreement if necessary. SES-imagotag does not provide any font and typeface within these Conditions and it is Customer’s sole liability to get rights to use fonts and typefaces;</p><p style=\"text-align: justify;\"><br></p><p style=\"text-align: justify;\"><b>g.</b> perform any security test of any kind without SESimagotag’s prior consent, including penetration tests and security breaches attempts.</p><p style=\"text-align: justify;\"><br></p><p style=\"text-align: justify;\"><b>(2)</b> The Customer will not use the Software and/or the Documentation except in compliance with these Conditions and SES-imagotag’s obligations to any third party with respect thereto, provided that SES-imagotag has notified the Customer of such obligations.</p><p style=\"text-align: justify;\"><br></p><p style=\"text-align: justify;\"><b>(3)</b> The Customer agrees to use the Software only for lawful purposes. The Customer agrees to comply with all applicable laws, rules, regulations (including but not limited to any applicable privacy and intellectual property laws) and to follow the best practices in connection with the use of the Software. The Customer may not use the Software to publish content or to engage in activities that are illegal under applicable law, that are harmful to others, or that would potentially subject SES-imagotag to incur its liability, including, without limitation, infringing the intellectual property or other proprietary rights of third parties.</p>"
+          },
+          "componentName" : "forceCommunity:richTextInline",
+          "id" : "914c807c-2e48-48d6-9db3-1779de66926d",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "richTextValue" : "<div class=\"container slds-text-align_center\"\n     style=\"margin: auto;padding-top: 20px; padding-bottom: 40px;\">\n\t\t<h2 style=\"color: black;\n                   text-align: center;\n                   border-bottom-size: 4px;\n                   border-bottom-style: solid;\n                   border-bottom-color: #f00000;\n                   border-bottom-width: 3px;\n                   border-bottom-height: 30px;\n                   display: inline-block;\"\n        >Article 10 - Disclaimers</h2>\n</div>"
+          },
+          "componentName" : "forceCommunity:htmlBlock",
+          "id" : "9de28849-c2b8-46bc-a63c-6c7e8de48017",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "richTextValue" : "<p style=\"text-align: justify;\"><b>(1)</b> SES-imagotag specifically disclaims all warranties, express or implied, including without limitation, warranties of merchantability, fitness for a particular purpose and noninfringement.</p><p style=\"text-align: justify;\"><br></p><p style=\"text-align: justify;\"><b>(2)</b> SES-imagotag does not warrant that the Software or any other information, materials and/or data provided will meet Customer’s requirements or is complete, accurate or errorfree. Therefore, SES-imagotag shall not be held liable for bugs of Software which do not materially impair the use of the Software by the Customer.</p><p style=\"text-align: justify;\"><br></p><p style=\"text-align: justify;\"><b>(3)</b> SES-imagotag does not assume any liability whatsoever for defects or other failures of Software:</p><p style=\"text-align: justify;\"><br></p><p style=\"text-align: justify;\"><b>a.</b> caused by application errors of any kind whatsoever or other forms of improper handling of the Software and which could have been avoided by proper and careful use of the Software;</p><p style=\"text-align: justify;\"><br></p><p style=\"text-align: justify;\"><b>b.</b> resulting from <b>(i)</b> a change of operating system components, interfaces or parameters, <b>(ii)</b> use of unsuitable organizational means or data carriers;</p><p style=\"text-align: justify;\"><br></p><p style=\"text-align: justify;\"><b>c.</b> caused by viruses or exposure of the Software to circumstances such as accidents, power failures, etc. which are caused by external factors not under the control of SES-imagotag;</p><p style=\"text-align: justify;\"><br></p><p style=\"text-align: justify;\"><b>d.</b> caused by transmission errors to data carriers or on the Internet, for Software;</p><p style=\"text-align: justify;\"><br></p><p style=\"text-align: justify;\"><b>e.</b> caused by network outage impacting SES-imagotag’s access points, for Software;</p><p style=\"text-align: justify;\"><br></p><p style=\"text-align: justify;\"><b>f.</b> caused by improper inspection and/or maintenance operations conducted by the Customer or third party with regard to the Software;</p><p style=\"text-align: justify;\"><br></p><p style=\"text-align: justify;\"><b>g.</b> resulting from a use of the Software which does not comply with the recommendations and specifications of SES-imagotag;</p><p style=\"text-align: justify;\"><br></p><p style=\"text-align: justify;\"><b>h.</b> caused by the Customer, their agents, employees, any other manufacturer or any third party outside the sphere and control of SES-imagotag.</p><p style=\"text-align: justify;\"><br></p><p style=\"text-align: justify;\"><b>(4)</b> The Customer shall not make any representations or warranties on behalf of SES-imagotag.</p>"
+          },
+          "componentName" : "forceCommunity:richTextInline",
+          "id" : "6b440eb1-d6f5-455c-8952-7366bf4a34ad",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "richTextValue" : "<div class=\"container slds-text-align_center\"\n     style=\"margin: auto;padding-top: 20px; padding-bottom: 40px;\">\n\t\t<h2 style=\"color: black;\n                   text-align: center;\n                   border-bottom-size: 4px;\n                   border-bottom-style: solid;\n                   border-bottom-color: #f00000;\n                   border-bottom-width: 3px;\n                   border-bottom-height: 30px;\n                   display: inline-block;\"\n        >Article 11 - Support and Maintenance</h2>\n</div>"
+          },
+          "componentName" : "forceCommunity:htmlBlock",
+          "id" : "770780e6-a6da-4f50-b725-7a074151bdb0",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "richTextValue" : "<p style=\"text-align: justify;\">Support and/or maintenance to be provided by SES-imagotag to the Customer with regard to any Product sold or delivered under any Contract shall in each case be subject to the conclusion of a separate respective agreement between SESimagotag and the Customer.</p>"
+          },
+          "componentName" : "forceCommunity:richTextInline",
+          "id" : "2eae4f7e-7be0-42d3-bce7-65b10963d2e8",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "richTextValue" : "<div class=\"container slds-text-align_center\"\n     style=\"margin: auto;padding-top: 20px; padding-bottom: 40px;\">\n\t\t<h2 style=\"color: black;\n                   text-align: center;\n                   border-bottom-size: 4px;\n                   border-bottom-style: solid;\n                   border-bottom-color: #f00000;\n                   border-bottom-width: 3px;\n                   border-bottom-height: 30px;\n                   display: inline-block;\"\n        >Article 12 - Liability and Indemnification</h2>\n</div>"
+          },
+          "componentName" : "forceCommunity:htmlBlock",
+          "id" : "bab2fa27-83b3-43dc-ad66-070c3f8df895",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "richTextValue" : "<p style=\"text-align: justify;\"><b>(1) </b>Unless expressly provided for otherwise in a Contract in writing or in these Conditions, any liability of SES-imagotag vis-à-vis the Customer for damages of any kind (except for personal injury) caused by SES-imagotag due to slight negligence shall be excluded. Further, any liability of SESimagotag for loss of profit, loss or corruption of data or any indirect or consequential loss or damage whatsoever shall be excluded.</p><p style=\"text-align: justify;\"><br></p><p style=\"text-align: justify;\"><b>(2) </b>Subject to Article 12 para <b>(1)</b>, the liability of SES-imagotag for damages (except for personal injury and damages due to gross negligence or wilful misconduct) – if any – shall further be limited with the aggregate net consideration payable by the Customer under the relevant Contract under which the damages in question have arisen.</p><p style=\"text-align: justify;\"><br></p><p style=\"text-align: justify;\"><b>(3)</b> The Customer's claims for damages shall in each case become time barred within 6 (six) months from the date on which the Customer has gained knowledge of the relevant damage.</p>"
+          },
+          "componentName" : "forceCommunity:richTextInline",
+          "id" : "b2486701-b166-41a7-bda5-7f83dabab51b",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "richTextValue" : "<div class=\"container slds-text-align_center\"\n     style=\"margin: auto;padding-top: 20px; padding-bottom: 40px;\">\n\t\t<h2 style=\"color: black;\n                   text-align: center;\n                   border-bottom-size: 4px;\n                   border-bottom-style: solid;\n                   border-bottom-color: #f00000;\n                   border-bottom-width: 3px;\n                   border-bottom-height: 30px;\n                   display: inline-block;\"\n        >Article 13 - Rescission/Termination of Contract</h2>\n</div>"
+          },
+          "componentName" : "forceCommunity:htmlBlock",
+          "id" : "fad6d4e2-ca7d-4297-b574-db69503ba083",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "richTextValue" : "<p style=\"text-align: justify;\"><b>(1)</b> SES-imagotag shall be entitled to rescind or terminate, as the case may be, any Contract for good cause with immediate effect in the event that,</p><p style=\"text-align: justify;\"><br></p><p style=\"text-align: justify;\"><b>a.</b> circumstances exist which clearly make it impossible for the Customer to properly fulfil its obligations under the relevant Contract over a prolonged period of time lasting not less than four weeks;</p><p style=\"text-align: justify;\"><br></p><p style=\"text-align: justify;\"><b>b.</b> the Customer has violated its duties under the relevant Contract and has failed to rectify the lack of conformity in question within a maximum of 14 (fourteen) days of being requested to do so by SES-imagotag;</p><p style=\"text-align: justify;\"><br></p><p style=\"text-align: justify;\"><b>c.</b> the Customer has behaved in a way which makes a continuation of the relevant Contract unfeasible for SES-imagotag; this is particularly the case if the Customer has intentionally caused damage or harm to SES-imagotag or has at least attempted to do so (e.g. if the Customer has made agreements with third parties that are detrimental to SES-imagotag, are contrary to accepted principles of morality (contra bonos mores) or violate principles of fair competition);</p><p style=\"text-align: justify;\"><br></p><p style=\"text-align: justify;\"><b>d.</b> the Customer has directly or indirectly promised or given benefits that are contra bonos mores to members of SES-imagotag's corporate bodies who are involved with the conclusion or execution of the relevant Contract or has directly threatened them with disadvantages or caused them harm;</p><p style=\"text-align: justify;\"><br></p><p style=\"text-align: justify;\"><b>e.</b> reasonable doubts concerning the identity, legal capacity, and/or legal person of the Customer or the power of representation of a natural or legal person acting on its behalf arise;</p><p style=\"text-align: justify;\"><br></p><p style=\"text-align: justify;\"><b>f.</b> the Customer is unable to pay its debts as they fall due, passes a resolution for winding up (other than for the purposes of a solvent amalgamation or reconstruction) or if a court of competent jurisdiction makes an order to that effect;</p><p style=\"text-align: justify;\"><br></p><p style=\"text-align: justify;\"><b>g.</b> the Customer enters into liquidation or otherwise ceases to carry on business or an analogous event occurs to the Customer in any jurisdiction.</p><p style=\"text-align: justify;\"><br></p><p style=\"text-align: justify;\"><b>(2)</b> In case SES-imagotag rescinds a Contract for good cause, the Customer shall return all benefits conferred upon the Customer under the rescinded Contract to SES-imagotag and put SES-imagotag in a position as if such Contract had never been concluded. Further, the Customer shall pay adequate user charges in case it has already used the Products delivered under the rescinded Contract.</p><p style=\"text-align: justify;\"><br></p><p style=\"text-align: justify;\"><b>(3)</b> In case SES-imagotag terminates a Contract for good cause, the Customer shall compensate SES-imagotag for any damages and losses resulting from such termination.</p>"
+          },
+          "componentName" : "forceCommunity:richTextInline",
+          "id" : "6cb74321-ce96-4fd6-b085-d4354f1c714f",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "richTextValue" : "<div class=\"container slds-text-align_center\"\n     style=\"margin: auto;padding-top: 20px; padding-bottom: 40px;\">\n\t\t<h2 style=\"color: black;\n                   text-align: center;\n                   border-bottom-size: 4px;\n                   border-bottom-style: solid;\n                   border-bottom-color: #f00000;\n                   border-bottom-width: 3px;\n                   border-bottom-height: 30px;\n                   display: inline-block;\"\n        >Article 14 - Intellectual Property and License Rights</h2>\n</div>"
+          },
+          "componentName" : "forceCommunity:htmlBlock",
+          "id" : "7af5b976-e439-4785-adef-5f9358954a45",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "richTextValue" : "<p style=\"text-align: justify;\"><b>(1)</b> In case a Contract relates to the delivery of Software, the Customer is granted a non-exclusive, non-transferable, nonsublicensable right of use of the relevant Software in connection with the use of the Product which right shall be limited materially and temporally by the period of validity defined in the relevant Contract. The source code is not subject of the relevant license.</p><p style=\"text-align: justify;\"><br></p><p style=\"text-align: justify;\"><b>(2)</b> For the purpose of any license granted to the Customer by SES-imagotag, “use” shall mean and include:</p><p style=\"text-align: justify;\"><br></p><p style=\"text-align: justify;\"><b>a.</b> utilisation of the Software by copying, displaying, running, transmitting or loading the same into the temporary memory (RAM) or installing into permanent memory (e.g. hard disk, CD ROM or other storage device) of the Customer’s system for the purposes of and in connection with the use of the Product in the business operations of the Customer;</p><p style=\"text-align: justify;\"><br></p><p style=\"text-align: justify;\"><b>b.</b> copying the Software for security purposes (back-up copies) provided that not more than two (2) copies will be in existence under the license at any one time without prior written consent from SES-imagotag or as otherwise permitted by the applicable law;</p><p style=\"text-align: justify;\"><br></p><p style=\"text-align: justify;\"><b>c.</b> merging the whole or any part of the Software in machine-readable form into another software program;</p><p style=\"text-align: justify;\"><br></p><p style=\"text-align: justify;\"><b>d.</b> storing the whole or a part of the Software on the Customer’s system for the purposes of and in connection with the use of the Product;</p><p style=\"text-align: justify;\"><br></p><p style=\"text-align: justify;\"><b>e.</b> utilising (but not copying) the instructional and/or operational manuals relating to the Software;</p><p style=\"text-align: justify;\"><br></p><p style=\"text-align: justify;\"><b>(3)</b> Any copyright relating to the Software in question as well as any Intellectual Property and proprietary information relating to any Product under a Contract shall be the unlimited property of SES-imagotag and, as the case may be, its licensors (manufacturers) and shall remain so after conclusion of a Contract. At the time of their creation, any specifications, further developments and adaptations of the Software or programs based thereon shall become the intellectual property of SES-imagotag and/or its licensors (manufacturers). This includes all rights that may result from copyright or other provisions covering intangible goods rights all over the world.</p><p style=\"text-align: justify;\"><br></p><p style=\"text-align: justify;\"><b>(4)</b> In the course of using the Software under a Contract in accordance with its intended purpose (as defined in Article 14 para (1)), the Customer shall not be entitled to edit, change or otherwise model the Software, to pass it on to third parties, to connect it to other programs or to retranslate (decompile) it to a different display format. Likewise, the Customer shall not remove, obviate or change any copying or protective mechanisms, program elements serving for digital rights management (DRM), security codes or characteristics serving to designate the Software (notes of ownership, brands, copyright information).</p><p style=\"text-align: justify;\"><br></p><p style=\"text-align: justify;\"><b>(5)</b> The Customer shall not be entitled to use the Software purchased for any purposes other than those stipulated in the relevant Contract or to permit use of the Software by third parties or to surrender them to such third parties either temporarily or permanently.</p><p style=\"text-align: justify;\"><br></p><p style=\"text-align: justify;\"><b>(6)</b> The Customer shall hold harmless and indemnify SESimagotag with regard to any damages and losses SESimagotag might suffer due to non-compliance by the Customer with the subject conditions of use of the Software, especially any interference with the copyright or intellectual property rights of SES-imagotag or third parties, and in all such cases, full satisfaction shall be provided.</p>"
+          },
+          "componentName" : "forceCommunity:richTextInline",
+          "id" : "e959aa6a-9d4c-4635-ad3b-2d8603b2b077",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "richTextValue" : "<div class=\"container slds-text-align_center\"\n     style=\"margin: auto;padding-top: 20px; padding-bottom: 40px;\">\n\t\t<h2 style=\"color: black;\n                   text-align: center;\n                   border-bottom-size: 4px;\n                   border-bottom-style: solid;\n                   border-bottom-color: #f00000;\n                   border-bottom-width: 3px;\n                   border-bottom-height: 30px;\n                   display: inline-block;\"\n        >Article 15 - Data protection and Secrecy</h2>\n</div>"
+          },
+          "componentName" : "forceCommunity:htmlBlock",
+          "id" : "13cb47c5-1e83-4e47-9431-c59e705a6943",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "richTextValue" : "<p style=\"text-align: justify;\"><b>(1)</b> The Customer shall be solely responsible for any personal (user) data and information transferred, used or processed by SES-imagotag in connection with the fulfilment of any Contract on behalf of the Customer. Therefore, it is the Customer’s responsibility to, where required under applicable data protection rules, obtain the consent of the persons concerned prior to editing or processing such personal data and information. The Customer is obliged, in the event of contravention, to hold harmless and indemnify SES-imagotag in relation to any claims brought by third parties.</p><p style=\"text-align: justify;\"><br></p><p style=\"text-align: justify;\"><b>(2)</b> SES-imagotag and the Customer shall treat all business and operational secrets of the other party of which they become aware in the course of their business relationship as strictly confidential. SES-imagotag wishes to point out that the confidentiality of any unencrypted data, information, etc. transmitted via the Internet cannot be warranted.</p><p style=\"text-align: justify;\"><br></p><p style=\"text-align: justify;\"><b>(3)</b> Upon termination of the business relationship between SESimagotag and the Customer, the Customer shall be obliged to return all documents received in the course of the performance of any Contract to SES-imagotag or to destroy these documents.</p><p style=\"text-align: justify;\"><br></p><p style=\"text-align: justify;\"><b>(4)</b> These secrecy obligations shall survive termination of the business relationship between SES-imagotag and the Customer.</p><p style=\"text-align: justify;\"><br></p><p style=\"text-align: justify;\"><b>(5) </b>The obligations set forth in this Article 15 shall equally apply to any agents and employees of SES-imagotag and the Customer.</p>"
+          },
+          "componentName" : "forceCommunity:richTextInline",
+          "id" : "44e0bd56-4793-4b58-bb7c-c3cb701ab102",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "richTextValue" : "<div class=\"container slds-text-align_center\"\n     style=\"margin: auto;padding-top: 20px; padding-bottom: 40px;\">\n\t\t<h2 style=\"color: black;\n                   text-align: center;\n                   border-bottom-size: 4px;\n                   border-bottom-style: solid;\n                   border-bottom-color: #f00000;\n                   border-bottom-width: 3px;\n                   border-bottom-height: 30px;\n                   display: inline-block;\"\n        >Article 16 - Miscellaneous</h2>\n</div>"
+          },
+          "componentName" : "forceCommunity:htmlBlock",
+          "id" : "3899c2c7-4d9a-414e-b084-0ca512cefd41",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "richTextValue" : "<p style=\"text-align: justify;\"><b>(1) </b>As far as these Conditions make reference to \"Articles\" such reference shall be construed to be made to the relevant clauses of these Conditions.</p><p style=\"text-align: justify;\"><br></p><p style=\"text-align: justify;\"><b>(2)</b> Any notices, declarations or actions under these Conditions or any Contract which must be made in writing shall be deemed to have been made in accordance with these Conditions and the relevant Contract if made by e-mail or fax as far as not expressly provided otherwise in these Conditions or the relevant Contract.</p><p style=\"text-align: justify;\"><br></p><p style=\"text-align: justify;\"><b>(3)</b> The Customer shall comply in all material respects with all applicable local, state and federal laws, rules and regulations now or hereafter in force and all applicable judicial and administrative decisions in connection with the enforcement&nbsp;thereof (in particular but not exclusively with regard to recycling of any Product, CEEE, etc.).</p><p style=\"text-align: justify;\"><br></p><p style=\"text-align: justify;\"><b>(4)</b> The place of performance under any Contract shall be the registered seat of SES-imagotag.</p><p style=\"text-align: justify;\"><br></p><p style=\"text-align: justify;\"><b>(5)</b> Provisions included in the given Conditions which, by their nature, should apply beyond the term of a Contract (in particular, Article 15) shall remain in full force and effect even after the termination or fulfilment of the relevant Contract.</p><p style=\"text-align: justify;\"><br></p><p style=\"text-align: justify;\"><b>(6)</b> If any term or provision of these Conditions or a Contract is invalid, illegal or unenforceable, such invalidity, illegality or unenforceability shall not affect any other term or provision of these Conditions or the relevant Contract or invalidate or render unenforceable such term or provision. The invalid or unenforceable provision shall be deemed replaced ipso iure by a provision which comes closest to the economic effect of the invalid/unenforceable provision.</p><p style=\"text-align: justify;\"><br></p><p style=\"text-align: justify;\"><b>(7)</b> No failure to exercise or delay in exercising any right, remedy, power or privilege arising from these Conditions or a Contract operates or may be construed as a waiver thereof. No single or partial exercise of any right, remedy, power or privilege precludes any other or further exercise thereof or the exercise of any other right, remedy, power or privilege.</p><p style=\"text-align: justify;\"><br></p><p style=\"text-align: justify;\"><b>(8)</b> Changes to a Contract or these Conditions shall be valid only if made in writing.</p><p style=\"text-align: justify;\"><br></p><p style=\"text-align: justify;\"><b>(9) </b>As far as the given Conditions or an individual Contract do not contain express provisions on a specific issue, applicable statutory law shall apply.</p>"
+          },
+          "componentName" : "forceCommunity:richTextInline",
+          "id" : "4be987b9-45ef-4ec9-8408-fd9cafc6ecd0",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "richTextValue" : "<div class=\"container slds-text-align_center\"\n     style=\"margin: auto;padding-top: 20px; padding-bottom: 40px;\">\n\t\t<h2 style=\"color: black;\n                   text-align: center;\n                   border-bottom-size: 4px;\n                   border-bottom-style: solid;\n                   border-bottom-color: #f00000;\n                   border-bottom-width: 3px;\n                   border-bottom-height: 30px;\n                   display: inline-block;\"\n        >Article 17 - Applicable lay and jurisdiction</h2>\n</div>"
+          },
+          "componentName" : "forceCommunity:htmlBlock",
+          "id" : "50921a3f-9caf-4e65-8cec-10941e4d5c6f",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "richTextValue" : "<p style=\"text-align: justify;\"><b><u>THESE CONDITIONS AND ANY CONTRACT SHALL BE SUBJECT TO THE LAWS OF THE STATE OF CALIFORNIA EXCLUDING ITS RULES ON CONFLICT OF LAWS AS WELL AS THE PROVISIONS OF THE UNITED NATIONS CONVENTION ON CONTRACTS FOR THE INTERNATIONAL SALE OF GOODS (CISG). ANY DISPUTES ARISING OUT OF OR IN CONNECTION WITH THESE CONDITIONS AND/OR ANY CONTRACT SHALL EXCLUSIVELY BE SETTLED BY THE COURTS OF SANTA CLARA COUNTY, CALIFORNIA, UNITED STATES OF AMERICA.</u></b></p>"
+          },
+          "componentName" : "forceCommunity:richTextInline",
+          "id" : "b29a8ac0-2215-4c7f-a503-1d171dfabee7",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "34f72962-811f-461b-b444-6c830f36500b",
+        "regionLabel" : "Column 1",
+        "regionName" : "1",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "9e374a2c-968c-48cf-a9e1-3403e491388f",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "General Terms of Service"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "4ac48c2e-d39f-42c5-8b28-821bab2bf684",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "80331d2c-7708-4e38-b4f6-3116dc52df8b",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "custom-general-terms-of-service"
+}

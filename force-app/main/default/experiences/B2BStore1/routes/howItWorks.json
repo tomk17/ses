@@ -1,0 +1,11 @@
+{
+  "activeViewId" : "db515554-a059-42a9-8d46-a340d07d891d",
+  "appPageId" : "0f39f530-1371-40d3-9005-f22e4fda9f38",
+  "configurationTags" : [ ],
+  "id" : "8ef8a7ac-5237-4fa9-884e-24af1f1cf023",
+  "label" : "How it works",
+  "pageAccess" : "Public",
+  "routeType" : "custom-how-it-works",
+  "type" : "route",
+  "urlPrefix" : "how-it-works"
+}

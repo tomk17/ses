@@ -1,0 +1,200 @@
+<template>
+    <template lwc:if={contentReady}>
+        <template lwc:if={isEditMode}>
+            <div class="slds-grid slds-grid_pull-padded-medium slds-wrap">
+                <div class="slds-col slds-size_1-of-2 slds-p-horizontal_medium">
+                    
+                    <article class="slds-card">
+                        <div class="slds-card__header slds-grid">
+                            <header class="slds-media slds-media_center slds-has-flexi-truncate">
+                                <div class="slds-media__figure">
+                                    <span title="account">
+                                        <lightning-icon 
+                                            class="iconAddress" 
+                                            icon-name={iconName} 
+                                            alternative-text="Account" 
+                                            title="Account"
+                                        ></lightning-icon>
+                                            
+                                        <span class="slds-assistive-text">account</span>
+                                    </span>
+                                </div>
+                                <div class="slds-media__body">
+                                    <h2 class="slds-card__header-title">
+                                        <span>{label.labelCardAccount}</span>
+                                    </h2>
+                                </div>
+                            </header>
+                        </div>
+                        <div class="slds-card__body slds-card__body_inner">
+                            <lightning-combobox
+                                name="selectAccount"
+                                label={label.labelSelect}
+                                value={selectedShipTo}
+                                placeholder="Sélectionner une adresse"
+                                options={selectAccountsOption}
+                                onchange={handleSelectAccountChange}
+                                class="Select-account"
+                                required
+                            ></lightning-combobox>
+
+                            <template lwc:if={isShipping}>
+                                <template lwc:if={isPicking}>
+                                    <b><p style="padding-top:25px;padding-bottom:10px">{label.labelPickingAddress} : </p></b>
+                                    <lightning-formatted-address
+                                        street={pickingAccountSelected.ShippingAddress.street}
+                                        city={pickingAccountSelected.ShippingAddress.city}
+                                        country={pickingAccountSelected.ShippingAddress.country}
+                                        postal-code={pickingAccountSelected.ShippingAddress.postalCode}
+                                    ></lightning-formatted-address>
+                                </template>
+                                <template lwc:else>
+                                    <b><p style="padding-top:25px;padding-bottom:10px">{label.labelShippingAddress} : </p></b>
+                                    <lightning-formatted-address
+                                        street={accountSelected.ShippingAddress.street}
+                                        city={accountSelected.ShippingAddress.city}
+                                        country={accountSelected.ShippingAddress.country}
+                                        postal-code={accountSelected.ShippingAddress.postalCode}
+                                        disabled=true
+                                    ></lightning-formatted-address>
+                                </template>
+                            </template>
+                            <template lwc:if={isBilling}>
+                                <b><p style="padding-top:25px;padding-bottom:10px">{label.labelBillingAddress} : </p></b>
+                                <lightning-formatted-address
+                                    street={accountSelected.ShippingAddress.street}
+                                    city={accountSelected.ShippingAddress.city}
+                                    country={accountSelected.ShippingAddress.country}
+                                    postal-code={accountSelected.ShippingAddress.postalCode}
+                                    disabled=true
+                                ></lightning-formatted-address>
+                            </template>
+                        </div>
+                        <footer class="slds-card__footer">
+                        </footer>
+                    </article>
+                </div>
+                
+                <div class="slds-col slds-size_1-of-2 slds-p-horizontal_medium">
+                    <article class="slds-card">
+                        <div class="slds-card__header slds-grid">
+                            <header class="slds-media slds-media_center slds-has-flexi-truncate">
+                                <div class="slds-media__figure">
+                                    <span title="account">
+                                        <lightning-icon 
+                                        class="iconAddress" 
+                                        icon-name="utility:email"
+                                        alternative-text="Account" 
+                                        title="Account"
+                                    ></lightning-icon>
+                                    <span class="slds-assistive-text">{label.labelContact}</span>
+                                    </span>
+                                </div>
+                                <div class="slds-media__body">
+                                    <h2 class="slds-card__header-title">
+                                        <span>{label.labelCardContact}</span>
+                                    </h2>
+                                </div>
+                            </header>
+                        </div>
+                        <div class="slds-card__body slds-card__body_inner">
+                            <template lwc:if={findContact}>
+                                <lightning-combobox
+                                    name="selectContact"
+                                    label={label.labelContactSelect}
+                                    value={selectedContactTo}
+                                    placeholder="Sélectionner une adresse"
+                                    options={selectContactsOption}
+                                    onchange={handleSelectContactChange}
+                                    class="selectContact-1"
+                                    required
+                                ></lightning-combobox>
+                            </template>
+                            <template lwc:else>   
+                                <p>{label.labelWarning}</p>
+                            </template>
+                            <template lwc:if={findContact}>
+                                <template lwc:if={isContactSelected}>
+                                    <p style="padding-top: 25px"><b>{label.labelSelectedContactEmail} :</b></p>
+                                    <p style="padding-top: 10px; font-size:18px">{selectedContacToEmail}</p>
+                                    <lightning-radio-group 
+                                        name="radioGroup"
+                                        label={label.labelRadioGroup}
+                                        options={formatOptions}
+                                        value={additionalEmailRadioValue}
+                                        onchange={handleRadioGroupChange}
+                                        type="button"
+                                        ></lightning-radio-group>
+                                </template>
+                                
+                                <template lwc:if={hasAdditionalEmail}>
+                                    <lightning-input 
+                                        type="email" 
+                                        name="input1"
+                                        label={label.labelEnterEmailAddress}
+                                        onchange={handleInputChange}
+                                        value={additionalEmailValue}
+                                        style="padding-top:10px"
+                                        required
+                                        ></lightning-input>
+                                </template>
+                            
+                            </template>
+                            <template lwc:else> 
+                            <lightning-input 
+                                type="email" 
+                                name="input1"
+                                label={label.labelEnterConfirmingOrderEmailAddress}
+                                onchange={handleInputChange}
+                                value={additionalEmailValue}
+                                style="padding-top:10px"
+                                required
+                                ></lightning-input>
+                            </template>
+                        </div>
+                        
+                        <footer class="slds-card__footer">
+                            
+                        </footer>
+                    </article>
+                </div>
+                <template lwc:if={isShipping}>
+                    <div class="slds-col slds-size_2-of-2 slds-p-horizontal_medium slds-p-vertical_medium">
+                        <article class="slds-card">
+                            <div class="slds-card__body slds-card__body_inner">
+                                <lightning-textarea 
+                                    name="shippingInstructions" 
+                                    label={label.labelDeliveryInstructions}
+                                    onchange={handleChangeShippingInstructions}
+                                    value={shippingInstructions}
+                                    placeholder="Cross street, security code, etc..."
+                                ></lightning-textarea>
+                            </div>
+                        </article>
+                    </div>
+                </template>
+                <template lwc:if={isBilling}>
+                    <div class="slds-col slds-size_2-of-2 slds-p-horizontal_medium">
+                        <c-checkout-terms-and-p-o-number-b2-b
+                            ca-fr-terms-and-condition-link={caFrTermsAndConditionLink}
+                            ca-en-terms-and-condition-link={caEnTermsAndConditionLink}
+                            us-terms-and-condition-link={usTermsAndConditionLink}
+                            fr-terms-and-condition-link={frTermsAndConditionLink}
+                            it-terms-and-condition-link={itTermsAndConditionLink}
+                            de-terms-and-condition-link={deTermsAndConditionLink}
+                            en-terms-and-condition-link={enTermsAndConditionLink}
+                            is-warning={isTermsWarning}
+                            onterms={handelTermAndPoChanged}
+                        ></c-checkout-terms-and-p-o-number-b2-b>
+                    </div>
+                </template>
+            </div>
+        </template>
+    </template>
+    <template lwc:else>
+        <div class="spinner">
+            <lightning-spinner alternative-text="Loading" size="medium"></lightning-spinner>
+        </div>
+    </template>
+
+</template>

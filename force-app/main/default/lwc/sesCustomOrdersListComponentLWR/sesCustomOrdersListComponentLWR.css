@@ -1,0 +1,128 @@
+.header-component-wrapper, .black-wrapper, .orders-and-filters-wrapper {
+    width: 100%;
+}
+
+.header-component-wrapper {
+    border-top: 1px solid #D8D8D8;
+    padding-top: 48px;
+}
+
+.header-component-wrapper h1{
+    font-size: 60px;
+    font-family: 'Maax_Bold';
+    margin-bottom: 36px;
+}
+
+.breadcrumbs-wrapper {
+    margin-bottom: 50px;
+}
+
+.black-wrapper {
+    background: linear-gradient(181.39deg, #000000 1.24%, #202020 93.88%);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.search-bar-wrapper {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    width: 40%;
+    display: inline-block;
+}
+
+.button-actions-wrapper {
+    display: inline-block;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /*padding-top: 13px;*/
+}
+
+.status-filter-container, .order-date-filter-container  {
+    width: 200px!important;
+}
+.filters-wrapper {
+    display: flex;
+    margin-bottom: 35px;
+    justify-content: end;
+    align-items: center;
+    position: relative;
+    gap: 2rem;
+}
+
+.orders-and-filters-wrapper {
+    background: #F7F7F7;
+    padding-bottom: 100px;
+    position: relative;
+}
+/* 
+lightning-combobox.status-filter-container .status-filter-container-combobox {
+    margin: 0!important;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    height: auto;
+}
+lightning-combobox.status-filter-container .status-filter-container-combobox div[part="combobox"] {
+   display: flex;
+   flex-grow: 1;   
+}
+lightning-combobox.status-filter-container .status-filter-container-combobox .slds-form-element__control {
+    flex-grow: 1;  
+} */
+.filter-h3 {
+    font-size: 21px;
+    position: relative;
+}
+
+.order-date-filter-container {
+    height: 50px;
+    background: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+}
+
+.dates-picker-selector {
+    background: white!important;
+    padding: 20px 30px;
+    z-index: 3;
+    box-shadow: 1.5px 2.6px 10px rgb(119 119 119 / 10%);
+    position: absolute;
+    top: 91px;
+    width: 200px;
+    right: 0;
+}
+
+.dates-filter-button-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+button.validate-dates-filter, button.reset-dates-filter {
+    color: black;
+    padding: 7px;
+    background: white;
+    margin-top: 15px;
+    outline: none;
+    border: none;
+    float: right;
+}
+
+button.reset-dates-filter {
+    color: #808080;
+}
+
+.date-filter-label {
+    margin-top: 10px;
+}
+.date-filter-input {
+    width: 100%;
+}
+
+.slds-input{
+    height:20rem;
+}

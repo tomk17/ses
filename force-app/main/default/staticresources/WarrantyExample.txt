@@ -1,0 +1,8 @@
+{
+    "label": {
+        "label_id": "BB3D0AAB",
+        "serial": "06R26S01301-I343012175",
+        "production_time": "2018-08-20T00:00:00.000Z",
+        "part_number": "11180123"
+    }
+}

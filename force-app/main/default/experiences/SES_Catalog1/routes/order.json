@@ -1,0 +1,10 @@
+{
+  "activeViewId" : "db8df3f0-f5d6-4fbc-aed7-64afe6f04403",
+  "appPageId" : "7d764b4a-d052-482a-b0a3-fbe81ddac77c",
+  "configurationTags" : [ ],
+  "id" : "01a6cf02-cbd6-4698-89f6-75432450f28f",
+  "label" : "Order",
+  "routeType" : "order",
+  "type" : "route",
+  "urlPrefix" : "order"
+}

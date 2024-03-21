@@ -1,0 +1,222 @@
+{
+  "appPageId" : "7f3c3a22-7f52-483b-8435-18c8b47cb803",
+  "componentName" : "siteforce:dynamicLayout",
+  "dataProviders" : [ ],
+  "id" : "80b46f59-e69e-4ba5-ab86-32003bb198ba",
+  "label" : "My Order",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "background" : "background: rgba(0,0,0,0)",
+        "backgroundOverlay" : "rgba(0,0,0,0.5)",
+        "contentAreaWidth" : 100,
+        "sectionConfig" : {
+          "UUID" : "be4462cf-0585-497d-9c40-9caa826c4a27",
+          "columns" : [ {
+            "UUID" : "f4741736-bf56-4bcb-8826-3e0fd7844f03",
+            "columnKey" : "1165c",
+            "columnName" : "Column 1",
+            "columnWidth" : "12",
+            "seedComponents" : [ ]
+          } ]
+        },
+        "sectionHeight" : 300
+      },
+      "componentName" : "forceCommunity:section",
+      "id" : "be4462cf-0585-497d-9c40-9caa826c4a27",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : { },
+          "componentName" : "c:sesCustomOrderDetailPageStyle",
+          "id" : "1ee845d7-e67c-4d1a-9b99-c02215ab24e7",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "fifthLabel" : "",
+            "fifthLink" : "",
+            "firstLabel" : "Home",
+            "firstLink" : "Home",
+            "fourthLabel" : "",
+            "fourthLink" : "",
+            "objectName" : "Order",
+            "paddingBetween" : "40px",
+            "paddingBottom" : "40px",
+            "paddingTop" : "40px",
+            "recordId" : "{!recordId}",
+            "secondLabel" : "Orders",
+            "secondLink" : "Orders_OrderManagementVisibility__c",
+            "sixthLabel" : "",
+            "sixthLink" : "",
+            "thirdLabel" : "Order",
+            "thirdLink" : "",
+            "titleLabel" : "<b> Order </b> {Order_Number__c}"
+          },
+          "componentName" : "c:sesCustomBreadcrumbAndTitle",
+          "id" : "cd527e7c-9584-4209-a56c-72ab35f5f52e",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : {
+            "fr" : "cb5e7070-6af9-4c2d-978e-9dfbad0e45ba"
+          },
+          "renditions" : [ {
+            "id" : "cb5e7070-6af9-4c2d-978e-9dfbad0e45ba",
+            "renditionValue" : {
+              "componentAttributes" : {
+                "firstLabel" : "Accueil",
+                "objectName" : "Order",
+                "secondLabel" : "Commandes",
+                "thirdLabel" : "Commande",
+                "titleLabel" : "<b> Commande </b> {Order_Number__c}"
+              }
+            },
+            "type" : "renditionComponent"
+          } ],
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "tabsetConfig" : {
+              "UUID" : "1a7ddfb8-82dc-481c-8073-461b1a0e5a51",
+              "activeTab" : "",
+              "tabs" : [ {
+                "UUID" : "f7edb059-2ad9-47e5-a744-19dcdf58b66c",
+                "allowGuestUser" : false,
+                "locked" : false,
+                "seedComponents" : [ ],
+                "tabKey" : "1",
+                "tabName" : "{!$Label.c.Z_OrderProducts}"
+              }, {
+                "UUID" : "22ae704d-4a4f-4258-b97b-2ae989140a3c",
+                "allowGuestUser" : false,
+                "locked" : false,
+                "seedComponents" : [ ],
+                "tabKey" : "2",
+                "tabName" : "{!$Label.c.Z_shipments}"
+              }, {
+                "UUID" : "0db7f915-9b2f-4c7f-a48a-406d67cb9cb6",
+                "allowGuestUser" : false,
+                "locked" : false,
+                "seedComponents" : [ ],
+                "tabKey" : "3",
+                "tabName" : "{!$Label.c.Z_invoices}"
+              } ],
+              "useOverflowMenu" : false
+            }
+          },
+          "componentName" : "forceCommunity:tabset",
+          "id" : "1a7ddfb8-82dc-481c-8073-461b1a0e5a51",
+          "regions" : [ {
+            "components" : [ {
+              "componentAttributes" : {
+                "btobconfirmation" : false,
+                "recordId" : "{!recordId}",
+                "reordering" : true,
+                "subtitle" : "Product ordered"
+              },
+              "componentName" : "c:sesCustomOrderFieldDetailsCommunityUsers",
+              "id" : "c13891bf-cdfc-4a09-88d3-8831526982b0",
+              "renditionMap" : {
+                "fr" : "e7ecfba5-e9e2-482e-ac80-3a9c763dfa55"
+              },
+              "renditions" : [ {
+                "id" : "e7ecfba5-e9e2-482e-ac80-3a9c763dfa55",
+                "renditionValue" : {
+                  "componentAttributes" : {
+                    "subtitle" : "Produits Commandés"
+                  }
+                },
+                "type" : "renditionComponent"
+              } ],
+              "type" : "component"
+            }, {
+              "componentAttributes" : {
+                "customTitle" : "",
+                "parentRecordId" : "{!recordId}",
+                "relatedListName" : "OrderItems",
+                "showBreadCrumbs" : false,
+                "showCustomTitle" : false,
+                "showManualRefreshButton" : false,
+                "showRowNumbers" : true
+              },
+              "componentName" : "forceCommunity:relatedList",
+              "id" : "1532a836-b377-4875-9162-e77496b13d83",
+              "renditionMap" : { },
+              "type" : "component"
+            } ],
+            "id" : "f7edb059-2ad9-47e5-a744-19dcdf58b66c",
+            "regionLabel" : "{!$Label.c.Z_OrderProducts}",
+            "regionName" : "1",
+            "renditionMap" : { },
+            "type" : "region"
+          }, {
+            "components" : [ {
+              "componentAttributes" : { },
+              "componentName" : "c:proofOfDelivery",
+              "id" : "bba7a8be-da02-4e71-9842-776a472b98bd",
+              "renditionMap" : { },
+              "type" : "component"
+            } ],
+            "id" : "22ae704d-4a4f-4258-b97b-2ae989140a3c",
+            "regionLabel" : "{!$Label.c.Z_shipments}",
+            "regionName" : "2",
+            "renditionMap" : { },
+            "type" : "region"
+          }, {
+            "components" : [ {
+              "componentAttributes" : {
+                "customTitle" : "",
+                "parentRecordId" : "{!recordId}",
+                "relatedListName" : "Invoices__r",
+                "showBreadCrumbs" : false,
+                "showCustomTitle" : false,
+                "showManualRefreshButton" : false,
+                "showRowNumbers" : true
+              },
+              "componentName" : "forceCommunity:relatedList",
+              "id" : "82e4ec85-19b0-49f7-a20a-9c29a65de999",
+              "renditionMap" : { },
+              "type" : "component"
+            } ],
+            "id" : "0db7f915-9b2f-4c7f-a48a-406d67cb9cb6",
+            "regionLabel" : "{!$Label.c.Z_invoices}",
+            "regionName" : "3",
+            "renditionMap" : { },
+            "type" : "region"
+          } ],
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "f4741736-bf56-4bcb-8826-3e0fd7844f03",
+        "regionLabel" : "Column 1",
+        "regionName" : "1165c",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "b6e4eb7e-6b34-4d5e-8bd7-79b142ae33aa",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "{!Record._Object}: {!Record._Title}"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "9f112930-ff47-468f-b492-d0310c1e93ea",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "9a1b8f15-89fa-4efc-9871-44a81694ce96",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "detail-801"
+}

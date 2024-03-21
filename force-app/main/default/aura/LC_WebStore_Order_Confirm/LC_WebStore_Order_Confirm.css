@@ -1,0 +1,65 @@
+.THIS .slds-modal__container {
+    width: 75%;
+    max-width: 50rem;
+}
+
+.THIS .slds-border_bottom {
+    border-bottom-width: 0.15rem;
+}
+
+.THIS th {
+    vertical-align: top;
+    background-color: white;
+    padding: 10px;
+    position: relative;
+}
+
+.THIS .slds-table_cell-buffer tr {
+    border-collapse: collapse;
+    background-color: white;
+    border-style: none;
+}
+
+.THIS .color-black {
+    color: black;
+}
+
+.THIS .gradient-border-bottom {
+    border-bottom: .2rem solid transparent;
+    background-image: linear-gradient(to right, #FF9646, #FFD264);
+}
+
+.THIS .slds-checkbox .slds-checkbox_faux,
+.THIS .slds-checkbox .slds-checkbox--faux {
+    border-color: black;
+}
+
+.THIS .slds-checkbox [type=checkbox]:checked+.slds-checkbox_faux,
+.THIS .slds-checkbox [type=checkbox]:checked+.slds-checkbox--faux,
+.THIS .slds-checkbox [type=checkbox]:checked~.slds-checkbox_faux,
+.THIS .slds-checkbox [type=checkbox]:checked~.slds-checkbox--faux,
+.THIS .slds-checkbox [type=checkbox]:checked+.slds-checkbox__label .slds-checkbox_faux,
+.THIS .slds-checkbox [type=checkbox]:checked+.slds-checkbox__label .slds-checkbox--faux {
+    border-color: black;
+}
+
+.THIS #tr_gray th {
+    background-color: #F9F9F9;
+}
+
+.THIS .email_notif_div {
+    /* font-size: 90%; */
+    position: relative;
+    /* bottom: 15px; */
+    width: 46%;
+}
+
+.THIS .header-color {
+    color: #414141 !important;
+}
+
+
+
+.THIS .header-color {
+    color: #414141 !important;
+}

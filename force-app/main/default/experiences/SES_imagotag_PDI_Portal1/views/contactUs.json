@@ -1,0 +1,68 @@
+{
+  "appPageId" : "4fd341a5-df0b-468b-a916-9e89abbf5516",
+  "componentName" : "siteforce:dynamicLayout",
+  "dataProviders" : [ ],
+  "id" : "4486a5bf-226e-4555-8f50-283b520baaca",
+  "label" : "Contact Us",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "background" : "background: rgba(0,0,0,0)",
+        "backgroundOverlay" : "rgba(0,0,0,0.5)",
+        "contentAreaWidth" : 100,
+        "sectionConfig" : {
+          "UUID" : "4cc38872-f686-4fc9-a08e-49801d8e812a",
+          "columns" : [ {
+            "UUID" : "25446ccd-d6cf-4faa-b36f-a7a452713666",
+            "columnKey" : "1",
+            "columnName" : "Column 1",
+            "columnWidth" : "12",
+            "seedComponents" : [ ]
+          } ]
+        },
+        "sectionHeight" : 300
+      },
+      "componentName" : "forceCommunity:section",
+      "id" : "4cc38872-f686-4fc9-a08e-49801d8e812a",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : { },
+          "componentName" : "c:LC_ContactUs",
+          "id" : "968fec4a-91ec-4b1f-b4c0-9e1ec083ec61",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "25446ccd-d6cf-4faa-b36f-a7a452713666",
+        "regionLabel" : "Column 1",
+        "regionName" : "1",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "0eb110e6-2116-48fc-8cd1-90b371e06a8f",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Contact Us"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "b327dce9-6e7f-4c89-b01a-9927dc02ac91",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "233c8036-2a9c-4675-af74-35d1baf16b2e",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "custom-contact-us"
+}

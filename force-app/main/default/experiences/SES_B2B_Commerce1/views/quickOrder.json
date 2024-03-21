@@ -1,0 +1,48 @@
+{
+  "appPageId" : "7f3c3a22-7f52-483b-8435-18c8b47cb803",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "dataProviders" : [ ],
+  "id" : "628c4d2a-3f44-411c-9473-fb514daf216d",
+  "label" : "Quick Order",
+  "regions" : [ {
+    "id" : "f88ab0c8-64c8-4f6e-8b4b-5ee74344f3ce",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "addEntryText" : "Add Line",
+        "addToCartButtonBackgroundColor" : "",
+        "addToCartButtonBackgroundHoverColor" : "",
+        "addToCartButtonBorderColor" : "",
+        "addToCartButtonBorderRadius" : "0",
+        "addToCartButtonDisabledBackgroundColor" : "rgb(201, 199, 197)",
+        "addToCartButtonText" : "Add To Cart",
+        "addToCartButtonTextColor" : "",
+        "addToCartButtonTextHoverColor" : "",
+        "numberOfLineItemsToAddEachTime" : 1,
+        "numberOfLineItemsToStart" : 5,
+        "productPlaceholderText" : "Item SKU",
+        "productText" : "Product",
+        "quantityText" : "Quantity",
+        "showAddEntryIcon" : true,
+        "title" : "Quick Order"
+      },
+      "componentName" : "b2b_buyer_builder:quickOrderPage",
+      "id" : "6a55b353-4a39-4e9c-bb0e-56e305a31eb8",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "f560de77-d1dc-437e-bf62-dee2af726fa7",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "0e93b0b7-1023-4533-b570-8f10dabad24b",
+    "regionName" : "footer",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "quickorder"
+}

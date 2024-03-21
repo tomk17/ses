@@ -1,0 +1,46 @@
+{
+  "appPageId" : "0f39f530-1371-40d3-9005-f22e4fda9f38",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "dataProviders" : [ ],
+  "id" : "a413fce9-8d36-4a3d-ade1-eb5ca3c49352",
+  "label" : "Account Creation",
+  "regions" : [ {
+    "id" : "45739638-1fe7-4dc8-bbca-deec63a58732",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : { },
+      "componentName" : "c:b2bAccountCreationForm",
+      "id" : "dc29cbed-6a67-4f19-a6f5-34ea3b8d0249",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "eabade05-7554-4248-a92d-47f6753e45a0",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "0954131e-b994-48c3-8a54-03166da4d202",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Account Creation"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "5879ee6d-0be4-42c0-a9bb-d6c9b75b0d3e",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "2855a58d-f2a5-40ec-b353-df976958eba1",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "custom-account-creation"
+}

@@ -1,0 +1,93 @@
+{
+  "appPageId" : "0f39f530-1371-40d3-9005-f22e4fda9f38",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "dataProviders" : [ ],
+  "id" : "b34d9dad-2a81-4e5e-b0c2-23a7d22dce6f",
+  "label" : "Category Detail",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "backgroundColor" : "rgba(0,0,0,0)",
+        "height" : 200,
+        "layout" : "cover",
+        "position" : "center center"
+      },
+      "componentName" : "b2b_buyer_builder:categoryBanner",
+      "id" : "4a70ba45-5cb8-449a-8f95-f46bf8a843ac",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "3b6fa9eb-97fd-4bcc-9eac-66798e8f2868",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "addToCartButtonBackgroundColor" : "",
+        "addToCartButtonBackgroundHoverColor" : "",
+        "addToCartButtonBorderColor" : "",
+        "addToCartButtonBorderRadius" : "0",
+        "addToCartButtonText" : "ADD TO CART",
+        "addToCartButtonTextColor" : "",
+        "addToCartButtonTextHoverColor" : "",
+        "breadcrumbsColor" : "",
+        "breadcrumbsFontSize" : "small",
+        "cardAlignment" : "center",
+        "cardBackgroundColor" : "",
+        "cardBorderColor" : "rgba(255, 255, 255, 0)",
+        "cardBorderRadius" : "0",
+        "cardContentMapping" : "",
+        "cardDividerColor" : "rgb(221, 219, 218)",
+        "gridColumnSpacing" : "small",
+        "gridMaxColumnsDisplayed" : "4",
+        "gridRowSpacing" : "large",
+        "listRowSpacing" : "small",
+        "negotiatedPriceTextColor" : "",
+        "negotiatedPriceTextSize" : "medium",
+        "originalPriceTextColor" : "",
+        "originalPriceTextSize" : "small",
+        "pageResultsType" : "productList",
+        "pageTitleFontColor" : "",
+        "pageTitleFontSize" : "large",
+        "resultsLayout" : "grid",
+        "showAddToCartButton" : true,
+        "showBreadCrumbs" : true,
+        "showNegotiatedPrice" : true,
+        "showOriginalPrice" : true,
+        "showProductImage" : true,
+        "viewOptionsButtonText" : "VIEW OPTIONS"
+      },
+      "componentName" : "b2b_search_builder:resultsDisplay",
+      "id" : "aeb64120-0409-43d6-84a8-c3f7588fe59e",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "f5563fa8-9cb4-49bc-aa97-4f43211d8577",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "e223f3d4-aed2-48b5-830b-5daf14a5b1bf",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "{!Record._Object}: {!Record._Title}"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "839c7652-e52d-4538-9083-80ac68d2fb65",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "695b5970-eb79-4642-af5f-dd386514e5c9",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "detail-0ZG"
+}

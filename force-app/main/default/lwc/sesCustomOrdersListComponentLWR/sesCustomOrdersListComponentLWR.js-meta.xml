@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>52.0</apiVersion>
+    <isExposed>true</isExposed>
+    <masterLabel>SES Custom Orders List Component (LWR)</masterLabel>
+    <targets>
+        <target>lightningCommunity__Page</target>
+        <target>lightningCommunity__Default</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightningCommunity__Default">
+            <property name="paddingLeft" type="String" default="11%" label="Padding left"/>
+            <property name="reordering" type="Boolean" default="false" label="Display reordering"/>
+            <property name="paddingRight" type="String" default="11%" label="Padding right"/>
+            <property name="displayAddNewOrderButton" type="Boolean" default="true" label="Display 'Add new order button'"/>
+            <property name="displayViewRequestsButton" type="Boolean" default="true" label="Display 'View my assistance requests'"/>
+            <property name="pageNameToNavigateTo" label="Page name to navigate to" type="String" default="SES_STORE__c" />
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>

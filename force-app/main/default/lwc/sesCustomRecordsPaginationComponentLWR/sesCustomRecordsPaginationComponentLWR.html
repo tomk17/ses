@@ -1,0 +1,55 @@
+<template>
+    <lightning-spinner if:true={isLoading} alternative-text="Loading" size="small"></lightning-spinner>
+
+    <div>
+        <template if:true={showTable}>
+            <template if:true={records}>
+                <div class="anchor-pagination"></div>
+                <lightning-datatable key-field="Id" data={recordsToDisplay} show-row-number-column="false"
+                    hide-checkbox-column columns={columns} onrowaction={handleRowAction}
+                    class="slds-table slds-table_cell-buffer slds-table_fixed-layout slds-max-medium-table_stacked slds-table_bordered"
+                    default-sort-direction={defaultSortDirection} sorted-direction={sortDirection} sorted-by={sortedBy}
+                    onsort={onHandleSort} onsave={handleSave} draft-values={draftValues}>
+                </lightning-datatable>
+            </template>
+
+        </template>
+    </div>
+
+    <!-- pagination -->
+    <div class="slds-align_absolute-center">
+        <div slot="actions" class="slot-actions">
+            <lightning-button class="previous-page-button" variant="base" title="previous" label=""
+                icon-name="utility:back" icon-position="left" onclick={handleClick}></lightning-button>
+
+            <lightning-button class="page-button" variant="base" title="1" label="1" icon-position="left"
+                onclick={handleClick}></lightning-button>
+
+            <template if:true={showSeparator1}>
+                ...
+            </template>
+
+            <template if:true={pagelinks}>
+                <lightning-button-group>
+                    <template for:each={pagelinks} for:item="page">
+                        <lightning-button class="page-button" variant="base" key={page} title={page} label={page}
+                            onclick={handlePage}></lightning-button>
+                    </template>
+                </lightning-button-group>
+            </template>
+
+            <template if:true={showSeparator2}>
+                ...
+            </template>
+            <template if:true={showLastPageLink}>
+                <lightning-button class="page-button" variant="base" title={totalPages} label={totalPages}
+                    icon-position="right" onclick={handleClick}></lightning-button>
+
+                <lightning-button variant="base" class="next-page-button" title="next" label=""
+                    icon-name="utility:forward" icon-position="right" onclick={handleClick}></lightning-button>
+            </template>
+
+        </div>
+    </div>
+    <div class="style-wrapper"></div>
+</template>

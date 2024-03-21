@@ -1,0 +1,11 @@
+{
+  "activeViewId" : "bbdb398e-6222-4dfc-bc56-232d4f902e1e",
+  "appPageId" : "0f39f530-1371-40d3-9005-f22e4fda9f38",
+  "configurationTags" : [ ],
+  "id" : "89d6f062-c477-4344-a19b-7136713732e9",
+  "label" : "Hardware Policies and Limited Warranty",
+  "pageAccess" : "Public",
+  "routeType" : "custom-hardware-policies-and-limited-warranty",
+  "type" : "route",
+  "urlPrefix" : "hardware-policies-and-limited-warranty"
+}

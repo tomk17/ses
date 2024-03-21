@@ -1,0 +1,78 @@
+.warranty-component {
+    background-color: #F6F6F6;
+    padding: 60px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.warranty-component h1 {
+    font-size: 36px;
+    text-align: center;
+    line-height: normal;
+}
+
+.choose-product,
+.scan-label {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+    margin: auto;
+}
+
+.fixed-width-div{
+    width: 530px;
+}
+
+.tags-images,
+.labels-images {
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 70px;
+}
+
+.GImg,
+.SImg{
+    max-width: 280px;
+}
+
+.scan-input {
+    width: 550px;
+}
+
+.btnIconOverlay {
+    top: 54.5%;
+    right: 3.5%;
+    pointer-events: none;
+}
+
+.help-paragraph {
+    color: #8B8A88;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+img {
+    object-fit: contain;
+}
+
+.result-div-border {
+    background: linear-gradient(90deg, rgba(226, 123, 71, 1) 0%, rgba(254, 211, 138, 1) 100%);
+    padding: 1px;
+    text-align: center;
+}
+
+.result-div {
+    padding: 10px 15px !important;
+    border: none;
+    font-family: 'Maax_Regular';
+    font-size: 16px;
+    background-color: white;
+    color: black;
+}

@@ -1,0 +1,121 @@
+{
+  "appPageId" : "420337f2-f879-4442-ac4d-7a772ca6fa6a",
+  "componentName" : "community_layout:sldsFlexibleLayout",
+  "dataProviders" : [ ],
+  "id" : "fc430f60-0839-4209-9c7e-65ecea4fae56",
+  "label" : "Order",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "backgroundImageConfig" : "",
+        "backgroundImageOverlay" : "rgba(0,0,0,0)",
+        "sectionConfig" : "{\"UUID\":\"61d5dccc-a2bb-4a91-826e-b7ec084fba84\",\"columns\":[{\"UUID\":\"e0db2456-2186-423b-8d15-526c61553445\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":null}]}"
+      },
+      "componentName" : "community_layout:section",
+      "id" : "61d5dccc-a2bb-4a91-826e-b7ec084fba84",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : { },
+          "componentName" : "c:sesCustomOrderDetailPageStyle",
+          "id" : "a29784c9-a2c6-4c89-89f0-54be0894bbca",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "richTextValue" : "<p style=\"text-align: center;\"><span style=\"font-size: 48px;\">Thank you for your order!</span></p><p style=\"text-align: center;\"><span style=\"font-size: 28px; background-color: transparent; color: var(--slds-g-color-neutral-base-10, var(--lwc-colorTextDefault,rgba(0, 0, 0, 0.8)));\">You will receive an email confirmation soon</span><span style=\"background-color: transparent; color: var(--slds-g-color-neutral-base-10, var(--lwc-colorTextDefault,rgba(0, 0, 0, 0.8)));\">&nbsp;</span></p><p style=\"text-align: center;\"><br></p>"
+          },
+          "componentName" : "community_builder:richTextEditor",
+          "id" : "66b92886-f6c3-45d5-80e9-694132160f07",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : {
+            "fr" : "24df6b4b-19a0-46dc-9483-8da5460615f7"
+          },
+          "renditions" : [ {
+            "id" : "24df6b4b-19a0-46dc-9483-8da5460615f7",
+            "renditionValue" : {
+              "componentAttributes" : {
+                "richTextValue" : "<p style=\"text-align: center;\"><span style=\"font-size: 48px;\">Merci pour votre commande!</span></p><p style=\"text-align: center;\"><span style=\"font-size: 28px;\">Vous recevrez une confirmation prochainement</span></p><p style=\"text-align: center;\"><br></p>"
+              }
+            },
+            "type" : "renditionComponent"
+          } ],
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "css" : ".forceCommunityFlowCommunity{ width:70%; margin-left:15%} .flow-button__FINISH button {background: linear-gradient(45deg, #FF9646 0%, #FFD264 100%)!important;color:black;font-weight:800!important;border: 2px solid #f49744!important;} .flow-button__FINISH button:hover{color:black!important}"
+          },
+          "componentName" : "c:addCssOnSpecificPage",
+          "id" : "12f51159-388d-4838-ba9d-9b6f5d88d12d",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "activeTabBorderHighlightWeight" : "2px",
+            "activeTabTextEmphasis" : "{\"bold\":true}",
+            "activeTabTextStyle" : "{\"textStyle\":\"paragraph1\",\"headingTag\":\"p\"}",
+            "borderColor" : "",
+            "borderRadius" : "0px",
+            "borderWeight" : "0px",
+            "enableOverflowMenu" : false,
+            "imageFit" : "cover",
+            "imagePosition" : "center center",
+            "overflowIconColor" : "rgb(116,116,116)",
+            "overflowIconStyle" : "down-arrow",
+            "overflowMenuLabel" : "More",
+            "tabAlignment" : "left",
+            "tabBorderColor" : "",
+            "tabBorderRadius" : "0px",
+            "tabBorderWeight" : "0px",
+            "tabHoverBorderHighlightWeight" : "1px",
+            "tabLayout" : "horizontal",
+            "tabPadding" : "12px",
+            "tabTextStyle" : "{\"textStyle\":\"paragraph1\",\"headingTag\":\"p\"}",
+            "tabsetConfig" : "{\"UUID\":\"bfdc3bdd-7caa-41ef-a22d-8030f3f74d41\",\"activeTab\":null,\"useOverflowMenu\":null,\"tabs\":[{\"UUID\":\"54848b20-ae27-4492-b77b-f5d4588c42a8\",\"tabName\":\"Produits commandés\",\"tabKey\":\"tab1\",\"locked\":false,\"allowGuestUser\":false},{\"UUID\":\"97fa5005-f761-4028-bcca-e94f7eafdb43\",\"tabName\":\"Expéditions\",\"tabKey\":\"tab2\",\"locked\":false,\"allowGuestUser\":false},{\"UUID\":\"3c0bec8c-bdd1-45b7-9864-574ec1ee7065\",\"tabName\":\"Factures\",\"tabKey\":\"tab3\",\"locked\":false,\"allowGuestUser\":false}]}",
+            "width" : "100%"
+          },
+          "componentName" : "dxp_layout:tabs",
+          "id" : "bfdc3bdd-7caa-41ef-a22d-8030f3f74d41",
+          "regions" : [ {
+            "id" : "54848b20-ae27-4492-b77b-f5d4588c42a8",
+            "regionLabel" : "Produits commandés",
+            "regionName" : "tab1",
+            "renditionMap" : { },
+            "type" : "region"
+          }, {
+            "id" : "97fa5005-f761-4028-bcca-e94f7eafdb43",
+            "regionLabel" : "Expéditions",
+            "regionName" : "tab2",
+            "renditionMap" : { },
+            "type" : "region"
+          }, {
+            "id" : "3c0bec8c-bdd1-45b7-9864-574ec1ee7065",
+            "regionLabel" : "Factures",
+            "regionName" : "tab3",
+            "renditionMap" : { },
+            "type" : "region"
+          } ],
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "e0db2456-2186-423b-8d15-526c61553445",
+        "regionLabel" : "Column 1",
+        "regionName" : "col1",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "scopedBrandingSetId" : null,
+      "type" : "component"
+    } ],
+    "id" : "3f300e54-404d-4534-a855-9c86f8dd674b",
+    "regionName" : "content",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "order"
+}

@@ -1,0 +1,38 @@
+{
+  "appPageId" : "7f3c3a22-7f52-483b-8435-18c8b47cb803",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "dataProviders" : [ ],
+  "id" : "6df50970-828d-4453-8fde-cca5c4d67d90",
+  "label" : "Order Summary List",
+  "regions" : [ {
+    "id" : "080dd606-62d1-4c6f-82d3-c6b5c87b9d9c",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "displayAddNewOrderButton" : true,
+        "displayViewRequestsButton" : true,
+        "paddingLeft" : "11%",
+        "paddingRight" : "11%",
+        "pageNameToNavigateTo" : "SES_STORE__c",
+        "reordering" : false
+      },
+      "componentName" : "c:sesCustomOrdersListComponent",
+      "id" : "8a61d358-58cc-48d8-ab57-e5aa62699854",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "ed70d272-5f29-4b98-b720-f027b30c39e3",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "7870916f-f916-46c3-835f-6068af1f0231",
+    "regionName" : "footer",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "list-1Os"
+}

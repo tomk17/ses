@@ -1,0 +1,259 @@
+{
+  "appPageId" : "0f39f530-1371-40d3-9005-f22e4fda9f38",
+  "componentName" : "siteforce:dynamicLayout",
+  "dataProviders" : [ ],
+  "id" : "bbdb398e-6222-4dfc-bc56-232d4f902e1e",
+  "label" : "Hardware Policies and Limited Warranty",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "background" : "background: rgb(244,244,244)",
+        "backgroundOverlay" : "rgba(0,0,0,0.5)",
+        "contentAreaWidth" : 60,
+        "sectionConfig" : {
+          "UUID" : "36d8eda2-020f-4788-911d-e6e945f9b1c1",
+          "columns" : [ {
+            "UUID" : "1c4ad43d-52d3-4faa-be1f-3a4b179ec793",
+            "columnKey" : "1",
+            "columnName" : "Column 1",
+            "columnWidth" : "12",
+            "seedComponents" : [ ]
+          } ]
+        },
+        "sectionHeight" : 400
+      },
+      "componentName" : "forceCommunity:section",
+      "id" : "36d8eda2-020f-4788-911d-e6e945f9b1c1",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : {
+            "richTextValue" : "<h1 style=\"text-align: center;\">Warranty Policy</h1>"
+          },
+          "componentName" : "forceCommunity:richTextInline",
+          "id" : "a9a040de-6368-497e-840c-3eb91b56f42c",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "richTextValue" : "<p style=\"text-align: justify;\">SES-imagotag sells its products <b>(“Products”)</b>, whichmay be hardware <b>(“Hardware”)</b> or software<b> (“Software”) </b>products, to direct clients <b>(“Customer”) </b>as well as to any of its authorised resellers <b>(“Partner”)</b>. SES-imagotag provides a warranty on its products <b>(“Warranty”)</b>, according to the present terms and conditions, unless otherwise provided under mandatory provisions of applicable laws <b>(“Warranty Conditions”)</b>.</p>"
+          },
+          "componentName" : "forceCommunity:richTextInline",
+          "id" : "d5a0d367-e34e-4bda-b668-a23d0e40c2ef",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "richTextValue" : "<div class=\"container slds-text-align_center\"\n     style=\"margin: auto;padding-top: 20px; padding-bottom: 40px;\">\n\t\t<h2 style=\"color: black;\n                   text-align: center;\n                   border-bottom-size: 4px;\n                   border-bottom-style: solid;\n                   border-bottom-color: #f00000;\n                   border-bottom-width: 3px;\n                   border-bottom-height: 30px;\n                   display: inline-block;\"\n        >1. Warranty period (\"Warranty Period\") </h2>\n</div>"
+          },
+          "componentName" : "forceCommunity:htmlBlock",
+          "id" : "fca56124-c773-4f58-b828-1891645dd1f5",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "richTextValue" : "<p style=\"text-align: justify;\">The&nbsp;Warranty&nbsp;Period&nbsp;for&nbsp;any Hardware shall&nbsp;be <u>twelve (12) months</u> starting with the date of invoice of&nbsp;the Product tothe&nbsp;Partner&nbsp;(if&nbsp;any)&nbsp;or to the Customer in case of direct purchase. In case of Product which was repaired or replaced by SES-imagotag&nbsp;according&nbsp;to&nbsp;this&nbsp;Warranty, the remaining Warranty&nbsp;Period applicable&nbsp;to&nbsp;such Product will be extended for ninety (90) days. The Warranty Period for any Software shall be <u>three (3)&nbsp;months</u> from&nbsp;the&nbsp;point&nbsp;in&nbsp;time&nbsp;in&nbsp;which&nbsp;such Software&nbsp;has&nbsp;been&nbsp;handed&nbsp;over&nbsp;or&nbsp;otherwise&nbsp;been made availabletothe Partner or to the Customer.</p>"
+          },
+          "componentName" : "forceCommunity:richTextInline",
+          "id" : "cc119716-ce53-471b-8b92-6668fd2dbde8",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "richTextValue" : "<div class=\"container slds-text-align_center\"\n     style=\"margin: auto;padding-top: 20px; padding-bottom: 40px;\">\n\t\t<h2 style=\"color: black;\n                   text-align: center;\n                   border-bottom-size: 4px;\n                   border-bottom-style: solid;\n                   border-bottom-color: #f00000;\n                   border-bottom-width: 3px;\n                   border-bottom-height: 30px;\n                   display: inline-block;\"\n        >2. Scope of the warranty for Hardware</h2>\n</div>"
+          },
+          "componentName" : "forceCommunity:htmlBlock",
+          "id" : "43b00cda-1f61-433b-a306-787d117ad866",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "richTextValue" : "<p style=\"text-align: justify;\">The features, technical applicability and conditions of use of any Product sold by SES-imagotag are outlined in a functional description or data sheet which is available for each Product from SESimagotag’s website <b>(\"Functional Description\")</b>. The batteries are not covered by the Warranty. SES-imagotag represents and warrants that – at the time of handover to the Partner (if any) or to the Customer in case of direct purchase – each Product is in a functional condition in accordance with the applicable Functional Description and fulfil the usually postulated characteristics and the current state of the art. Any further specific properties of a Product must be expressly designated and agreed upon by the parties in writing and may not be implied by the Partner and/or Customer.</p>"
+          },
+          "componentName" : "forceCommunity:richTextInline",
+          "id" : "cf103927-ff38-4d6b-982c-c11358e3caf2",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "richTextValue" : "<div class=\"container slds-text-align_center\"\n     style=\"margin: auto;padding-top: 20px; padding-bottom: 40px;\">\n\t\t<h2 style=\"color: black;\n                   text-align: center;\n                   border-bottom-size: 4px;\n                   border-bottom-style: solid;\n                   border-bottom-color: #f00000;\n                   border-bottom-width: 3px;\n                   border-bottom-height: 30px;\n                   display: inline-block;\"\n        >3. Scope of the warranty for Software</h2>\n</div>"
+          },
+          "componentName" : "forceCommunity:htmlBlock",
+          "id" : "b6006d4c-7670-4949-8734-c5c2ca0d531b",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "richTextValue" : "<p style=\"text-align: justify;\">Any type of support not covered by the Warranty shall be subject to a quotation or to a separate service agreement to be mutually agreed with the Partner and/or Customer.</p>"
+          },
+          "componentName" : "forceCommunity:richTextInline",
+          "id" : "89d97b50-99ee-4d43-b981-7c6f0b67836a",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "richTextValue" : "<div class=\"container slds-text-align_center\"\n     style=\"margin: auto;padding-top: 20px; padding-bottom: 40px;\">\n\t\t<h2 style=\"color: black;\n                   text-align: center;\n                   border-bottom-size: 4px;\n                   border-bottom-style: solid;\n                   border-bottom-color: #f00000;\n                   border-bottom-width: 3px;\n                   border-bottom-height: 30px;\n                   display: inline-block;\"\n        >4. Support maintenance</h2>\n</div>"
+          },
+          "componentName" : "forceCommunity:htmlBlock",
+          "id" : "6b3a4e6e-9d92-41fe-8586-df6bfa21b78a",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "richTextValue" : "<p style=\"text-align: justify;\">Any type of support not covered by the Warranty shall be subject to a quotation or to a separate service agreement to be mutually agreed with the Partner and/or Customer.</p>"
+          },
+          "componentName" : "forceCommunity:richTextInline",
+          "id" : "ee7d1e2a-9a01-480d-9fc0-9c3cee9c1c1f",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "richTextValue" : "<div class=\"container slds-text-align_center\"\n     style=\"margin: auto;padding-top: 20px; padding-bottom: 40px;\">\n\t\t<h2 style=\"color: black;\n                   text-align: center;\n                   border-bottom-size: 4px;\n                   border-bottom-style: solid;\n                   border-bottom-color: #f00000;\n                   border-bottom-width: 3px;\n                   border-bottom-height: 30px;\n                   display: inline-block;\"\n            >5. Notification of Defects under Warranty</h2>\n</div>"
+          },
+          "componentName" : "forceCommunity:htmlBlock",
+          "id" : "82d5fc8c-6bdf-4b6d-babd-5dfd3e7d1de3",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "richTextValue" : "<p style=\"text-align: justify;\">Any defects, bugs or other errors of the Product <b>(\"Defects\")</b> detected during the Warranty Period shall be notified to SES-imagotag. Notice of any Defect <b>(\"Defect Notice\") must be given electronically by email to following addresses:</b></p><p><br></p><p><span style=\"font-size: 20px; color: rgb(230, 0, 0);\">•</span><span style=\"font-size: 20px; color: rgb(0, 138, 0);\"> </span>EMEA: <a href=\"https://sesimagotag--b2bcommerc.livepreview.salesforce-communities.com/imagotagpoc/s/support@ses-imagotag.com\" rel=\"noopener noreferrer\" target=\"_blank\">support@ses-imagotag.com</a></p><p><span style=\"font-size: 20px; color: rgb(230, 0, 0);\">•</span><span style=\"font-size: 20px; color: rgb(0, 138, 0);\"> </span>AMERICAS: <a href=\"https://sesimagotag--b2bcommerc.livepreview.salesforce-communities.com/imagotagpoc/s/support.na@ses-imagotag.com\" rel=\"noopener noreferrer\" target=\"_blank\">support.na@ses-imagotag.com</a></p><p><span style=\"font-size: 20px; color: rgb(230, 0, 0);\">•</span><span style=\"font-size: 20px; color: rgb(0, 138, 0);\"> </span>ASIA: <a href=\"https://sesimagotag--b2bcommerc.livepreview.salesforce-communities.com/imagotagpoc/s/support.asia@ses-imagotag.com\" rel=\"noopener noreferrer\" target=\"_blank\">support.asia@ses-imagotag.com</a></p><p><br></p><p style=\"text-align: justify;\">In each case, the Defect Notice shall state precisely (i) the type of Defect, including a detailed description thereof, (ii) the application during which such Defect occurred, (iii) the proof of purchase and (iv) any measures already taken by the Customer to repair the Defect. If the Customer fails to timely notify SES-imagotag about any Defect, the Customer shall not be entitled to any legal remedies (in particular, any warranty or damage claims) with regard to such Defect.&nbsp;&nbsp;</p>"
+          },
+          "componentName" : "forceCommunity:richTextInline",
+          "id" : "8da34203-bda4-424c-a236-8a898783b863",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "richTextValue" : "<div class=\"container slds-text-align_center\"\n     style=\"margin: auto;padding-top: 20px; padding-bottom: 40px;\">\n\t\t<h2 style=\"color: black;\n                   text-align: center;\n                   border-bottom-size: 4px;\n                   border-bottom-style: solid;\n                   border-bottom-color: #f00000;\n                   border-bottom-width: 3px;\n                   border-bottom-height: 30px;\n                   display: inline-block;\"\n        >6. Warranty procedure</h2>\n</div>"
+          },
+          "componentName" : "forceCommunity:htmlBlock",
+          "id" : "508c2be4-00d9-4630-b51f-ed1929041039",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "richTextValue" : "<p style=\"text-align: justify;\">In case of a justified warranty claim by the Partner or the Customer regarding a defective Product, SESimagotag will send a Return Material Authorisation<b> (“RMA”) </b>to the Partner or the Customer, which shall accompany any returned defective Product (minimum of quantity to grant a RMA for ESLs: 100 units). The Partner or the Customer should send the defective Products at its own costs and risks. After analysis, SES-imagotag may, at its own discretion, choose to either:</p><p style=\"text-align: justify;\"><br></p><p style=\"text-align: justify;\"><b>(i) </b>repair the defective Product within thirty (30) days from receipt of by SES-imagotag of the defective Product, or</p><p style=\"text-align: justify;\"><b>(ii) </b>replace the defective Product by an equivalent product (which may be new or equivalent to new), or</p><p style=\"text-align: justify;\"><b>(iii) </b>reimburse the defective Product.</p><p style=\"text-align: justify;\"><br></p><p style=\"text-align: justify;\">Any other claims or legal remedies, in particular any right to claim price reduction or any conversion right as well as any damage claims shall be excluded. If a Defect has been caused by negligent behaviour of the Partner or the Customer, the latter shall compensate SES-imagotag for all costs incurred by SES imagotag in connection with the assessment and evaluation of the relevant Defect.</p>"
+          },
+          "componentName" : "forceCommunity:richTextInline",
+          "id" : "80d931bb-0a9e-4757-a50e-9beb0cdac3ca",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "richTextValue" : "<div class=\"container slds-text-align_center\"\n     style=\"margin: auto;padding-top: 20px; padding-bottom: 40px;\">\n\t\t<h2 style=\"color: black;\n                   text-align: center;\n                   border-bottom-size: 4px;\n                   border-bottom-style: solid;\n                   border-bottom-color: #f00000;\n                   border-bottom-width: 3px;\n                   border-bottom-height: 30px;\n                   display: inline-block;\"\n        >7. Conditions</h2>\n</div>"
+          },
+          "componentName" : "forceCommunity:htmlBlock",
+          "id" : "f93693cd-cd03-4a77-a368-ad6a243f8150",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "richTextValue" : "<p style=\"text-align: justify;\">SES-imagotag does not assume any liability whatsoever for defects or other failures of a Product:</p><p style=\"text-align: justify;\"><br></p><p style=\"text-align: justify;\"><b>(a)</b> Related to the battery(ies) of the Hardware;</p><p style=\"text-align: justify;\"><br></p><p style=\"text-align: justify;\"><b>(b) </b>caused by application errors of any kind whatsoever or other forms of improper handling of the Product and which could have been avoided by proper and careful use of the Product;</p><p style=\"text-align: justify;\"><br></p><p style=\"text-align: justify;\"><b>(c) </b>resulting from (i) a change of operating system components, interfaces or parameters, (ii) use of unsuitable organisational means or data carriers;</p><p style=\"text-align: justify;\"><br></p><p style=\"text-align: justify;\"><b>(d) </b>caused by viruses or exposure of the Product to circumstances such as fire, accidents, power failures, etc. which are caused by external factors not under the control of SES-imagotag;</p><p style=\"text-align: justify;\"><br></p><p style=\"text-align: justify;\"><b>(e) </b>caused by transmission errors to data carriers or on the Internet;</p><p style=\"text-align: justify;\"><br></p><p style=\"text-align: justify;\"><b>(f) </b>caused by improper inspection and/or maintenance operations conducted by the Partner or the Customer or third parties with regard to the Product;</p><p style=\"text-align: justify;\"><br></p><p style=\"text-align: justify;\"><b>(g) </b>resulting from a use of the Product which does not comply with the recommendations and specifications of SES-imagotag (e.g. use or installation which is not compliant with the applicable Functional Description or any other technical specifications provided by SES-imagotag, installation of a non-compatible software program or interface or power supply or other equipment, number of update or refresh exceeding the preconised limits, etc.);</p><p style=\"text-align: justify;\"><br></p><p style=\"text-align: justify;\"><b>(h) </b>resulting from use or storage which is harmful to the proper working of the Product (e.g. abnormal use, incorrect maintenance and/or storage) and/or non-compliance with the applicable Product environment specifications;</p><p style=\"text-align: justify;\"><br></p><p style=\"text-align: justify;\"><b>﻿(i) </b>caused by the Partner or the Customer, their agents, employees, any other manufacturer or any third party outside the sphere and control of SESimagotag.</p>"
+          },
+          "componentName" : "forceCommunity:richTextInline",
+          "id" : "5ad84ffe-096f-4895-9c24-d2964dfbce4f",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "richTextValue" : "<div class=\"container slds-text-align_center\"\n     style=\"margin: auto;padding-top: 20px; padding-bottom: 40px;\">\n\t\t<h2 style=\"color: black;\n                   text-align: center;\n                   border-bottom-size: 4px;\n                   border-bottom-style: solid;\n                   border-bottom-color: #f00000;\n                   border-bottom-width: 3px;\n                   border-bottom-height: 30px;\n                   display: inline-block;\"\n        >8. Optional extended warranty (\"Optional Extended Warranty\") </h2>\n</div>"
+          },
+          "componentName" : "forceCommunity:htmlBlock",
+          "id" : "c62d8453-97b6-4c03-b349-56585fca1e6a",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "richTextValue" : "<p style=\"text-align: justify;\">In addition to the Warranty Period, SES-imagotag offers an Optional Extended Warranty that extends the Warranty Period for an additional period, to be determined upon mutual consent. The Partner (if any) or the Customer may elect to purchase the Optional Extended Warranty at the time of sales or within the regular Warranty Period. During Optional Extended Warranty, the Warranty Conditions will continue to apply.&nbsp;Replace this text with content of your own.</p>"
+          },
+          "componentName" : "forceCommunity:richTextInline",
+          "id" : "3e1184d9-e354-47a5-837b-0882d5708e49",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "richTextValue" : "<div class=\"container slds-text-align_center\"\n     style=\"margin: auto;padding-top: 20px; padding-bottom: 40px;\">\n\t\t<h2 style=\"color: black;\n                   text-align: center;\n                   border-bottom-size: 4px;\n                   border-bottom-style: solid;\n                   border-bottom-color: #f00000;\n                   border-bottom-width: 3px;\n                   border-bottom-height: 30px;\n                   display: inline-block;\"\n        >9. Liability</h2>\n</div>"
+          },
+          "componentName" : "forceCommunity:htmlBlock",
+          "id" : "a18a7093-a3b5-4dc1-b820-d041450dbdab",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "richTextValue" : "<p style=\"text-align: justify;\">Any liability of SES-imagotag vis à vis the Partner or the Customer for damages of any kind (except for personal injury) caused by SES-imagotag due to slight negligence shall be excluded. Further, any liability of SES-imagotag for loss of profit, loss or corruption of data or any indirect or consequential loss or damage whatsoever shall be excluded. The liability of SES-imagotag for damages (except for personal injury and damages due to gross negligence or wilful misconduct), if any, shall further be limited to repair, replacement or refund of the purchase price paid for the related Products, at SESimagotag’s option.</p>"
+          },
+          "componentName" : "forceCommunity:richTextInline",
+          "id" : "84e2c294-6cae-465a-bdde-02f869589359",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "richTextValue" : "<div class=\"container slds-text-align_center\"\n     style=\"margin: auto;padding-top: 20px; padding-bottom: 40px;\">\n\t\t<h2 style=\"color: black;\n                   text-align: center;\n                   border-bottom-size: 4px;\n                   border-bottom-style: solid;\n                   border-bottom-color: #f00000;\n                   border-bottom-width: 3px;\n                   border-bottom-height: 30px;\n                   display: inline-block;\"\n        >10. Final provisions</h2>\n</div>"
+          },
+          "componentName" : "forceCommunity:htmlBlock",
+          "id" : "01f4da4d-9ce9-4315-aa6a-42ccf777f71f",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "richTextValue" : "<p style=\"text-align: justify;\">The Partner or the Customer can only transfer the rights to the Warranty to third parties with the express permission of SES-imagotag. These Warranty Conditions shall be governed by French law, without any reference to its conflict of law principles. The applicability of the Vienna Sales Convention (CISG) is excluded. Disputes which cannot be resolved amicably shall be submitted exclusively to the Court of Nanterre in France. Any provision in these Warranty Conditions which is wholly or partially void, voidable or otherwise inapplicable does not affect the application of the other provisions. Any void, voidable or otherwise inapplicable provision would be replaced by a valid provision which comes as close as possible to the inapplicable provision in spirit.</p>"
+          },
+          "componentName" : "forceCommunity:richTextInline",
+          "id" : "be5e3a63-952a-45a4-8a85-f3ba073ff23b",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "1c4ad43d-52d3-4faa-be1f-3a4b179ec793",
+        "regionLabel" : "Column 1",
+        "regionName" : "1",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "207c30c5-faa8-4577-80fa-b8d3af1588aa",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Hardware Policies and Limited Warranty"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "6cd537f8-4b75-4743-967e-901dece9c573",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "1d47cf6a-816c-4dc3-b9d2-974a2abe24e2",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "custom-hardware-policies-and-limited-warranty"
+}

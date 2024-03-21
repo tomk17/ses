@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningMessageChannel xmlns="http://soap.sforce.com/2006/04/metadata">
+    <masterLabel>Checkout Delivery Message Channel</masterLabel>
+    <description>Message channel from checkout delivery component.</description>
+    <isExposed>true</isExposed>
+    <lightningMessageFields>
+        <description>shipping is done</description>
+        <fieldName>shippingDone</fieldName>
+    </lightningMessageFields>
+    <lightningMessageFields>
+        <description>billing is done</description>
+        <fieldName>billingDone</fieldName>
+    </lightningMessageFields>
+    <lightningMessageFields>
+        <fieldName>termsAndConditionsDone</fieldName>
+        <description>Terms and conditions are done</description>
+    </lightningMessageFields>
+
+</LightningMessageChannel>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Network xmlns="http://soap.sforce.com/2006/04/metadata">
+    <allowInternalUserLogin>false</allowInternalUserLogin>
+    <allowMembersToFlag>false</allowMembersToFlag>
+    <changePasswordTemplate>unfiled$public/CommunityChangePasswordEmailTRANSLATED</changePasswordTemplate>
+    <communityRoles/>
+    <disableReputationRecordConversations>false</disableReputationRecordConversations>
+    <emailSenderAddress>noreply@ses-imagotag.com</emailSenderAddress>
+    <emailSenderName>No reply SES-imagotag</emailSenderName>
+    <enableApexCDNCaching>false</enableApexCDNCaching>
+    <enableCustomVFErrorPageOverrides>false</enableCustomVFErrorPageOverrides>
+    <enableDirectMessages>false</enableDirectMessages>
+    <enableExperienceBundleBasedSnaOverrideEnabled>true</enableExperienceBundleBasedSnaOverrideEnabled>
+    <enableGuestChatter>false</enableGuestChatter>
+    <enableGuestFileAccess>true</enableGuestFileAccess>
+    <enableGuestMemberVisibility>false</enableGuestMemberVisibility>
+    <enableImageOptimizationCDN>true</enableImageOptimizationCDN>
+    <enableInvitation>false</enableInvitation>
+    <enableKnowledgeable>true</enableKnowledgeable>
+    <enableMemberVisibility>false</enableMemberVisibility>
+    <enableNicknameDisplay>false</enableNicknameDisplay>
+    <enablePrivateMessages>false</enablePrivateMessages>
+    <enableReputation>false</enableReputation>
+    <enableShowAllNetworkSettings>false</enableShowAllNetworkSettings>
+    <enableSiteAsContainer>true</enableSiteAsContainer>
+    <enableTalkingAboutStats>false</enableTalkingAboutStats>
+    <enableTopicAssignmentRules>true</enableTopicAssignmentRules>
+    <enableTopicSuggestions>false</enableTopicSuggestions>
+    <enableUpDownVote>false</enableUpDownVote>
+    <forgotPasswordTemplate>unfiled$public/Community_ForgotPasswordTRANSLATED</forgotPasswordTemplate>
+    <gatherCustomerSentimentData>true</gatherCustomerSentimentData>
+    <headlessForgotPasswordTemplate>unfiled$public/CommunityHeadlessForgotPasswordTemplate</headlessForgotPasswordTemplate>
+    <networkMemberGroups>
+        <profile>admin</profile>
+        <profile>analytics cloud integration user</profile>
+        <profile>b2bma integration user</profile>
+        <profile>analytics cloud security user</profile>
+        <profile>standardaul</profile>
+        <profile>standard</profile>
+        <profile>customer community login user ses-imagotag</profile>
+        <profile>minimum access - salesforce</profile>
+        <profile>ses-service vat</profile>
+        <profile>ses - manager of customer projects</profile>
+        <profile>ses-service</profile>
+        <profile>xxxx_ses-system administrator</profile>
+        <profile>ses-supply&amp;planning</profile>
+        <profile>ses - all view and edit</profile>
+        <profile>read only</profile>
+        <profile>marketingprofile</profile>
+        <profile>ses-marketing</profile>
+        <profile>ses-sales</profile>
+        <profile>ses-opérationnel</profile>
+        <profile>ses-partner-phoning</profile>
+        <profile>ses-chatter only</profile>
+        <profile>ses-adv</profile>
+        <profile>ses-responsable contrôle de gestion</profile>
+        <profile>ses-service-us</profile>
+        <profile>ses-quality</profile>
+        <profile>ses-amalto_api</profile>
+        <profile>ses-service-fsl</profile>
+        <profile>pse – project manager</profile>
+        <profile>pse - project manager (platform user)</profile>
+        <profile>integration</profile>
+        <profile>it resources</profile>
+        <profile>it support</profile>
+        <profile>ses- adv and  accounting manager</profile>
+        <profile>ses- adv and accounting manager 1</profile>
+    </networkMemberGroups>
+    <networkPageOverrides>
+        <changePasswordPageOverrideSetting>VisualForce</changePasswordPageOverrideSetting>
+        <forgotPasswordPageOverrideSetting>Designer</forgotPasswordPageOverrideSetting>
+        <homePageOverrideSetting>Designer</homePageOverrideSetting>
+        <loginPageOverrideSetting>Designer</loginPageOverrideSetting>
+        <selfRegProfilePageOverrideSetting>Designer</selfRegProfilePageOverrideSetting>
+    </networkPageOverrides>
+    <picassoSite>SES_imagotag_Customer_Portal1</picassoSite>
+    <selfRegistration>true</selfRegistration>
+    <sendWelcomeEmail>true</sendWelcomeEmail>
+    <site>SES_imagotag_Customer_Portal</site>
+    <siteArchiveStatus>NotArchived</siteArchiveStatus>
+    <status>Live</status>
+    <tabs>
+        <defaultTab>home</defaultTab>
+        <standardTab>Chatter</standardTab>
+    </tabs>
+    <welcomeTemplate>unfiled$public/Community_ForgotPasswordTRANSLATED</welcomeTemplate>
+</Network>

@@ -1,0 +1,74 @@
+{
+  "appPageId" : "0f39f530-1371-40d3-9005-f22e4fda9f38",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "dataProviders" : [ ],
+  "id" : "70517405-edb3-428b-89f4-2903c4fbbc63",
+  "label" : "Contact Support",
+  "regions" : [ {
+    "id" : "074d7f60-2191-48fc-acd1-f5e1c175f4cd",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "debugMode" : false,
+        "readOnly" : false
+      },
+      "componentName" : "c:b2b_ContactUsForm",
+      "id" : "3c21cf80-5e81-47f8-9388-f88e13e71dec",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "f8f7118b-1353-48eb-8d0a-81c201663fd4",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "askConfirmationQuestion" : true,
+        "confirmationMessageLabel" : "Got it!",
+        "deflectionSubtitle" : "Find what you need here.",
+        "deflectionTitle" : "Need Answers Fast?",
+        "firstQuestion" : "Did this content solve your issue?",
+        "maxResults" : 6,
+        "measureDeflection" : true,
+        "redirectUrl" : "",
+        "secondQuestion" : "Stop creating your case?",
+        "showArticles" : true,
+        "showDiscussions" : false,
+        "topicId" : ""
+      },
+      "componentName" : "forceCommunity:caseDeflection",
+      "id" : "2795d951-1977-4364-961f-09a325883933",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "5f2f0eee-4b8b-42b5-9ef2-5654e12a1a55",
+    "regionName" : "sidebar",
+    "type" : "region"
+  }, {
+    "id" : "62bdcd76-f2f8-4856-8230-eaad22e982be",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Contact Support"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "de6125b6-174c-4858-bdf8-c554f5893f9c",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "ea67c1ca-956c-49e1-99ff-6a7b963743f3",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "contactsupport"
+}

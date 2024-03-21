@@ -1,0 +1,11 @@
+{
+  "activeViewId" : "0ea91034-4fe2-49c5-a1a4-eb8909801090",
+  "appPageId" : "0f39f530-1371-40d3-9005-f22e4fda9f38",
+  "configurationTags" : [ ],
+  "id" : "875fe07a-04c9-4c48-add0-fe9ee20b2b8b",
+  "label" : "Why Easel",
+  "pageAccess" : "Public",
+  "routeType" : "custom-why-easel",
+  "type" : "route",
+  "urlPrefix" : "why-easel"
+}

@@ -1,0 +1,463 @@
+{
+  "appPageId" : "7d764b4a-d052-482a-b0a3-fbe81ddac77c",
+  "componentName" : "community_layout:sldsFlexibleLayout",
+  "dataProviders" : [ ],
+  "id" : "7414730d-f339-4851-9281-6979271a4dc2",
+  "label" : "Home",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "backgroundImageConfig" : "",
+        "backgroundImageOverlay" : "rgba(0,0,0,0)",
+        "sectionConfig" : "{\"UUID\":\"36aa741d-ad4c-4b28-8895-9bdf90bc2339\",\"columns\":[{\"UUID\":\"ae2669b0-736f-4a55-8e1f-38272e9cee03\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":null}]}"
+      },
+      "componentName" : "community_layout:section",
+      "id" : "36aa741d-ad4c-4b28-8895-9bdf90bc2339",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : {
+            "backgroundColor" : "",
+            "bannerAlignment" : "center",
+            "bannerLinkAssistiveText" : "",
+            "borderColor" : "",
+            "borderRadius" : 0,
+            "borderWidth" : 0,
+            "buttonDirection" : "horizontal",
+            "buttonGroupAlignment" : "center",
+            "buttonGroupHeight" : 50,
+            "buttonGroupSpacingHorizontal" : "space-evenly",
+            "buttonGroupSpacingVertical" : "space-evenly",
+            "buttonGroupWidth" : 50,
+            "contentPadding" : "none",
+            "contentPosition" : "center center",
+            "contentWidth" : 50,
+            "height" : 360,
+            "imageFit" : "cover",
+            "imageInfo" : "{\"imageInfoV1\":{\"url\":\"assets/images/home-sustainable.jpg\",\"altText\":\"Pods Banner\",\"contentKey\":\"\"}}",
+            "imagePosition" : "top center",
+            "isBannerLink" : false,
+            "overlayColor" : "",
+            "showButtons" : false,
+            "showSecondaryButton" : false,
+            "singleButtonAlignment" : "center",
+            "width" : 100
+          },
+          "componentName" : "dxp_content_layout:banner",
+          "id" : "6593eb34-466e-456a-960e-015a4e6f2240",
+          "regions" : [ {
+            "components" : [ {
+              "componentAttributes" : {
+                "backgroundColor" : "",
+                "paddingHorizontal" : "none",
+                "paddingVertical" : "none",
+                "text" : "Organic bars, gels, and drinks",
+                "textAlign" : "center",
+                "textColor" : "rgb(255, 255, 255)",
+                "textDecoration" : "{\"bold\": true}",
+                "textDisplayInfo" : "{\"headingTag\": \"h1\", \"textStyle\": \"heading-large\"}"
+              },
+              "componentName" : "dxp_base:textBlock",
+              "id" : "25a34561-66ff-4a2c-971e-1f694de2a208",
+              "renderPriority" : "NEUTRAL",
+              "renditionMap" : { },
+              "type" : "component"
+            }, {
+              "componentAttributes" : {
+                "backgroundColor" : "",
+                "paddingHorizontal" : "none",
+                "paddingVertical" : "none",
+                "text" : "Expertly crafted with the finest ingredients",
+                "textAlign" : "center",
+                "textColor" : "rgb(255, 255, 255)",
+                "textDecoration" : "{}",
+                "textDisplayInfo" : "{\"headingTag\": \"p\", \"textStyle\": \"body-regular\"}"
+              },
+              "componentName" : "dxp_base:textBlock",
+              "id" : "676d62c1-d91a-4121-b60e-15e230c58ec3",
+              "renderPriority" : "NEUTRAL",
+              "renditionMap" : { },
+              "type" : "component"
+            } ],
+            "id" : "c7ae4f0b-22c9-4012-9bfd-6c929ab13050",
+            "regionName" : "contentRegion",
+            "type" : "region"
+          }, {
+            "components" : [ {
+              "componentAttributes" : {
+                "alignment" : "center",
+                "size" : "standard",
+                "stretch" : "standard",
+                "text" : "Shop Now",
+                "type" : "primary",
+                "url" : "javascript:void(0)"
+              },
+              "componentName" : "dxp_base:button",
+              "id" : "1df64fda-f22e-4445-9ee2-5ad26fd903cc",
+              "renderPriority" : "NEUTRAL",
+              "renditionMap" : { },
+              "type" : "component"
+            } ],
+            "id" : "c3aa0967-0188-4979-b09a-1b23a585b627",
+            "regionName" : "bannerPrimaryButton",
+            "type" : "region"
+          }, {
+            "components" : [ {
+              "componentAttributes" : {
+                "alignment" : "center",
+                "size" : "standard",
+                "stretch" : "standard",
+                "text" : "Contact Us",
+                "type" : "secondary"
+              },
+              "componentName" : "dxp_base:button",
+              "id" : "f8fb9f3a-b248-46ef-880b-31753232862a",
+              "renderPriority" : "NEUTRAL",
+              "renditionMap" : { },
+              "type" : "component"
+            } ],
+            "id" : "1647b035-6ab9-4ab4-abf5-02fdb5210ffc",
+            "regionName" : "bannerSecondaryButton",
+            "type" : "region"
+          }, {
+            "components" : [ {
+              "componentAttributes" : { },
+              "componentName" : "dxp_page_layout:placeHolder",
+              "id" : "5679b0c2-ba1c-4319-95d6-24f1761ecea0",
+              "renderPriority" : "NEUTRAL",
+              "renditionMap" : { },
+              "type" : "component"
+            } ],
+            "id" : "f9ef8120-364b-4f10-98d6-a45098a85859",
+            "regionName" : "placeholder",
+            "type" : "region"
+          } ],
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "ae2669b0-736f-4a55-8e1f-38272e9cee03",
+        "regionLabel" : "Column 1",
+        "regionName" : "col1",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "scopedBrandingSetId" : null,
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "backgroundImageConfig" : "",
+        "backgroundImageOverlay" : "rgba(0,0,0,0)",
+        "sectionConfig" : "{\"UUID\":\"0d282180-c43f-424f-8b10-03799a8c1e7d\",\"columns\":[{\"UUID\":\"cb0d4072-9b85-499a-834c-2ddf48fe81d1\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":null}]}"
+      },
+      "componentName" : "community_layout:section",
+      "id" : "0d282180-c43f-424f-8b10-03799a8c1e7d",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : {
+            "browseStep" : 3,
+            "categoryId" : "0ZGxx00000004WfGAI",
+            "headerText" : "Recommended For You",
+            "pageSize" : 6
+          },
+          "componentName" : "b2c_lite_commerce:topSellers",
+          "id" : "6ee1ded3-a411-4842-bae5-1bb917158f22",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "cb0d4072-9b85-499a-834c-2ddf48fe81d1",
+        "regionLabel" : "Column 1",
+        "regionName" : "col1",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "scopedBrandingSetId" : null,
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "backgroundImageConfig" : "",
+        "backgroundImageOverlay" : "rgba(0,0,0,0)",
+        "sectionConfig" : "{\"UUID\":\"daee85c0-fe0d-4a42-957b-be46321e933f\",\"columns\":[{\"UUID\":\"08357355-bb81-4def-94e7-51d26ae1d4ca\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"4\",\"seedComponents\":null},{\"UUID\":\"1d9a5534-952a-4439-95f8-c77fca4b80b9\",\"columnName\":\"Column 2\",\"columnKey\":\"col2\",\"columnWidth\":\"8\",\"seedComponents\":null}]}"
+      },
+      "componentName" : "community_layout:section",
+      "id" : "daee85c0-fe0d-4a42-957b-be46321e933f",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : {
+            "addEntryButtonText" : "+ Add Product",
+            "addToCartButtonBorderRadius" : 0,
+            "addToCartButtonProcessingText" : "Adding...",
+            "addToCartButtonText" : "Add To Cart",
+            "incrementValueGuideText" : "Sold in increments of {0}",
+            "maximumValueGuideText" : "Maximum quantity is {0}",
+            "minimumValueGuideText" : "Minimum quantity is {0}",
+            "numberOfLineItemsToAddEachTime" : "3",
+            "numberOfLineItemsToStart" : "5",
+            "searchInputPlaceHolderText" : "Enter Sku",
+            "skuLabelText" : "SKU# {0}"
+          },
+          "componentName" : "commerce_builder:quickOrder",
+          "id" : "1e824ce0-493b-4134-bc1c-c11403a5e9c1",
+          "regions" : [ {
+            "components" : [ {
+              "componentAttributes" : {
+                "backgroundColor" : "",
+                "paddingHorizontal" : "none",
+                "paddingVertical" : "none",
+                "text" : "Quick Order",
+                "textAlign" : "left",
+                "textDecoration" : "{\"bold\": true}",
+                "textDisplayInfo" : "{\"headingTag\": \"h1\", \"textStyle\": \"heading-large\"}"
+              },
+              "componentName" : "dxp_base:textBlock",
+              "id" : "c20d3226-f217-4ca5-a80c-275d5a89c2a1",
+              "renderPriority" : "NEUTRAL",
+              "renditionMap" : { },
+              "type" : "component"
+            } ],
+            "id" : "e8fa679a-d9de-485f-97c9-c7d3066d5290",
+            "regionName" : "header",
+            "type" : "region"
+          }, {
+            "components" : [ {
+              "componentAttributes" : {
+                "backgroundColor" : "",
+                "paddingHorizontal" : "none",
+                "paddingVertical" : "none",
+                "text" : "Product",
+                "textAlign" : "left",
+                "textDecoration" : "{\"bold\": true}",
+                "textDisplayInfo" : "{\"headingTag\": \"p\", \"textStyle\": \"body-regular\"}"
+              },
+              "componentName" : "dxp_base:textBlock",
+              "id" : "abe18107-4f62-49b3-9775-d60659ac5cc4",
+              "renderPriority" : "NEUTRAL",
+              "renditionMap" : { },
+              "type" : "component"
+            } ],
+            "id" : "683cdaae-73a0-4f77-ade4-aac6ab1f5ef8",
+            "regionName" : "productHeader",
+            "type" : "region"
+          }, {
+            "components" : [ {
+              "componentAttributes" : {
+                "backgroundColor" : "",
+                "paddingHorizontal" : "none",
+                "paddingVertical" : "none",
+                "text" : "Quantity",
+                "textAlign" : "left",
+                "textDecoration" : "{\"bold\": true}",
+                "textDisplayInfo" : "{\"headingTag\": \"p\", \"textStyle\": \"body-regular\"}"
+              },
+              "componentName" : "dxp_base:textBlock",
+              "id" : "8e67ce1a-0972-4627-9b2f-37949ed6dfbf",
+              "renderPriority" : "NEUTRAL",
+              "renditionMap" : { },
+              "type" : "component"
+            } ],
+            "id" : "b8f7bce8-1310-455b-b428-cbbc031f4e5a",
+            "regionName" : "quantityHeader",
+            "type" : "region"
+          } ],
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "08357355-bb81-4def-94e7-51d26ae1d4ca",
+        "regionLabel" : "Column 1",
+        "regionName" : "col1",
+        "renditionMap" : { },
+        "type" : "region"
+      }, {
+        "components" : [ {
+          "componentAttributes" : {
+            "backgroundColor" : "",
+            "bannerAlignment" : "center",
+            "bannerLinkAssistiveText" : "",
+            "borderColor" : "",
+            "borderRadius" : 0,
+            "borderWidth" : 0,
+            "buttonDirection" : "horizontal",
+            "buttonGroupAlignment" : "center",
+            "buttonGroupHeight" : 50,
+            "buttonGroupSpacingHorizontal" : "space-evenly",
+            "buttonGroupSpacingVertical" : "space-evenly",
+            "buttonGroupWidth" : 50,
+            "contentPadding" : "none",
+            "contentPosition" : "center center",
+            "contentWidth" : 50,
+            "height" : 360,
+            "imageFit" : "cover",
+            "imageInfo" : "{\"imageInfoV1\":{\"url\":\"assets/images/home-sustainable.jpg\",\"altText\":\"Pods Banner\",\"contentKey\":\"\"}}",
+            "imagePosition" : "top center",
+            "isBannerLink" : false,
+            "overlayColor" : "",
+            "showButtons" : false,
+            "showSecondaryButton" : false,
+            "singleButtonAlignment" : "center",
+            "width" : 100
+          },
+          "componentName" : "dxp_content_layout:banner",
+          "id" : "f12a0c10-964e-4c57-97ce-6736903e7278",
+          "regions" : [ {
+            "components" : [ {
+              "componentAttributes" : {
+                "backgroundColor" : "",
+                "paddingHorizontal" : "none",
+                "paddingVertical" : "none",
+                "text" : "Organic bars, gels, and drinks",
+                "textAlign" : "center",
+                "textColor" : "rgb(255, 255, 255)",
+                "textDecoration" : "{\"bold\": true}",
+                "textDisplayInfo" : "{\"headingTag\": \"h1\", \"textStyle\": \"heading-large\"}"
+              },
+              "componentName" : "dxp_base:textBlock",
+              "id" : "a35f5f33-0717-4107-9420-da8d9165821f",
+              "renderPriority" : "NEUTRAL",
+              "renditionMap" : { },
+              "type" : "component"
+            }, {
+              "componentAttributes" : {
+                "backgroundColor" : "",
+                "paddingHorizontal" : "none",
+                "paddingVertical" : "none",
+                "text" : "Expertly crafted with the finest ingredients",
+                "textAlign" : "center",
+                "textColor" : "rgb(255, 255, 255)",
+                "textDecoration" : "{}",
+                "textDisplayInfo" : "{\"headingTag\": \"p\", \"textStyle\": \"body-regular\"}"
+              },
+              "componentName" : "dxp_base:textBlock",
+              "id" : "c3460e5f-9b3e-42ff-8cba-34af0c645371",
+              "renderPriority" : "NEUTRAL",
+              "renditionMap" : { },
+              "type" : "component"
+            } ],
+            "id" : "dbe7bfea-1970-4738-8197-4d523c37eeb3",
+            "regionName" : "contentRegion",
+            "type" : "region"
+          }, {
+            "components" : [ {
+              "componentAttributes" : {
+                "alignment" : "center",
+                "size" : "standard",
+                "stretch" : "standard",
+                "text" : "Shop Now",
+                "type" : "primary",
+                "url" : "javascript:void(0)"
+              },
+              "componentName" : "dxp_base:button",
+              "id" : "17d9811c-2528-4a25-a6b3-f9a97ea9bb45",
+              "renderPriority" : "NEUTRAL",
+              "renditionMap" : { },
+              "type" : "component"
+            } ],
+            "id" : "ca164201-9308-4138-87da-f833e9cceda0",
+            "regionName" : "bannerPrimaryButton",
+            "type" : "region"
+          }, {
+            "components" : [ {
+              "componentAttributes" : {
+                "alignment" : "center",
+                "size" : "standard",
+                "stretch" : "standard",
+                "text" : "Contact Us",
+                "type" : "secondary"
+              },
+              "componentName" : "dxp_base:button",
+              "id" : "109f6949-0659-46d1-ae0d-6e776a6a0a17",
+              "renderPriority" : "NEUTRAL",
+              "renditionMap" : { },
+              "type" : "component"
+            } ],
+            "id" : "d278052f-4e36-4d20-b5f5-1e3510dda9a2",
+            "regionName" : "bannerSecondaryButton",
+            "type" : "region"
+          }, {
+            "components" : [ {
+              "componentAttributes" : { },
+              "componentName" : "dxp_page_layout:placeHolder",
+              "id" : "a276eb09-a809-4333-92d2-31bbc4378121",
+              "renderPriority" : "NEUTRAL",
+              "renditionMap" : { },
+              "type" : "component"
+            } ],
+            "id" : "757f33e3-c78a-4fd1-ac2f-ea9508dfdccf",
+            "regionName" : "placeholder",
+            "type" : "region"
+          } ],
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "1d9a5534-952a-4439-95f8-c77fca4b80b9",
+        "regionLabel" : "Column 2",
+        "regionName" : "col2",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "scopedBrandingSetId" : null,
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "backgroundImageConfig" : "",
+        "backgroundImageOverlay" : "rgba(0,0,0,0)",
+        "sectionConfig" : "{\"UUID\":\"9c48de6d-6b4d-4f56-9b91-5c13370d1f31\",\"columns\":[{\"UUID\":\"a225849c-70d3-43e7-ba42-8e6be3af1155\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":null}]}"
+      },
+      "componentName" : "community_layout:section",
+      "id" : "9c48de6d-6b4d-4f56-9b91-5c13370d1f31",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : {
+            "browseStep" : 3,
+            "headerText" : "Shop By Category",
+            "pageSize" : 6
+          },
+          "componentName" : "b2c_lite_commerce:shopCategory",
+          "id" : "2d95fb3c-57fd-453d-98d2-280f6be56293",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "a225849c-70d3-43e7-ba42-8e6be3af1155",
+        "regionLabel" : "Column 1",
+        "regionName" : "col1",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "scopedBrandingSetId" : null,
+      "type" : "component"
+    } ],
+    "id" : "1c7753ac-90b9-4068-917a-31bc31bbb57f",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "pageTitle" : "Home",
+        "recordId" : "{!recordId}"
+      },
+      "componentName" : "community_builder:seoAssistant",
+      "id" : "2060aa28-dce9-4e28-ad88-e9cb3b3230a5",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "942ca947-45ce-4928-9762-b6ed89936f2b",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "home"
+}

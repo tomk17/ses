@@ -1,0 +1,11 @@
+{
+  "activeViewId" : "5fcd2de4-9d9a-4083-accd-52b1d9307339",
+  "appPageId" : "0f39f530-1371-40d3-9005-f22e4fda9f38",
+  "configurationTags" : [ ],
+  "id" : "155263bd-a4f4-49a5-b222-07fd80d86b26",
+  "label" : "General Terms of Service",
+  "pageAccess" : "Public",
+  "routeType" : "custom-general-terms-of-service",
+  "type" : "route",
+  "urlPrefix" : "general-terms-of-service"
+}

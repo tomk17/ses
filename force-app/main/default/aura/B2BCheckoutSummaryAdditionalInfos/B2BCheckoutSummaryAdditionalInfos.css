@@ -1,0 +1,57 @@
+.THIS .backgroundTH{
+    background-color: #D4D4D4;
+}
+
+.THIS .wrap{
+    display: flex;
+}
+
+.THIS .slds-box{
+    padding: initial!important;
+}
+
+.THIS .inheritPadding{
+    padding: initial!important;
+}
+
+.THIS commerce_checkout-payment-method{
+    margin-top: 10px!important;
+}
+
+.THIS .changePadding{
+    padding-top: 1rem!important;
+    padding-bottom: 1rem!important;
+}
+
+.THIS tr td {
+    text-align: center!important;
+}
+
+.THIS .middle {
+    text-align: center!important;
+}
+
+.THIS .end {
+    text-align: end!important;
+    padding-right: 1rem!important;
+}
+
+.THIS .begin {
+    padding-left: 1rem!important;
+}
+
+.THIS .hide {
+    display: none!important;
+}
+
+.THIS .block {
+    display: block!important;
+}
+
+/*.THIS button:hover + .slds-popover.slds-popover_tooltip.slds-hide {
+    display : block!important;
+}*/
+
+.THIS lightning-icon svg {
+    width:16px!important;
+}

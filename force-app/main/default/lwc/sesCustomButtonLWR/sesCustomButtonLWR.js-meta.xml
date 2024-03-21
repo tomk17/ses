@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>52.0</apiVersion>
+    <isExposed>true</isExposed>
+    <masterLabel>SES Custom Button (LWR)</masterLabel>
+    <targets>
+        <target>lightningCommunity__Page</target>
+        <target>lightningCommunity__Default</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightningCommunity__Default">
+            <property name="pageName" type="String" default="Page Name" label="Page name"/>
+            <property name="buttonLabel" type="String" default="Button label" label="Button label"/>
+            <property name="backgroundColor" type="String" default="#ffffff" label='Background color'/>
+            <property name="textColor" type="Color" default="#000000" label="Text color"/>
+            <property name="viewCatalog" type="Boolean" default="false" label="View catalog for B2B?"/>
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>

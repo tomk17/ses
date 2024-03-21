@@ -1,0 +1,248 @@
+{
+  "appPageId" : "0f39f530-1371-40d3-9005-f22e4fda9f38",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "dataProviders" : [ ],
+  "id" : "db515554-a059-42a9-8d46-a340d07d891d",
+  "label" : "How it works",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "richTextValue" : "<div class=\"slds-grid slds-wrap slds-gutters_x-small slds-grid_align-center slds-grid_vertical-align-center\">\n\t<div class=\"slds-col slds-size_1-of-1 slds-align_absolute-center\"\n\t\t\t style=\"background-color: white;height:30vw; max-height:519px;\">\n        \t<img src=\"/Howitworksheroimage.png\" alt=\"How it works\" style=\"width:100%;height:100%;\">\n\t</div>\n    <div class=\"slds-col slds-size_1-of-1\"\n         style=\"margin-top:max(-15vw,-255px);\">\n\t\t<div class=\"slds-grid slds-wrap slds-gutters_x-small slds-grid_align-center slds-grid_vertical-align-center\">\n            <div class=\"slds-col slds-size_1-of-5 slds-p-vertical_medium\">\n            </div>\n            <div class=\"slds-col slds-size_3-of-5 slds-p-vertical_large slds-grid_vertical-align-center\">\n                <div class=\"slds-p-vertical_large slds-grid_vertical-align-center\"\n                     style=\"position: relative;\n                            background-color: #2B2B2B;\n                            padding: 4vw;\n                            padding-bottom:min(2vw,52px);\n                            text-align: center;\n                            border-radius:20px;\n                            max-width: 1110px;\n                            height:440px;\">\n                    <h1 style=\"color: white;font-size:min(2.5vw, 43px);\">Simple and Reliable</h1>\n                    <p style=\"padding-top: 3vw;\n                              color: white;\n                              font-size:min(1.6vw, 28px);\n                              width: 75%;\n                              text-align: center;\n                              margin: auto;\">With Easel you have one less thing to worry about in your store. Our solutions have been rigorously tested and used by thousands of customers in all retail environments.</p>\n                </div>\n            </div>\n            <div class=\"slds-col slds-size_1-of-5 slds-p-vertical_medium\">                \n            </div>\n        </div>\n    </div>\n</div>"
+      },
+      "componentName" : "forceCommunity:htmlBlock",
+      "id" : "833a5310-10bb-4fd1-a43e-3260569d9e9a",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "ea10559a-5ac4-4265-8cc6-a51a0f998b51",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "richTextValue" : "<div style=\"height:6.5vw;\">\n</div>"
+      },
+      "componentName" : "forceCommunity:htmlBlock",
+      "id" : "267be690-5560-4499-bfd2-280aa0c50a6b",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "richTextValue" : "<div class=\"slds-grid slds-wrap slds-grid_align-center slds-grid_vertical-align-center\">\t\t\n\t<div class=\"slds-col slds-align_absolute-center\" style=\"width: 1366px;\">\n\t\t<div style=\"position: relative;\n                    width: 150vw;\n                    max-width: 1680px;\n                    height: 30vw;\n                    left: 3%;\">\n\t\t\t<div style=\"position:absolute;\n                        left: 0;\n                        top: 18%;\n                        width:30vw;\n                        max-width:510px;\n                        height:20vw\n                        max-height:340px;\n                        margin: auto;\">                \n                <img src=\"/DigitalLabel.png\" alt=\"Digital Tags\"\n                     style=\"border-radius:20px;height: 90%; width:90%;\">                          \n            </div>\n            \n            \n            <div style=\"position:absolute;\n                        left: 17%;\n                        top:0vw;\n                        width: 71.5vw;\n                        max-width: 1400px;\n                        height:30vw;\n                        max-height:510px;\n                        z-index:-1;\">\n\t\t\t\t<div class=\"slds-grid slds-wrap slds-gutters_x-small slds-grid_align-center slds-grid_vertical-align-center\"\n                    style=\"\n                        background-color: #f4f4f4;\n                        height: 108%;\n                        width: 74%;\n                        text-align: left;\n                        border-radius: 20px;\n                        padding-left: 15vw;\n                        padding-right:3vw;\n                        padding-top: 3vw;\n                        padding-bottom: 3vw;\n                        margin-right: 0px;\n                        box-shadow: 1px 1px 5px rgb(0 0 0 / 25%);\">\n                    <div class=\"slds-col slds-size_1-of-1 slds-grid_align-left\">\n                        <h1 style=\"color: black;font-size:min(2.5vw, 43px);\">Digital Tags</h1>\n                    </div>\n                    <div class=\"slds-col slds-size_1-of-1 slds-grid_align-left\">\n                        <p style=\"padding-top: 2vw;\n                              color: black;\n                              font-size:min(1.6vw, 28px);\">With Easel your price tags come to life. Made from ultra efficient e-paper displays that last five years without a battery change. Our displays support white, black and red colors, at high resolution providing clear and eye catching graphics for your shoppers.</p>\n                    </div>\n                </div>\n            </div>\n        </div>\n\t</div>\n</div>"
+      },
+      "componentName" : "forceCommunity:htmlBlock",
+      "id" : "979d95b6-2dcd-4f0b-9897-6e5bc864dc3e",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "richTextValue" : "<div style=\"height:6.5vw;\">\n</div>"
+      },
+      "componentName" : "forceCommunity:htmlBlock",
+      "id" : "5f473e94-fa5b-4e24-9c6f-dd0c8ab36d15",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "richTextValue" : "a<h1 style=\"color: black; font-size:min(2.5vw, 43px);text-align: center\">Cloud Managed</h1>\n<div style=\"height:1vw;\">\n</div>\n<p style=\"color:black;\n          font-size:min(1.6vw, 28px);\n          text-align:center;\n          width: 50%;\n          margin: auto;\">Easel manages your  digital labels through a secure internet connection to your POS provider. It's build to meet the highest security standard in the industry and to offer 24/7 reliability.\n</p>"
+      },
+      "componentName" : "forceCommunity:htmlBlock",
+      "id" : "8b898924-667e-4ea4-8143-55e3fc9968b9",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "richTextValue" : "<div style=\"height:2vw;\">\n</div>"
+      },
+      "componentName" : "forceCommunity:htmlBlock",
+      "id" : "532c3fae-9222-4b41-9c11-acc790abe613",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "config" : {
+          "contentItemContentKey" : "MCD75P4XTONVGMPEYBUX5WTJ3NRE",
+          "layoutDefinition" : {
+            "attributes" : {
+              "additionalLinks" : "{}",
+              "backgroundPosition" : "center center",
+              "backgroundSize" : "contain",
+              "bannerAspectRatio" : "16:9",
+              "bannerHeight" : "517",
+              "bannerSubTitleTextColor" : "#ffffff",
+              "bannerTitleTextColor" : "#ffffff",
+              "callToActionButtonBackgroundColor" : "",
+              "callToActionButtonBackgroundColorHover" : "",
+              "callToActionButtonBorderColor" : "",
+              "callToActionButtonBorderColorHover" : "",
+              "callToActionButtonBorderStyles" : "",
+              "callToActionButtonTextColor" : "",
+              "callToActionButtonTextColorHover" : "",
+              "callToActionLabel" : "View",
+              "componentHoverEffect" : "none",
+              "contentWidth" : "100",
+              "dateFormat" : "none",
+              "datetime" : "",
+              "datetimeFontSize" : "regular",
+              "datetimeTextColor" : "#ffffff",
+              "datetimeTextDecoration" : "",
+              "defaultLinksOverrides" : "{}",
+              "displayDayOfWeek" : false,
+              "eyebrowFontSize" : "regular",
+              "eyebrowHighlightColor" : "",
+              "eyebrowText" : "",
+              "eyebrowTextColor" : "#ffffff",
+              "eyebrowTextDecoration" : "",
+              "flagAlignment" : "top left",
+              "flagBackgroundColor" : "#ff0000",
+              "flagBorderColor" : "#ffffff",
+              "flagBorderStyles" : "{\"borderTopLeftRadius\":{\"value\":\"0\"},\"borderTopRightRadius\":{\"value\":\"0\"},\"borderBottomRightRadius\":{\"value\":\"0\"},\"borderBottomLeftRadius\":{\"value\":\"0\"}}",
+              "flagRotation" : 0,
+              "flagSpacing" : "medium",
+              "flagText" : "",
+              "flagTextColor" : "#ffffff",
+              "flagTextDecoration" : "",
+              "hideTextElementsForVideo" : false,
+              "imageAltText" : "{!CurrentItem.source.url}",
+              "imageUrl" : "{!CurrentItem.source.url}",
+              "metadata1HighlightColor" : "",
+              "metadata1Text" : "",
+              "metadata2HighlightColor" : "",
+              "metadata2Text" : "",
+              "metadataFontSize" : "regular",
+              "metadataTextColor" : "#ffffff",
+              "metadataTextDecoration" : "",
+              "overlayBackgroundColor" : "rgba(0, 0, 0, 0)",
+              "showButton" : false,
+              "showCaption" : false,
+              "showDateTime" : false,
+              "showEyebrow" : false,
+              "showEyebrowHighlight" : false,
+              "showFlag" : false,
+              "showMetadata1" : false,
+              "showMetadata1Highlight" : false,
+              "showMetadata2" : false,
+              "showMetadata2Highlight" : false,
+              "showTitle" : false,
+              "showTitleHighlight" : false,
+              "subTitle" : "",
+              "subTitleFontSize" : "regular",
+              "textAlignment" : "center center",
+              "timeFormat" : "none",
+              "timeZoneDisplay" : "short",
+              "timeZoneOptions" : "none",
+              "title" : "",
+              "titleFontSize" : "large",
+              "titleHeadingTag" : "p",
+              "titleHighlightColor" : "",
+              "titleTextDecoration" : "",
+              "useAspectRatio" : false,
+              "videoUrl" : ""
+            },
+            "componentName" : "forceCommunity:bannerLayout"
+          },
+          "schemaVersion" : "V2.0"
+        }
+      },
+      "componentName" : "forceCommunity:managedContent",
+      "id" : "3af318c7-4dfe-4891-801a-5672912210ce",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "richTextValue" : "<div style=\"height:6.5vw;\">\n</div>"
+      },
+      "componentName" : "forceCommunity:htmlBlock",
+      "id" : "c7ce53c0-8a49-42c9-ab40-cbfd9de48bee",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "richTextValue" : "<div class=\"slds-grid slds-wrap slds-grid_align-center slds-grid_vertical-align-center\">\t\t\n\t<div class=\"slds-col  slds-align_absolute-center\">\n\t\t<div style=\"position:relative;\n                    width:80vw;\n                    max-width:1680px;\n                    height:30vw;\n                    max-height:510px;\n                    left: 9.5%;\">\n\t\t\t\n            <div style=\"left:7%;\n                        top:7%;\n                        width:80vw;\n                        max-width:1358px;\n                        height:100%;\n                        z-index:-1;\">\n\t\t\t\t<div class=\"slds-grid slds-wrap slds-gutters_x-small slds-grid_align-center slds-grid_vertical-align-center\"\n                    style=\"background-color: #f4f4f4;\n                        height: 100%;\n                        width: 46vw;\n                        text-align: left;\n                        border-radius:20px;\n                        padding-top: 3vw;\n                        padding-bottom: 3vw;\n                        padding-left:min(3vw,51px);\n                        padding-right: min(14vw,510px);\n                        box-shadow: 1px 1px 5px rgb(0 0 0 / 25%);\">\n                    <div class=\"slds-col slds-size_1-of-1 slds-grid_align-left\">\n                        \t<h1 style=\"color: black;font-size:min(2.5vw, 43px);\">Supported POS Systems</h1>\n                    </div>\n                    <div class=\"slds-col slds-size_1-of-1 slds-grid_align-left\">\n                        <p style=\"padding-top: min(2vw, 68px);\n                              color: black;\n                              font-size:min(1.6vw, 28px);\">We work with most major POS providers in the US and are adding support for more this year.</p>\n                        <p style=\"padding-top: 0vw;\n                              color: black;\n                              font-size:min(1.6vw, 28px);\">Don’t see yours on the list? Fee free to contact us.</p>\n                        <a href=\"/B2BStore/s/contactsupport\" ><h3 style=\"padding-top: min(2vw,34px);\n                           color: #f00000;\n                           font-size:min(1.6vw, 28px);\n                            text-align:left;\">Contact Us &#8250;</h3></a>\n                    </div>\n             \t</div>\n        \t</div>\n        \n            <div style=\"position:absolute;\n                        left: 44.5%;\n                        top:8%;\n                        width:40vw;\n                        max-width:678px;\n                        height:25vw;\n                        max-height:424px;\n                        padding-right:5vw;\">                \n                <img src=\"/POSProviders.png\" alt=\"POS Providers\"\n                     style=\"background: white; box-shadow: 1px 1px 5px rgb(0 0 0 / 25%); border-radius: 20px;height: 100%;\">                          \n            </div>\n        </div>\n\t</div>\n</div>"
+      },
+      "componentName" : "forceCommunity:htmlBlock",
+      "id" : "6c9c8a37-f00d-4e26-a682-3c54e0fd8fff",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "richTextValue" : "<div style=\"height:6.5vw;\">\n</div>"
+      },
+      "componentName" : "forceCommunity:htmlBlock",
+      "id" : "283c4d80-4932-4f69-8ca4-eb08ea1a0477",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "richTextValue" : "<div style=\"background-color: #2B2B2B; height: 30vw; max-height:510px; text-align: center; margin-left: -15px; margin-right: -15px;\">\n    <h1 style=\"padding-right: min(6vw,102px); padding-left: min(6vw,102px); padding-top: min(4vw,68px); color: white; font-size:min(2.5vw, 43px);\">Reliable and Built to last </h1>\n    <p style=\"padding-right: min(6vw,102px); padding-left: min(6vw,102px); padding-top: min(1vw); color: white; font-size:min(1.6vw,28px);\">Made for reliability and battle tested in thousands of retail environments.</p>\n\t\n    <div class=\"slds-align_absolute-center\" style='width:70%;'>\n\t<span style=\"align: center; display: inline-flex; padding-right: auto; padding-left: auto; padding-top:min(3vw,51px)\">\n\t <span class=\"column\"; style=\"display: inline; width: 12.5%;\" >\n\t   <img src=\"/Ultra-lowPowerBattery.png\" alt=\"Ultra-lowPowerBattery\" style=\"width:4vw; max-width:68px; margin: 1vw\"/>\n\t\t <br/><span style=\"color:white; font-size: min(1.3vw,23px);padding:0.4vw;\">Ultra-low Power Battery</span>\n\t</span>\n\t <span class=\"column\"; style=\"display: inline; width: 12.5%;\" >\n\t   <img src=\"/NFC.png\" alt=\"NFC\" style=\"width:4vw; max-width:68px; margin: 1vw\"/>\n\t\t<br/><span style=\"color:white; font-size: min(1.3vw,23px);padding:0.4vw;\">NFC</span>\n\t </span>\n\t <span class=\"column\"; style=\"display: inline; width: 12.5%;\" >\n\t   <img src=\"/MulticolorInstantFlash.png\" alt=\"Multicolor Instant flash\" style=\"width:4vw; max-width:68px; margin:1vw\"/>\n\t\t<br/><span style=\"color:white; font-size: min(1.3vw,23px);padding:0.4vw;\">Multicolor Instant Flash</span>\n\t </span>\n\t <span class=\"column\"; style=\"display: inline; width: 12.5%;\" >\n\t   <img src=\"/RetailIoTCloud.png\" alt=\"Retail IoT Cloud\" style=\"width:4vw; max-width:68px; margin:1vw\"/>\n\t\t<br/><span style=\"color:white; font-size: min(1.3vw,23px);padding:0.4vw;\">Retail IoT Cloud</span>\n\t </span>\n\t <span class=\"column\"; style=\"display: inline; width: 12.5%;\" >\n\t   <img src=\"/ExtremelyThin.png\" alt=\"Extremely Thin\" style=\"width:4vw; max-width:68px; margin:1vw\"/>\n\t\t<br/><span style=\"color:white; font-size: min(1.3vw,23px);padding:0.4vw;\">Extremely Thin</span>\n\t </span>\n\t <span class=\"column\"; style=\"display: inline; width: 12.5%;\" >\n\t   <img src=\"/Security.png\" alt=\"Security\" style=\"width:4vw; max-width:68px; margin:1vw\"/>\n\t\t<br/><span style=\"color:white; font-size: min(1.3vw,23px);padding:0.4vw;\">Security</span>\n\t </span>\n\t <span class=\"column\"; style=\"display: inline; width: 12.5%;\" >\n\t   <img src=\"/AllTerrain40º.png\" alt=\"All Terrain +40º\" style=\"width:4vw; max-width:68px; margin:1vw\"/>\n\t\t<br/><span style=\"color:white; font-size: min(1.3vw,23px); padding:0.4vw;\">All Terrain +40º</span>\n\t </span>\n\t <span class=\"column\"; style=\"display: inline; width: 12.5%;\" >\n\t   <img src=\"/AllTerrain-25º.png\" alt=\"All Terrain -25º\" style=\"width:4vw; max-width:68px; margin:1vw\"/>\n\t\t<br/><span style=\"color:white; font-size: min(1.3vw,23px);padding:0.4vw;\">All Terrain -25º</span>\n\t </span>\n\t  </span>\n     </div>\n  </div>"
+      },
+      "componentName" : "forceCommunity:htmlBlock",
+      "id" : "4df0f1b5-2766-4aa9-93dc-e1aaa309b900",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "richTextValue" : "<div style=\"height:6.5vw;\">\n</div>"
+      },
+      "componentName" : "forceCommunity:htmlBlock",
+      "id" : "3f9b2240-b049-4e0c-bffd-96e697ed0dc9",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "richTextValue" : "<div class=\"slds-grid slds-wrap slds-grid_align-center slds-grid_vertical-align-center\">\t\t\n\t<div class=\"slds-col slds-p-vertical_medium slds-align_absolute-center\">\n\t\t<div style=\"position:relative;\n                    width:80vw;\n                    max-width:1335px;\n                    height:22.5vw;\n                    max-height:382px;\n                    \">\n\t\t\t<div style=\"position:absolute;\n                        left:0vw;\n                        width:44vw;\n                        max-width:746px;\n                        padding-right: 10px;\">                \n            \t<img src=\"Findasolution_02.png\" alt=\"Find a solution\"\n\t\t\t\t   style=\"border-radius: 20px; \n\t\t\t\t\t\t  width: 100%;\n                          box-shadow: 1px 1px 5px rgb(0 0 0 / 25%);\">\n            </div>\n            \n            \n            <div style=\"position:absolute;\n                        left:56%;\n                        width:35vw;\n                        max-width:594px;\n                        height:100%;\">\n\t\t\t\t\n                <div class=\"slds-grid slds-wrap slds-gutters_x-small slds-align_absolute-center\"\n                     style=\"background-color: #f4f4f4;\n                            height: 100%;\n                            width: 98%;    \t\t\t\t\t\t\t\t\t\n                            text-align: left;\n                            border-radius:20px;\n                            padding-left:3vw;\n                            padding-right:3vw;\n                            padding-top: 4vw;\n                            box-shadow: 1px 1px 5px rgb(0 0 0 / 25%);\">\n                    <div class=\"slds-col slds-size_1-of-1 slds-grid_align-left\">\n                        <h1 style=\"color: black;font-size:min(2.5vw, 43px);\">Not sure which solution is right for your business?</h1>\n                    </div>\n                    <div class=\"slds-col slds-size_1-of-1 slds-grid_align-right\">\t\t\t\t\t\t\n                        <a href=\"/B2BStore/s/solution-questionnaire\"> \n                            <h3 style=\"padding-top: 2vw;\n                                       padding-bottom: 4vw;\n                                       color: #f00000;\n                                       font-size:min(1.6vw, 28px);\">Find a Solution &#8250;</h3> </a>\n                    </div>\n                </div>\n            </div>\n        </div>\n\t</div>\n</div>"
+      },
+      "componentName" : "forceCommunity:htmlBlock",
+      "id" : "8836772d-d1e0-4304-b53c-4bda43472057",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "richTextValue" : "<div style=\"height:6.5vw;\">\n</div>"
+      },
+      "componentName" : "forceCommunity:htmlBlock",
+      "id" : "838cc0be-4734-4333-843d-1e182754ffe3",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "ccb04753-28c1-4ba4-bff0-ff3302124577",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "1b16baa1-6851-4629-ba02-a83b489556a4",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "How it works"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "8ab22060-4ccc-4ce7-a415-fb4da18117f2",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "920988c0-adb4-4b5f-9bef-e8b8f3e5e34a",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "custom-how-it-works"
+}

@@ -1,0 +1,11 @@
+{
+  "activeViewId" : "f3e1be28-d5de-416b-aef1-4ca6e0473bcb",
+  "appPageId" : "96e97e94-6f8c-4ac5-bdd3-56b4ba07e990",
+  "configurationTags" : [ ],
+  "id" : "0ee52406-9153-4505-a6d7-1d059ea3a316",
+  "label" : "SES STORE",
+  "pageAccess" : "UseParent",
+  "routeType" : "custom-ses-store",
+  "type" : "route",
+  "urlPrefix" : "ses-store"
+}

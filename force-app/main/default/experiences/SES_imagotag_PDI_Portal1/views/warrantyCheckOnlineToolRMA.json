@@ -1,0 +1,75 @@
+{
+  "appPageId" : "4fd341a5-df0b-468b-a916-9e89abbf5516",
+  "componentName" : "siteforce:dynamicLayout",
+  "dataProviders" : [ ],
+  "id" : "20fc2b4e-3e74-40e4-8ca8-70cff78292d3",
+  "label" : "Warranty Check Online Tool (RMA)",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "background" : "background: rgba(0,0,0,0)",
+        "backgroundOverlay" : "rgba(0,0,0,0.5)",
+        "contentAreaWidth" : 100,
+        "sectionConfig" : {
+          "UUID" : "6b13cfee-3a0e-4388-a36a-23fefdf00aab",
+          "columns" : [ {
+            "UUID" : "28955daa-5043-4c29-8d40-4b82f5fdc6a0",
+            "columnKey" : "1",
+            "columnName" : "Column 1",
+            "columnWidth" : "12",
+            "seedComponents" : [ ]
+          } ]
+        },
+        "sectionHeight" : 300
+      },
+      "componentName" : "forceCommunity:section",
+      "id" : "6b13cfee-3a0e-4388-a36a-23fefdf00aab",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : { },
+          "componentName" : "c:LC_AccountNumber",
+          "id" : "b7b33029-d79d-4c98-bf54-bb21d04fedb6",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : { },
+          "componentName" : "c:LC_WarrantyCheck",
+          "id" : "027879a5-e48e-48ed-a515-e14470717ad7",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "28955daa-5043-4c29-8d40-4b82f5fdc6a0",
+        "regionLabel" : "Column 1",
+        "regionName" : "1",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "7fed7016-b3f8-4670-b0cc-c2aaaa7c4973",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Warranty Check Online Tool (RMA)"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "bb6e04c0-4502-4c97-8388-76164d1d420d",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "5437dd09-132f-457b-bff2-c71c4e8e2866",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "custom-warranty-check-online-tool-rma"
+}

@@ -1,0 +1,11 @@
+{
+  "activeViewId" : "20fc2b4e-3e74-40e4-8ca8-70cff78292d3",
+  "appPageId" : "4fd341a5-df0b-468b-a916-9e89abbf5516",
+  "configurationTags" : [ ],
+  "id" : "56cbbb55-16a6-4bb5-aa89-af18aa62427d",
+  "label" : "Warranty Check Online Tool (RMA)",
+  "pageAccess" : "UseParent",
+  "routeType" : "custom-warranty-check-online-tool-rma",
+  "type" : "route",
+  "urlPrefix" : "warranty-check-online-tool-rma"
+}

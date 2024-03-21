@@ -1,0 +1,42 @@
+.terms-and-conditions {
+    margin-top:10px;
+    margin-bottom:10px;
+}
+.terms-and-conditions.warning {
+    border:1px solid red
+}
+.checkbox-item {
+    position: relative;
+}
+.checkbox-item lightning-input {
+    margin: 0;
+}
+.checkbox-item-label {
+    font-size:14px;
+}
+.checkbox-group .checkbox-item-label {
+    position: absolute;
+    top: 0;
+    left: 35px;
+    display: flex;
+    align-items: center;
+    padding-top: 0.2em;
+
+}
+.po-info-icon:hover + .slds-popover.slds-popover_tooltip.slds-hide {
+    display : block!important;
+}
+.checkout-po-label-container {
+    position: relative;
+    display: flex;
+    gap: 0.5em;
+}
+.checkout-po-info-container{
+    position: relative;
+}
+.checkout-po-info-container .slds-popover_tooltip {
+    position: absolute;
+    bottom: 31px;
+    width: 500px;
+    left: -17px;
+}

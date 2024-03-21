@@ -1,0 +1,263 @@
+{
+  "appPageId" : "0f39f530-1371-40d3-9005-f22e4fda9f38",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "dataProviders" : [ ],
+  "id" : "27ad2609-f41e-46fe-9301-a02db63083c7",
+  "label" : "Home",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "richTextValue" : "<div class=\"slds-grid slds-wrap slds-gutters_x-small slds-grid_align-center slds-grid_vertical-align-center\"\n     style=\"padding-left:0px; padding-right:0px;\">\n\t<div class=\"slds-col slds-size_1-of-1 slds-align_absolute-center\"\n\t\t\t style=\"background-color: #2b2b2b;padding:min(2vw,34px) 0vw min(13vw,222px) 0vw;\">\n        \t<div class=\"slds-m-around_large slds-grid slds-wrap\"\n                 style=\"padding-left:0px; padding-right:0px;\">\n\t\t\t\t<div class=\"slds-col slds-size_1-of-1 slds-align_absolute-center\">\n        \t\t\t<h1 style=\"color: white;text-align:center;font-size:min(2.5vw, 42px);padding-top: 20px;padding-bottom: 15px;\">Smart Shelves That Help You Run Your Business</h1>\n    \t\t\t</div>\n                <div class=\"slds-col slds-size_1-of-1 slds-align_absolute-center\" style=\"padding-bottom:min(2vw,52px); width: 60%;\">\n\t\t\t\t\t<p style=\"color: white; font-size:min(1.6vw, 32px);text-align:center;\">Our solution is used by thousands of small business owners to automate price changes and convey up-to-date and accurate information to customers.</p>\n\t\t\t\t</div>\n\t\t\t</div>\n\n\t</div>\n    <div class=\"slds-col slds-size_1-of-1\"\n         style=\"margin-top:max(-15vw,-255px);\">\n\t<div class=\"slds-grid slds-wrap slds-grid_align-center slds-grid_vertical-align-center\"\n         style=\"padding-left:0px; padding-right:0px;\">\n\t\t\t<div class=\"slds-col slds-show_medium slds-medium-size--1-of-8 slds-large-size--1-of-8 slds-p-vertical_medium\">\n        \t</div>\n            <div class=\"slds-col slds-size_1-of-3 slds-medium-size--2-of-8 slds-large-size--2-of-8 slds-p-vertical_medium\">\n                <img src=\"/Hero_LP_01.png\" alt=\"Landing page\" style=\"border-radius:20px;margin-left: 40px;\">\n            </div>\n            <div class=\"slds-col slds-size_1-of-3 slds-medium-size--2-of-8 slds-large-size--2-of-8 slds-p-vertical_medium slds-align_absolute-center\">\n                <img src=\"/Hero_LP_02.png\" alt=\"Landing page\" style=\"border-radius:20px;width: 350px; text-align: center;\">\n            </div>\n            <div class=\"slds-col slds-size_1-of-3 slds-medium-size--2-of-8 slds-large-size--2-of-8 slds-p-vertical_medium\">\n                <img src=\"/Hero_LP_03.png\" alt=\"How it works\" style=\"border-radius:20px;margin-left: -40px;\">\n            </div>\n            <div class=\"slds-col slds-show_medium slds-medium-size--1-of-8 slds-large-size--1-of-8 slds-p-vertical_medium\">\n            </div>\n        </div>\n    </div>\n</div>\n\n<div class=\"slds-grid slds-wrap\">\n\t<div class=\"slds-col slds-col slds-m-top_large\">\n\t\t<div style=\"text-align: center;\">\n         <strong><a href=\"/B2BStore/s/solution-questionnaire\"\n\t\t style=\"    background-color: #f00000;\n    border: 0px solid #f00000;\n    border-radius: 50px;\n    color: #ffffff;\n    display: inline-block;\n    font-size: 1.56vm;\n    line-height: 70px;\n    text-align: center;\n    min-width: 400px;\n    -webkit-text-size-adjust: none;\"><h3 style=\"font-size: 30px;\">Find a solution</h3></a></strong>\n        </div>\n\t</div>                                                      \n</div>"
+      },
+      "componentName" : "forceCommunity:htmlBlock",
+      "id" : "567af241-2854-44b9-98d7-d21d94634b63",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "df68b46f-b072-42e6-9ad8-857c03b8d3b7",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "richTextValue" : "<div style=\"height:6.5vw;\">\n</div>"
+      },
+      "componentName" : "forceCommunity:htmlBlock",
+      "id" : "a06f372e-b208-4358-bf4a-852ff6fdcfa4",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "richTextValue" : "<div class=\"slds-grid slds-wrap slds-grid_align-center slds-grid_vertical-align-center\">\t\t\n\t<div class=\"slds-col slds-p-vertical_medium slds-align_absolute-center\">\n\t\t<div style=\"position:relative;\n                    width:80vw;\n                    max-width:1335px;\n                    height:40vw;\n                    max-height:678px\">\n\t\t\t<div style=\"position:absolute;\n                        left:0vw;\n                        width:45vw;\n                        max-width:764px;\n                        z-index:-1;\n                        height: 100%;\">                \n                <img src=\"/FindaSolutionLP.png\" alt=\"How it works\"\n                     style=\"border-radius:20px;height: 100%;\n                            box-shadow: 1px 1px 5px rgb(0 0 0 / 25%);\">                          \n            </div>\n            \n            \n            <div style=\"position:absolute;\n                        left:38%;\n                        top:15%;\n                        width:50vw;\n                        max-width:835px;\n                        height:25vw;\n                        max-height:510px\">\n\t\t\t\t<div class=\"slds-grid slds-wrap slds-gutters_x-small slds-grid_align-center slds-grid_vertical-align-center\"\n                    style=\"background-color: #f4f4f4;\n                        height: 100%; \n                        width: 100%;\n                        text-align: left;\n                        border-radius:20px;\n                        padding-left:3vw;\n                        padding-right:3vw;\n                        box-shadow: 1px 1px 5px rgb(0 0 0 / 25%);\">\n                    <div class=\"slds-col slds-size_1-of-1 slds-grid_align-left\">\n                        <h1 style=\"color: black;font-size:min(2.5vw, 43px);\">Retail is detail</h1>\n                    </div>\n                    <div class=\"slds-col slds-size_1-of-1 slds-grid_align-left\">\n                        <p style=\"padding-top: min(2vw, 68px);\n                              color: black;\n                              font-size:min(1.6vw, 28px);\">Retail hinges on the ability to have accurate information on the shelves, to automate tasks, and to maximize the time spent helping customers.\n                Easel make it all possible.</p>\n                    </div>\n                    <div class=\"slds-col slds-size_1-of-1 slds-grid_align-right\">\n                        <a href=\"/B2BStore/s/solution-questionnaire\" ><h3 style=\"padding-top: 2vw;\n                           color: #f00000;\n                           font-size:min(1.6vw, 28px);\n                            text-align:right;\">Find a Solution &#8250;</h3></a>\n                    </div>\n                </div>\n            </div>\n        </div>\n\t</div>\n</div>"
+      },
+      "componentName" : "forceCommunity:htmlBlock",
+      "id" : "ff57909b-dc2a-439c-a7d3-86d82a638293",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "richTextValue" : "<div style=\"height:6.5vw;\">\n</div>"
+      },
+      "componentName" : "forceCommunity:htmlBlock",
+      "id" : "9584f36b-d18a-43bb-8103-9f78867256ab",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "richTextValue" : "<div class=\"slds-grid slds-wrap slds-grid_align-center slds-grid_vertical-align-center\">\n    <div style=\"margin:auto;\">\n\t<div class=\"slds-col slds-p-vertical_medium slds-align_absolute-center\">\n\t\t<div style=\"position:relative;\n                    width:80vw;\n                    max-width:1335px;\n                    height:38vw;\n                    max-height:644px;\n                    z-index:-1;\">\n\t\t\t<div style=\"position:absolute;\n                        left:0vw;\n                        width:45vw;\n                        max-width:764px;\n                        height:34vw;\n                        max-height:576px;\n                        top:4vw;\">                \n                <div class=\"slds-grid slds-wrap slds-gutters_x-small slds-grid_align-center slds-grid_vertical-align-center\"\n\t\t\t\t\tstyle=\"background-color: #f4f4f4;\n\t\t\t\t\t\theight: 100%; \n\t\t\t\t\t\twidth: 100%;      \t\t\t\t\n\t\t\t\t\t\ttext-align: left;\n\t\t\t\t\t\tborder-radius:20px;\n\t\t\t\t\t\tpadding-left:3vw;\n\t\t\t\t\t\tpadding-right:3vw;\n\t\t\t\t\t\tbox-shadow: 1px 1px 5px rgb(0 0 0 / 25%);\">\n\t\t\t\t\t<div class=\"slds-col slds-size_1-of-1 slds-grid_align-left\">\n\t\t\t\t\t\t<h1 style=\"color: black; font-size:min(2.5vw, 43px)\">Smarter Shelves</h1>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class=\"slds-col slds-size_1-of-1 slds-grid_align-left\">\n\t\t\t\t\t\t<p style=\"padding-top: 4vw;\n\t\t\t\t\t\t\t  color: black;\n\t\t\t\t\t\t\t  font-size:min(1.6vw, 28px);\">Never change a label again with Easel. Our cloud connected tags will reliably display the correct price and information for your customers at the shelf working seamlessly with your existing POS system.</p>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class=\"slds-col slds-size_1-of-1 slds-grid_align-right\">\n\t\t\t\t\t\t<a href=\"/B2BStore/s/how-it-works\">\n\t\t\t\t\t\t\t<h3 style=\"padding-top: 2vw;\n\t\t\t\t\t\t\t\t   text-align:right;\n\t\t\t\t\t\t\t\t   color: #f00000;\n                                       font-size:min(1.6vw, 28px);\">Learn about its benefits &#8250;</h3> </a>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n                          \n            </div>\n            <div style=\"position:absolute;\n                        left:43%;\n                        width:45vw;\n                        max-width:764px;\n                        z-index:-1;\">\n                <img src=\"/SmartShelves.png\" alt=\"Digital Tags\"\n                       style=\"border-radius: 20px; \n                              width:100%;\n                              box-shadow: 1px 1px 5px rgb(0 0 0 / 25%);\">\n            </div>\n        </div>\n\t</div>\n</div>"
+      },
+      "componentName" : "forceCommunity:htmlBlock",
+      "id" : "31f399db-8510-435c-8fd9-84d43de17826",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "richTextValue" : "<div style=\"height:6.5vw;\">\n</div>"
+      },
+      "componentName" : "forceCommunity:htmlBlock",
+      "id" : "fa075221-67ca-4742-bec3-96f227e7893f",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "richTextValue" : "<h1 style=\"color: black; font-size:min(2.5vw, 43px);text-align: center\">What our clients say about us</h1>"
+      },
+      "componentName" : "forceCommunity:htmlBlock",
+      "id" : "d9ffba4d-0c2e-4ac6-a68a-c8caea29a7ad",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "richTextValue" : "<div style=\"height:2vw;\">\n</div>"
+      },
+      "componentName" : "forceCommunity:htmlBlock",
+      "id" : "1581af3f-8128-4084-a651-1e6ae896c17d",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "config" : {
+          "collectionLayoutDefinition" : {
+            "attributes" : {
+              "contentIndicatorSpacing" : "none",
+              "limitItems" : 5,
+              "showProgressArrows" : true,
+              "showProgressIndicator" : false,
+              "transitionSpeed" : 600,
+              "transitionType" : "slide"
+            },
+            "componentName" : "forceCommunity:dynamicCollectionCarousel"
+          },
+          "dataProviderDefinition" : {
+            "attributes" : {
+              "dataProviderInfo" : {
+                "apiName" : "Testimonials_LP_V2"
+              },
+              "dataProviderType" : "NamedCollection"
+            },
+            "componentName" : "forceCommunity:managedContentCollectionDataProvider"
+          },
+          "itemLayoutDefinition" : {
+            "attributes" : {
+              "additionalLinks" : "{}",
+              "backgroundPosition" : "center center",
+              "backgroundSize" : "contain",
+              "bannerAspectRatio" : "16:9",
+              "bannerHeight" : "270",
+              "bannerSubTitleTextColor" : "#ffffff",
+              "bannerTitleTextColor" : "#ffffff",
+              "callToActionButtonBackgroundColor" : "",
+              "callToActionButtonBackgroundColorHover" : "",
+              "callToActionButtonBorderColor" : "",
+              "callToActionButtonBorderColorHover" : "",
+              "callToActionButtonBorderStyles" : "",
+              "callToActionButtonTextColor" : "",
+              "callToActionButtonTextColorHover" : "",
+              "callToActionLabel" : "View",
+              "componentHoverEffect" : "none",
+              "contentWidth" : "31",
+              "dateFormat" : "none",
+              "datetime" : "",
+              "datetimeFontSize" : "regular",
+              "datetimeTextColor" : "#ffffff",
+              "datetimeTextDecoration" : "",
+              "defaultLinksOverrides" : "{}",
+              "displayDayOfWeek" : false,
+              "eyebrowFontSize" : "regular",
+              "eyebrowHighlightColor" : "",
+              "eyebrowText" : "",
+              "eyebrowTextColor" : "#ffffff",
+              "eyebrowTextDecoration" : "",
+              "flagAlignment" : "top left",
+              "flagBackgroundColor" : "#ff0000",
+              "flagBorderColor" : "#ffffff",
+              "flagBorderStyles" : "{\"borderTopLeftRadius\":{\"value\":\"0\"},\"borderTopRightRadius\":{\"value\":\"0\"},\"borderBottomRightRadius\":{\"value\":\"0\"},\"borderBottomLeftRadius\":{\"value\":\"0\"}}",
+              "flagRotation" : 0,
+              "flagSpacing" : "medium",
+              "flagText" : "",
+              "flagTextColor" : "#ffffff",
+              "flagTextDecoration" : "",
+              "hideTextElementsForVideo" : false,
+              "imageAltText" : "{!CurrentItem.source.url}",
+              "imageUrl" : "{!CurrentItem.source.url}",
+              "metadata1HighlightColor" : "",
+              "metadata1Text" : "",
+              "metadata2HighlightColor" : "",
+              "metadata2Text" : "",
+              "metadataFontSize" : "regular",
+              "metadataTextColor" : "#ffffff",
+              "metadataTextDecoration" : "",
+              "overlayBackgroundColor" : "rgba(0, 0, 0, 0)",
+              "showButton" : false,
+              "showCaption" : false,
+              "showDateTime" : false,
+              "showEyebrow" : false,
+              "showEyebrowHighlight" : false,
+              "showFlag" : false,
+              "showMetadata1" : false,
+              "showMetadata1Highlight" : false,
+              "showMetadata2" : false,
+              "showMetadata2Highlight" : false,
+              "showTitle" : false,
+              "showTitleHighlight" : false,
+              "subTitle" : "{!CurrentItem.body}",
+              "subTitleFontSize" : "regular",
+              "textAlignment" : "center center",
+              "timeFormat" : "none",
+              "timeZoneDisplay" : "short",
+              "timeZoneOptions" : "none",
+              "title" : "",
+              "titleFontSize" : "large",
+              "titleHeadingTag" : "p",
+              "titleHighlightColor" : "",
+              "titleTextDecoration" : "",
+              "useAspectRatio" : false,
+              "videoUrl" : ""
+            },
+            "componentName" : "forceCommunity:bannerLayout"
+          },
+          "schemaVersion" : "V2.0"
+        }
+      },
+      "componentName" : "forceCommunity:dynamicCollection",
+      "id" : "9741ed70-e306-41f8-a1f1-f0f7e3603a11",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "88e74533-5992-4e64-bd6e-1ede614cd239",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "1cbe473a-8f0a-435c-b07f-ea11fbac618b",
+    "regionName" : "sidebar",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "richTextValue" : "<div style=\"height:6.5vw;\">\n</div>"
+      },
+      "componentName" : "forceCommunity:htmlBlock",
+      "id" : "ec215677-2f9a-4526-97ed-2fa82d010a7b",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "richTextValue" : "<div class=\"slds-grid slds-wrap slds-grid_align-center slds-grid_vertical-align-center\">\t\t\n\t<div class=\"slds-col slds-p-vertical_medium slds-align_absolute-center\">\n\t\t<div style=\"position:relative;\n                    width:80vw;\n                    max-width:1335px;\n                    height:22.5vw;\n                    max-height:382px;\n                    \">\n\t\t\t<div style=\"position:absolute;\n                        left:0vw;\n                        width:44vw;\n                        max-width:746px;\n                        padding-right: 10px;\">                \n            \t<img src=\"FindaSolution01.png\" alt=\"Find a solution\"\n\t\t\t\t   style=\"border-radius: 20px; \n\t\t\t\t\t\t  width: 100%;\n                          box-shadow: 1px 1px 5px rgb(0 0 0 / 25%);\">\n            </div>\n            \n            \n            <div style=\"position:absolute;\n                        left:56%;\n                        width:35vw;\n                        max-width:594px;\n                        height:100%;\">\n\t\t\t\t\n                <div class=\"slds-grid slds-wrap slds-gutters_x-small slds-align_absolute-center\"\n                     style=\"background-color: #f4f4f4;\n                            height: 100%;\n                            width: 98%;    \t\t\t\t\t\t\t\t\t\n                            text-align: left;\n                            border-radius:20px;\n                            padding-left:3vw;\n                            padding-right:3vw;\n                            padding-top: 4vw;\n                            box-shadow: 1px 1px 5px rgb(0 0 0 / 25%);\">\n                    <div class=\"slds-col slds-size_1-of-1 slds-grid_align-left\">\n                        <h1 style=\"color: black;font-size:min(2.5vw, 43px);\">Not sure which solution is right for your business?</h1>\n                    </div>\n                    <div class=\"slds-col slds-size_1-of-1 slds-grid_align-right\">\t\t\t\t\t\t\n                        <a href=\"/B2BStore/s/solution-questionnaire\"> \n                            <h3 style=\"padding-top: 2vw;\n                                       padding-bottom: 4vw;\n                                       color: #f00000;\n                                       font-size:min(1.6vw, 28px);\">Find a Solution &#8250;</h3> </a>\n                    </div>\n                </div>\n            </div>\n        </div>\n\t</div>\n</div>"
+      },
+      "componentName" : "forceCommunity:htmlBlock",
+      "id" : "b2bec93f-1f26-4a6e-9a78-e166e4ff2067",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "richTextValue" : "<div style=\"height:5.5vw;\">\n</div>"
+      },
+      "componentName" : "forceCommunity:htmlBlock",
+      "id" : "3cb26f14-27eb-43a4-a85f-093ee3599b93",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "debugMode" : false
+      },
+      "componentName" : "c:b2bGuestCartOnAccountCreation",
+      "id" : "44ed4002-7b11-419c-96f0-5389c60990c3",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "ca9995ad-cd5d-4113-831d-a04a2ba35430",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Home"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "1d2d86b8-430d-488d-865e-12aa6178ddba",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "e95d59df-2888-4415-9f5c-3766d47a57dd",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Home",
+  "type" : "view",
+  "viewType" : "home"
+}

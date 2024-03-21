@@ -1,0 +1,33 @@
+.THIS {
+    font-size: 14px;
+}
+
+.THIS .slds-radio_button [type="radio"]:checked + .slds-radio_button__label {
+    background-color:black;
+}
+
+.THIS .slds-form-element__label {
+    font-size: 14px;
+    margin-bottom: 5px;
+    font-weight: 400;
+}  
+
+.THIS .iconAddress .slds-icon {
+    fill:black;
+} 
+
+.THIS .iconMail .slds-icon {
+    fill:#FEA34A;
+} 
+
+/* Maax Regular */
+@font-face {
+    font-family: 'Maax_Regular';
+    src: url(/resource/Maax_Regular_205TF);
+}
+
+/* Maax Bold */
+@font-face {
+    font-family: 'Maax_Bold';
+    src: url(/resource/Maax_Bold_205TF);
+}

@@ -1,0 +1,101 @@
+<template>
+    <template if:true={error}>
+        {error}
+    </template>
+    <div class="style-wrapper"></div>
+    
+        <div class="header-component-wrapper">
+            <div class="breadcrumbs-wrapper">
+                <lightning-breadcrumbs>
+                    <lightning-breadcrumb
+                        label={labels.HomeLabel}
+                        onclick={navigateToHomepage}
+                    >
+                    </lightning-breadcrumb>
+                    <lightning-breadcrumb
+                        label={labels.OrdersLabel}
+                    >
+                    </lightning-breadcrumb>
+                </lightning-breadcrumbs>
+            </div>
+            <h1>{labels.OrdersLabel}</h1>
+        </div>
+        <div class="black-wrapper">
+            <!-- searchbar -->
+            <div class="search-bar-wrapper" onkeyup={displayOrdersByNumber}>
+                <lightning-input
+                    class="inputClass"
+                    name="enter-search"
+                    type="search"
+                    placeholder={labels.OrdersSearchBarLabel}
+                ></lightning-input>
+            </div>
+            <div class="button-actions-wrapper">
+                <template if:true={displayAddNewOrderButton}>
+                    <c-ses-custom-button button-label={labels.AddNewOrder} page-name={pageNameToNavigateTo} background-color="#181818" text-color='white'></c-ses-custom-button>
+                </template>
+                <template if:true={displayViewRequestsButton}>
+                    <c-ses-custom-button style='margin-left: 15px;' button-label={labels.ViewMySupportRequests} page-name="assistance_requests__c" background-color="#181818" text-color='white'></c-ses-custom-button>
+                </template>
+            </div>
+            
+        </div>
+        <div class="orders-and-filters-wrapper">
+            <div class="filters-wrapper">
+                <h3 class="filter-h3">{labels.FilterBy}</h3>
+                <!-- status -->
+                <div class="status-filter-container">
+                    <template if:true={statusFilterValues}>
+                        <lightning-combobox name="Status" value={statusValue} placeholder={labels.Status}
+                                            options={statusFilterValues} onchange={displayOrdersFilteredByStatus}>
+                        </lightning-combobox>
+            
+                    </template>
+                </div>
+                <!-- dates -->
+                <div class="order-date-filter-container" onclick={toggleDatePickerSelectors}>
+                    <template if:false={enableDateFilter}>
+                        <span>{labels.OrderDates}</span>
+                    </template>
+                    <template if:true={enableDateFilter}>
+                        <lightning-formatted-date-time value={startDateFilter} aura:id="startDateFitler" year="numeric" month="numeric" day="numeric"></lightning-formatted-date-time>
+                        <span> - </span> 
+                        <lightning-formatted-date-time value={endDateFilter} aura:id="endDateFitler" year="numeric" month="numeric" day="numeric"></lightning-formatted-date-time>
+                    </template>
+                </div>
+                <template if:true={showDatePickerSelectors}>
+                    <div class="dates-picker-selector">
+                        <label class="date-filter-label" for="startDate">{labels.StartDate}</label>
+                        <input class="date-filter-input" type="date" name="startDate" label="Start date" onchange={handleStartDateFilter}>
+                        <label class="date-filter-label" for="endDate">{labels.EndDate}</label>
+                        <input class="date-filter-input" type="date" name="endDate" label="End date" onchange={handleEndDateFilter}>
+                        <template if:true={showDatesFilterError}>
+                            <span style="color: #d91c3e; font-style: italic; margin-top: 10px;">{labels.DatesErrorMessage}</span>
+                        </template>
+                        <div class='dates-filter-button-wrapper'>
+                            <button class="reset-dates-filter" onclick={resetDateFilters}>{labels.Reset}</button>
+                            <button class="validate-dates-filter" onclick={validateAndSetDateFilters}>{labels.Validate}</button>
+                        </div>
+                    </div>
+                </template>
+            </div>
+            <lightning-spinner if:true={isLoading} alternative-text="Loading" size="medium"></lightning-spinner>
+            <template if:true={ordersToDisplay}>
+                <template if:false={error}>
+                    <template if:true={ordersToDisplay}>
+                        <!-- record list with pagination component -->
+                        <c-ses-custom-records-pagination-component
+                            records={ordersToDisplay}
+                            show-table="true"
+                            columns={columns}
+                            recordsperpage="10"
+                            onactions={handleRowActions}
+                            onpagination={handlePagination}>
+                        </c-ses-custom-records-pagination-component>
+                    </template>
+                </template>
+            </template>
+        </div>
+    </template>
+
+</template>

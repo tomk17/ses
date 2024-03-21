@@ -1,0 +1,10 @@
+<design:component>
+    <design:attribute name="Cart" label="Cart" />
+    <design:attribute name="AccountFromCart" label="Account from Cart" />
+    <design:attribute name="boolship" label="It is for ship accounts ?" />
+    <design:attribute name="boolbill" label="It is for bill accounts ?" />
+    <design:attribute name="selectedShipTo" label="Account selected" />
+    <design:attribute name="idAccountSelected" label="Account selected" />
+    <design:attribute name="emailSelected" label="Email selected" />
+    <design:attribute name="idContactSelected" label="Contact Selected" />
+</design:component>

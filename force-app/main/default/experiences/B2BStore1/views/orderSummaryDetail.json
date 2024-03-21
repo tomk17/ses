@@ -1,0 +1,148 @@
+{
+  "appPageId" : "0f39f530-1371-40d3-9005-f22e4fda9f38",
+  "componentName" : "siteforce:dynamicLayout",
+  "dataProviders" : [ ],
+  "id" : "dc34a797-3f97-476c-b1e7-7dc9e0b44d8e",
+  "label" : "Order Summary Detail",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "background" : "background: rgba(0,0,0,0)",
+        "backgroundOverlay" : "rgba(0,0,0,0.5)",
+        "contentAreaWidth" : 60,
+        "sectionConfig" : {
+          "UUID" : "f08df0a9-a47a-4a8e-86c5-e8bf298ef5d6",
+          "columns" : [ {
+            "UUID" : "9774b54f-e4ef-425e-adf9-598e424b73c0",
+            "columnKey" : "col1",
+            "columnName" : "column 1",
+            "columnWidth" : "12",
+            "seedComponents" : [ {
+              "attributes" : {
+                "recordId" : "{!recordId}",
+                "sfdc:identifier" : "b2b_buyer_builder_orderSummaryDetailsHeader"
+              },
+              "fqn" : "b2b_buyer_builder:orderSummaryDetailsHeader"
+            } ]
+          } ]
+        },
+        "sectionHeight" : 202
+      },
+      "componentName" : "forceCommunity:section",
+      "id" : "f08df0a9-a47a-4a8e-86c5-e8bf298ef5d6",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : {
+            "showOrderNumber" : true,
+            "startReOrderButtonBackgroundColor" : "rgb(240, 0, 0)",
+            "startReOrderButtonBackgroundHoverColor" : "rgb(240, 0, 0)",
+            "startReOrderButtonBorderColor" : "rgb(240, 0, 0)",
+            "startReOrderButtonBorderRadius" : "20",
+            "startReOrderButtonText" : "Start reorder",
+            "startReOrderButtonTextColor" : "",
+            "startReOrderButtonTextHoverColor" : "",
+            "title" : "My Order"
+          },
+          "componentName" : "b2b_buyer_builder:orderSummaryDetailsHeader",
+          "id" : "bdb05978-8a5b-4c32-a98b-29431f8ae331",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "highlightsCardBackgroundColor" : "#FFFFFF",
+            "highlightsCardBorderColor" : "",
+            "highlightsCardBorderRadius" : "0",
+            "highlightsCardTextColor" : "",
+            "highlightsTitle" : "Details",
+            "orderSummaryHighlightsFieldMapping" : "[{\"entity\":\"OrderSummary\",\"name\":\"AccountId\",\"label\":\"Account\",\"type\":\"Lookup(Account)\"},{\"entity\":\"OrderSummary\",\"name\":\"OrderedDate\",\"label\":\"Order Date\",\"type\":\"Date/Time\"},{\"entity\":\"OrderSummary\",\"name\":\"GrandTotalAmount\",\"label\":\"Total\",\"type\":\"Formula (Currency)\"},{\"entity\":\"OrderSummary\",\"name\":\"BillToContactId\",\"label\":\"Billing Contact\",\"type\":\"Lookup(Contact)\"},{\"entity\":\"OrderSummary\",\"name\":\"BillingAddress\",\"label\":\"Billing Address\",\"type\":\"Address\"},{\"entity\":\"OrderSummary\",\"name\":\"BillingEmailAddress\",\"label\":\"Billing Email Address\",\"type\":\"Email\"},{\"entity\":\"OrderSummary\",\"name\":\"BillingPhoneNumber\",\"label\":\"Billing Phone Number\",\"type\":\"Phone\"}]"
+          },
+          "componentName" : "b2b_buyer_builder:orderSummaryHighlights",
+          "id" : "02df9576-8dee-4b8c-b022-fecfe95f1459",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "grossTaxOrdersFieldMapping" : "[{\"entity\":\"OrderSummary\",\"name\":\"TotalAdjProductAmtWithTax\",\"label\":\"Subtotal with Tax\",\"type\":\"Formula (Currency)\"},{\"entity\":\"OrderSummary\",\"name\":\"TotalAdjDeliveryAmtWithTax\",\"label\":\"Shipping with Tax\",\"type\":\"Formula (Currency)\"},{\"entity\":\"OrderSummary\",\"name\":\"GrandTotalAmount\",\"label\":\"Total\",\"type\":\"Formula (Currency)\"},{\"entity\":\"OrderSummary\",\"name\":\"TotalTaxAmount\",\"label\":\"Tax\",\"type\":\"Roll-Up Summary (SUM Order Product Summary)\"}]",
+            "netTaxOrdersFieldMapping" : "[{\"entity\":\"OrderSummary\",\"name\":\"TotalAdjustedProductAmount\",\"label\":\"Subtotal\",\"type\":\"Roll-Up Summary ( Order Product Summary)\"},{\"entity\":\"OrderSummary\",\"name\":\"TotalAdjustedDeliveryAmount\",\"label\":\"Shipping\",\"type\":\"Roll-Up Summary ( Order Product Summary)\"},{\"entity\":\"OrderSummary\",\"name\":\"TotalTaxAmount\",\"label\":\"Tax\",\"type\":\"Roll-Up Summary (SUM Order Product Summary)\"},{\"entity\":\"OrderSummary\",\"name\":\"GrandTotalAmount\",\"label\":\"Total\",\"type\":\"Formula (Currency)\"}]",
+            "showHorizontalLineAboveLastField" : true,
+            "showLastFieldAsBold" : true,
+            "totalsCardBackgroundColor" : "#FFFFFF",
+            "totalsCardBorderColor" : "",
+            "totalsCardBorderRadius" : "0",
+            "totalsCardTextColor" : "",
+            "totalsCardTitle" : "Totals"
+          },
+          "componentName" : "b2b_buyer_builder:orderSummaryTotals",
+          "id" : "45d7b889-da16-4ca3-a78b-191179bfc0c8",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "prefixToShippingGroup" : "Ship To",
+            "productFieldMapping" : "[{\"entity\":\"Product2\",\"name\":\"B2B_Commerce_Cloud_Description__c\",\"label\":\"\",\"type\":\"Text(255)\"},{\"entity\":\"OrderItemSummary\",\"name\":\"StockKeepingUnit\",\"label\":\"SKU\",\"type\":\"Text(255)\"},{\"entity\":\"OrderItemSummary\",\"name\":\"Quantity\",\"label\":\"Quantity\",\"type\":\"Number(18, 0)\"},{\"entity\":\"OrderItemSummary\",\"name\":\"TotalAmtWithTax\",\"label\":\"Total with Tax\",\"type\":\"Formula (Currency)\"}]",
+            "productUnavailableMessage" : "(No More Available)",
+            "shippingGroupFieldMapping" : "[{\"entity\":\"OrderDeliveryMethod\",\"name\":\"Name\",\"label\":\"Name\",\"type\":\"Text(255)\"},{\"entity\":\"OrderDeliveryGroupSummary\",\"name\":\"TotalAmount\",\"label\":\"Pretax Total\",\"type\":\"Currency(16, 2)\"}]",
+            "showProductImage" : true
+          },
+          "componentName" : "b2b_buyer_builder:orderItemSummaryContents",
+          "id" : "5f8fa1f1-e454-4d90-898d-56fd117c6f64",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "9774b54f-e4ef-425e-adf9-598e424b73c0",
+        "regionLabel" : "column 1",
+        "regionName" : "col1",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "background" : "background: rgba(0,0,0,0)",
+        "backgroundOverlay" : "rgba(0,0,0,0.5)",
+        "contentAreaWidth" : 100,
+        "sectionConfig" : {
+          "UUID" : "007b469e-a151-4086-92d5-da82959b7e34",
+          "columns" : [ {
+            "UUID" : "ce527308-8e6d-40e3-8758-5083dfec0712",
+            "columnKey" : "col2",
+            "columnName" : "column 1",
+            "columnWidth" : "12",
+            "seedComponents" : [ {
+              "attributes" : {
+                "recordId" : "{!recordId}",
+                "sfdc:identifier" : "b2b_buyer_builder_orderItemSummaryContents"
+              },
+              "fqn" : "b2b_buyer_builder:orderItemSummaryContents"
+            } ]
+          } ]
+        },
+        "sectionHeight" : 32
+      },
+      "componentName" : "forceCommunity:section",
+      "id" : "007b469e-a151-4086-92d5-da82959b7e34",
+      "regions" : [ {
+        "id" : "ce527308-8e6d-40e3-8758-5083dfec0712",
+        "regionLabel" : "column 1",
+        "regionName" : "col2",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "9579363e-9787-4a98-b000-20079a3806fc",
+    "regionName" : "content",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "detail-1Os"
+}

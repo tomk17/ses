@@ -1,0 +1,155 @@
+{
+  "appPageId" : "420337f2-f879-4442-ac4d-7a772ca6fa6a",
+  "componentName" : "community_layout:sldsFlexibleLayout",
+  "dataProviders" : [ ],
+  "id" : "ace9e7e1-ee7d-4e10-89ab-67f385c3da5d",
+  "label" : "Address List",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "backgroundImageConfig" : "",
+        "backgroundImageOverlay" : "rgba(0,0,0,0)",
+        "sectionConfig" : "{\"UUID\":\"7f25900d-44ed-4b2a-9364-0ee3448594a9\",\"columns\":[{\"UUID\":\"a8f848f3-252d-46b6-9cd5-442699e39d6d\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"10\",\"seedComponents\":null},{\"UUID\":\"7bd32010-3870-4450-8cd4-0ae30e449d01\",\"columnName\":\"Column 2\",\"columnKey\":\"col2\",\"columnWidth\":\"2\",\"seedComponents\":null}]}"
+      },
+      "componentName" : "community_layout:section",
+      "id" : "7f25900d-44ed-4b2a-9364-0ee3448594a9",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : {
+            "backgroundColor" : "",
+            "paddingHorizontal" : "small",
+            "paddingVertical" : "xx-small",
+            "text" : "Address Management",
+            "textAlign" : "left",
+            "textDecoration" : "{\"bold\": true}",
+            "textDisplayInfo" : "{\"textStyle\": \"heading-medium\", \"headingTag\": \"h2\"}"
+          },
+          "componentName" : "dxp_base:textBlock",
+          "id" : "6ddee776-1039-470d-9324-f69c5cefd354",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : {
+            "fr" : "feaba5f1-5168-416a-ac45-31c5b6871607"
+          },
+          "renditions" : [ {
+            "id" : "feaba5f1-5168-416a-ac45-31c5b6871607",
+            "renditionValue" : {
+              "componentAttributes" : {
+                "text" : "Gestion des adresses"
+              }
+            },
+            "type" : "renditionComponent"
+          } ],
+          "type" : "component"
+        } ],
+        "id" : "a8f848f3-252d-46b6-9cd5-442699e39d6d",
+        "regionLabel" : "Column 1",
+        "regionName" : "col1",
+        "renditionMap" : { },
+        "type" : "region"
+      }, {
+        "components" : [ {
+          "componentAttributes" : {
+            "alignment" : "right",
+            "size" : "standard",
+            "text" : "Add Address",
+            "variant" : "primary",
+            "width" : "standard"
+          },
+          "componentName" : "commerce_my_account:myAccountAddAddressButton",
+          "id" : "7093f72f-b112-4030-a7b3-0c0801a6048e",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : {
+            "fr" : "707ac3c2-17e1-4690-bde5-3606f77432e6"
+          },
+          "renditions" : [ {
+            "id" : "707ac3c2-17e1-4690-bde5-3606f77432e6",
+            "renditionValue" : {
+              "componentAttributes" : {
+                "text" : "Ajouter une adresse"
+              }
+            },
+            "type" : "renditionComponent"
+          } ],
+          "type" : "component"
+        } ],
+        "id" : "7bd32010-3870-4450-8cd4-0ae30e449d01",
+        "regionLabel" : "Column 2",
+        "regionName" : "col2",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "scopedBrandingSetId" : null,
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "backgroundImageConfig" : "",
+        "backgroundImageOverlay" : "rgba(0,0,0,0)",
+        "sectionConfig" : "{\"UUID\":\"7ca9850f-6964-4d1f-ab8a-18f047f7e27a\",\"columns\":[{\"UUID\":\"fd424104-3447-4fa1-8a35-966df2446870\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":null}]}"
+      },
+      "componentName" : "community_layout:section",
+      "id" : "7ca9850f-6964-4d1f-ab8a-18f047f7e27a",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : {
+            "billingTabLabel" : "Billing",
+            "cardDefaultBadgeColor" : "rgb(201,201, 201)",
+            "cardDefaultBorderRadius" : "50",
+            "cardDefaultLabel" : "Default",
+            "footerDeleteLabel" : "Delete",
+            "footerEditLabel" : "Edit",
+            "itemSpacing" : "small",
+            "noAddressMessageText" : "You don't have any address yet",
+            "noAddressMessageTitle" : "No Address Yet",
+            "pageSize" : "10",
+            "shippingTabLabel" : "Shipping",
+            "showAddressType" : "Shipping and billing",
+            "showMoreButtonAlign" : "center",
+            "showMoreButtonLabel" : "Show More",
+            "showMoreButtonSize" : "standard",
+            "showMoreButtonStyle" : "secondary",
+            "showMoreButtonWidth" : "standard"
+          },
+          "componentName" : "commerce_my_account:myAccountAddressGridContainer",
+          "id" : "9dacff5a-5b2e-4273-9591-3cd8a82d8716",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : {
+            "fr" : "852c9fb4-5c8f-4c7c-940e-da12dc24b4d4"
+          },
+          "renditions" : [ {
+            "id" : "852c9fb4-5c8f-4c7c-940e-da12dc24b4d4",
+            "renditionValue" : {
+              "componentAttributes" : {
+                "billingTabLabel" : "Facturation",
+                "footerDeleteLabel" : "Supprimer",
+                "footerEditLabel" : "Editer",
+                "noAddressMessageText" : "Vous n'avez pas encore d'adresse",
+                "noAddressMessageTitle" : "Aucune adresse",
+                "shippingTabLabel" : "Livraison",
+                "showMoreButtonLabel" : "Voir plus"
+              }
+            },
+            "type" : "renditionComponent"
+          } ],
+          "type" : "component"
+        } ],
+        "id" : "fd424104-3447-4fa1-8a35-966df2446870",
+        "regionLabel" : "Column 1",
+        "regionName" : "col1",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "scopedBrandingSetId" : null,
+      "type" : "component"
+    } ],
+    "id" : "7acb9766-79e3-441d-b3a8-819533fd0c3b",
+    "regionName" : "content",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "MyAccount",
+  "type" : "view",
+  "viewType" : "addresses"
+}

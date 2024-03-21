@@ -1,0 +1,79 @@
+{
+  "appPageId" : "0f39f530-1371-40d3-9005-f22e4fda9f38",
+  "componentName" : "siteforce:dynamicLayout",
+  "dataProviders" : [ ],
+  "id" : "a258cab7-5e6b-4dd8-91de-db9375d1a39f",
+  "label" : "Cloud Agreement",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "background" : "background: rgb(244,244,244)",
+        "backgroundOverlay" : "rgba(0,0,0,0.5)",
+        "contentAreaWidth" : 60,
+        "sectionConfig" : {
+          "UUID" : "be494563-d325-4c92-b0dc-ff03602d111e",
+          "columns" : [ {
+            "UUID" : "47127b62-7808-4bed-96f3-4c008b8f26c7",
+            "columnKey" : "1",
+            "columnName" : "Column 1",
+            "columnWidth" : "12",
+            "seedComponents" : [ ]
+          } ]
+        },
+        "sectionHeight" : 400
+      },
+      "componentName" : "forceCommunity:section",
+      "id" : "be494563-d325-4c92-b0dc-ff03602d111e",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : {
+            "richTextValue" : "<h1 style=\"text-align: center;\">Cloud Agreement</h1>"
+          },
+          "componentName" : "forceCommunity:richTextInline",
+          "id" : "d5533059-708a-448d-ae07-e71c76ce04a9",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "richTextValue" : "<div class=\"container slds-text-align_center\"\n     style=\"margin: auto;padding-top: 20px; padding-bottom: 40px;\">\n\t\t<h2 style=\"color: black;\n                   text-align: center;\n                   border-bottom-size: 4px;\n                   border-bottom-style: solid;\n                   border-bottom-color: #f00000;\n                   border-bottom-width: 3px;\n                   border-bottom-height: 30px;\n                   display: inline-block;\"\n        >Add your titlte here</h2>\n</div>"
+          },
+          "componentName" : "forceCommunity:htmlBlock",
+          "id" : "1f90781d-a7e8-4ffd-b101-f072c06d046f",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "47127b62-7808-4bed-96f3-4c008b8f26c7",
+        "regionLabel" : "Column 1",
+        "regionName" : "1",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "a41bdf18-a863-44c7-a5c5-df4a9c42786e",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Cloud Agreement"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "6414f294-66fe-49cf-b45b-71e7e5dd06ef",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "daac9828-89e0-4d23-aa32-dc901005e504",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "custom-cloud-agreement"
+}

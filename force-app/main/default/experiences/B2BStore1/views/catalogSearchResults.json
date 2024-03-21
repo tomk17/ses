@@ -1,0 +1,146 @@
+{
+  "appPageId" : "0f39f530-1371-40d3-9005-f22e4fda9f38",
+  "componentName" : "siteforce:dynamicLayout",
+  "dataProviders" : [ ],
+  "id" : "97cd2d98-dbc1-4bb6-aea4-6c8dbddcd7de",
+  "label" : "Catalog Search Results",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "background" : "background: rgba(0,0,0,0)",
+        "backgroundOverlay" : "rgba(0,0,0,0.5)",
+        "contentAreaWidth" : 100,
+        "sectionConfig" : {
+          "UUID" : "4a652168-ff9a-472b-b1bf-11bc62d43a94",
+          "columns" : [ {
+            "UUID" : "f20540eb-1cbd-428d-991d-8d929f89d849",
+            "columnKey" : "1",
+            "columnName" : "Column 1",
+            "columnWidth" : "12",
+            "seedComponents" : [ ]
+          } ]
+        },
+        "sectionHeight" : 46
+      },
+      "componentName" : "forceCommunity:section",
+      "id" : "4a652168-ff9a-472b-b1bf-11bc62d43a94",
+      "regions" : [ {
+        "id" : "f20540eb-1cbd-428d-991d-8d929f89d849",
+        "regionLabel" : "Column 1",
+        "regionName" : "1",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "background" : "background: rgba(0,0,0,0)",
+        "backgroundOverlay" : "rgba(0,0,0,0.5)",
+        "contentAreaWidth" : 100,
+        "sectionConfig" : {
+          "UUID" : "d588101d-e052-4e74-9919-a0d21f6eaccc",
+          "columns" : [ {
+            "UUID" : "bb0033d1-4201-4d14-8e11-4bed21579078",
+            "columnKey" : "1",
+            "columnName" : "Column 1",
+            "columnWidth" : "1",
+            "seedComponents" : [ ]
+          }, {
+            "UUID" : "11f91869-5984-4eb4-9fca-6e025fe9e8e4",
+            "columnKey" : "d4633",
+            "columnName" : "Column 2",
+            "columnWidth" : "10",
+            "seedComponents" : [ ]
+          }, {
+            "UUID" : "73a1aedb-dd89-4a16-9bde-26624fdd442f",
+            "columnKey" : "346f0",
+            "columnName" : "Column 3",
+            "columnWidth" : "1",
+            "seedComponents" : [ ]
+          } ]
+        },
+        "sectionHeight" : 300
+      },
+      "componentName" : "forceCommunity:section",
+      "id" : "d588101d-e052-4e74-9919-a0d21f6eaccc",
+      "regions" : [ {
+        "id" : "bb0033d1-4201-4d14-8e11-4bed21579078",
+        "regionLabel" : "Column 1",
+        "regionName" : "1",
+        "renditionMap" : { },
+        "type" : "region"
+      }, {
+        "components" : [ {
+          "componentAttributes" : {
+            "addToCartButtonBackgroundColor" : "rgb(255, 255, 255)",
+            "addToCartButtonBackgroundHoverColor" : "rgb(0, 0, 0)",
+            "addToCartButtonBorderColor" : "rgb(244, 151, 68)",
+            "addToCartButtonBorderRadius" : "5",
+            "addToCartButtonText" : "Add To Cart",
+            "addToCartButtonTextColor" : "rgb(0, 0, 0)",
+            "addToCartButtonTextHoverColor" : "#FFFFFF",
+            "breadcrumbsColor" : "rgb(0, 0, 0)",
+            "breadcrumbsFontSize" : "medium",
+            "cardAlignment" : "center",
+            "cardBackgroundColor" : "rgba(255, 255, 255, 0)",
+            "cardBorderColor" : "rgb(255, 255, 255)",
+            "cardBorderRadius" : "5",
+            "cardContentMapping" : "[{\"name\":\"Name\",\"showLabel\":false,\"label\":\"Product Name\",\"displayName\":\"Product Name\",\"type\":\"STRING\",\"fontSize\":\"medium\",\"fontColor\":\"rgba(0, 0, 0, 0.8)\"},{\"name\":\"ProductCode\",\"showLabel\":true,\"label\":\"Product Code :\",\"displayName\":\"Product Code :\",\"type\":\"STRING\",\"fontSize\":\"small\",\"fontColor\":\"rgba(0, 0, 0, 0.8)\"},{\"name\":\"Tech_DisplayColor__c\",\"showLabel\":true,\"label\":\"Display Color\",\"displayName\":\"Display Color\",\"type\":\"STRING\",\"fontSize\":\"small\",\"fontColor\":\"rgba(0, 0, 0, 0.8)\"},{\"name\":\"TechB2B_Size__c\",\"showLabel\":true,\"label\":\"Taille d'affichage : \",\"displayName\":\"Taille d'affichage : \",\"type\":\"STRING\",\"fontSize\":\"small\",\"fontColor\":\"rgba(0, 0, 0, 0.8)\"}]",
+            "cardDividerColor" : "rgb(221, 219, 218)",
+            "gridColumnSpacing" : "medium",
+            "gridMaxColumnsDisplayed" : "4",
+            "gridRowSpacing" : "medium",
+            "listRowSpacing" : "medium",
+            "minimumQuantityGuideText" : "QMC : {0}",
+            "negotiatedPriceTextColor" : "rgb(0, 0, 0)",
+            "negotiatedPriceTextSize" : "medium",
+            "noResultsRichText" : "<br><br><h1> No results found </h1><br><h2>Try these search tips instead:</h2><br><ol><li>Check your spelling</li><li>Search by product type, SKU, or feature</li><li>Broaden your search using fewer or more general words</li></ol>",
+            "originalPriceTextColor" : "rgb(0, 0, 0)",
+            "originalPriceTextSize" : "medium",
+            "pageResultsType" : "productList",
+            "pageTitleFontColor" : "rgb(0, 0, 0)",
+            "pageTitleFontSize" : "medium",
+            "resultsLayout" : "list",
+            "showAddToCartButton" : true,
+            "showBreadCrumbs" : true,
+            "showNegotiatedPrice" : true,
+            "showNoSearchResults" : false,
+            "showOriginalPrice" : true,
+            "showProductImage" : true,
+            "showQuantityRulesSetup" : true,
+            "showQuantityRulesText" : true,
+            "showSearchSortingMenuSetup" : true,
+            "viewOptionsButtonText" : "VIEW OPTIONS"
+          },
+          "componentName" : "b2b_search_builder:resultsDisplay",
+          "id" : "3ccf20e1-ec00-4582-91b7-3a93b7657c97",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "11f91869-5984-4eb4-9fca-6e025fe9e8e4",
+        "regionLabel" : "Column 2",
+        "regionName" : "d4633",
+        "renditionMap" : { },
+        "type" : "region"
+      }, {
+        "id" : "73a1aedb-dd89-4a16-9bde-26624fdd442f",
+        "regionLabel" : "Column 3",
+        "regionName" : "346f0",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "5354cefc-32ad-4cb2-92df-bb68a888af52",
+    "regionName" : "content",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "global-search"
+}

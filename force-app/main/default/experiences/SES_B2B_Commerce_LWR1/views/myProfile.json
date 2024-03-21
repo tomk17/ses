@@ -1,0 +1,103 @@
+{
+  "appPageId" : "420337f2-f879-4442-ac4d-7a772ca6fa6a",
+  "componentName" : "community_layout:sldsFlexibleLayout",
+  "dataProviders" : [ ],
+  "id" : "c09040ee-745d-4db8-a3f3-db4b22e7020c",
+  "label" : "My Profile",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "backgroundImageConfig" : "",
+        "backgroundImageOverlay" : "rgba(0,0,0,0)",
+        "sectionConfig" : "{\"UUID\":\"3b6a4362-4889-4e86-ba35-d0793184f1d6\",\"columns\":[{\"UUID\":\"817d038e-2377-4c3d-ad3a-8b3639a3a291\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":[]}]}"
+      },
+      "componentName" : "community_layout:section",
+      "id" : "3b6a4362-4889-4e86-ba35-d0793184f1d6",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : {
+            "backgroundColor" : "",
+            "paddingHorizontal" : "none",
+            "paddingVertical" : "small",
+            "text" : "My Profile & Password",
+            "textAlign" : "left",
+            "textDecoration" : "{\"bold\": true}",
+            "textDisplayInfo" : "{\"textStyle\": \"heading-medium\", \"headingTag\": \"h2\"}"
+          },
+          "componentName" : "dxp_base:textBlock",
+          "id" : "87478d4e-ca88-4a6d-92c1-ef2d372010ff",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : {
+            "fr" : "a3c93194-a326-4e4f-9614-7f9bc6f94012"
+          },
+          "renditions" : [ {
+            "id" : "a3c93194-a326-4e4f-9614-7f9bc6f94012",
+            "renditionValue" : {
+              "componentAttributes" : {
+                "text" : "Mon Profil & Mon Mot de Passe"
+              }
+            },
+            "type" : "renditionComponent"
+          } ],
+          "type" : "component"
+        } ],
+        "id" : "817d038e-2377-4c3d-ad3a-8b3639a3a291",
+        "regionLabel" : "Column 1",
+        "regionName" : "col1",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "scopedBrandingSetId" : null,
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "backgroundImageConfig" : "",
+        "backgroundImageOverlay" : "rgba(0,0,0,0)",
+        "sectionConfig" : "{\"UUID\":\"238c24cd-207c-4aaf-bfd6-0541b84ed376\",\"columns\":[{\"UUID\":\"a99c06a4-e97d-413a-8179-3cc5f486208e\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"6\",\"seedComponents\":[]},{\"UUID\":\"c058d261-0e8b-4a11-907f-b3121e0dfa16\",\"columnName\":\"Column 2\",\"columnKey\":\"col2\",\"columnWidth\":\"6\",\"seedComponents\":null}]}"
+      },
+      "componentName" : "community_layout:section",
+      "id" : "238c24cd-207c-4aaf-bfd6-0541b84ed376",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : { },
+          "componentName" : "commerce_builder:myAccountProfile",
+          "id" : "2c2152b8-43f5-4173-af4c-2ba9910fd22b",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "a99c06a4-e97d-413a-8179-3cc5f486208e",
+        "regionLabel" : "Column 1",
+        "regionName" : "col1",
+        "renditionMap" : { },
+        "type" : "region"
+      }, {
+        "components" : [ {
+          "componentAttributes" : { },
+          "componentName" : "commerce_builder:myAccountPassword",
+          "id" : "c67bfc0f-7508-4aec-8d27-a9f2031bd806",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "c058d261-0e8b-4a11-907f-b3121e0dfa16",
+        "regionLabel" : "Column 2",
+        "regionName" : "col2",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "scopedBrandingSetId" : null,
+      "type" : "component"
+    } ],
+    "id" : "40cf8787-53f6-4b4d-be0d-579b187e0389",
+    "regionName" : "content",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "MyAccount",
+  "type" : "view",
+  "viewType" : "my-profile"
+}

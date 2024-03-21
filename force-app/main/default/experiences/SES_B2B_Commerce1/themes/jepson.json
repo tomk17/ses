@@ -1,0 +1,668 @@
+{
+  "activeBrandingSetId" : "43d01bc6-a692-4d3e-8fd7-e19cb32d77f7",
+  "customCSS" : "/* __________________ POLICES _____________________ */\n\n/* Maax Italic */\n@font-face {\n    font-family: 'Maax_Italic';\n    src: url('/sfsites/c/resource/Maax_Italic_205TF') format('woff');\n}\n\n/* Maax Regular */\n@font-face {\n    font-family: 'Maax_Regular';\n    src: url('/sfsites/c/resource/Maax_Regular_205TF') format('woff');\n}\n\n/* Maax Bold */\n@font-face {\n    font-family: 'Maax_Bold';\n    src: url('/sfsites/c/resource/Maax_Bold_205TF') format('woff');\n}\n\n/* Maax Bold Italic */\n@font-face {\n    font-family: 'Maax_BoldItalic';\n    src: url('/sfsites/c/resource/Maax_Bold_Italic_205TF') format('woff');\n}\n\n/* Lato reg */\n@font-face {\n    font-family: 'Lato';\n    src: url('/sfsites/c/resource/lato_regular') format('woff');\n}\n\n/* Proxima nova reg */\n@font-face {\n    font-family: 'Proxima';\n    src: url('/sfsites/c/resource/ProximaNova_Regular') format('woff');\n}\n\n/*______________ Général ________________*/\nh2 {\n    font-weight: 800!important;\n}\n\n.cB2BPicklistForFlowScreenController h2 {\n\tcolor: black!important;\n}\n\nc-fsc_flow-button-bar div div lightning-button button {\n    background-color: black !important;\n    color: white!important;\n    font-weight:800!important;\n}\n\n.flow-button__NEXT button {\n    background: linear-gradient(45deg, #FF9646 0%, #FFD264 100%)!important;\n    color: black!important;\n    border: 2px solid #f49744!important;\n    font-weight:800!important;\n}\n\ncommerce_checkout-payment-method div a {\n    background: linear-gradient(45deg, #FF9646 0%, #FFD264 100%)!important;\n    color: black!important;\n    border: 2px solid #f49744!important;\n    font-weight:800!important;\n}\n\n/*______________ Gestion avatar / user profile (menu) ________________*/\n\n.comm-user-profile-menu .slds-avatar img,\n.profile-icon {\n    content: url(/sfsites/c/file-asset/profileIconOrange) !important;\n    min-width: 18px !important;\n    height: fit-content !important;\n}\n.slds-avatar {\n    position: relative;\n    top: -3px;\n}\n\n/* Gradiant on avatar div */\n.slds-dropdown-trigger.slds-dropdown-trigger_click.slds-grid {\n    background: linear-gradient(90deg, rgba(226, 123, 71, 1) 0%, rgba(254, 211, 138, 1) 100%);\n    border-radius: 5px;\n    padding: 1px;\n}\n\nbutton.slds-button.slds-no-space.slds-m-bottom_xx-small {\n    background: white;\n    padding: 5px 10px;\n    height: 42px;\n    margin: 0;\n    transition: all 0.3s;\n}\n\n/* hover effect on avatar div */\nbutton.slds-button.slds-no-space.slds-m-bottom_xx-small:hover {\n    background: black;\n    color: white;\n}\n\nbutton.slds-button.slds-no-space.slds-m-bottom_xx-small:hover p {\n    color: white !important;\n}\n\n/* box shadow on dropdown user settings menu */\n.comm-user-profile-menu__dropdown-ctn.slds-dropdown.slds-dropdown_right.slds-nubbin_top-right {\n    box-shadow: 0 0px 4px 0 rgb(0 0 0 / 16%) !important;\n}\n\n/* user wrapper */\n.themeUtils {\n    top: 25px;\n}\n\n/* notification svg */\n.forceCommunityThemeHeaderCompact .themeUtils .themeUtil.themeNotifications button svg,\n.themeNotifications {\n    display: none !important;\n}\n\n.forceCommunityThemeHeaderCompact .themeUtils .themeUtil svg {\n    height: 31px !important;\n    width: 18px !important;\n}\n\n/* search svg / close search svg */\n.forceCommunityThemeHeaderCompact .search-triggerButton svg,\n.forceCommunityThemeHeaderCompact .search-triggercloseButton svg {\n    fill: black !important;\n}\n\n.cb-section_column {\n    padding: 0px !important;\n}\n\nh1[c-headerComponent_headerComponent]{\n    color: white!important;\n}\n\n.forceCommunityCheckoutFlow {\n    border: 0.13rem solid #D4D4D4 !important;\n}\n\n/* ______________________ CHECKOUT _________________________*/\n\ncommerce_checkout-order-address textarea {\n    box-shadow: none!important;\n    border: 1px solid #D4D4D4!important;\n}\n\n/* ____________________ MENU STYLE V1.5 __________________ */\n\n/* Fix logo white effect on hover */\n.logoImage,\na.forceCommunityThemeLogo,\n.themeLogo {\n    -webkit-transition: none !important;\n    -moz-transition: none !important;\n    -o-transition: none !important;\n    transition: none !important;\n}\n\n\n/* Menu height */\n.forceCommunityThemeHeaderBase {\n    height: 95px !important;\n}\n\n/* menu nav position adjustment */\n.forceCommunityThemeHeaderCompact .themeNav {\n    position: relative;\n    top: -3px;\n}\n\n/* Menu item alignment with logo */\n.themeHeaderInner.centerAlignLogo-true.showNavMenuOnLeft-true.searchStyle-collapsed {\n    padding-top: 22px !important;\n}\n\n/* Menu items */\n.themeNav nav li a,\n.themeNav nav li a:hover,\n.themeNav nav li button,\n.themeNav nav li button:hover {\n    color: black !important;\n    letter-spacing: 1px !important;\n    position: relative !important;\n    top: 6px !important;\n    font-size: 1rem !important;\n}\n\nlightning-icon.slds-icon-utility-chevrondown.comm-navigation__sub-menu-trigger-icon.slds-icon_container>lightning-primitive-icon>svg.slds-icon.slds-icon_xx-small{\n    fill: black!important;\n}\n\n/* Remove basic border bottom on menu items */\n.themeNav nav li a--active {\n    border-bottom: none !important;\n}\n\n/* Menu items after (gradiant underline on hover) */\n/*.themeNav nav li a:after,\n.themeNav nav li button:after,\nbutton.comm-navigation__top-level-item-link.comm-navigation__sub-menu-trigger.js-top-level-menu-item.linkBtn:after {\n    content: '' !important;\n    position: absolute !important;\n    bottom: 10px !important;\n    right: 0 !important;\n    bottom: 10px !important;\n    left: 0 !important;\n    z-index: -1 !important;\n    height: 1px !important;\n    width: 0px !important;\n    margin-bottom: -3px !important;\n    transition: width 0.3s !important;\n    background: linear-gradient(90deg, rgba(226, 123, 71, 1) 0%, rgba(254, 211, 138, 1) 100%) !important;\n}*/\n\n/* Menu items on hover */\n/*.themeNav nav li a:hover:after,\n.themeNav nav li button:hover:after,\n.themeNav nav li a.comm-navigation__top-level-item-link--active:after {\n    content: '' !important;\n    position: absolute !important;\n    right: 0 !important;\n    bottom: 10px !important;\n    left: 0 !important;\n    z-index: -1 !important;\n    height: 1px !important;\n    width: 100% !important;\n    margin-bottom: -3px !important;\n    background: linear-gradient(90deg, rgba(226, 123, 71, 1) 0%, rgba(254, 211, 138, 1) 100%) !important;\n}*/\n\n/* Logo wrapper position */\n.forceCommunityThemeHeaderCompact .themeLogo {\n    position: absolute !important;\n    top: 16px !important;\n    left: 4%;\n    margin-right: 0px !important;\n    margin-left: 0px !important;\n}\n\n/* Username &  manifying glass */\n.forceCommunityThemeHeaderCompact .themeUtils {\n    position: absolute !important;\n    right: 4% !important;\n}\n\n/* Logo image size */\n.logoImage {\n    width: 216px !important;\n    height: 54px !important;\n}\n\nnav ul {\n    justify-content: center;\n}\n\ncommunity_navigation-drilldown-navigation-list lightning-icon {\n    top: 0.9rem !important;\n    right:initial !important;\n}\n\n@media screen and (min-width: 768px) {\n    .logoImage {\n        position: relative !important;\n        top: 5px !important;\n    }\n}\n\n/* Alignement menu items */\n.themeNav nav li {\n    padding-left: 3px !important;\n    padding-right: 3px !important;\n}\n\n/* search bar in menu */\n.search-region:not(.comm-hide) {\n    border: 1px solid #bfbfbf;\n    padding: 5px;\n    border-radius: 5px;\n    background: white;\n}\n\n.themeNav {\n    font-size: 1em !important;\n    display: inline-table;\n}\n\n/* ___________________ Gestion tailles écran (desktop) pour menu ______________________ */\n\n@media screen and (max-width: 1300px) {\n\n    /* center menu */\n    .themeNav {\n        margin-left: 0 !important;\n    }\n}\n\n@media screen and (min-width: 768px) and (max-width: 1559px) {\n\n    /* remove username */\n    .slds-media__body.slds-show_medium.comm-user-profile-menu__trigger {\n        display: none !important;\n    }\n\n    /* reduce logo size */\n    .logoImage {\n        width: 116px !important;\n    }\n\n    /* position of logo */\n    .forceCommunityThemeHeaderCompact .themeLogo {\n        top: 20px !important;\n    }\n}\n\n@media screen and (min-width: 768px) and (max-width: 1100px) {\n\n    /* reduce menu items font-size */\n    /*.themeNav nav li a,\n    .themeNav nav li button,\n    .themeNav nav li a:hover {\n        font-size: 0.7rem !important;\n    }*/\n\n    /* remove padding on menu items */\n    .themeNav nav li {\n        padding-left: 0 !important;\n        padding-right: 0 !important;\n    }\n\n    .themeNav nav .comm-navigation__top-level-item.mainNavItem:first-child {\n        padding-left: 20px !important;\n    }\n\n    /* reduce margin left and right on logo & user wrapper */\n    .forceCommunityThemeHeaderCompact .themeLogo {\n        left: 0% !important;\n    }\n\n    .forceCommunityThemeHeaderCompact .themeUtils {\n        right: 0% !important;\n    }\n}\n\n@media screen and (max-width: 767px) {\n    .themeHeader.forceCommunityThemeHeaderBase {\n        height: 66px !important;\n    }\n}\n\n/* ___________________  mobile menu  __________________ */\n\n/* fix hamburger menu */\n.forceCommunityThemeNavTrigger .themeNavTrigger {\n    position: absolute !important;\n    width: 20px !important;\n    left: 7% !important;\n    top: 27px !important;\n}\n\n/* change color of span hamburger menu */\n.forceCommunityThemeNavTrigger .themeNavTrigger .themeBurgerLine {\n    background-color: black !important;\n}\n\n@media screen and (max-width: 767px) {\n\n    /* position user icon */\n    .themeUtils {\n        top: 9px !important;\n    }\n}\n\n/****************************************************************************** SEARCH RESULTS **************************/\nb2b_search_results_tiles-results-tiles {\n    font-size: 1rem;\n}\n\nb2b_search_facets-category-tree ul li a {\n    font-size: 0.9rem!important;\n}\n\nb2b_search_facets-filters-panel section {\n    border-color: #f49744!important;\n    border-width: 2px!important;\n}\n\nb2b_buyer_cart-add-to-cart-button {\n    font-weight: 800;\n}\n\n.decrement-btn {\n    background: #ffdec2!important;\n}\n\n.decrement-btn svg {\n    fill: white!important;\n}\n\n.increment-btn {\n    background: black!important;\n}\n\n.increment-btn svg {\n    fill: white!important;\n}\n\nb2b_buyer_cart-add-to-cart-button button {\n    border: 2px solid #f49744!important;\n    background: linear-gradient(45deg, #FF9646 0%, #FFD264 100%)!important;\n}\n\nb2b_buyer_cart-add-to-cart-button button:hover {\n    /*color:white!important;\n    background: black!important;*/\n    background: linear-gradient(45deg, #ff7b16 0%, #ffbc18 100%)!important;\n    color: black!important;\n}\n\nbutton[disabled][b2b_buyer_cart-constrainedQuantitySelector_constrainedQuantitySelector] .btn-icon[b2b_buyer_cart-constrainedQuantitySelector_constrainedQuantitySelector] {\n    fill: red!important;\n}\n\nb2b_search_product_card-product-card section div a div b2b_search_product_card-product-field div lightning-formatted-rich-text span {\n    font-weight: 800!important;\n    font-size: 1rem!important;\n}\n\nb2b_search_product_card-product-card section div:nth-child(2) a div:nth-child(2) b2b_search_product_card-product-field div lightning-formatted-rich-text span {\n    font-weight: 300!important;\n    color:#8B9599!important;\n}\n\nb2b_search_product_card-product-card section div:nth-child(2) a div:nth-child(3) b2b_search_product_card-product-field div lightning-formatted-rich-text span {\n    font-weight: 300!important;\n    font-size: 1rem!important;\n}\nb2b_search_product_card-product-card section div:nth-child(2) a div:nth-child(4) b2b_search_product_card-product-field div lightning-formatted-rich-text span {\n    font-weight: 300!important;\n    font-size: 1rem!important;\n}\n\nb2b_search_product_card-product-card section div:nth-child(2) a div:nth-child(3) b2b_search_product_card-product-field div {\n    margin-top: 10px!important;\n}\n\n/*b2b_search_product_card-product-card section div:nth-child(2) a div:nth-child(4) b2b_search_product_card-product-field div {\n    position: relative!important;\n}\n\nb2b_search_product_card-product-card section div:nth-child(2) a div:nth-child(4) b2b_search_product_card-product-field div lightning-formatted-rich-text {\n    padding-right: inherit!important;\n}\n\nb2b_search_product_card-product-card section div:nth-child(2) a div:nth-child(4) b2b_search_product_card-product-field div lightning-formatted-rich-text:nth-child(1) span {\n    position: absolute!important;\n    margin-left: 35px!important;\n}*/\n\n.filters-title[b2b_search_facets-filtersPanel_filtersPanel] {\n    color: black!important;\n}\n\n.selected-category[b2b_search_facets-categoryTree_categoryTree] {\n    color: black!important;\n}\n\n/*b2b_buyer_navigation-bread-crumbs nav ol li p {\n    font-weight: 800!important;\n}*/\n\nb2b_buyer_navigation-bread-crumbs nav ol li p {\n    color: #8B9599!important;\n    margin-left: 10px!important;\n    font-size: 0.9rem!important;\n    font-weight: 800!important;\n}\n\nb2b_buyer_navigation-bread-crumbs nav ol li a {\n    color: #8B9599!important;\n    margin-right: 10px!important;\n    font-size: 0.9rem!important;\n}\n\nb2b_buyer_navigation-bread-crumbs nav ol li:before {\n    color: #8B9599!important;\n    bottom: 0!important;\n}\n\nb2b_search_results_tiles-sort-menu lightning-base-combobox-item:nth-child(5) {\n    display:none!important;\n}\n\n@media (min-width: 768px){\n    b2b_search_results_tiles-results-tiles article section {\n        margin-left: 20px;\n    }\n\n    b2b_search_product_card-product-card section .fieldsArea {\n        margin-left: 20px; \n    }\n}\n\n@media only screen and (max-width: 1024px){\n    .filters-panel[b2b_search_results_tiles-resultsTiles_resultsTiles] {\n        display: none;\n    }\n    .b2b_search_builderResultsDisplay.mobile {\n        display: flex!important;\n    }\n    b2b_search_results_tiles-results-tiles section b2b_search_results_tiles-sort-menu {\n        display: none;\n    }\n}\n\n@media only screen and (min-width: 1024px){\n    .b2b_search_builderResultsDisplay.mobile {\n        display: none;\n    }\n}\n\n\n/**************************************************************************** Panier ***********************/\n\ncommerce_checkout-checkout-button button {\n    text-transform: initial!important;\n    font-size: 16px!important;\n}\n\nb2b_buyer_cart-constrained-quantity-selector span span label {\n    display: none!important;\n}\n\ncommerce_checkout-checkout-button button {\n    font-weight: 800!important;\n    border: 2px solid #f49744!important;\n    background: linear-gradient(45deg, #FF9646 0%, #FFD264 100%)!important;\n}\n\ncommerce_checkout-checkout-button button:hover {\n    background: linear-gradient(45deg, #ff7b16 0%, #ffbc18 100%)!important;\n    color: black!important;\n}\n\nb2b_buyer_cart-summary div b2b_buyer_pricing-formatted-price {\n    font-size:1.4vw!important;\n}\n\nb2b_buyer_cart-managed-contents .sort-menu {\n    display: none!important;\n}\n\nb2b_buyer_cart-cart-contents-error-message header {\n    display: none!important;\n}\n\nb2b_buyer_cart-contents b2b_buyer_cart-managed-contents header {\n    display: none!important;    \n}\n\nb2b_buyer_cart-items ul {\n    border-top: 1px solid #f3f2f2!important;\n}\n\nb2b_buyer_cart-items ul li figure a img {\n    padding-bottom:30px!important;\n}\n\n@media (min-width: 1024px){\n    .quantity-price-remove div b2b_buyer_pricing-formatted-price {\n        margin-top: 11px!important;\n        margin-left: 20%!important;\n        font-size: 1.4vw!important;\n    }\n}\n\n@media (max-width: 1024px){\n    b2b_buyer_cart-items ul li .details .line-item-properties{\n        flex-direction:initial!important;\n    }\n    \n    b2b_buyer_cart-summary div b2b_buyer_pricing-formatted-price {\n        font-size:2rem!important;\n    }\n}\n\n@media (max-width: 1200px){\n    b2b_buyer_cart-items b2b_buyer_pricing-formatted-price{\n        margin-left:20%!important;\n    }\n}\n\n\n/**************************************************************************** Dropdown ***********************/\n.comm-drilldown-navigation__list[community_navigation-drilldownNavigationList_drilldownNavigationList]{\n    outline: initial!important;\n    overflow-y: hidden!important;\n}\n\n/**************************************************************************** Order details ***********************/\n/* disable list view selection */\n/* Case List view */\n.actionColumnHeader {\n    display: none;\n}\n\n.forceVirtualActionMarker {\n    display: none;\n}\n\n.forceCommunityRecordListDesktop .slds-input {\n    border-color: #C6C6C6;\n}\n\n.forceCommunityRecordListDesktop .slds-button_icon {\n    border-color: #C6C6C6;\n    height: 40px;\n}\n\n.forceCommunityRecordListDesktop .forceListViewPicker {\n    pointer-events: none;\n}\n\n.forceCommunityRecordListDesktop span,\n.forceRelatedListDesktop .slds-table thead {\n    color: black;\n}\n\n.forceCommunityRecordListDesktop lightning-primitive-icon,\n.forceRelatedListDesktop lightning-primitive-icon {\n    color: #FFC850;\n    fill: #FFC850;\n}\n\n.forceCommunityRecordListDesktop .search-in-list svg path,\n.forceRelatedListDesktop .search-in-list svg path {\n    color: #FFC850;\n    fill: #FFC850;\n}\n\n.forceCommunityRecordListDesktop .slds-table thead,\n.forceRelatedListDesktop .slds-table thead {\n    font-family: 'Maax_Regular';\n    border-collapse: collapse;\n    box-sizing: content-box;\n}\n\n.forceCommunityRecordListDesktop .slds-table tr,\n.forceRelatedListDesktop .slds-table tr {\n    border-collapse: collapse;\n    background-color: white;\n    border-color: #1B7AE0;\n    border-style: none;\n}\n\n.forceCommunityRecordListDesktop .slds-table tr:nth-child(even),\n.forceRelatedListDesktop .slds-table tr:nth-child(even) {\n    background-color: rgb(248, 248, 248);\n}\n\n.forceCommunityRecordListDesktop h1.slds-truncate.slds-page-header__title.slds-text-color--default,\n.forceRelatedListDesktop h1.slds-truncate.slds-page-header__title.slds-text-color--default {\n    border-bottom: 1px solid;\n}\n\n.forceCommunityRecordListDesktop .forceListViewManagerHeader.slds-page-header {\n    border-bottom-style: none !important;\n    padding-bottom: 40px !important;\n}\n\n.forceCommunityRecordListDesktop .slds-table_header-fixed_container::before,\n.forceCommunityRecordListDesktop .slds-table--header-fixed_container::before,\n.forceRelatedListDesktop .slds-table_header-fixed_container::before,\n.forceRelatedListDesktop .slds-table--header-fixed_container::before {\n    background: linear-gradient(white, white) padding-box, linear-gradient(to right, #FF9646, #FFD264) border-box;\n}\n\n.forceRelatedListDesktop .quickFilterButton {\n    display: none;\n}\n\n.forceListViewManagerHeader .slds-grid:first-child {\n    display: none;\n}\n\nforce-list-view-manager-status-info {\n    display: none!important;\n}\n\n.forceListViewSettingsMenu {\n    display: none;\n}\n\n.forceRelatedListDesktop .test-listViewManager {\n    border:none!important;\n}\n\n.forceRelatedListDesktop .test-listViewManager .forceListViewManagerHeader {\n    display:none!important;\n}\n\nc-ses-custom-breadcrumb-and-title .ses-custom-main-body {\n    padding-right:11%!important;\n    padding-left:11%!important;\n}\n\n/**************************************************************************** Product Details ***********************/\n\nb2b_buyer_product_images-carousel div lightning-button-icon {\n    display:none!important;\n    justify-content: center!important;\n}\n\nb2b_buyer_product_details-heading div:nth-child(3) {\n    margin-top: 10px!important;\n    font-size: 1rem!important;\n}\n\n/*b2b_buyer_product_details-heading div:nth-child(4) {\n    position: relative!important;\n}\n\nb2b_buyer_product_details-heading div:nth-child(4) p {\n    position: absolute!important;\n    margin-left: 28px;\n}*/\n\nb2b_buyer_product_details-heading h1 {\n    font-family: 'Lato' !important;\n    /* font-family: 'Proxima' !important; */\n    color: #000;\n    font-weight: 800;\n    text-transform: uppercase;\n    font-size: 1.5em;\n}\n\nb2b_buyer_product_details-heading div p {\n    font-family: 'Proxima' !important;\n    font-size: 0.9rem!important;\n}\n\nb2b_buyer_product_details-heading span {\n    font-family: 'Proxima' !important;\n    font-size: 0.9rem!important;\n    font-weight: 800;\n}\n\nb2b_buyer_product_details-heading H1 {\n    margin-top: 8%!important;\n}\n\nb2b_buyer_pricing-product-price table tbody tr td:nth-child(1) {\n    display: none;\n}\n\nb2b_buyer_pricing-product-price b2b_buyer_pricing-formatted-price {\n    font-family: 'Proxima' !important;\n    font-size: 1.5rem!important;\n    color: #000;\n    font-weight: 800;\n}\n\nb2b_buyer_product_details-purchase-options .quantity-list-container {\n    margin-top:10px!important;\n}\n\nb2b_buyer_product_details-purchase-options {\n    font-family: 'Proxima' !important;\n}\n\nb2b_buyer_product_images-gallery-image {\n    border: none!important;\n}\n\n@media (max-width: 1200px){\n    b2b_buyer_product_images-gallery-image figure button img {\n        max-width: 300px!important;\n    }\n}\n/************************* checkout *******************/\n.cB2BPaymentPOOnly .slds-card__footer{\n    padding-right:initial!important;\n}\n\n/*.cB2BPaymentPOOnly .slds-card__footer button {\n    border: 2px solid #f49744!important;\n    background: linear-gradient(45deg, #FF9646 0%, #FFD264 100%)!important;\n    color:black!important;\n    font-weight:800!important;\n}\n\n.cB2BPaymentPOOnly .slds-card__footer button:disabled {\n    border: 2px solid #D4D4D4!important;\n    background: inherit!important;\n    color:inherit!important;\n    font-weight:inherit!important;\n}*/\n\ncommerce_checkout-checkout-summary .total-price div {\n    color: black!important;\n}\n\n/************************* Order details *******************/\n\na[href^=\"/SES/s/detail/\"] {\n    cursor: default;\n    pointer-events: none;\n    text-decoration: none;\n}\n\n/************************* Order List *******************/\n\n@media (min-width: 768px) and (max-width: 1200px) {\n    .orders-and-filters-wrapper{\n\t\tpadding-left: 0%!important;\n        padding-right: 0%!important;\n    }\n    \n    lightning-primitive-cell-factory span div lightning-primitive-cell-button lightning-button button {\n        width:50px!important;\n    }\n}\n\n@media (min-width: 1200px) and (max-width: 1500px) {\n    \n    lightning-primitive-cell-factory span div lightning-primitive-cell-button lightning-button button {\n        width:65px!important;\n    }\n}",
+  "developerName" : "jepson",
+  "id" : "4a91a134-89d2-4abd-b1d9-2fe0de8d7500",
+  "label" : "Jepson",
+  "layouts" : {
+    "Home" : "4e15a476-37e3-4682-842d-9c12db9fd170",
+    "Inner" : "430ea6ef-f6d2-4253-b85c-94e3bde80197",
+    "Login" : "1b6dbc27-7800-4800-a160-b9a0364e0b63",
+    "ServiceNotAvailable" : "7b1fd678-de75-48b3-915a-7f38e4582bcc"
+  },
+  "type" : "theme",
+  "views" : [ {
+    "componentAttributes" : { },
+    "componentName" : "salesforceIdentity:loginBody2",
+    "id" : "1b6dbc27-7800-4800-a160-b9a0364e0b63",
+    "label" : "Login",
+    "regions" : [ {
+      "id" : "ba9b846b-6e51-4f9c-8c55-48acebd787bf",
+      "regionName" : "header",
+      "type" : "region"
+    }, {
+      "id" : "bc4c3846-a2bc-4f53-adcb-817e10d2250c",
+      "regionName" : "content",
+      "type" : "region"
+    }, {
+      "id" : "7ab32f2b-4f15-4c35-803c-df3d761a7e3e",
+      "regionName" : "footer",
+      "type" : "region"
+    } ],
+    "type" : "view"
+  }, {
+    "componentAttributes" : {
+      "fixedPageWidth" : 1920,
+      "headerBgColor" : "rgba(255, 255, 255, 0.8)",
+      "isHeaderPinned" : true,
+      "isHeroUnderHeader" : false,
+      "isPageWidthFixed" : true,
+      "showHeader" : true,
+      "showHero" : false
+    },
+    "componentName" : "siteforce:themeLayoutStarter",
+    "id" : "430ea6ef-f6d2-4253-b85c-94e3bde80197",
+    "label" : "Default",
+    "regions" : [ {
+      "components" : [ {
+        "componentAttributes" : {
+          "background" : "background: #FFFFFF",
+          "backgroundOverlayColor" : "rgba(0, 0, 0, 0.3)",
+          "borderBottomColor" : "rgb(216, 216, 216)",
+          "centerAlignLogo" : true,
+          "collapseNavMenu" : false,
+          "containHeader" : false,
+          "containHeaderWidth" : 1440,
+          "dropdownBackgroundColor" : "#FFFFFF",
+          "dropdownBackgroundHoverColor" : "rgba(105, 105, 105, 0.05)",
+          "dropdownBorderColor" : "rgb(226, 123, 71)",
+          "dropdownTextColor" : "rgba(0, 0, 0, 0.8)",
+          "dropdownTextHoverColor" : "rgb(226, 123, 71)",
+          "headerHeight" : 30,
+          "linkActiveBorderColor" : "rgb(226, 123, 71)",
+          "linkColor" : "rgba(0, 0, 0, 0.8)",
+          "linkHoverColor" : "rgb(226, 123, 71)",
+          "linkTextShadowColor" : "rgba(255, 255, 255, 0)",
+          "logoWidth" : 150,
+          "searchStyle" : "collapsed",
+          "showAppLauncher" : false,
+          "showNavMenuOnLeft" : true,
+          "showNotifications" : true,
+          "showProfileMenu" : true,
+          "showSearch" : true
+        },
+        "componentName" : "forceCommunity:themeHeaderCompact",
+        "id" : "ac262714-e3fb-4995-9d4f-6a778e71c026",
+        "regions" : [ {
+          "components" : [ {
+            "componentAttributes" : {
+              "buttonBackgroundColor" : "",
+              "buttonBackgroundHoverColor" : "",
+              "buttonBorderColor" : "rgba(0, 0, 0, 0)",
+              "buttonBorderRadius" : 15,
+              "buttonText" : "Log in",
+              "buttonTextColor" : "",
+              "buttonTextHoverColor" : "",
+              "customizableUserProfileMenuEditor" : "Default_User_Profile_Menu3",
+              "menuStyleSettings" : "{\"selectedMenuStyleSetting\":\"iconOnly\",\"selectedIconSetting\":\"userAvatar\",\"includeCompanyName\":false,\"selectedTextOrientationSetting\":\"right\"}"
+            },
+            "componentName" : "forceCommunity:customizableUserProfileMenu",
+            "id" : "996b803c-8d63-4cf3-9a9a-96f67e0483e5",
+            "renditionMap" : {
+              "fr" : "5df86938-1f29-431a-80a8-023d1f2917a5",
+              "fr_ca" : "51549d3e-112a-4b93-b850-b8258739dec4"
+            },
+            "renditions" : [ {
+              "id" : "51549d3e-112a-4b93-b850-b8258739dec4",
+              "renditionValue" : {
+                "componentAttributes" : {
+                  "buttonText" : "Se connecter"
+                }
+              },
+              "type" : "renditionComponent"
+            }, {
+              "id" : "5df86938-1f29-431a-80a8-023d1f2917a5",
+              "renditionValue" : {
+                "componentAttributes" : {
+                  "buttonText" : "Se connecter"
+                }
+              },
+              "type" : "renditionComponent"
+            } ],
+            "type" : "component"
+          } ],
+          "id" : "50045f9d-d301-4efe-914a-8991a7512058",
+          "regionName" : "themeHeaderProfileMenu",
+          "type" : "region"
+        }, {
+          "components" : [ {
+            "componentAttributes" : {
+              "backgroundColor" : "#fff",
+              "borderColor" : "transparent",
+              "borderRadius" : 5,
+              "borderStyle" : "outline",
+              "buttonColor" : "rgba(255,255,255,1)",
+              "buttonHoverColor" : "rgba(0,0,0,0.2)",
+              "crossObjectTypeaheadApiNames" : [ {
+                "isPublic" : true,
+                "name" : "FeedItem"
+              } ],
+              "iconColor" : "#000",
+              "placeholderText" : "Search...",
+              "placeholderTextColor" : "#000",
+              "showSearchButton" : false,
+              "textColor" : "#000",
+              "typeaheadResultMax" : 6,
+              "useTypeahead" : true
+            },
+            "componentName" : "forceCommunity:themeSearch",
+            "id" : "8d24215a-4a41-43c4-b2f0-3916cc684db4",
+            "renditionMap" : {
+              "fr" : "40134870-1f00-49f9-b185-72d3afdba159"
+            },
+            "renditions" : [ {
+              "id" : "40134870-1f00-49f9-b185-72d3afdba159",
+              "renditionValue" : {
+                "componentAttributes" : {
+                  "placeholderText" : "Rechercher..."
+                }
+              },
+              "type" : "renditionComponent"
+            } ],
+            "type" : "component"
+          } ],
+          "id" : "ef67a064-3978-4904-9d9d-cebafb8de577",
+          "regionName" : "search",
+          "type" : "region"
+        }, {
+          "components" : [ {
+            "componentAttributes" : {
+              "NavigationMenuEditorRefresh" : "Default_Navigation4",
+              "alignment" : "left",
+              "showAppLauncher" : false,
+              "showBackLabel" : false,
+              "showHomeLink" : false
+            },
+            "componentName" : "forceCommunity:multiLevelNavigationWrapper",
+            "id" : "8783d07f-4fe7-4a53-aee8-505a416f41fe",
+            "renditionMap" : { },
+            "type" : "component"
+          } ],
+          "id" : "698d1ebb-4433-4332-88fc-02a148855d3a",
+          "regionName" : "nav",
+          "type" : "region"
+        }, {
+          "components" : [ {
+            "componentAttributes" : {
+              "cartCountType" : "UniqueProductCount"
+            },
+            "componentName" : "b2b_buyer_builder:cartBadge",
+            "id" : "f05218fb-6545-4488-81e1-0ea0e88c8094",
+            "renditionMap" : { },
+            "type" : "component"
+          } ],
+          "id" : "59858707-5815-459c-ab87-ebe7bdbfefb4",
+          "regionName" : "cartIcon",
+          "type" : "region"
+        } ],
+        "renditionMap" : { },
+        "type" : "component"
+      } ],
+      "id" : "b579de34-b1c8-4b62-ab25-cad88f652281",
+      "regionName" : "themeHeader",
+      "type" : "region"
+    }, {
+      "components" : [ {
+        "componentAttributes" : {
+          "bgImage" : "background: #FFFFFF url(/sfsites/assets/themes/jepson-background.jpg) top center /cover",
+          "bgOverlayColor" : "rgba(255, 255, 255, 0.20)",
+          "captionText" : "Our Mission",
+          "captionTextColor" : "rgba(0, 0, 0, 0.8)",
+          "captionTextShadowColor" : "rgba(0, 0, 0, 0)",
+          "contentAlignment" : "right",
+          "contentWidth" : 45,
+          "ctaBtnOneBgColor" : "",
+          "ctaBtnOneBgHoverColor" : "",
+          "ctaBtnOneBorderColor" : "rgba(10, 50, 198, 0)",
+          "ctaBtnOneOpenNewTab" : false,
+          "ctaBtnOneText" : "Our Projects",
+          "ctaBtnOneTextColor" : "",
+          "ctaBtnOneTextHoverColor" : "",
+          "ctaBtnOneUrl" : "",
+          "ctaBtnRadius" : 25,
+          "ctaBtnTwoBgColor" : "rgba(255, 255, 255, 0)",
+          "ctaBtnTwoBgHoverColor" : "rgba(255, 255, 255, 0.9)",
+          "ctaBtnTwoBorderColor" : "rgba(0, 0, 0, 0.8)",
+          "ctaBtnTwoOpenNewTab" : false,
+          "ctaBtnTwoText" : "Contact Us",
+          "ctaBtnTwoTextColor" : "rgba(0, 0, 0, 0.8)",
+          "ctaBtnTwoTextHoverColor" : "rgba(0, 0, 0, 0.8)",
+          "ctaBtnTwoUrl" : "",
+          "ctaShowBtnOne" : true,
+          "ctaShowBtnTwo" : true,
+          "fixedHeroWidth" : true,
+          "heroHeight" : 162,
+          "heroWidth" : 1440,
+          "showCaption" : true,
+          "showSubtitle" : true,
+          "showTitle" : true,
+          "subtitleText" : "We specialize in the construction of unique and exclusive properties.  We deliver outstanding quality and design for leading architects and private clients around the world.",
+          "subtitleTextColor" : "rgba(0, 0, 0, 0.8)",
+          "subtitleTextShadowColor" : "rgba(0, 0, 0, 0)",
+          "titleText" : "Your Dream Home",
+          "titleTextColor" : "rgba(0, 0, 0, 0.8)",
+          "titleTextShadowColor" : "rgba(0, 0, 0, 0)",
+          "type" : "callToAction"
+        },
+        "componentName" : "forceCommunity:themeHeroStarter",
+        "id" : "cbca262d-f0b3-4120-b823-fa929810bc48",
+        "regions" : [ {
+          "components" : [ {
+            "componentAttributes" : {
+              "backgroundColor" : "#FFFFFF",
+              "borderColor" : "rgba(0, 0, 0, 0)",
+              "borderRadius" : 25,
+              "borderStyle" : "outline",
+              "buttonColor" : "",
+              "buttonHoverColor" : "",
+              "crossObjectTypeaheadApiNames" : "",
+              "iconColor" : "#FFFFFF",
+              "placeholderText" : "Ask a question...",
+              "placeholderTextColor" : "rgba(0, 0, 0, 0.6)",
+              "publicDropdownBackgroundColor" : "#FFFFFF",
+              "publicDropdownBackgroundHoverColor" : "",
+              "publicDropdownBorderColor" : "#F0F0F0",
+              "publicDropdownTextColor" : "",
+              "publicDropdownTextHoverColor" : "",
+              "showSearchButton" : true,
+              "textColor" : "rgba(0, 0, 0, 0.8)",
+              "typeaheadResultMax" : 6,
+              "useTypeahead" : true
+            },
+            "componentName" : "forceCommunity:themeSearchHero",
+            "id" : "5ad56096-494d-4d69-99eb-9146ba358f3e",
+            "renditionMap" : { },
+            "type" : "component"
+          } ],
+          "id" : "9958df1a-0eff-45f8-b670-38c8a815526e",
+          "regionName" : "search",
+          "type" : "region"
+        } ],
+        "renditionMap" : { },
+        "type" : "component"
+      } ],
+      "id" : "32f33096-ea46-4417-ad46-778f97905a59",
+      "regionName" : "themeHero",
+      "type" : "region"
+    }, {
+      "components" : [ {
+        "componentAttributes" : {
+          "accountLabel" : "",
+          "assistanceLabel" : "Account",
+          "assistanceSupportLabel" : "My orders",
+          "assistanceSupportPageName" : "Orders_OrderManagementVisibility__c",
+          "bfLabel" : "LF",
+          "btobpurpose" : true,
+          "buttonLabel" : "Button label",
+          "catalogLabel" : "My Catalog",
+          "hardwareLabel" : "Hardware",
+          "haveAQuestionLabel" : "Have a question",
+          "hfb1Label" : "HF B1",
+          "knowledgeBaseLabel" : "Contact support",
+          "knowledgeBasePageName" : "https://sesimagotag.my.site.com/s/customer-services/assistance-requests",
+          "licenceServicesLabel" : "",
+          "licenceServicesPageName" : "",
+          "myAccountLabel" : "",
+          "myAccountPageName" : "",
+          "ordersLabel" : "",
+          "ordersPageName" : "",
+          "paddingLeft" : "11%",
+          "paddingRight" : "11%",
+          "pageNameToNavigateTo" : "Page Name",
+          "privacyLabel" : "Data privacy",
+          "privacyPageName" : "Data privacy",
+          "productCatalogLabel" : "All products",
+          "productCatalogPageName" : "Category Detail",
+          "productReturnSupportLabel" : "",
+          "productReturnSupportPageName" : "",
+          "questionParagraphLabel" : "",
+          "servicesLabel" : "Services",
+          "softwareLabel" : "Software",
+          "suboneLabel" : "Subone",
+          "technicalSupportLabel" : "My account",
+          "technicalSupportPageName" : "https://sesimagotag.my.site.com/SES/s/account/Account/",
+          "toolsLabel" : "Customer service",
+          "vusionLabel" : "Vusion",
+          "warrantiesLabel" : "Knowledge base",
+          "warrantiesPageName" : "https://sesimagotag.my.site.com/s/knowledge-base"
+        },
+        "componentName" : "c:sesPortalFooterV1_5",
+        "id" : "bb03561c-8470-4e01-b95d-2b241c7e37ba",
+        "renditionMap" : {
+          "fr" : "3e76c995-47a0-44cf-adca-ed2103e82d11"
+        },
+        "renditions" : [ {
+          "id" : "3e76c995-47a0-44cf-adca-ed2103e82d11",
+          "renditionValue" : {
+            "componentAttributes" : {
+              "assistanceLabel" : "Compte",
+              "assistanceSupportLabel" : "Mes commandes",
+              "catalogLabel" : "Mon Catalogue",
+              "knowledgeBaseLabel" : "Assistance Commande",
+              "licenceServicesLabel" : "",
+              "privacyLabel" : "Confidentialité des données",
+              "privacyPageName" : "Data privacy",
+              "productCatalogLabel" : "Tous les produits",
+              "technicalSupportLabel" : "Mon compte",
+              "toolsLabel" : "Service Client",
+              "warrantiesLabel" : "Base de connaissance"
+            }
+          },
+          "type" : "renditionComponent"
+        } ],
+        "type" : "component"
+      } ],
+      "id" : "9b7197bf-34a0-413e-827e-acd15a2ddb68",
+      "regionName" : "themeFooter",
+      "type" : "region"
+    } ],
+    "type" : "view"
+  }, {
+    "componentAttributes" : {
+      "fixedPageWidth" : 1920,
+      "headerBgColor" : "rgba(255, 255, 255, 0.8)",
+      "isHeaderPinned" : true,
+      "isHeroUnderHeader" : false,
+      "isPageWidthFixed" : false,
+      "showHeader" : true,
+      "showHero" : false
+    },
+    "componentName" : "siteforce:themeLayoutStarter",
+    "id" : "4e15a476-37e3-4682-842d-9c12db9fd170",
+    "label" : "Home",
+    "regions" : [ {
+      "components" : [ {
+        "componentAttributes" : {
+          "background" : "background: #FFFFFF",
+          "backgroundOverlayColor" : "rgba(0, 0, 0, 0.3)",
+          "borderBottomColor" : "rgba(0, 0, 0, 0.5)",
+          "centerAlignLogo" : true,
+          "collapseNavMenu" : false,
+          "containHeader" : false,
+          "containHeaderWidth" : 1440,
+          "dropdownBackgroundColor" : "#FFFFFF",
+          "dropdownBackgroundHoverColor" : "",
+          "dropdownBorderColor" : "rgb(226, 123, 71)",
+          "dropdownTextColor" : "",
+          "dropdownTextHoverColor" : "",
+          "headerHeight" : 30,
+          "linkActiveBorderColor" : "",
+          "linkColor" : "rgba(0, 0, 0, 0.8)",
+          "linkHoverColor" : "rgba(0, 0, 0, 0.7)",
+          "linkTextShadowColor" : "rgba(255, 255, 255, 0)",
+          "logoWidth" : 150,
+          "searchStyle" : "collapsed",
+          "showAppLauncher" : false,
+          "showNavMenuOnLeft" : true,
+          "showNotifications" : false,
+          "showProfileMenu" : true,
+          "showSearch" : true
+        },
+        "componentName" : "forceCommunity:themeHeaderCompact",
+        "id" : "3fc6711a-f6f7-41c6-8cbf-40280d21ae95",
+        "regions" : [ {
+          "components" : [ {
+            "componentAttributes" : {
+              "buttonBackgroundColor" : "",
+              "buttonBackgroundHoverColor" : "",
+              "buttonBorderColor" : "rgba(0, 0, 0, 0)",
+              "buttonBorderRadius" : 15,
+              "buttonText" : "Log in",
+              "buttonTextColor" : "",
+              "buttonTextHoverColor" : "",
+              "customizableUserProfileMenuEditor" : "Default_User_Profile_Menu3",
+              "menuStyleSettings" : "{\"selectedMenuStyleSetting\":\"iconAndName\",\"selectedIconSetting\":\"userAvatar\",\"includeCompanyName\":true,\"selectedTextOrientationSetting\":\"right\"}"
+            },
+            "componentName" : "forceCommunity:customizableUserProfileMenu",
+            "id" : "80841517-68c9-494e-bac5-45669d8fa184",
+            "renditionMap" : { },
+            "type" : "component"
+          } ],
+          "id" : "33bcb7a8-2b4d-42f1-afdd-cf79e0502698",
+          "regionName" : "themeHeaderProfileMenu",
+          "type" : "region"
+        }, {
+          "components" : [ {
+            "componentAttributes" : {
+              "backgroundColor" : "#fff",
+              "borderColor" : "transparent",
+              "borderRadius" : 5,
+              "borderStyle" : "outline",
+              "buttonColor" : "rgba(255,255,255,1)",
+              "buttonHoverColor" : "rgba(0,0,0,0.2)",
+              "crossObjectTypeaheadApiNames" : [ {
+                "isPublic" : true,
+                "name" : "FeedItem"
+              } ],
+              "iconColor" : "#000",
+              "placeholderText" : "Search...",
+              "placeholderTextColor" : "#000",
+              "showSearchButton" : false,
+              "textColor" : "#000",
+              "typeaheadResultMax" : 6,
+              "useTypeahead" : true
+            },
+            "componentName" : "forceCommunity:themeSearch",
+            "id" : "ff8aae71-f6c4-4623-9c58-ae2ddbdfe413",
+            "renditionMap" : { },
+            "type" : "component"
+          } ],
+          "id" : "0c561bcd-8c79-4da6-a270-16baed076fdb",
+          "regionName" : "search",
+          "type" : "region"
+        }, {
+          "components" : [ {
+            "componentAttributes" : {
+              "NavigationMenuEditorRefresh" : "Default_Navigation4",
+              "alignment" : "left",
+              "showAppLauncher" : false,
+              "showBackLabel" : true,
+              "showHomeLink" : false
+            },
+            "componentName" : "forceCommunity:multiLevelNavigationWrapper",
+            "id" : "59c80015-913c-4b4a-85a5-fa06ce46fe4c",
+            "renditionMap" : { },
+            "type" : "component"
+          } ],
+          "id" : "137f4e0b-9391-42c6-b426-a6041bf6a654",
+          "regionName" : "nav",
+          "type" : "region"
+        }, {
+          "components" : [ {
+            "componentAttributes" : {
+              "cartCountType" : "UniqueProductCount"
+            },
+            "componentName" : "b2b_buyer_builder:cartBadge",
+            "id" : "aec4de5c-3665-4d1b-9cce-4de3ba41110b",
+            "renditionMap" : { },
+            "type" : "component"
+          } ],
+          "id" : "d58cfc42-729f-4531-9f01-62628a3f6114",
+          "regionName" : "cartIcon",
+          "type" : "region"
+        } ],
+        "renditionMap" : { },
+        "type" : "component"
+      } ],
+      "id" : "21283ea7-d87f-436e-aa14-d760235bb31e",
+      "regionName" : "themeHeader",
+      "type" : "region"
+    }, {
+      "components" : [ {
+        "componentAttributes" : {
+          "bgImage" : "background: #FFFFFF url(/sfsites/assets/themes/jepson-background.jpg) top center /cover",
+          "bgOverlayColor" : "rgba(255, 255, 255, 0.20)",
+          "captionText" : "Our Mission",
+          "captionTextColor" : "rgba(0, 0, 0, 0.8)",
+          "captionTextShadowColor" : "rgba(0, 0, 0, 0)",
+          "contentAlignment" : "right",
+          "contentWidth" : 45,
+          "ctaBtnOneBgColor" : "",
+          "ctaBtnOneBgHoverColor" : "",
+          "ctaBtnOneBorderColor" : "rgba(10, 50, 198, 0)",
+          "ctaBtnOneOpenNewTab" : false,
+          "ctaBtnOneText" : "Our Projects",
+          "ctaBtnOneTextColor" : "",
+          "ctaBtnOneTextHoverColor" : "",
+          "ctaBtnOneUrl" : "",
+          "ctaBtnRadius" : 25,
+          "ctaBtnTwoBgColor" : "rgba(255, 255, 255, 0)",
+          "ctaBtnTwoBgHoverColor" : "rgba(255, 255, 255, 0.9)",
+          "ctaBtnTwoBorderColor" : "rgba(0, 0, 0, 0.8)",
+          "ctaBtnTwoOpenNewTab" : false,
+          "ctaBtnTwoText" : "Contact Us",
+          "ctaBtnTwoTextColor" : "rgba(0, 0, 0, 0.8)",
+          "ctaBtnTwoTextHoverColor" : "rgba(0, 0, 0, 0.8)",
+          "ctaBtnTwoUrl" : "",
+          "ctaShowBtnOne" : true,
+          "ctaShowBtnTwo" : true,
+          "fixedHeroWidth" : true,
+          "heroHeight" : 162,
+          "heroWidth" : 1440,
+          "showCaption" : true,
+          "showSubtitle" : true,
+          "showTitle" : true,
+          "subtitleText" : "We specialize in the construction of unique and exclusive properties.  We deliver outstanding quality and design for leading architects and private clients around the world.",
+          "subtitleTextColor" : "rgba(0, 0, 0, 0.8)",
+          "subtitleTextShadowColor" : "rgba(0, 0, 0, 0)",
+          "titleText" : "Your Dream Home",
+          "titleTextColor" : "rgba(0, 0, 0, 0.8)",
+          "titleTextShadowColor" : "rgba(0, 0, 0, 0)",
+          "type" : "callToAction"
+        },
+        "componentName" : "forceCommunity:themeHeroStarter",
+        "id" : "8d7d3a06-cd9f-4de1-8551-e51579ebac4e",
+        "regions" : [ {
+          "components" : [ {
+            "componentAttributes" : {
+              "backgroundColor" : "#FFFFFF",
+              "borderColor" : "rgba(0, 0, 0, 0)",
+              "borderRadius" : 25,
+              "borderStyle" : "outline",
+              "buttonColor" : "",
+              "buttonHoverColor" : "",
+              "crossObjectTypeaheadApiNames" : "",
+              "iconColor" : "#FFFFFF",
+              "placeholderText" : "Ask a question...",
+              "placeholderTextColor" : "rgba(0, 0, 0, 0.6)",
+              "publicDropdownBackgroundColor" : "#FFFFFF",
+              "publicDropdownBackgroundHoverColor" : "",
+              "publicDropdownBorderColor" : "#F0F0F0",
+              "publicDropdownTextColor" : "",
+              "publicDropdownTextHoverColor" : "",
+              "showSearchButton" : true,
+              "textColor" : "rgba(0, 0, 0, 0.8)",
+              "typeaheadResultMax" : 6,
+              "useTypeahead" : true
+            },
+            "componentName" : "forceCommunity:themeSearchHero",
+            "id" : "3d7cafdf-c542-450f-87c6-1c99923cf184",
+            "renditionMap" : { },
+            "type" : "component"
+          } ],
+          "id" : "3100c1a8-4927-4c76-800e-f3a668b9f5ba",
+          "regionName" : "search",
+          "type" : "region"
+        } ],
+        "renditionMap" : { },
+        "type" : "component"
+      } ],
+      "id" : "aee50325-7dc5-46a0-b075-4573e047392b",
+      "regionName" : "themeHero",
+      "type" : "region"
+    }, {
+      "components" : [ {
+        "componentAttributes" : {
+          "accountLabel" : "",
+          "assistanceLabel" : "Account",
+          "assistanceSupportLabel" : "My orders",
+          "assistanceSupportPageName" : "Orders_OrderManagementVisibility__c",
+          "bfLabel" : "LF",
+          "btobpurpose" : true,
+          "buttonLabel" : "",
+          "catalogLabel" : "My Catalog",
+          "hardwareLabel" : "Hardware",
+          "haveAQuestionLabel" : "",
+          "hfb1Label" : "HF B1",
+          "knowledgeBaseLabel" : "Contact support",
+          "knowledgeBasePageName" : "https://sesimagotag.my.site.com/s/customer-services/assistance-requests",
+          "licenceServicesLabel" : "",
+          "licenceServicesPageName" : "",
+          "myAccountLabel" : "",
+          "myAccountPageName" : "",
+          "ordersLabel" : "",
+          "ordersPageName" : "",
+          "paddingLeft" : "11%",
+          "paddingRight" : "11%",
+          "pageNameToNavigateTo" : "",
+          "privacyLabel" : "",
+          "privacyPageName" : "",
+          "productCatalogLabel" : "All products",
+          "productCatalogPageName" : "Category Detail",
+          "productReturnSupportLabel" : "",
+          "productReturnSupportPageName" : "",
+          "questionParagraphLabel" : "",
+          "servicesLabel" : "Services",
+          "softwareLabel" : "Software",
+          "suboneLabel" : "Subone",
+          "technicalSupportLabel" : "My account",
+          "technicalSupportPageName" : "https://sesimagotag.my.site.com/SES/s/account/Account/",
+          "toolsLabel" : "Customer service",
+          "vusionLabel" : "Vusion",
+          "warrantiesLabel" : "Knowledge base",
+          "warrantiesPageName" : "https://sesimagotag.my.site.com/s/knowledge-base"
+        },
+        "componentName" : "c:sesPortalFooterV1_5",
+        "id" : "6b3d3680-d871-46b4-a692-31fc194ba82f",
+        "renditionMap" : {
+          "fr" : "9666eda9-d75f-4c2c-8ec1-1d38d7de1ada",
+          "fr_ca" : "ffaa1777-9101-4bdc-aea7-3f978f2e1f9b"
+        },
+        "renditions" : [ {
+          "id" : "9666eda9-d75f-4c2c-8ec1-1d38d7de1ada",
+          "renditionValue" : {
+            "componentAttributes" : {
+              "assistanceLabel" : "Compte",
+              "assistanceSupportLabel" : "Mes commandes",
+              "catalogLabel" : "Mon Catalogue",
+              "knowledgeBaseLabel" : "Assistance Commande",
+              "privacyLabel" : "Confidentialité des données",
+              "privacyPageName" : "Data privacy",
+              "productCatalogLabel" : "Tous les produits",
+              "technicalSupportLabel" : "Mon compte",
+              "toolsLabel" : "Service Client",
+              "warrantiesLabel" : "Base de connaissance"
+            }
+          },
+          "type" : "renditionComponent"
+        }, {
+          "id" : "ffaa1777-9101-4bdc-aea7-3f978f2e1f9b",
+          "renditionValue" : {
+            "componentAttributes" : {
+              "privacyPageName" : "Data privacy"
+            }
+          },
+          "type" : "renditionComponent"
+        } ],
+        "type" : "component"
+      } ],
+      "id" : "2018b176-818e-4811-99fb-4699fecbb6d9",
+      "regionName" : "themeFooter",
+      "type" : "region"
+    } ],
+    "type" : "view"
+  }, {
+    "componentAttributes" : {
+      "fixedPageWidth" : 1440,
+      "headerBgColor" : "rgba(0, 0, 0, 0)",
+      "isHeaderPinned" : false,
+      "isHeroUnderHeader" : false,
+      "isPageWidthFixed" : true,
+      "showHeader" : true,
+      "showHero" : true
+    },
+    "componentName" : "siteforce:themeLayoutStarter",
+    "id" : "7b1fd678-de75-48b3-915a-7f38e4582bcc",
+    "label" : "ServiceNotAvailable",
+    "regions" : [ {
+      "id" : "37851688-697e-443c-b421-7010900f01ba",
+      "regionName" : "themeHeader",
+      "type" : "region"
+    }, {
+      "id" : "7b9d577d-33d9-45c8-9da6-67add8fd9008",
+      "regionName" : "themeFooter",
+      "type" : "region"
+    } ],
+    "type" : "view"
+  } ]
+}

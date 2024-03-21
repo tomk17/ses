@@ -1,0 +1,93 @@
+.THIS{
+	background-color: #F6F6F6;
+}
+
+.THIS.redBoldText {
+	font-weight: bold;
+	color: red;
+}
+
+/* .THIS .button-gradient {
+	background-clip: padding-box;
+	border: solid 0.1rem transparent;
+	padding: 0.3rem 1.1rem;
+}
+
+.THIS .button-gradient:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: -1;
+	margin: -0.1rem;
+	border-radius: inherit;
+	background: linear-gradient(45deg, #FF9646 0%, #FFD264 100%);
+} */
+
+.THIS .slds-tabs_default__item.slds-is-active:after {
+	background: linear-gradient(45deg, #FF9646 0%, #FFD264 100%);
+	height: calc(var(--sds-c-tabs-list-sizing-border, 1px) + 0.5px);
+}
+
+.THIS .slds-tabs_default__item:hover:after {
+	background-color: black;
+	height: calc(var(--sds-c-tabs-list-sizing-border, 1px) + 0.5px);
+}
+
+.THIS .slds-tabs_default__item {
+	width: 25%;
+	text-align: center;
+}
+
+.THIS #tab1,
+.THIS #tab2,
+.THIS #tab3,
+.THIS #tab3bis,
+.THIS #tab4{
+	padding: 30px 0px;
+}
+
+.THIS #tab1{
+	padding-top: 18px;
+}
+
+.THIS .validate-order-button {
+	padding: .3rem 1.1rem;
+	background: linear-gradient(black, black) padding-box, linear-gradient(to right, #FF9646, #FFD264) border-box;
+	border: 0.05rem solid transparent !important;
+	color: #FFFFFF;
+	size: 14px;
+}
+
+.THIS .BackBtn{
+    margin: 0;
+}
+
+.THIS .custom-btn-border {
+    align-self: flex-end;
+    background: linear-gradient(90deg, rgba(226, 123, 71, 1) 0%, rgba(254, 211, 138, 1) 100%);
+    border-radius: 5px;
+    padding: 1px;
+    display: inline-block;
+    border: none;
+}
+
+.THIS .custom-btn {
+    height: 36px !important;
+    padding: 10px 15px !important;
+    border: none;
+    font-size: 16px;
+    background: var(--licence-background-color, #F6F6F6);
+    color: black;
+}
+
+.THIS .custom-btn:hover{
+    background-color: black;
+    color: white;
+}
+
+.THIS .custom-btn-div{
+	padding-top: 20px;
+}

@@ -1,0 +1,161 @@
+{
+  "appPageId" : "7f3c3a22-7f52-483b-8435-18c8b47cb803",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "dataProviders" : [ ],
+  "id" : "7eb0e15a-2a84-496b-b213-5627112186dd",
+  "label" : "Order Confirmation Detail",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : { },
+      "componentName" : "c:sesCustomOrderDetailPageStyle",
+      "id" : "0db7ee24-3016-40aa-b387-3ad4c77d9c39",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "richTextValue" : "<p style=\"text-align: center;\"><span style=\"font-size: 48px;\">Thank you for your order!</span></p><p style=\"text-align: center;\"><span style=\"font-size: 28px; color: var(--slds-g-color-neutral-base-10, var(--lwc-colorTextDefault,rgba(0, 0, 0, 0.8))); background-color: transparent;\">You will receive an email confirmation soon</span><span style=\"color: var(--slds-g-color-neutral-base-10, var(--lwc-colorTextDefault,rgba(0, 0, 0, 0.8))); background-color: transparent;\">&nbsp;</span></p>"
+      },
+      "componentName" : "forceCommunity:richTextInline",
+      "id" : "df60450e-3cdf-4cfb-ae8c-a730f95d497e",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : {
+        "fr" : "9acc18e5-db40-4a95-8b05-ce41908c6d1d",
+        "fr_ca" : "68101bd3-3607-4f48-a931-50a27b8d30fc"
+      },
+      "renditions" : [ {
+        "id" : "9acc18e5-db40-4a95-8b05-ce41908c6d1d",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "richTextValue" : "<p style=\"text-align: center;\"><span style=\"font-size: 48px;\">Merci pour votre commande!</span></p><p style=\"text-align: center;\"><span style=\"font-size: 28px;\">Vous recevrez une confirmation prochainement</span></p><p style=\"text-align: center;\"><br></p>"
+          }
+        },
+        "type" : "renditionComponent"
+      }, {
+        "id" : "68101bd3-3607-4f48-a931-50a27b8d30fc",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "richTextValue" : "<p style=\"text-align: center;\"><span style=\"font-size: 48px;\">Merci pour votre commande!</span></p><p style=\"text-align: center;\"><span style=\"font-size: 28px;\">Vous recevrez une confirmation par courriel prochainement</span></p><p style=\"text-align: center;\"><br></p>"
+          }
+        },
+        "type" : "renditionComponent"
+      } ],
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "css" : ".forceCommunityFlowCommunity{ width:70%; margin-left:15%} .flow-button__FINISH button {background: linear-gradient(45deg, #FF9646 0%, #FFD264 100%)!important;color:black;font-weight:800!important;border: 2px solid #f49744!important;} .flow-button__FINISH button:hover{color:black!important}"
+      },
+      "componentName" : "c:addCssOnSpecificPage",
+      "id" : "dc6c112e-f5c1-44cf-b9a1-10c69da706cb",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "6fb21a08-6370-47ef-9bcf-eb61d5692e33",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "tabsetConfig" : {
+          "UUID" : "2728a865-6f8e-4fd1-b393-77be7c1fcd97",
+          "activeTab" : "",
+          "tabs" : [ {
+            "UUID" : "5ebf01b8-c64a-4d82-9df4-1608ca78a541",
+            "allowGuestUser" : false,
+            "locked" : false,
+            "seedComponents" : [ ],
+            "tabKey" : "1",
+            "tabName" : "{!$Label.c.Z_OrderProducts}"
+          }, {
+            "UUID" : "78fe3072-26e2-4cd9-8aca-25f2d7eac7b3",
+            "allowGuestUser" : false,
+            "locked" : false,
+            "seedComponents" : [ ],
+            "tabKey" : "2",
+            "tabName" : "{!$Label.c.Z_shipments}"
+          }, {
+            "UUID" : "60e82dc8-91e0-4b55-8aea-5d6aa85ded7d",
+            "allowGuestUser" : false,
+            "locked" : false,
+            "seedComponents" : [ ],
+            "tabKey" : "3",
+            "tabName" : "{!$Label.c.Z_invoices}"
+          } ],
+          "useOverflowMenu" : false
+        }
+      },
+      "componentName" : "forceCommunity:tabset",
+      "id" : "2728a865-6f8e-4fd1-b393-77be7c1fcd97",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : {
+            "btobconfirmation" : true,
+            "recordId" : "{!recordId}",
+            "reordering" : true,
+            "subtitle" : "Product ordered"
+          },
+          "componentName" : "c:sesCustomOrderFieldDetailsCommunityUsers",
+          "id" : "a1e87807-feb3-4db4-914f-1cb01bfebdb5",
+          "renditionMap" : {
+            "fr" : "b107ad77-b523-4b2d-8c58-f51af77001fb"
+          },
+          "renditions" : [ {
+            "id" : "b107ad77-b523-4b2d-8c58-f51af77001fb",
+            "renditionValue" : {
+              "componentAttributes" : {
+                "subtitle" : "Produit commandé"
+              }
+            },
+            "type" : "renditionComponent"
+          } ],
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "customTitle" : "",
+            "parentRecordId" : "{!recordId}",
+            "relatedListName" : "OrderItems",
+            "showBreadCrumbs" : true,
+            "showCustomTitle" : false,
+            "showManualRefreshButton" : true,
+            "showRowNumbers" : true
+          },
+          "componentName" : "forceCommunity:relatedList",
+          "id" : "3fcf6c88-2cc7-41c6-8cb1-083de253bbc0",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "5ebf01b8-c64a-4d82-9df4-1608ca78a541",
+        "regionLabel" : "{!$Label.c.Z_OrderProducts}",
+        "regionName" : "1",
+        "renditionMap" : { },
+        "type" : "region"
+      }, {
+        "id" : "78fe3072-26e2-4cd9-8aca-25f2d7eac7b3",
+        "regionLabel" : "{!$Label.c.Z_shipments}",
+        "regionName" : "2",
+        "renditionMap" : { },
+        "type" : "region"
+      }, {
+        "id" : "60e82dc8-91e0-4b55-8aea-5d6aa85ded7d",
+        "regionLabel" : "{!$Label.c.Z_invoices}",
+        "regionName" : "3",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "7dcf4195-e234-4534-bec0-7caa1027ff5c",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "ee6d3f98-8545-4ba2-9cc4-22dcd1d1e3a4",
+    "regionName" : "footer",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "orderconfirmation"
+}

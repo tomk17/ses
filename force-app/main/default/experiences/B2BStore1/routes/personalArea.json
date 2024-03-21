@@ -1,0 +1,11 @@
+{
+  "activeViewId" : "9d69d238-8f0e-421d-8fd2-ffb3a8109ab6",
+  "appPageId" : "0f39f530-1371-40d3-9005-f22e4fda9f38",
+  "configurationTags" : [ ],
+  "id" : "3e617c7c-6104-46a7-8f7e-403ea7311a0f",
+  "label" : "Personal Area",
+  "pageAccess" : "UseParent",
+  "routeType" : "custom-personal-area",
+  "type" : "route",
+  "urlPrefix" : "personal-area"
+}

@@ -1,0 +1,99 @@
+{
+  "appPageId" : "7f3c3a22-7f52-483b-8435-18c8b47cb803",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "dataProviders" : [ ],
+  "id" : "7507442a-cde9-463c-8e6e-e1227ca6dbb7",
+  "label" : "Order Confirmation",
+  "regions" : [ {
+    "id" : "f636832b-4922-4571-aa6a-d9698af06117",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "confirmationHeader" : "",
+        "continueLabel" : "Add New Order",
+        "orderConfirmationMessage" : "",
+        "orderNumberLabel" : "",
+        "orderSummaryId" : "{!recordId}",
+        "trackMyOrderLabel" : "Track my Order"
+      },
+      "componentName" : "forceCommunity:commerceOrderConfirmation",
+      "id" : "aedbdff4-3992-467e-ae58-f21f39a569ef",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "addressLabel" : "",
+        "cartId" : "",
+        "contactPointAddressId" : "",
+        "readonly" : true,
+        "shippingInstructions" : "",
+        "shippingInstructionsLabel" : "",
+        "showShipAddress" : true,
+        "showShippingInstructions" : true
+      },
+      "componentName" : "forceCommunity:commerceDelivery",
+      "id" : "ec5558ed-c54e-435c-914c-429b489ac30d",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "cartId" : "{!recordId}",
+        "isReadOnly" : true,
+        "orderDeliveryMethodId" : ""
+      },
+      "componentName" : "commerce_checkout:deliveryMethod",
+      "id" : "ffe1f4e7-d53f-44ca-b66d-3aad2454360b",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "cartId" : "",
+        "discountHeader" : "",
+        "shippingHeader" : "",
+        "showDiscount" : false,
+        "showShipping" : true,
+        "showSubtotal" : true,
+        "showTax" : true,
+        "showTotal" : true,
+        "subtotalHeader" : "",
+        "taxHeader" : "",
+        "titleHeader" : "",
+        "totalHeader" : ""
+      },
+      "componentName" : "forceCommunity:commerceCheckoutSummary",
+      "id" : "0a97887c-a139-402a-9953-96e3bfc0ab07",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "appliedPromAmountTextColor" : "",
+        "appliedPromCardBackgroundColor" : "#FFFFFF",
+        "appliedPromCardBorderColor" : "",
+        "appliedPromCardBorderRadius" : "0",
+        "appliedPromCardTitle" : "Applied Promotions",
+        "appliedPromTextColor" : ""
+      },
+      "componentName" : "b2b_buyer_builder:orderSummaryAppliedPromotions",
+      "id" : "f86f1f41-ca9d-4e65-b2c6-25cab4b48cc7",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "59671e9d-d31a-4ecd-8062-fe8c8fb85dbe",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "4b8e8a25-fa20-4bb8-af3d-ebdb35f6e449",
+    "regionName" : "footer",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "orderconfirmation"
+}

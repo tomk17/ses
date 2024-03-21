@@ -1,0 +1,29 @@
+div.slds-p-bottom_x-small {
+    font-weight: var(--lwc-fontWeightBold);
+}
+
+.purchase-order-error {
+    background-color: #fafaf9;
+    color: #c23934;
+    border: 0.125rem solid #c23934;
+}
+
+.divButtons {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.prevButton {
+    background: black!important;
+    color: white!important;
+    font-weight: 800!important;
+}
+
+.nextButton {
+    border: 2px solid #f49744!important;
+    background: linear-gradient(45deg, #FF9646 0%, #FFD264 100%)!important;
+    color: black!important;
+    font-weight: 800!important;
+}

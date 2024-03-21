@@ -1,0 +1,232 @@
+{
+  "appPageId" : "0f39f530-1371-40d3-9005-f22e4fda9f38",
+  "componentName" : "siteforce:dynamicLayout",
+  "dataProviders" : [ ],
+  "id" : "e2f386db-189a-4347-9881-6039fc1e0ebe",
+  "label" : "Privacy Policy",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "background" : "background: rgba(0,0,0,0)",
+        "backgroundOverlay" : "rgba(0,0,0,0.5)",
+        "contentAreaWidth" : 60,
+        "sectionConfig" : {
+          "UUID" : "03d9f794-bf9a-4027-9738-e99531d73ce8",
+          "columns" : [ {
+            "UUID" : "31cd765a-d624-4263-bf71-15f0642e5fd7",
+            "columnKey" : "1",
+            "columnName" : "Column 1",
+            "columnWidth" : "12",
+            "seedComponents" : [ ]
+          } ]
+        },
+        "sectionHeight" : 400
+      },
+      "componentName" : "forceCommunity:section",
+      "id" : "03d9f794-bf9a-4027-9738-e99531d73ce8",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : {
+            "richTextValue" : "<h1 style=\"text-align: center;\">Privacy Policy</h1><p style=\"text-align: center;\"><br></p><p style=\"text-align: justify;\"><br></p><p style=\"text-align: justify;\">This Privacy Notice describes how SES-Imagotag, Inc. and our affiliates (collectively, “SES-Imagotag,” “we,” and “us”) collect, use, disclose, transfer, store, retain or otherwise process your information when you (whether you are a person acting as a sole proprietor or on behalf of another business entity) apply or sign up for a SES-Imagotag Seller account and other services SES-Imagotag’s website or applications (collectively, “Services”).</p><p style=\"text-align: justify;\">This Privacy Notice applies to information collected in connection with your access to and use of our Services. By continuing to interact with our Services, you are consenting to the practices described in this Privacy Notice.</p>"
+          },
+          "componentName" : "forceCommunity:richTextInline",
+          "id" : "8e882393-7bd0-4a53-bf50-b402e25d6013",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "richTextValue" : "<div class=\"container slds-text-align_center\"\n     style=\"margin: auto;padding-top: 20px; padding-bottom: 40px;\">\n\t\t<h2 style=\"color: black;\n                   text-align: center;\n                   border-bottom-size: 4px;\n                   border-bottom-style: solid;\n                   border-bottom-color: #f00000;\n                   border-bottom-width: 3px;\n                   border-bottom-height: 30px;\n                   display: inline-block;\"\n        >Information we collect about you</h2>\n</div>"
+          },
+          "componentName" : "forceCommunity:htmlBlock",
+          "id" : "12760aff-cb11-4d60-9ca7-87a546e4a680",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "richTextValue" : "<h6 style=\"text-align: justify;\"><b style=\"font-size: 16px;\">1. Information you provide</b></h6><p style=\"text-align: justify;\"><br></p><p style=\"text-align: justify;\">We use data you put into our systems when you open and use an account or other systems, like financial or tax information, information that identifies who you are, transaction information, and any other data you give us.</p><p style=\"text-align: justify;\"><br></p><p style=\"text-align: justify;\">We collect information you provide when you:</p><p style=\"text-align: justify;\"><br></p><p style=\"text-align: justify;\"><span style=\"font-size: 20px; color: rgb(230, 0, 0);\">•</span><span style=\"font-size: 20px; color: rgb(0, 138, 0);\"> </span>Make a request to receive information about SES-Imagotag or our products;</p><p style=\"text-align: justify;\"><span style=\"font-size: 20px; color: rgb(230, 0, 0);\">•</span><span style=\"font-size: 20px; color: rgb(0, 138, 0);\"> </span>Apply or sign up for a SES-Imagotag account or other Services;</p><p style=\"text-align: justify;\"><span style=\"color: rgb(230, 0, 0); font-size: 20px;\">•</span><span style=\"color: rgb(0, 138, 0); font-size: 20px;\"> </span>Go through our identity or account verification process, authenticate into your account, communicate with us, answer our surveys, upload content, or otherwise interact with the Services.</p><p style=\"text-align: justify;\"><br></p><p style=\"text-align: justify;\">Specifically, we collect (and/or have collected during at least the 12-month period preceding the effective date of this Privacy Notice) the following categories of information:</p><h4 style=\"text-align: justify;\"><br></h4><p style=\"text-align: justify;\"><span style=\"font-size: 20px; color: rgb(230, 0, 0);\">•</span><span style=\"font-size: 20px; color: rgb(0, 138, 0);\"> </span>Financial information, such as bank account information and payment card numbers;</p><p style=\"text-align: justify;\"><span style=\"font-size: 20px; color: rgb(230, 0, 0);\">•</span><span style=\"font-size: 20px; color: rgb(0, 138, 0);\"> </span>Identification Information, such as: Name, email address, postal address, signature, and phone number;</p><p style=\"text-align: justify;\"><span style=\"font-size: 20px; color: rgb(230, 0, 0);\">•</span><span style=\"font-size: 20px; color: rgb(0, 138, 0);\"> </span>Transaction Information, such as information about when and where payment transactions occur, the names of the transacting parties, a description of the transactions, the payment or transfer amounts, billing and shipping information, and the payment methods used to complete the transactions.&nbsp;&nbsp;</p><p style=\"text-align: justify;\"><br></p><h3 style=\"text-align: justify;\"><span style=\"font-size: 16px;\">2. Information we collect from your use of the services</span></h3><p style=\"text-align: justify;\"><br></p><p style=\"text-align: justify;\"><span style=\"font-size: 20px; color: rgb(230, 0, 0);\">•</span><span style=\"font-size: 20px; color: rgb(0, 138, 0);\"> </span>Electronic information, such as web browser and device characteristics;</p><p style=\"text-align: justify;\"><span style=\"font-size: 20px; color: rgb(230, 0, 0);\">•</span><span style=\"font-size: 20px; color: rgb(0, 138, 0);\"> </span>Internet or other electronic network activity information, which includes information about how you use and interact with our Services, including your access time, “log-in” and “log-out” information, browser type and language, the date and time of your use of the Services, your search terms, and the website you visited before you visited or used the Services;</p><p style=\"text-align: justify;\"><span style=\"font-size: 20px; color: rgb(230, 0, 0);\">•</span><span style=\"font-size: 20px; color: rgb(0, 138, 0);\"> </span>Online identifiers (e.g., information you use to log in to your account), Internet Protocol (“IP”) address, and unique personal identifiers (including device identifier; cookies, beacons, pixel tags, mobile ad identifiers and similar technology; customer number; unique alias, and other identifiers);</p>"
+          },
+          "componentName" : "forceCommunity:richTextInline",
+          "id" : "e3ef0036-541e-4b98-a901-c9b42f907adb",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "richTextValue" : "<div class=\"container slds-text-align_center\"\n     style=\"margin: auto;padding-top: 20px; padding-bottom: 40px;\">\n\t\t<h2 style=\"color: black;\n                   text-align: center;\n                   border-bottom-size: 4px;\n                   border-bottom-style: solid;\n                   border-bottom-color: #f00000;\n                   border-bottom-width: 3px;\n                   border-bottom-height: 30px;\n                   display: inline-block;\"\n        >How we use your information</h2>\n</div>"
+          },
+          "componentName" : "forceCommunity:htmlBlock",
+          "id" : "ec24002b-744a-4894-9c7a-d0b3110410a6",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "richTextValue" : "<p style=\"text-align: justify;\"><span style=\"color: rgb(26, 26, 26); background-color: transparent;\">We use your data to do things like make sure the products you are using work, help you log in to your account, verify who you are, secure your data, fight fraud, follow the law, enforce our agreements, figure out what new products we can build, and market products to you that we think could make it easier for you to run your business.</span></p><p style=\"text-align: justify;\"><br></p><p style=\"text-align: justify;\"><span style=\"color: rgb(26, 26, 26); background-color: transparent;\">We may collect, use and share information about you for the following reasons:</span></p><p style=\"text-align: justify;\"><br></p><h3 style=\"text-align: justify;\"><span style=\"font-size: 16px;\">1. Performing, improving and developing our Services</span></h3><p style=\"text-align: justify;\"><br></p><p style=\"text-align: justify;\"><span style=\"font-size: 20px; color: rgb(230, 0, 0);\">•</span><span style=\"font-size: 20px; color: rgb(0, 138, 0);\"> </span><span style=\"background-color: transparent;\">Delivering the information and support you request, including technical notices, security alerts, and support and administrative messages such as to resolve disputes, collect fees, and provide assistance for problems with our Services or your SES-Imagotag account;</span></p><p style=\"text-align: justify;\"><span style=\"font-size: 20px; color: rgb(230, 0, 0);\">•</span><span style=\"font-size: 20px; color: rgb(0, 138, 0);\"> </span><span style=\"background-color: transparent;\">Developing new products and services;</span></p><p style=\"text-align: justify;\"><span style=\"font-size: 20px; color: rgb(230, 0, 0);\">•</span><span style=\"font-size: 20px; color: rgb(0, 138, 0);\"> </span><span style=\"background-color: transparent;\">Displaying your historical transaction;</span></p><p style=\"text-align: justify;\"><span style=\"font-size: 20px; color: rgb(230, 0, 0);\">•</span><span style=\"font-size: 20px; color: rgb(0, 138, 0);\"> </span><span style=\"background-color: transparent;\">Improving, personalizing, and facilitating your use of our Services;</span></p><p style=\"text-align: justify;\"><span style=\"font-size: 20px; color: rgb(230, 0, 0);\">•</span><span style=\"font-size: 20px; color: rgb(0, 138, 0);\"> </span><span style=\"background-color: transparent;\">Providing, maintaining and improving our Services, including our website;</span></p><p style=\"text-align: justify;\"><br></p><h3 style=\"text-align: justify;\"><span style=\"font-size: 16px;\">2. Communicating with you about our Services</span></h3><p style=\"text-align: justify;\"><br></p><p style=\"text-align: justify;\"><span style=\"font-size: 20px; color: rgb(230, 0, 0);\">•</span><span style=\"font-size: 20px; color: rgb(0, 138, 0);\"> </span>Sending you surveys and getting your feedback about our Services;</p><p style=\"text-align: justify;\"><span style=\"font-size: 20px; color: rgb(230, 0, 0);\">•</span><span style=\"font-size: 20px; color: rgb(0, 138, 0);\"> </span>Providing information about and promoting our Services to you; and</p><p style=\"text-align: justify;\"><span style=\"font-size: 20px; color: rgb(230, 0, 0);\">•</span><span style=\"font-size: 20px; color: rgb(0, 138, 0);\"> </span>Sending you information we think you may find useful or which you have requested from us about our products and services.</p><p style=\"text-align: justify;\"><br></p><h3 style=\"text-align: justify;\"><span style=\"font-size: 16px;\">3. Protecting our Services and maintaining a trusted environment</span></h3><p style=\"text-align: justify;\"><br></p><p style=\"text-align: justify;\"><span style=\"font-size: 20px; color: rgb(230, 0, 0);\">•</span><span style=\"font-size: 20px; color: rgb(0, 138, 0);\"> </span>Conducting investigations, complying with and enforcing applicable laws, regulations, legal requirements and industry standards, and responding to lawful requests for information from the government or to valid legal process;</p><p style=\"text-align: justify;\"><span style=\"font-size: 20px; color: rgb(230, 0, 0);\">•</span><span style=\"font-size: 20px; color: rgb(0, 138, 0);\"> </span>Contacting you to resolve disputes, collect fees, and help you with our Services;</p><p style=\"text-align: justify;\"><span style=\"font-size: 20px; color: rgb(230, 0, 0);\">•</span><span style=\"font-size: 20px; color: rgb(0, 138, 0);\"> </span>Debugging to identify and fix errors that impair how our Services function;</p><p style=\"text-align: justify;\"><span style=\"font-size: 20px; color: rgb(230, 0, 0);\">•</span><span style=\"font-size: 20px; color: rgb(0, 138, 0);\"> </span>Making sure you follow applicable agreements or policies;</p><p style=\"text-align: justify;\"><span style=\"font-size: 20px; color: rgb(230, 0, 0);\">•</span><span style=\"font-size: 20px; color: rgb(0, 138, 0);\"> </span>Investigating, detecting, preventing, recovering from or reporting fraud, misrepresentations, security breaches or incidents, other potentially prohibited, malicious, or illegal activities, or to otherwise help protect your account, including to dispute chargebacks on your behalf;</p><p style=\"text-align: justify;\"><span style=\"font-size: 20px; color: rgb(230, 0, 0);\">•</span><span style=\"font-size: 20px; color: rgb(0, 138, 0);\"> </span>Verifying your identity (e.g., through government-issued identification numbers).</p>"
+          },
+          "componentName" : "forceCommunity:richTextInline",
+          "id" : "3285e829-fcb5-4844-9d47-be511f511e7c",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "richTextValue" : "<div class=\"container slds-text-align_center\"\n     style=\"margin: auto;padding-top: 20px; padding-bottom: 40px;\">\n\t\t<h2 style=\"color: black;\n                   text-align: center;\n                   border-bottom-size: 4px;\n                   border-bottom-style: solid;\n                   border-bottom-color: #f00000;\n                   border-bottom-width: 3px;\n                   border-bottom-height: 30px;\n                   display: inline-block;\"\n        >When and with whom we share your information</h2>\n</div>"
+          },
+          "componentName" : "forceCommunity:htmlBlock",
+          "id" : "3198e8f6-faf2-45cd-996f-cd36832724d5",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "richTextValue" : "<h2 style=\"text-align: justify;\"><b style=\"font-size: 16px;\">1. With our affiliates and group companies</b></h2><p style=\"text-align: justify;\"><br></p><p style=\"text-align: justify;\"><span style=\"color: rgb(230, 0, 0); font-size: 20px;\">•</span><span style=\"color: rgb(0, 138, 0); font-size: 20px;\"> </span>With our group companies and corporate affiliates, for the reasons outlined above. For example, we may share your information internally to understand how you engage with SES-Imagotag company products to help make our Services better for you and for everyone, and to help us build Services tailored to your preferences.</p><p style=\"text-align: justify;\"><br></p><h3 style=\"text-align: justify;\"><span style=\"font-size: 16px;\">2. With our Service Providers</span></h3><p style=\"text-align: justify;\"><br></p><p style=\"text-align: justify;\"><span style=\"color: rgb(230, 0, 0); font-size: 20px;\">•</span><span style=\"color: rgb(0, 138, 0); font-size: 20px;\"> </span><span style=\"background-color: transparent;\">With service providers who help us provide, maintain, and improve our Services (e.g., vendors who help us with fraud prevention, identity verification, and fee collection services), as well as financial institutions, payment networks, payment card associations, credit bureaus, partners and other entities that help us provide the Services;</span></p><p style=\"text-align: justify;\"><span style=\"color: rgb(230, 0, 0); font-size: 20px;\">•</span><span style=\"color: rgb(0, 138, 0); font-size: 20px;\"> </span><span style=\"background-color: transparent;\">With service providers that help us run our advertising campaigns, contests, special offers, or other events or activities.</span></p><p style=\"text-align: justify;\"><br></p><h3 style=\"text-align: justify;\"><span style=\"font-size: 16px;\">3. Safety and Compliance with Law</span></h3><p style=\"text-align: justify;\"><br></p><p style=\"text-align: justify;\"><span style=\"color: rgb(230, 0, 0); font-size: 20px;\">•</span><span style=\"color: rgb(0, 138, 0); font-size: 20px;\"> </span>If we believe that disclosure is reasonably necessary (i) to comply with any applicable law, regulation, legal process or governmental request (e.g., from creditors, tax authorities, law enforcement agencies, in response to a garnishment, levy, or lien notice, etc.); (ii) to establish, exercise or defend our legal rights; (iii) to enforce or comply with our general terms and conditions or other applicable agreements or policies; (iv) to protect our or our customers’ rights or property, or the security or integrity of our Services; (v) for an investigation of suspected or actual illegal activity; or (vi) to protect us, users of our Services or the public from harm, fraud, or potentially prohibited or illegal activities.</p><p style=\"text-align: justify;\"><br></p><h3 style=\"text-align: justify;\"><span style=\"font-size: 16px;\">4. Aggregated and Anonymized Information</span></h3><p style=\"text-align: justify;\"><br></p><p style=\"text-align: justify;\"><span style=\"color: rgb(230, 0, 0); font-size: 20px;\">•</span><span style=\"color: rgb(0, 138, 0); font-size: 20px;\"> </span><span style=\"color: rgb(26, 26, 26); background-color: transparent;\">We also may share (within our group of companies or affiliates, or with service providers or other third parties) aggregated and anonymized information that does not specifically identify you or any individual user of our Services.</span></p>"
+          },
+          "componentName" : "forceCommunity:richTextInline",
+          "id" : "df252ce6-900e-4197-8ff8-5047e5a82b45",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "richTextValue" : "<div class=\"container slds-text-align_center\"\n     style=\"margin: auto;padding-top: 20px; padding-bottom: 40px;\">\n\t\t<h2 style=\"color: black;\n                   text-align: center;\n                   border-bottom-size: 4px;\n                   border-bottom-style: solid;\n                   border-bottom-color: #f00000;\n                   border-bottom-width: 3px;\n                   border-bottom-height: 30px;\n                   display: inline-block;\"\n        >Cookies and other similar technologies</h2>\n</div>"
+          },
+          "componentName" : "forceCommunity:htmlBlock",
+          "id" : "c99d1607-3b2f-4e4e-b3a2-d2e2cdd475c8",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "richTextValue" : "<p style=\"text-align: justify;\"><span style=\"background-color: transparent; color: rgb(26, 26, 26);\">Digital cookies and similar technologies help us make our services better to use by doing things like recognizing when you’ve signed in, analyzing how you use our services so we can make them more useful to you, giving you a more personalized experience, and making our ads to you work better.</span></p><p style=\"text-align: justify;\"><span style=\"background-color: transparent; color: rgb(26, 26, 26);\">When you interact with our online services, or open emails we send you, we obtain certain information using automated technologies, such as cookies, web server logs and other technologies. A “cookie” is a text file that websites send to a visitor’s computer or other internet-connected device to uniquely identify the visitor’s browser or to store information or settings in the browser.&nbsp;</span></p><p style=\"text-align: justify;\"><br></p><p style=\"text-align: justify;\"><span style=\"background-color: transparent; color: rgb(26, 26, 26);\">These technologies help us to:</span></p><p style=\"text-align: justify;\"><br></p><p style=\"text-align: justify;\"><span style=\"font-size: 20px; color: rgb(230, 0, 0);\">•</span><span style=\"font-size: 20px; color: rgb(0, 138, 0);\"> </span><span style=\"background-color: transparent;\">Remember your information so you do not have to re-enter it;</span></p><p style=\"text-align: justify;\"><span style=\"font-size: 20px; color: rgb(230, 0, 0);\">•</span><span style=\"font-size: 20px; color: rgb(0, 138, 0);\"> </span><span style=\"background-color: transparent;\">Understand how you use and interact with our online services and emails;</span></p><p style=\"text-align: justify;\"><span style=\"font-size: 20px; color: rgb(230, 0, 0);\">•</span><span style=\"font-size: 20px; color: rgb(0, 138, 0);\"> </span><span style=\"background-color: transparent;\">Measure how useful and effective our services and communications are to you; and</span></p><p style=\"text-align: justify;\"><span style=\"font-size: 20px; color: rgb(230, 0, 0);\">•</span><span style=\"font-size: 20px; color: rgb(0, 138, 0);\"> </span><span style=\"background-color: transparent;\">Otherwise manage and enhance our products and services.</span></p><p style=\"text-align: justify;\">&nbsp;</p><p style=\"text-align: justify;\"><span style=\"background-color: transparent; color: rgb(26, 26, 26);\">Your browser can alert you when cookies are placed on your device, and how you can stop or disable them via your browser settings. Please note, however, that without cookies all of the features of our online services may not work properly. If you use a mobile device, you can manage how your device and browser share certain device data by changing the privacy and security settings on your mobile device. You can learn more about cookies and how to manage your preferences by visiting&nbsp;</span><a href=\"http://www.allaboutcookies.org/\" rel=\"noopener noreferrer\" target=\"null\" style=\"color: rgb(230, 0, 0);\"><b>http://www.allaboutcookies.org</b></a><span style=\"color: rgb(26, 26, 26); background-color: transparent;\">.</span></p>"
+          },
+          "componentName" : "forceCommunity:richTextInline",
+          "id" : "7ad8cca9-b261-4ce4-8bf4-990da2c11cc6",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "richTextValue" : "<div class=\"container slds-text-align_center\"\n     style=\"margin: auto;padding-top: 20px; padding-bottom: 40px;\">\n\t\t<h2 style=\"color: black;\n                   text-align: center;\n                   border-bottom-size: 4px;\n                   border-bottom-style: solid;\n                   border-bottom-color: #f00000;\n                   border-bottom-width: 3px;\n                   border-bottom-height: 30px;\n                   display: inline-block;\"\n        >How long we keep your information</h2>\n</div>"
+          },
+          "componentName" : "forceCommunity:htmlBlock",
+          "id" : "8a285975-fda5-41db-b2ff-31fea9e88f98",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "richTextValue" : "<p style=\"text-align: justify;\"><span style=\"background-color: transparent; color: rgb(26, 26, 26);\">We keep your information as long as you keep using our products and services. After that, we keep it for as long as we need it to do things like fight fraud, collect fees you owe, resolve disputes with (or involving) you, follow the law, enforce our agreements and defend our rights in court.</span></p><p style=\"text-align: justify;\"><br></p><p style=\"text-align: justify;\"><span style=\"background-color: transparent; color: rgb(26, 26, 26);\">We generally keep your information as long as reasonably necessary to provide you the Services or to comply with applicable law. However, even after you deactivate your account, we can retain copies of information about you and any transactions or Services in which you may have participated for a period of time that is consistent with applicable law, applicable statute of limitations or as we believe is reasonably necessary to comply with applicable law, regulation, legal process, or governmental request, to detect or prevent fraud, to collect fees owed, to resolve disputes, to address problems with our Services, to assist with investigations, to enforce our&nbsp;terms and conditions&nbsp;or other applicable agreements or policies, or to take any other actions consistent with applicable law.</span></p><p style=\"text-align: justify;\"><br></p><p style=\"text-align: justify;\"><span style=\"background-color: transparent;\">You can&nbsp;access, change or fix&nbsp;information you gave us, ask us to&nbsp;deactivate&nbsp;your account, control your&nbsp;location information, or&nbsp;tell us to stop marketing to you by opting out.</span></p><p style=\"text-align: justify;\"><span style=\"background-color: transparent;\">You may access, change, or correct information that you have provided by logging into your SES-Imagotag account at any time or by making a request to us using the&nbsp;contact details below. We will need to verify your identity before granting access or otherwise changing or correcting your information.</span></p>"
+          },
+          "componentName" : "forceCommunity:richTextInline",
+          "id" : "beabaabd-f74e-43bc-a1df-420de36180b2",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "richTextValue" : "<div class=\"container slds-text-align_center\"\n     style=\"margin: auto;padding-top: 20px; padding-bottom: 40px;\">\n\t\t<h2 style=\"color: black;\n                   text-align: center;\n                   border-bottom-size: 4px;\n                   border-bottom-style: solid;\n                   border-bottom-color: #f00000;\n                   border-bottom-width: 3px;\n                   border-bottom-height: 30px;\n                   display: inline-block;\"\n        >Security</h2>\n</div>"
+          },
+          "componentName" : "forceCommunity:htmlBlock",
+          "id" : "a8f565dc-7964-4a42-a364-039fda7734cf",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "richTextValue" : "<p style=\"text-align: justify;\"><span style=\"color: rgb(26, 26, 26); background-color: transparent;\">We do a lot to keep your data safe. While we think we have strong defenses in place, no one can ever guarantee that hackers won’t be able to break into our sites or steal your data while it is stored or flowing from you to us or vice versa.</span></p><p style=\"text-align: justify;\"><span style=\"color: rgb(26, 26, 26); background-color: transparent;\">We take reasonable measures, including administrative, technical, and physical safeguards, to protect your information from loss, theft, and misuse, and unauthorized access, disclosure, alteration, and destruction. Nevertheless, the internet is not a 100% secure environment, and we cannot guarantee absolute security of the transmission or storage of your information. We hold information about you both at our own premises and with the assistance of third-party service providers.</span></p>"
+          },
+          "componentName" : "forceCommunity:richTextInline",
+          "id" : "c183100f-70b3-44ed-b31f-a6e14acb9caa",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "richTextValue" : "<div class=\"container slds-text-align_center\"\n     style=\"margin: auto;padding-top: 20px; padding-bottom: 40px;\">\n\t\t<h2 style=\"color: black;\n                   text-align: center;\n                   border-bottom-size: 4px;\n                   border-bottom-style: solid;\n                   border-bottom-color: #f00000;\n                   border-bottom-width: 3px;\n                   border-bottom-height: 30px;\n                   display: inline-block;\"\n        >Storage and Processing</h2>\n</div>"
+          },
+          "componentName" : "forceCommunity:htmlBlock",
+          "id" : "f250f44d-7a11-4e11-a056-e6e8a6be6e3a",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "richTextValue" : "<p style=\"text-align: justify;\">We operate in many countries, and we (or our service providers) may move your data and process it outside the country where you live. We may, and we may use third-party service providers to, process and store your information in the United States, and the European Union.Replace this text with content of your own.</p>"
+          },
+          "componentName" : "forceCommunity:richTextInline",
+          "id" : "03f43b35-a1ef-4359-b761-e884b6e91d2f",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "richTextValue" : "<div class=\"container slds-text-align_center\"\n     style=\"margin: auto;padding-top: 20px; padding-bottom: 40px;\">\n\t\t<h2 style=\"color: black;\n                   text-align: center;\n                   border-bottom-size: 4px;\n                   border-bottom-style: solid;\n                   border-bottom-color: #f00000;\n                   border-bottom-width: 3px;\n                   border-bottom-height: 30px;\n                   display: inline-block;\"\n            >Changes to this Privacy Policy</h2>\n</div>"
+          },
+          "componentName" : "forceCommunity:htmlBlock",
+          "id" : "4a52df00-138b-432e-86e9-ba0e4fc1b46d",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "richTextValue" : "<p style=\"text-align: justify;\"><span style=\"color: rgb(26, 26, 26);\">We may amend this Privacy Notice from time to time by posting a revised version and updating the “Effective Date” above. The revised version will be effective on the “Effective Date” listed. If you keep using our Services, you consent to any amendment of this Privacy Notice.</span></p>"
+          },
+          "componentName" : "forceCommunity:richTextInline",
+          "id" : "89b4b268-e2fa-4277-9fcb-b651cbdb7766",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "richTextValue" : "<div class=\"container slds-text-align_center\"\n     style=\"margin: auto;padding-top: 20px; padding-bottom: 40px;\">\n\t\t<h2 style=\"color: black;\n                   text-align: center;\n                   border-bottom-size: 4px;\n                   border-bottom-style: solid;\n                   border-bottom-color: #f00000;\n                   border-bottom-width: 3px;\n                   border-bottom-height: 30px;\n                   display: inline-block;\"\n            >Contact</h2>\n</div>"
+          },
+          "componentName" : "forceCommunity:htmlBlock",
+          "id" : "10719e77-9cd8-4338-b9ba-73656fbf5150",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "richTextValue" : "<p style=\"text-align: justify;\"><span style=\"color: rgb(26, 26, 26); background-color: transparent;\">Please contact our privacy team with any questions or concerns regarding this Privacy Notice: </span><a href=\"mailto:privacy@ses-imagotag.com\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"color: rgb(230, 0, 0);\">privacy@ses-imagotag.com</a><span style=\"color: rgb(230, 0, 0); font-size: 8px;\">﻿</span></p><p style=\"text-align: justify;\"><span style=\"color: rgb(26, 26, 26); background-color: transparent;\">If you have any questions or concerns regarding our privacy notice, or if you believe our privacy notice or applicable laws relating to the protection of your personal information have not been respected, you may file a complaint with our privacy team listed above. We will respond to let you know when you can expect a further response. We may request additional details from you regarding your concerns and may need to engage or consult with other parties in order to investigate and address your issue. We may keep records of your request and any resolution.</span></p>"
+          },
+          "componentName" : "forceCommunity:richTextInline",
+          "id" : "80383c0d-22f4-4bc6-8336-bdf43ff00d05",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "31cd765a-d624-4263-bf71-15f0642e5fd7",
+        "regionLabel" : "Column 1",
+        "regionName" : "1",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "0792a226-b6c1-4b32-8ffa-ee542cafa952",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Privacy Policy"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "d908776e-5cff-41a8-b891-8ff9e90ae82e",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "77bb8f5a-a79f-4a80-87a7-786096dc1365",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "custom-privacy-policy"
+}

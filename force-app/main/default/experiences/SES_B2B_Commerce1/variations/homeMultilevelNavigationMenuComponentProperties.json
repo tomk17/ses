@@ -1,0 +1,15 @@
+{
+  "componentVariants" : [ {
+    "id" : "d459d185-2e02-4e0b-b559-8e6e14384e08",
+    "propertyOverrides" : {
+      "componentAttributes" : {
+        "NavigationMenuEditorRefresh" : "Imagotag_Options"
+      }
+    },
+    "targetId" : "59c80015-913c-4b4a-85a5-fa06ce46fe4c",
+    "type" : "componentVariant"
+  } ],
+  "developerName" : "Home_Multilevel_Navigation_Menu_Component_Properties",
+  "id" : "33f0a21a-1b12-47b8-bb13-e527cc1608c3",
+  "type" : "experienceVariation"
+}

@@ -1,0 +1,722 @@
+<aura:component
+    implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction"
+    access="global" controller="LC_Order">
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    <!--aura:method name="init" action="{!c.doInit}"/-->
+    <aura:attribute name="PaginationList" type="list" />
+    <aura:attribute name="OrderList" type="list" />
+    <aura:method name="refreshTotals" action="{!c.refreshTotals}" />
+    <!--aura:handler name="change" value="{!v.OrderList}" action="{!c.refreshTotals}"/-->
+    <aura:attribute name="bNoRecordsFound" type="boolean" />
+    <aura:attribute name="poids" type="Decimal" />
+    <aura:attribute name="TotalHT" type="Decimal" />
+    <aura:attribute name="fraisdeport" type="Decimal" default="2" />
+    <aura:attribute name="showfraisdeport" type="Boolean" default="true" />
+    <aura:attribute name="showTVA" type="Boolean" default="true" />
+    <aura:attribute name="changeTVA" type="Boolean" default="true" />
+    <aura:attribute name="fraisdeportmsg" type="String" default="" />
+    <aura:attribute name="totalet" type="Decimal" /><!-- default="{!v.TotalHT+v.fraisdeport}"-->
+    <aura:attribute name="tva" type="Decimal" />
+    <aura:attribute name="totalttc" type="Decimal" />
+    <!--default="{!v.totalet+v.tva}" -->
+    <aura:attribute access="private" name="msg" type="String" default="" />
+    <aura:attribute access="private" name="title" type="String" default="" />
+    <aura:attribute name="Spinner" type="boolean" default="false" />
+    <aura:attribute name="beforeEdit" type="boolean" default="true" />
+    <aura:attribute name="tvaEdited" type="boolean" default="false" />
+    <aura:attribute name="SelectedShipToContact" type="String" />
+    <aura:attribute name="SelectedBillToContact" type="String" />
+    <aura:attribute name="ShipToAccount" type="String" />
+    <aura:attribute name="BillToAccount" type="String" />
+    <aura:attribute name="PONumber" type="String" />
+    <aura:attribute name="ShipToAcct" type="Account" />
+    <aura:attribute name="BillToAcct" type="Account" />
+    <aura:attribute name="SelectedBillToCon" type="Contact" />
+    <aura:attribute name="SelectedShipToCon" type="Contact" />
+    <aura:attribute name="RealBillToAcct" type="Account" />
+    <aura:attribute name="RealSelectedBillToCon" type="Contact" />
+    <aura:attribute name="RealSelectedBillToContact" type="String" />
+    <aura:attribute name="RealBillToAccount" type="String" />
+    <aura:attribute name="emailnotifications" type="String" />
+    <!--aura:attribute name="showbillto" type="Boolean" default="true" /-->
+    <aura:attribute name="options" type="String[]" default="{!v.SelectedShipToContact}" />
+    <!--aura:attribute name="showEditForm" type="boolean" default="false"/-->
+    <aura:attribute name="isADV" type="boolean" default="false" />
+    <!--aura:attribute name="fraisDePortObj" type="Freight_Charges__c"/-->
+    <aura:attribute name="isFrench" type="boolean" default="false" />
+    <aura:attribute name="sendEmailRealBill" type="boolean" default="true" />
+    <aura:attribute name="sendEmailBill" type="boolean" default="true" />
+    <aura:attribute name="sendEmailShip" type="boolean" default="true" />
+
+    <aura:attribute name="DisclaimerValue" type="Boolean" default="false" />
+    <aura:attribute name="isModalOpen" type="boolean" default="false" />
+    <aura:attribute name="isValidEmail" type="boolean" default="false" />
+
+    <aura:attribute name="BillToAcctStreet" type="String[]" />
+    <aura:attribute name="RealBillToAcctStreet" type="String[]" />
+    <aura:attribute name="ShipToAcctStreet" type="String[]" />
+    <aura:attribute name="currency" type="String" />
+    <aura:attribute name="isLeft" type="boolean" />
+    <aura:attribute name="currencyRate" type="Decimal" default="" />
+    <aura:attribute name="fraisdeportUsedValues" type="String" default="" />
+
+    <aura:attribute name="communityLogId" type="String" />
+    <aura:attribute name="isADVPermissionSet" type="boolean" default="false" />
+    <aura:attribute name="isSystemAdmin" type="boolean" default="false" />
+    <aura:attribute name="hideTaxes" type="Boolean" default="false" />
+
+    <aura:attribute name="userLanguage" type="String" />
+
+    <aura:method name="validateOrderMethod" action="{!c.openPopup}"></aura:method>
+
+    <aura:method name="createQuoteMethod" action="{!c.createQuote}"></aura:method>
+
+    <aura:if isTrue="{!v.Spinner}">
+        <div>
+            <lightning:spinner aura:id="mySpinner" />
+        </div>
+    </aura:if>
+    <aura:if isTrue="{! !empty(v.msg)}">
+        <ui:message title="{!v.title}" severity="{!v.title}" closable="true">
+            <aura:if isTrue="{!v.title != 'confirm' }">
+                {!v.msg}
+            </aura:if>
+        </ui:message>
+    </aura:if>
+    <br />
+    <!-- data table start-->
+    <table style="width:100%" class="slds-table_cell-buffer">
+        <thead>
+            <tr class="gradient-border-bottom color-black">
+                <th scope="col" style="visibility:hidden;">
+                    <div class="slds-truncate" title="N°">{!$Label.c.Z_LC_WebStoreOrderCart_Number}
+                    </div>
+                </th>
+                <th scope="col">
+                    <div class="slds-truncate" title="{!$Label.c.Z_LC_Catalog_Code}">{!$Label.c.Z_LC_Catalog_Code}
+                    </div>
+                </th>
+                <th scope="col">
+                    <div class="slds-truncate" title="{!$Label.c.Z_LC_Catalog_Description}">
+                        {!$Label.c.Z_LC_Catalog_Description}
+                    </div>
+                </th>
+                <th scope="col">
+                    <div class="slds-truncate slds-align_absolute-center" title="{!$Label.c.Z_LC_Catalog_UnitPrice}">
+                        {!$Label.c.Z_LC_Catalog_UnitPrice}
+                    </div>
+                </th>
+                <th scope="col">
+                    <div class="slds-truncate slds-align_absolute-center" title="{!$Label.c.Z_LC_Catalog_Quantity}">
+                        {!$Label.c.Z_LC_Catalog_Quantity}
+                    </div>
+                </th>
+                <th scope="col">
+                    <div class="slds-truncate slds-align_absolute-center" title="{!$Label.c.Z_LC_Cart_TotalPrice}">
+                        {!$Label.c.Z_LC_Cart_TotalPrice}
+                    </div>
+                </th>
+            </tr>
+
+        </thead>
+        <tbody style="width:100%;">
+            <aura:iteration items="{!v.OrderList}" var="obj" indexVar="index">
+                <tr class="slds-text-title_caps">
+                    <th scope="row">
+                        <div class="slds-truncate" title="Number">
+                            {!index + 1}
+                        </div>
+                    </th>
+                    <th scope="row">
+                        <div class="slds-truncate" title="{!obj.objStoreConfig.Product__r.ProductCode}">
+                            {!obj.objStoreConfig.Product__r.ProductCode}
+                        </div>
+                    </th>
+                    <th scope="row">
+                        <div class="slds-truncate" title="{!obj.objStoreConfig.Product__r.Name}"
+                            style="max-width:400px;white-space:pre-wrap;">
+                            {!obj.objStoreConfig.Product__r.Name}
+                        </div>
+                    </th>
+                    <th scope="row">
+                        <div class="slds-truncate slds-align_absolute-center" title="{!obj.unitPrice}">
+                            <!--<lightning:formattedNumber value="{!obj.unitPrice}" maximumFractionDigits="2" minimumFractionDigits="2" style="currency" currencyCode="{!v.currency}" currencyDisplayAs="code"/>&nbsp;{!v.currency}
+                            <ui:outputCurrency value="{!obj.unitPrice}" currencyCode="{!v.currency}" format="{!$Locale.currencyFormat}"/>-->
+                            <!--<lightning:formattedNumber value="{!obj.unitPrice}" maximumFractionDigits="2" minimumFractionDigits="2" style="decimal"/>&nbsp;{!v.currency}-->
+                            <!--
+                            <aura:if isTrue="{!v.isLeft}">
+                                {!v.currency}&nbsp;<lightning:formattedNumber value="{!obj.unitPrice}" maximumFractionDigits="2" minimumFractionDigits="2" style="decimal"/>
+                                
+                                <aura:set attribute="else">
+                                    <lightning:formattedNumber value="{!obj.unitPrice}" maximumFractionDigits="2" minimumFractionDigits="2" style="decimal"/>&nbsp;{!v.currency}
+                                </aura:set>
+                            </aura:if>
+							-->
+                            <!-- <ui:outputCurrency value="{!obj.unitPrice}" currencyCode="{!v.currency}" format="{!$Locale.currencyFormat}"/> -->
+                            <lightning:formattedNumber value="{!obj.unitPrice}" style="currency"
+                                currencyCode="{!v.currency}" currencyDisplayAs="code" />
+                        </div>
+                    </th>
+                    <th scope="row">
+                        <div class="slds-truncate slds-align_absolute-center" title="{!obj.Quantity}">
+                            <lightning:formattedNumber value="{!obj.quantity}" maximumFractionDigits="0"
+                                minimumFractionDigits="0" />
+                        </div>
+                    </th>
+                    <th scope="row">
+                        <div class="slds-truncate slds-align_absolute-center" title="{!obj.totalPrice}">
+                            <!--<lightning:formattedNumber value="{!obj.totalPrice}" maximumFractionDigits="2" minimumFractionDigits="2" style="currency" currencyCode="{!v.currency}" currencyDisplayAs="code"/>&nbsp;{!v.currency}
+                            <ui:outputCurrency value="{!obj.totalPrice}" currencyCode="{!v.currency}" format="{!$Locale.currencyFormat}"/>-->
+                            <!--<lightning:formattedNumber value="{!obj.totalPrice}" maximumFractionDigits="2" minimumFractionDigits="2" style="decimal"/>&nbsp;{!v.currency}-->
+                            <!--
+                            <aura:if isTrue="{!v.isLeft}">
+                                {!v.currency}&nbsp;<lightning:formattedNumber value="{!obj.totalPrice}" maximumFractionDigits="2" minimumFractionDigits="2" style="decimal"/>
+                                
+                                <aura:set attribute="else">
+                                    <lightning:formattedNumber value="{!obj.totalPrice}" maximumFractionDigits="2" minimumFractionDigits="2" style="decimal"/>&nbsp;{!v.currency}
+                                </aura:set>
+                            </aura:if>
+							-->
+                            <!-- <ui:outputCurrency value="{!obj.totalPrice}" currencyCode="{!v.currency}" format="{!$Locale.currencyFormat}"/> -->
+                            <lightning:formattedNumber value="{!obj.totalPrice}" style="currency"
+                                currencyCode="{!v.currency}" currencyDisplayAs="code" />
+                        </div>
+                    </th>
+                </tr>
+            </aura:iteration>
+
+            <tr id="tr_gray" style="width:100%;">
+                <th colspan="4" scope="row">
+                    <!--div  class="slds-truncate slds-float_right" >
+                            <lightning:button variant="brand" label="{!$Label.c.Z_LC_Cart_ValidateOrder}" title="{!$Label.c.Z_LC_Cart_ValidateOrder}" onclick="{!c.createOrder}"/>
+                        </div-->
+                </th>
+                <th colspan="1" scope="row" class='recap_price'>
+                    <div class="slds-truncate" style="text-align:right;" title="{!$Label.c.Z_LC_Cart_Total}">
+                        {!$Label.c.Z_LC_Cart_Total} :
+                    </div>
+                    <div class="slds-truncate" style="text-align:right;" title="{!$Label.c.Z_LC_Confirm_Fraisdeport}">
+                        {!$Label.c.Z_LC_Confirm_Fraisdeport} :
+                    </div>
+                    <div class="slds-truncate" style="text-align:right;" title="{!$Label.c.Z_LC_Confirm_totalet}">
+                        {!$Label.c.Z_LC_Confirm_totalet} :
+                    </div>
+                    <aura:if isTrue="{!v.hideTaxes == false}">
+                        <div class="slds-truncate" style="text-align:right;" title="{!$Label.c.Z_LC_Confirm_tva}">
+                            {!$Label.c.Z_LC_Confirm_tva} :
+                        </div>
+                        <div class="slds-truncate" style="text-align:right;" title="{!$Label.c.Z_LC_Confirm_totalttc}">
+                            {!$Label.c.Z_LC_Confirm_totalttc} :
+                        </div>
+                    </aura:if>
+                </th>
+                <th colspan="1" scope="row">
+                    <div class="slds-truncate" style="text-align:right;" title="{!$Label.c.Z_LC_Cart_Total}">
+                        <!--<lightning:formattedNumber value="{!v.TotalHT}" maximumFractionDigits="2" minimumFractionDigits="2" style="currency" currencyCode="{!v.currency}" currencyDisplayAs="code"/>&nbsp;{!v.currency}
+                        <ui:outputCurrency value="{!v.TotalHT}" currencyCode="{!v.currency}" format="{!$Locale.currencyFormat}"/>-->
+                        <!--<lightning:formattedNumber value="{!v.TotalHT}" maximumFractionDigits="2" minimumFractionDigits="2" style="decimal"/>&nbsp;{!v.currency}-->
+                        <!--
+                        <aura:if isTrue="{!v.isLeft}">
+                                {!v.currency}&nbsp;<lightning:formattedNumber value="{!v.TotalHT}" maximumFractionDigits="2" minimumFractionDigits="2" style="decimal"/>
+                                
+                                <aura:set attribute="else">
+                                    <lightning:formattedNumber value="{!v.TotalHT}" maximumFractionDigits="2" minimumFractionDigits="2" style="decimal"/>&nbsp;{!v.currency}
+                                </aura:set>
+                            </aura:if>
+						-->
+                        <!-- <ui:outputCurrency value="{!v.TotalHT}" currencyCode="{!v.currency}" format="{!$Locale.currencyFormat}"/> -->
+                        <lightning:formattedNumber value="{!v.TotalHT}" style="currency" currencyCode="{!v.currency}"
+                            currencyDisplayAs="code" />
+                    </div>
+                    <div class="slds-truncate" style="text-align:right;" title="{!$Label.c.Z_LC_Confirm_Fraisdeport}">
+                        <aura:if isTrue="{! empty(v.fraisdeportmsg)}">
+                            <aura:if isTrue="{!!v.showfraisdeport}">
+
+                                {!v.currency}<input type="number" name="chk" id="fraisdeport" style="width: 50px;"
+                                    value="{!v.fraisdeport}" onchange="{!c.setfraisdeport}"
+                                    onblur="{!c.setshowfraisdeport}" />
+
+                                <!--
+                                <aura:if isTrue="{!v.isLeft}">
+                                    {!v.currency} &nbsp;<input type="number" name="chk" id="fraisdeport" style="width: 50px;" value="{!v.fraisdeport}"
+                                                               onchange="{!c.setfraisdeport}" onblur="{!c.setshowfraisdeport}"/>
+                                    
+                                    <aura:set attribute="else">
+                                        <input type="number" name="chk" id="fraisdeport" style="width: 50px;" value="{!v.fraisdeport}"
+                                               onchange="{!c.setfraisdeport}" onblur="{!c.setshowfraisdeport}"/>
+                                        &nbsp;{!v.currency}                                    </aura:set>
+                                </aura:if>
+                                -->
+                            </aura:if>
+                            <aura:if isTrue="{!v.showfraisdeport}">
+                                <aura:if isTrue="{!or(v.isADVPermissionSet, v.isSystemAdmin)}">
+                                    <lightning:buttonIcon iconName="utility:edit" alternativeText="edit" size="x-small"
+                                        onclick="{!c.setshowfraisdeport}" />
+                                    &nbsp;
+                                </aura:if>
+                                <!--<lightning:formattedNumber value="{!v.fraisdeport}" maximumFractionDigits="2" minimumFractionDigits="2" style="currency" currencyCode="{!v.currency}" currencyDisplayAs="code"/>
+                               &nbsp;{!v.currency}
+                                <ui:outputCurrency value="{!v.fraisdeport}" currencyCode="{!v.currency}" format="{!$Locale.currencyFormat}"/>-->
+                                <!-- <lightning:formattedNumber value="{!v.fraisdeport}" maximumFractionDigits="2" minimumFractionDigits="2" style="decimal"/>&nbsp;{!v.currency}-->
+                                <!--
+                                <aura:if isTrue="{!v.isLeft}">
+                                    {!v.currency}&nbsp;<lightning:formattedNumber value="{!v.fraisdeport}" maximumFractionDigits="2" minimumFractionDigits="2" style="decimal"/>
+                                    
+                                    <aura:set attribute="else">
+                                        <lightning:formattedNumber value="{!v.fraisdeport}" maximumFractionDigits="2" minimumFractionDigits="2" style="decimal"/>&nbsp;{!v.currency}
+                                    </aura:set>
+                                </aura:if>
+                                -->
+                                <!-- <ui:outputCurrency value="{!v.fraisdeport}" currencyCode="{!v.currency}" format="{!$Locale.currencyFormat}"/> -->
+                                <lightning:formattedNumber value="{!v.fraisdeport}" style="currency"
+                                    currencyCode="{!v.currency}" currencyDisplayAs="code" />
+                            </aura:if>
+                        </aura:if>
+                        <aura:if isTrue="{!!empty(v.fraisdeportmsg)}">
+                            <aura:if isTrue="{!and(!v.isADVPermissionSet, !v.isSystemAdmin)}">
+                                <b> <i>&nbsp;{!v.fraisdeportmsg}</i></b>
+                            </aura:if>
+
+                            <aura:if isTrue="{!or(v.isADVPermissionSet, v.isSystemAdmin)}">
+                                <aura:if isTrue="{!v.beforeEdit}">
+                                    <lightning:buttonIcon iconName="utility:edit" alternativeText="edit" size="x-small"
+                                        onclick="{!c.setshowfraisdeport}" />
+                                    &nbsp;
+                                    <b><i>{!v.fraisdeportmsg}&nbsp;</i></b>
+                                </aura:if>
+                                <aura:if isTrue="{!!v.beforeEdit}">
+                                    <aura:if isTrue="{!!v.showfraisdeport}">
+
+                                        {!v.currency}<input type="number" name="chk" id="fraisdeport"
+                                            style="width: 50px;" value="{!v.fraisdeport}" onchange="{!c.setfraisdeport}"
+                                            onblur="{!c.setshowfraisdeport}" />
+
+                                        <!--
+                                    <aura:if isTrue="{!v.isLeft}">
+                                        {!v.currency}&nbsp;<input type="number" name="chk" id="fraisdeport" style="width: 50px;" value="{!v.fraisdeport}"
+                                           onchange="{!c.setfraisdeport}" onblur="{!c.setshowfraisdeport}"/>
+                                        
+                                        <aura:set attribute="else">
+                                            <input type="number" name="chk" id="fraisdeport" style="width: 50px;" value="{!v.fraisdeport}"
+                                           onchange="{!c.setfraisdeport}" onblur="{!c.setshowfraisdeport}"/>&nbsp;{!v.currency}
+                                        </aura:set>
+                                    </aura:if>
+                                    -->
+                                    </aura:if>
+                                    <aura:if isTrue="{!v.showfraisdeport}">
+                                        <aura:if isTrue="{!or(v.isADVPermissionSet, v.isSystemAdmin)}">
+                                            <lightning:buttonIcon iconName="utility:edit" alternativeText="edit"
+                                                size="x-small" onclick="{!c.setshowfraisdeport}" />
+                                            &nbsp;
+                                        </aura:if>
+                                        <!--<lightning:formattedNumber value="{!v.fraisdeport}" maximumFractionDigits="2" minimumFractionDigits="2" style="currency" currencyCode="{!v.currency}" currencyDisplayAs="code"/>
+                                    &nbsp;{!v.currency}
+                                    <ui:outputCurrency value="{!v.fraisdeport}" currencyCode="{!v.currency}" format="{!$Locale.currencyFormat}"/>-->
+                                        <!--<lightning:formattedNumber value="{!v.fraisdeport}" maximumFractionDigits="2" minimumFractionDigits="2" style="decimal"/>&nbsp;{!v.currency}-->
+                                        <!--
+                                    <aura:if isTrue="{!v.isLeft}">
+                                        {!v.currency}&nbsp;<lightning:formattedNumber value="{!v.fraisdeport}" maximumFractionDigits="2" minimumFractionDigits="2" style="decimal"/>
+                                        
+                                        <aura:set attribute="else">
+                                            <lightning:formattedNumber value="{!v.fraisdeport}" maximumFractionDigits="2" minimumFractionDigits="2" style="decimal"/>&nbsp;{!v.currency}
+                                        </aura:set>
+                                    </aura:if>
+                                    -->
+                                        <!-- <ui:outputCurrency value="{!v.fraisdeport}" currencyCode="{!v.currency}" format="{!$Locale.currencyFormat}"/> -->
+                                        <lightning:formattedNumber value="{!v.fraisdeport}" style="currency"
+                                            currencyCode="{!v.currency}" currencyDisplayAs="code" />
+                                    </aura:if>
+                                </aura:if>
+                            </aura:if>
+                        </aura:if>
+                    </div>
+                    <div class="slds-truncate" style="text-align:right;" title="{!$Label.c.Z_LC_Confirm_totalet}">
+                        <!--<lightning:formattedNumber value="{!v.totalet}" maximumFractionDigits="2" minimumFractionDigits="2" style="currency" currencyCode="{!v.currency}" currencyDisplayAs="code"/>&nbsp;{!v.currency}
+                        <ui:outputCurrency value="{!v.totalet}" currencyCode="{!v.currency}" format="{!$Locale.currencyFormat}"/>-->
+                        <!--<lightning:formattedNumber value="{!v.totalet}" maximumFractionDigits="2" minimumFractionDigits="2" style="decimal"/>&nbsp;{!v.currency}-->
+                        <!--
+                        <aura:if isTrue="{!v.isLeft}">
+                            {!v.currency}&nbsp;<lightning:formattedNumber value="{!v.totalet}" maximumFractionDigits="2" minimumFractionDigits="2" style="decimal"/>
+                            
+                            <aura:set attribute="else">
+                                <lightning:formattedNumber value="{!v.totalet}" maximumFractionDigits="2" minimumFractionDigits="2" style="decimal"/>&nbsp;{!v.currency}
+                            </aura:set>
+                        </aura:if>
+                        -->
+                        <!-- <ui:outputCurrency value="{!v.totalet}" currencyCode="{!v.currency}" format="{!$Locale.currencyFormat}"/> -->
+                        <lightning:formattedNumber value="{!v.totalet}" style="currency" currencyCode="{!v.currency}"
+                            currencyDisplayAs="code" />
+                    </div>
+                    <aura:if isTrue="{!v.hideTaxes == false}">
+                        <div class="slds-truncate" style="text-align:right; border-top: grey 2px solid;"
+                            title="{!$Label.c.Z_LC_Confirm_tva}">
+                            <aura:if isTrue="{!!v.showTVA}">
+
+                                {!v.currency}<input type="number" name="chk" id="tva" style="width: 50px;"
+                                    value="{!v.tva}" onchange="{!c.setTVA}" onblur="{!c.setshowTVA}" />
+
+                                <!--
+                                <aura:if isTrue="{!v.isLeft}">
+                                    {!v.currency}&nbsp;<input type="number" name="chk" id="tva" style="width: 50px;" value="{!v.tva}"
+                                                              onchange="{!c.setTVA}" onblur="{!c.setshowTVA}"/>
+                                    
+                                    <aura:set attribute="else">
+                                        <input type="number" name="chk" id="tva" style="width: 50px;" value="{!v.tva}"
+                                               onchange="{!c.setTVA}" onblur="{!c.setshowTVA}"/>&nbsp;{!v.currency}
+                                    </aura:set>
+                                </aura:if>
+                                -->
+                            </aura:if>
+                            <aura:if isTrue="{!v.showTVA}">
+                                <aura:if isTrue="{!or(v.isADVPermissionSet, v.isSystemAdmin)}">
+                                    <lightning:buttonIcon iconName="utility:edit" alternativeText="edit" size="x-small"
+                                        onclick="{!c.setshowTVA}" />
+                                    &nbsp;
+                                </aura:if>
+                                <!--<lightning:formattedNumber value="{!v.tva}" maximumFractionDigits="2" minimumFractionDigits="2" style="currency" currencyCode="{!v.currency}" currencyDisplayAs="code"/>
+                                &nbsp;{!v.currency}
+                                <ui:outputCurrency value="{!v.tva}" currencyCode="{!v.currency}" format="{!$Locale.currencyFormat}"/>-->
+                                <!--<lightning:formattedNumber value="{!v.tva}" maximumFractionDigits="2" minimumFractionDigits="2" style="decimal"/>&nbsp;{!v.currency}-->
+                                <!--
+                                <aura:if isTrue="{!v.isLeft}">
+                                    {!v.currency}&nbsp;<lightning:formattedNumber value="{!v.tva}" maximumFractionDigits="2" minimumFractionDigits="2" style="decimal"/>
+                                    
+                                    <aura:set attribute="else">
+                                        <lightning:formattedNumber value="{!v.tva}" maximumFractionDigits="2" minimumFractionDigits="2" style="decimal"/>&nbsp;{!v.currency}
+                                    </aura:set>
+                                </aura:if>
+                                -->
+                                <!-- <ui:outputCurrency value="{!v.tva}" currencyCode="{!v.currency}" format="{!$Locale.currencyFormat}"/> -->
+                                <lightning:formattedNumber value="{!v.tva}" style="currency"
+                                    currencyCode="{!v.currency}" currencyDisplayAs="code" />
+                            </aura:if>
+                        </div>
+                        <div class="slds-truncate" style="text-align:right;" title="{!$Label.c.Z_LC_Confirm_totalttc}">
+                            <!--<lightning:formattedNumber value="{!v.totalttc}" maximumFractionDigits="2" minimumFractionDigits="2" style="currency" currencyCode="{!v.currency}" currencyDisplayAs="code"/>&nbsp;{!v.currency}
+                            <ui:outputCurrency value="{!v.totalttc}" currencyCode="{!v.currency}" format="{!$Locale.currencyFormat}"/>-->
+                            <!--<lightning:formattedNumber value="{!v.totalttc}" maximumFractionDigits="2" minimumFractionDigits="2" style="decimal"/>&nbsp;{!v.currency}-->
+                            <!--
+                            <aura:if isTrue="{!v.isLeft}">
+                                {!v.currency}&nbsp;<lightning:formattedNumber value="{!v.totalttc}" maximumFractionDigits="2" minimumFractionDigits="2" style="decimal"/>
+                                
+                                <aura:set attribute="else">
+                                    <lightning:formattedNumber value="{!v.totalttc}" maximumFractionDigits="2" minimumFractionDigits="2" style="decimal"/>&nbsp;{!v.currency}
+                                </aura:set>
+                            </aura:if>
+                            -->
+                            <!-- <ui:outputCurrency value="{!v.totalttc}" currencyCode="{!v.currency}" format="{!$Locale.currencyFormat}"/> -->
+                            <lightning:formattedNumber value="{!v.totalttc}" style="currency"
+                                currencyCode="{!v.currency}" currencyDisplayAs="code" />
+                        </div>
+                    </aura:if>
+                </th>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- BILLING SHIPPING ADDRESS -->
+    <table class="slds-table slds-m-top_small">
+        <thead>
+            <tr class="header-color">
+                <th scope="col">
+                    <p class="slds-align_absolute-center slds-border_bottom">{!$Label.c.Z_LC_SoldToAccount}</p>
+                </th>
+                <th scope="col">
+                    <p class="slds-align_absolute-center slds-border_bottom">{!$Label.c.Z_LC_Account_Shipping_Address}
+                    </p>
+                </th>
+                <th scope="col">
+                    <p class="slds-align_absolute-center slds-border_bottom">{!$Label.c.Z_LC_Account_Billing_Address}
+                    </p>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <!--aura:if isTrue="{!v.showbillto}"-->
+                <th scope="row" class='slds-border_bottom'
+                    style="text-align:center;max-width:400px;white-space:pre-wrap;">
+                    <div><b>{!v.BillToAcct.Name}</b></div>
+                    <div><b>{!v.BillToAcct.AccountNumber}</b></div>
+                    <div>
+                        <aura:iteration items="{!v.BillToAcctStreet}" var="obj" indexVar="i">
+                            {!obj}
+                            <br />
+                        </aura:iteration>
+                        <div>{!v.BillToAcct.ShippingPostalCode}&nbsp;{!v.BillToAcct.ShippingCity}</div>
+                        <div>{!v.BillToAcct.ShippingState}&nbsp;{!v.BillToAcct.ShippingCountry}</div>
+                    </div>
+                    <!--div><lightning:buttonIcon iconName="utility:edit" alternativeText="edit" size="x-small" onclick="{!c.setshowbillto}" /></div-->
+                </th>
+
+                <!--/aura:if>
+                        <aura:if isTrue="{!!v.showbillto}">
+                            <th scope="row" style="text-align: center;">
+                                <div style="max-width: 200px;margin:0 auto;">
+                                  <lightning:inputAddress
+                                        addressLabel="{!$Label.c.Z_LC_Confirm_Address}"
+                                        streetLabel="{!$Label.c.Z_LC_Confirm_street}"
+                                        cityLabel="{!$Label.c.Z_LC_Confirm_city}"
+                                        countryLabel="{!$Label.c.Z_LC_Confirm_country}"
+                                        provinceLabel="{!$Label.c.Z_LC_Confirm_province}"
+                                        postalCodeLabel="{!$Label.c.Z_LC_Confirm_postalcode}"
+                                        street="{!v.BillToAcct.BillingStreet}"
+                                        city="{!v.BillToAcct.BillingCity}"
+                                        country="{!v.BillToAcct.BillingPostalCountry}"
+                                        province="{!v.BillToAcct.BillingProvince}"
+                                        postalCode="{!v.BillToAcct.BillingPostalCode}"
+                                        required="true"/>
+                                </div>
+                                <div>
+                                    <lightning:buttonIcon iconName="utility:check" alternativeText="ok" size="x-small" onclick="{!c.setshowbillto}" />
+                                </div>
+                            </th>
+                        </aura:if-->
+                <th scope="row" class='slds-border_bottom'
+                    style="text-align:center;max-width:400px;white-space:pre-wrap;">
+                    <div><b>{!v.ShipToAcct.Name}</b></div>
+                    <div><b>{!v.ShipToAcct.AccountNumber}</b></div>
+                    <div>
+                        <aura:iteration items="{!v.ShipToAcctStreet}" var="obj" indexVar="i">
+                            {!obj}
+                            <br />
+                        </aura:iteration>
+                        <div>{!v.ShipToAcct.ShippingPostalCode}&nbsp;{!v.ShipToAcct.ShippingCity}</div>
+                        <div>{!v.ShipToAcct.ShippingState}&nbsp;{!v.ShipToAcct.ShippingCountry}</div>
+                    </div>
+                </th>
+
+                <th scope="row" class='slds-border_bottom'
+                    style="text-align:center;max-width:400px;white-space:pre-wrap;">
+                    <div><b>{!v.RealBillToAcct.Name}</b></div>
+                    <div><b>{!v.RealBillToAcct.AccountNumber}</b></div>
+                    <div>
+                        <!--aura:iteration items="{!v.RealBillToAcctStreet}" var="obj" indexVar="i">
+                            {!obj}
+                            <br/>
+                        </aura:iteration-->
+                        <div>{!v.RealBillToAcct.ShippingStreet}</div>
+                        <div>{!v.RealBillToAcct.ShippingPostalCode}&nbsp;{!v.RealBillToAcct.ShippingCity}</div>
+                        <div>{!v.RealBillToAcct.ShippingState}&nbsp;{!v.RealBillToAcct.ShippingCountry}</div>
+                    </div>
+                    <!--div><lightning:buttonIcon iconName="utility:edit" alternativeText="edit" size="x-small" onclick="{!c.setshowbillto}" /></div-->
+                </th>
+            </tr>
+
+            <!-- BILLING SHIPPING CONTACT NAT -->
+            <tr class="header-color">
+                <th scope="col">
+                    <p class="slds-align_absolute-center slds-border_bottom"><b>{!$Label.c.Z_LC_SoldToContact}</b></p>
+                </th>
+                <th scope="col">
+                    <p class="slds-align_absolute-center slds-border_bottom">
+                        <b>{!$Label.c.Z_LC_Account_Contact_ShipTo_Address}</b></p>
+                </th>
+                <th scope="col">
+                    <p class="slds-align_absolute-center slds-border_bottom">
+                        <b>{!$Label.c.Z_LC_Account_Contact_BillTo_Address}</b></p>
+                </th>
+            </tr>
+            <tr>
+                <th scope="row" class='slds-border_bottom'
+                    style="text-align: center;max-width: 372px;white-space: pre-wrap;">
+                    <div>{!v.SelectedBillToCon.Name}</div>
+                    <div>{!v.SelectedBillToCon.Phone}</div>
+                    <div>{!v.SelectedBillToCon.MobilePhone}</div>
+                    <div>{!v.SelectedBillToCon.Email}</div>
+                </th>
+                <th scope="row" class='slds-border_bottom'
+                    style="text-align: center;max-width: 372px;white-space: pre-wrap;">
+                    <div>{!v.SelectedShipToCon.Name}</div>
+                    <div>{!v.SelectedShipToCon.Phone}</div>
+                    <div>{!v.SelectedShipToCon.MobilePhone}</div>
+                    <div>{!v.SelectedShipToCon.Email}</div>
+                </th>
+                <th scope="row" class='slds-border_bottom'
+                    style="text-align: center;max-width: 372px;white-space: pre-wrap;">
+                    <div>{!v.RealSelectedBillToCon.Name}</div>
+                    <div>{!v.RealSelectedBillToCon.Phone}</div>
+                    <div>{!v.RealSelectedBillToCon.MobilePhone}</div>
+                    <div>{!v.RealSelectedBillToCon.Email}</div>
+                </th>
+            </tr>
+            <tr>
+                <!--<th scope="col" style="text-align:center;">{!$Label.c.z_LC_Confirm_SendEmailNotifications1}
+                    <br/>
+                    {!$Label.c.z_LC_Confirm_SendEmailNotifications2}
+                    </th>-->
+
+                <th scope="col" class='slds-border_bottom' style="max-width:372px;white-space:pre-wrap;">
+                    <div style="display: flex;">
+                        <div class="email_notif_div">
+                            {!$Label.c.z_LC_Confirm_SendEmailNotifications1}&nbsp;{!$Label.c.z_LC_Confirm_SendEmailNotifications2}
+                        </div>
+                        <lightning:input type="checkbox" value="{!v.sendEmailBill}" class='checkbox_style'
+                            variant="label-hidden" checked="{!v.sendEmailBill}" />
+                    </div>
+                </th>
+                <th scope="col" class='slds-border_bottom' style="max-width:372px;white-space:pre-wrap;">
+                    <div class="slds-align_absolute-center">
+                        <lightning:input type="checkbox" value="{!v.sendEmailShip}" class='checkbox_style'
+                            variant="label-hidden" checked="{!v.sendEmailShip}" />
+                    </div>
+                </th>
+                <th scope="col" class='slds-border_bottom' style="max-width:372px;white-space:pre-wrap;">
+                    <div class="slds-align_absolute-center">
+                        <lightning:input type="checkbox" value="{!v.sendEmailRealBill}" class='checkbox_style'
+                            variant="label-hidden" checked="{!v.sendEmailRealBill}" />
+                    </div>
+                </th>
+            </tr>
+        </tbody>
+    </table>
+
+    <!--lightning:button class="slds-m-left_medium" variant="base" label="Create Billing Contact" iconName="utility:new" title="Base action" onclick="{!c.createRecord}"/>
+        <lightning:button class="slds-m-left_medium" variant="base" label="Edit Billing Contact" iconName="utility:edit" title="Base action" onclick="{! c.editRecord }"/-->
+
+    <!-- NAT remove Contact and picklist Start -->
+    <!--div class="slds-m-top_small">
+            <b>{!$Label.c.Z_LC_Account_Contact} </b-->
+    <!-- NAT remove Contact and picklist break -->
+    <!--lightning:RecordEditForm aura:id="editFormUser" recordId="{!v.SelectedContact}" objectApiName="Contact">
+                    <div class="slds-box slds-size_1-of-2">
+                  <lightning:outputField fieldName="Name" />
+                    </div>
+                  </lightning:RecordEditForm -->
+    <!-- NAT remove Contact and picklist break -->
+    <!--lightning:select name="select">
+                <aura:iteration items="{!v.options}" var="option">
+                    <option text="{!option}"></option>
+                </aura:iteration>
+            </lightning:select>        
+        </div-->
+    <!-- NAT remove Contact and picklist End -->
+    <!--lightning:buttonIcon iconName="utility:edit" alternativeText="edit" size="x-small" onclick="{!c.showEditForm}" /-->
+    <!--lightning:notificationsLibrary aura:id="notifLib"/-->
+
+    <div class="slds-m-top_small">
+        <lightning:inputField label="{!$Label.c.Z_LC_Confirm_EmailNotificationLabel}" value="{!v.emailnotifications}" />
+    </div>
+    <br />
+    <div class="slds-m-top_small">
+        {!$Label.c.Z_LC_Confirm_EmailNotificationLabel}
+        <ui:inputText aura:id="emailnotifications" required="false" />
+    </div>
+    <div class="slds-m-top_small">
+        <lightning:input type="text" label="{!$Label.c.Z_LC_Account_PO}" value="{!v.PONumber}" />
+        <!--<lightning:input type="text" name="input1" label="{!$Label.c.Z_LC_Account_PO}" value="{!v.PONumber}" readonly="true"  />-->
+    </div>
+    <!--<div  class="slds-truncate slds-float_right" >
+            <lightning:button variant="brand" label="test button" title="test button" onclick="{!c.sendEmailTest}"/>
+        </div>-->
+
+    <!-- TERMS AND CONDITIONS POPUP NTA -->
+    <!--div  class="slds-truncate slds-float_right" >
+        <lightning:button variant="brand" disabled="{! !(v.TotalHT > 0)}" label="{!$Label.c.Z_LC_Cart_ValidateOrder}" title="{!$Label.c.Z_LC_Cart_ValidateOrder}" onclick="{!c.openPopup}"/>
+    </div-->
+
+    <aura:if isTrue="{!v.isModalOpen}">
+        <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true"
+            aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open">
+
+            <div class="slds-modal__container" style="width: 75%;">
+
+                <div class="slds-modal__header">
+                    <lightning:buttonIcon iconName="utility:close" onclick="{!c.closePopup }" alternativeText="close"
+                        variant="bare-inverse" class="slds-modal__close" />
+                    <h2 id="modal-heading-01" class="slds-text-heading_medium slds-hyphenate">
+                        {!$Label.c.Z_LC_Terms_CondHeader}</h2>
+
+                </div>
+
+                <div class="slds-modal__content slds-p-around--medium">
+                    <!--<div class="slds-p-left_xx-large slds-p-right_xx-large">
+                       <div class="slds-page-header" style="padding-top: 9px; padding-bottom: 9px;, padding-right: 9px;, padding-left: 10px;">
+                            <h3 style="font-size: 1rem;" title="">Terms And Condtions</h3>
+                        </div> 
+                    </div>-->
+                    <div class="slds-grid slds-p-top_medium">
+                        <div class="slds-show" id="terms">
+                            <div>
+                                <img src="{!$Resource.SESImagotagLogo}" style="max-width:15%" />
+                            </div> <br /><br />
+                            <div class="slds-scrollable_y" style="height:20rem">
+                                <!-- height:10rem;width:50rem-->
+                                <aura:if isTrue="{!v.userLanguage == 'fr'}">
+                                    <img src="{!$Resource.terms_cgv+'/FR/terms_cond1.jpg'}" />
+                                    <img src="{!$Resource.terms_cgv+'/FR/terms_cond2.jpg'}" />
+                                    <img src="{!$Resource.terms_cgv+'/FR/terms_cond3.jpg'}" />
+                                    <img src="{!$Resource.terms_cgv+'/FR/terms_cond4.jpg'}" />
+                                    <img src="{!$Resource.terms_cgv+'/FR/terms_cond5.jpg'}" />
+                                    <img src="{!$Resource.terms_cgv+'/FR/terms_cond6.jpg'}" />
+                                    <img src="{!$Resource.terms_cgv+'/FR/terms_cond7.jpg'}" />
+                                </aura:if>
+                                <aura:if isTrue="{!v.userLanguage == 'en_US'}">
+                                    <img src="{!$Resource.terms_cgv+'/EN/terms_cond1.jpg'}" />
+                                    <img src="{!$Resource.terms_cgv+'/EN/terms_cond2.jpg'}" />
+                                    <img src="{!$Resource.terms_cgv+'/EN/terms_cond3.jpg'}" />
+                                    <img src="{!$Resource.terms_cgv+'/EN/terms_cond4.jpg'}" />
+                                    <img src="{!$Resource.terms_cgv+'/EN/terms_cond5.jpg'}" />
+                                    <img src="{!$Resource.terms_cgv+'/EN/terms_cond6.jpg'}" />
+                                </aura:if>
+                                <aura:if isTrue="{!v.userLanguage == 'de'}">
+                                    <img src="{!$Resource.terms_cgv+'/GB/terms_cond1.jpg'}" />
+                                    <img src="{!$Resource.terms_cgv+'/GB/terms_cond2.jpg'}" />
+                                    <img src="{!$Resource.terms_cgv+'/GB/terms_cond3.jpg'}" />
+                                    <img src="{!$Resource.terms_cgv+'/GB/terms_cond4.jpg'}" />
+                                    <img src="{!$Resource.terms_cgv+'/GB/terms_cond5.jpg'}" />
+                                    <img src="{!$Resource.terms_cgv+'/GB/terms_cond6.jpg'}" />
+                                </aura:if>
+                                <aura:if isTrue="{!v.userLanguage == 'it'}">
+                                    <img src="{!$Resource.terms_cgv+'/IT/terms_cond1.jpg'}" />
+                                    <img src="{!$Resource.terms_cgv+'/IT/terms_cond2.jpg'}" />
+                                    <img src="{!$Resource.terms_cgv+'/IT/terms_cond3.jpg'}" />
+                                    <img src="{!$Resource.terms_cgv+'/IT/terms_cond4.jpg'}" />
+                                    <img src="{!$Resource.terms_cgv+'/IT/terms_cond5.jpg'}" />
+                                    <img src="{!$Resource.terms_cgv+'/IT/terms_cond6.jpg'}" />
+                                </aura:if>
+                                <br /><br />
+
+                                <br />
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="slds-modal__footer">
+                    <div>
+                        <lightning:input type="checkbox" style="float:left" checked="{!v.DisclaimerValue}"
+                            variant="label-hidden" />
+                        <aura:if isTrue="{!v.userLanguage == 'fr'}">
+                            <lightning:formattedUrl style="float:left"
+                                value="https://www.ses-imagotag.com/wp-content/uploads/2020/06/2020_General_Terms_and_Conditions__Global_FR.pdf"
+                                label="{!$Label.c.LC_CheckboxAgreement}" />
+                        </aura:if>
+                        <aura:if isTrue="{!v.userLanguage == 'en_US'}">
+                            <lightning:formattedUrl style="float:left"
+                                value="https://www.ses-imagotag.com/wp-content/uploads/2020/05/General_Terms_and_Conditions__Global_EN.pdf"
+                                label="{!$Label.c.LC_CheckboxAgreement}" />
+                        </aura:if>
+                        <aura:if isTrue="{!v.userLanguage == 'de'}">
+                            <lightning:formattedUrl style="float:left"
+                                value="https://www.ses-imagotag.com/wp-content/uploads/2020/10/2020_General_Terms_and_Conditions__Austria.pdf"
+                                label="{!$Label.c.LC_CheckboxAgreement}" />
+                        </aura:if>
+                        <aura:if isTrue="{!v.userLanguage == 'it'}">
+                            <lightning:formattedUrl style="float:left"
+                                value="https://www.ses-imagotag.com/wp-content/uploads/2020/10/2020_General_Terms_and_Conditions_Italy.pdf"
+                                label="{!$Label.c.LC_CheckboxAgreement}" />
+                        </aura:if>
+                        <lightning:button variant="brand" disabled="{! !(v.totalttc > 0)}"
+                            label="{!$Label.c.Z_LC_Terms_Cond_Submit}" title="{!$Label.c.Z_LC_Terms_Cond_Submit}"
+                            onclick="{!c.createOrder}" />
+                        <!--<lightning:button label="close" onclick="{!c.closeNewModal}" />-->
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <div class="slds-backdrop slds-backdrop_open"></div>
+    </aura:if>
+    <!-- TERMS AND CONDITIONS POPUP NTA -->
+</aura:component>

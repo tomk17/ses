@@ -1,0 +1,179 @@
+<aura:component
+	implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction"
+	access="global" controller="LC_Order">
+	<lightning:quickActionAPI aura:id="quickActionAPI" />
+	<aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+	<aura:attribute name="isVisibleTabset" type="Boolean" default="true" />
+	<aura:attribute name="OrderList" type="list" />
+	<aura:attribute name="PaginationList" type="list" />
+	<aura:attribute name="selTabId" type="String" default="tab1" />
+	<aura:attribute name="ShipToAccount" type="String" />
+	<aura:attribute name="BillToAccount" type="String" />
+	<aura:attribute name="ShipToAcct" type="Account" />
+	<aura:attribute name="BillToAcct" type="Account" />
+	<aura:attribute name="SelectedBillToCon" type="Contact" />
+	<aura:attribute name="SelectedShipToCon" type="Contact" />
+	<aura:attribute name="SelectedShipToContact" type="String" />
+	<aura:attribute name="SelectedBillToContact" type="String" />
+	<aura:attribute name="RealSelectedBillToContact" type="String" />
+	<aura:attribute name="RealBillToAccount" type="String" />
+	<aura:attribute name="RealSelectedBillToCon" type="Contact" />
+	<aura:attribute name="RealBillToAcct" type="Account" />
+	<aura:attribute name="PONumber" type="String" />
+	<aura:attribute name="PONumberFlag" type="Boolean" default="false" />
+	<aura:attribute name="TotalHT" type="Decimal" />
+	<aura:attribute name="isADV" type="boolean" default="false" />
+	<aura:attribute name="isADVPermissionSet" type="boolean" default="false" />
+	<aura:attribute name="isSystemAdmin" type="boolean" default="false" />
+	<aura:attribute name="Spinner" type="boolean" default="false" />
+	<aura:attribute name="cpqQuoteId" type="String" default="" />
+	<aura:attribute name="lockAccounts" type="boolean" default="false" />
+	<aura:attribute name="isFrench" type="boolean" />
+	<aura:attribute name="isLeft" type="boolean" default="false" />
+	<aura:attribute name="currency" type="String" default="EUR" />
+	<aura:attribute name="currencyRate" type="Decimal" default="" />
+	<aura:attribute name="currencyReadOnly" type="boolean" default="" />
+
+	<aura:attribute name="BillToAcctStreet" type="String[]" />
+	<aura:attribute name="RealBillToAcctStreet" type="String[]" />
+	<aura:attribute name="ShipToAcctStreet" type="String[]" />
+
+	<aura:attribute name="isWithOppOver70" type="boolean" default="false" />
+	<aura:attribute name="communityLogId" type="String" />
+	<aura:attribute name="displayTransitionModal" type="boolean" default="false" />
+	<aura:attribute name="transitionModalAlreadyClosed" type="boolean" default="false" />
+	<aura:attribute name="oldSelectedSoldToAcctId" type="String" />
+	<aura:attribute name="BillToAccountcreditStatus" type="String" />
+	<aura:handler name="change" value="{!v.selTabId}" action="{!c.tabChanged}" />
+	<aura:handler name="change" value="{!v.BillToAcct}" action="{!c.SoldToAccountChange}" />
+
+	<aura:if isTrue="{!v.Spinner}">
+		<div>
+			<lightning:spinner aura:id="mySpinner" />
+		</div>
+	</aura:if>
+	<aura:if isTrue="{!v.isVisibleTabset}">
+
+		<lightning:tabset variant="default" selectedTabId="{!v.selTabId}" class="tabs-list">
+
+			<lightning:tab label="{!$Label.c.Z_LC_Account_Label}" aura:id="tab1" tabindex="1" id="tab1">
+				<c:LC_Webstore_Order_Account aura:id="ChildAccount" BillToAcctStreet="{!v.BillToAcctStreet}"
+					ShipToAcctStreet="{!v.ShipToAcctStreet}" isFrench="{!v.isFrench}" ShipToAcct="{!v.ShipToAcct}"
+					ShipToAccount="{!v.ShipToAccount}" BillToAcct="{!v.BillToAcct}" BillToAccount="{!v.BillToAccount}"
+					PONumberFlag="{!v.PONumberFlag}" isADV="{!v.isADV}" lockAccounts="{!v.lockAccounts}"
+					currency="{!v.currency}" currencyReadOnly="{!v.currencyReadOnly}" isLeft="{!v.isLeft}" />
+			</lightning:tab>
+
+			<lightning:tab label="{!$Label.c.Z_LC_Catalog_Label}" aura:id="tab2" tabindex="2" id="tab2"
+				onactive="{!c.checkTab1}">
+				<c:LC_Webstore_Order_Select aura:id="ChildSelect" OrderList="{!v.OrderList}"
+					PaginationList="{!v.PaginationList}" ShipToAccount="{!v.ShipToAccount}" isADV="{!v.isADV}"
+					BillToAccount="{!v.BillToAccount}" selTabId="{!v.selTabId}" cpqQuoteId="{!v.cpqQuoteId}"
+					lockAccounts="{!v.lockAccounts}" TotalHT="{!v.TotalHT}" ShipToAcct="{!v.ShipToAcct}"
+					BillToAcct="{!v.BillToAcct}" isADVPermissionSet="{!v.isADVPermissionSet}"
+					isSystemAdmin="{!v.isSystemAdmin}" currency="{!v.currency}" currencyRate="{!v.currencyRate}"
+					isLeft="{!v.isLeft}" />
+			</lightning:tab>
+
+			<lightning:tab label="{!$Label.c.Z_LC_Cart_Label}" aura:id="tab3" tabindex="3" id="tab3"
+				onactive="{!c.checkTab3}">
+				<c:LC_WebStore_Order_Cart aura:id="ChildCart" OrderList="{!v.OrderList}" TotalHT="{!v.TotalHT}"
+					PaginationList="{!v.PaginationList}" ShipToAccount="{!v.ShipToAccount}" cpqQuoteId="{!v.cpqQuoteId}"
+					currency="{!v.currency}" isLeft="{!v.isLeft}" />
+			</lightning:tab>
+
+			<lightning:tab label="{!$Label.c.z_LC_GENERAL_INFORMATIONN}" aura:id="tab3bis" tabindex="4" id="tab3bis"
+				onactive="{!c.checkTab3bis}">
+				<c:LC_Webstore_Order_Other aura:id="ChildOther" BillToAcctStreet="{!v.BillToAcctStreet}"
+					RealBillToAcctStreet="{!v.RealBillToAcctStreet}" ShipToAcctStreet="{!v.ShipToAcctStreet}"
+					RealSelectedBillToContact="{!v.RealSelectedBillToContact}"
+					RealBillToAccount="{!v.RealBillToAccount}" RealSelectedBillToCon="{!v.RealSelectedBillToCon}"
+					RealBillToAcct="{!v.RealBillToAcct}" ShipToAccount="{!v.ShipToAccount}" ShipToAcct="{!v.ShipToAcct}"
+					BillToAccount="{!v.BillToAccount}" BillToAcct="{!v.BillToAcct}" PONumber="{!v.PONumber}"
+					PONumberFlag="{!v.PONumberFlag}" SelectedShipToContact="{!v.SelectedShipToContact}"
+					SelectedBillToContact="{!v.SelectedBillToContact}" SelectedBillToCon="{!v.SelectedBillToCon}"
+					SelectedShipToCon="{!v.SelectedShipToCon}" isADV="{!v.isADV}" />
+			</lightning:tab>
+
+			<lightning:tab label="{!$Label.c.Z_LC_Confirm_Label}" aura:id="tab4" tabindex="5" id="tab4"
+				onactive="{!c.checkTab4}">
+				<c:LC_WebStore_Order_Confirm aura:id="Confirm" BillToAcctStreet="{!v.BillToAcctStreet}"
+					RealBillToAcctStreet="{!v.RealBillToAcctStreet}" ShipToAcctStreet="{!v.ShipToAcctStreet}"
+					isFrench="{!v.isFrench}" OrderList="{!v.OrderList}" TotalHT="{!v.TotalHT}"
+					PaginationList="{!v.PaginationList}" ShipToAccount="{!v.ShipToAccount}"
+					BillToAccount="{!v.BillToAccount}" PONumber="{!v.PONumber}"
+					RealSelectedBillToContact="{!v.RealSelectedBillToContact}"
+					RealBillToAccount="{!v.RealBillToAccount}" communityLogId="{!v.communityLogId}"
+					RealSelectedBillToCon="{!v.RealSelectedBillToCon}" RealBillToAcct="{!v.RealBillToAcct}"
+					ShipToAcct="{!v.ShipToAcct}" BillToAcct="{!v.BillToAcct}"
+					SelectedShipToContact="{!v.SelectedShipToContact}"
+					SelectedBillToContact="{!v.SelectedBillToContact}" SelectedBillToCon="{!v.SelectedBillToCon}"
+					SelectedShipToCon="{!v.SelectedShipToCon}" isADV="{!v.isADV}"
+					isADVPermissionSet="{!v.isADVPermissionSet}" isSystemAdmin="{!v.isSystemAdmin}"
+					currency="{!v.currency}" currencyRate="{!v.currencyRate}" isLeft="{!v.isLeft}" />
+			</lightning:tab>
+
+		</lightning:tabset>
+
+		<!-- ######################################### -->
+		<aura:set attribute="else">
+			<ui:outputText class="redBoldText" value="{!$Label.c.Z_LC_AccHolderError}" />
+		</aura:set>
+
+		<div class="slds-clearfix custom-btn-div">
+
+			<div class="slds-float_left">
+				<aura:renderIf isTrue="{!v.selTabId != 'tab1'}">
+					<!--disabled the back button on first Tab-->
+					<div class="custom-btn-border">
+						<lightning:button disabled="{!v.selTabId == 'tab1'}" class="BackBtn newOrderBtn custom-btn"
+							label="{!$Label.c.Z_LC_WebStoreOrder_BackButton}" onclick="{!c.back}" />
+					</div>
+				</aura:renderIf>
+				<aura:renderIf isTrue="{!v.selTabId == 'tab1'}">
+					<c:LC06_BackButton></c:LC06_BackButton>
+				</aura:renderIf>
+			</div>
+
+			<div class="slds-float_right">
+				<!--disabled the next button on last Tab-->
+				<aura:renderIf isTrue="{!v.selTabId != 'tab4'}">
+					<div class="custom-btn-border">
+						<lightning:button label="{!$Label.c.Z_LC_WebStoreOrder_NextButton}" onclick="{!c.next}"
+							class="BackBtn newOrderBtn custom-btn" />
+					</div>
+				</aura:renderIf>
+				<!--show the confirm order button on last Tab-->
+				<aura:renderIf isTrue="{!v.selTabId == 'tab4'}">
+					<div class="custom-btn-border">
+						<lightning:button class="BackBtn newOrderBtn custom-btn" disabled="{! !(v.TotalHT > 0)}"
+							label="{!$Label.c.Z_LC_Cart_ValidateOrder}" title="{!$Label.c.Z_LC_Cart_ValidateOrder}"
+							onclick="{!c.callValidateOrderMethod}" />
+					</div>
+				</aura:renderIf>
+			</div>
+		</div>
+	</aura:if>
+	<aura:renderIf isTrue="{!v.displayTransitionModal}">
+		<section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true"
+			aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open">
+			<div class="slds-modal__container">
+				<header class="slds-modal__header">
+					<button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse"
+						title="Close" onclick="{!c.closeTransitionModal}">
+						<lightning:icon iconName="utility:close" alternativeText="close" variant="inverse" size="small">
+						</lightning:icon>
+						<span class="slds-assistive-text">Close</span>
+					</button>
+					<h2 id="modal-heading-01"
+						class="slds-modal__title slds-hyphenate slds-p-top_x-small slds-p-left_medium">
+						{!$Label.c.TransitionModalHeader} </h2>
+				</header>
+				<div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1">
+					{!$Label.c.TransitionModalContent}
+				</div>
+			</div>
+		</section>
+		<div class="slds-backdrop slds-backdrop_open"></div>
+	</aura:renderIf>
+</aura:component>
